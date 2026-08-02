@@ -4,6 +4,12 @@ A comprehensive, one-stop AWS Certification simulation and learning platform cov
 
 Featuring authentic **65-question exam simulations**, **50 scored vs 15 experimental beta question splits**, **retake question & option scrambling**, **candidate analytics dashboard**, and **persistent local data storage**.
 
+---
+
+## 🎬 Application Demo & Walkthrough
+
+Below is an animated walkthrough demonstrating exam selection, smooth scrolling, 65-question exam simulation (Mode A instant feedback & Mode B timed sitting), instant explanations with official AWS docs, and candidate analytics with detailed attempt logs:
+
 ![AWS Certification Suite Walkthrough Demo](./demo.gif)
 
 ---
@@ -44,8 +50,9 @@ Every official AWS certification features **10 full practice exam sets** (65 que
 
 ---
 
-### 3. Dedicated Candidate Analytics Dashboard
+### 3. Dedicated Candidate Analytics Dashboard & Attended Exams Breakdown
 - **AWS Exam Readiness Index (0–100%)**: Color-coded readiness badge (`HIGHLY EXAM READY`, `MODERATE READINESS`, `PRACTICE NEEDED`).
+- **Attended Exams Details Modal**: Interactive summary card listing all previous exam sittings, date/time timestamps, scaled score (100–1000), scored/unscored question accuracy, time spent, and domain performance breakdown badges.
 - **AWS Scaled Score Trajectory Bar Chart**: Visual bar graph displaying performance trends across historical sittings with a dashed **AWS Passing Benchmark line (720 / 1000)**.
 - **Domain Accuracy Breakdown**: Horizontal domain mastery progress bars.
 - **Personalized Study Suggestions**: Automated recommendations targeting lower-accuracy domains (<75%).
