@@ -49,6 +49,15 @@ export const ExamSelector: React.FC<ExamSelectorProps> = ({
   const [selectedMode, setSelectedMode] = useState<ExamMode>('practice');
   const [isInstructionModalOpen, setIsInstructionModalOpen] = useState<boolean>(false);
 
+  const workspaceRef = React.useRef<HTMLDivElement>(null);
+
+  const handleExamSelect = (code: ExamCode) => {
+    setActiveExamCode(code);
+    setTimeout(() => {
+      workspaceRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  };
+
   const availableExams = Object.values(EXAM_CATALOG);
 
   const filteredExams = selectedTier === 'All'
@@ -124,7 +133,7 @@ export const ExamSelector: React.FC<ExamSelectorProps> = ({
         <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-2xl bg-slate-950/80 border border-slate-800">
           <button
             onClick={() => setSelectedTier('All')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
+            className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               selectedTier === 'All'
                 ? 'bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20'
                 : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
@@ -137,7 +146,7 @@ export const ExamSelector: React.FC<ExamSelectorProps> = ({
             <button
               key={t.tier}
               onClick={() => setSelectedTier(t.tier)}
-              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
+              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 selectedTier === t.tier
                   ? 'bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
@@ -185,7 +194,7 @@ export const ExamSelector: React.FC<ExamSelectorProps> = ({
                   ? 'border-amber-500/80 ring-2 ring-amber-500/30 bg-slate-900/90'
                   : 'hover:border-slate-700'
               }`}
-              onClick={() => setActiveExamCode(exam.code as ExamCode)}
+              onClick={() => handleExamSelect(exam.code as ExamCode)}
             >
               <CardHeader className="space-y-3 pb-3">
                 <div className="flex items-start justify-between gap-3">
@@ -255,7 +264,7 @@ export const ExamSelector: React.FC<ExamSelectorProps> = ({
 
       {/* Selected Exam Launch Workspace (For All 12 Active AWS Certifications) */}
       {currentExamMeta && (
-        <div className="p-6 sm:p-8 rounded-3xl glass-panel border-amber-500/40 space-y-8 bg-slate-950/80">
+        <div ref={workspaceRef} className="p-6 sm:p-8 rounded-3xl glass-panel border-amber-500/40 space-y-8 bg-slate-950/80 scroll-mt-6">
           
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
             <div>
@@ -311,7 +320,7 @@ export const ExamSelector: React.FC<ExamSelectorProps> = ({
                   <button
                     key={setNum}
                     onClick={() => setSelectedSet(setNum)}
-                    className={`p-3.5 rounded-2xl border text-left transition-all ${
+                    className={`p-3.5 rounded-2xl border text-left transition-all cursor-pointer ${
                       isSetSelected
                         ? 'bg-amber-500 text-slate-950 border-amber-400 font-bold shadow-lg shadow-amber-500/20'
                         : isCompleted

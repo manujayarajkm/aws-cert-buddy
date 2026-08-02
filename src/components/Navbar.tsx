@@ -5,16 +5,12 @@ import { Badge } from './ui/Badge';
 import { formatTime } from '../engine/examEngine';
 import {
   Cloud,
-  Flame,
   BarChart3,
-  BookOpen,
   Home,
-  User,
   LogIn,
   UserPlus,
   LogOut,
   Layers,
-  Sparkles,
   ChevronDown
 } from 'lucide-react';
 
@@ -25,7 +21,7 @@ export interface NavbarProps {
   onOpenAuthModal: (initialRegisterMode?: boolean) => void;
   onLogout: () => void;
   onHomeClick: () => void;
-  streakDays: number;
+  streakDays?: number;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -34,8 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenAnalytics,
   onOpenAuthModal,
   onLogout,
-  onHomeClick,
-  streakDays
+  onHomeClick
 }) => {
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -96,32 +91,15 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Right Navigation & User Auth */}
         <div className="flex items-center gap-3">
           
-          {/* Practice Streak Counter */}
-          <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold">
-            <Flame className="w-4 h-4 fill-amber-500 animate-bounce" />
-            <span>{streakDays} Day Streak</span>
-          </div>
-
-          {/* Analytics Page Nav Link */}
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={onOpenAnalytics}
-            className="gap-1.5 text-xs font-bold text-slate-300 hover:text-amber-400"
-          >
-            <BarChart3 className="w-4 h-4 text-amber-400" />
-            <span className="hidden sm:inline">Analytics</span>
-          </Button>
-
           {/* Home Nav Link */}
           <Button
             variant="ghost"
             size="sm"
             onClick={onHomeClick}
-            className="gap-1.5 text-xs font-bold text-slate-300"
+            className="gap-1.5 text-xs font-bold text-slate-300 cursor-pointer"
           >
             <Layers className="w-4 h-4" />
-            <span className="hidden md:inline">Exams</span>
+            <span>Exams</span>
           </Button>
 
           {/* TOP RIGHT: AUTHENTICATION USER PROFILE / LOGIN & SIGN UP BUTTONS */}
@@ -130,7 +108,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-bold text-slate-100 transition-colors shadow-lg"
+                className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-bold text-slate-100 transition-colors shadow-lg cursor-pointer"
               >
                 <div className="w-6 h-6 rounded-lg bg-gradient-to-tr from-amber-500 to-orange-500 text-slate-950 flex items-center justify-center font-black text-xs">
                   {currentUser.name.charAt(0).toUpperCase()}
@@ -148,12 +126,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <span className="text-[11px] text-slate-400 block truncate">{currentUser.email}</span>
                   </div>
 
+                  {/* Single entry to Performance Dashboard */}
                   <button
                     onClick={() => {
                       setIsProfileDropdownOpen(false);
                       onOpenAnalytics();
                     }}
-                    className="w-full flex items-center gap-2 p-2.5 rounded-xl text-slate-300 hover:bg-slate-900 hover:text-amber-400 font-medium transition-colors"
+                    className="w-full flex items-center gap-2 p-2.5 rounded-xl text-slate-300 hover:bg-slate-900 hover:text-amber-400 font-medium transition-colors cursor-pointer"
                   >
                     <BarChart3 className="w-4 h-4 text-amber-400" />
                     <span>My Performance Dashboard</span>
@@ -164,7 +143,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       setIsProfileDropdownOpen(false);
                       onLogout();
                     }}
-                    className="w-full flex items-center gap-2 p-2.5 rounded-xl text-rose-400 hover:bg-rose-500/10 font-bold transition-colors"
+                    className="w-full flex items-center gap-2 p-2.5 rounded-xl text-rose-400 hover:bg-rose-500/10 font-bold transition-colors cursor-pointer"
                   >
                     <LogOut className="w-4 h-4" />
                     <span>Log Out (Continue as Guest)</span>
@@ -179,7 +158,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 variant="outline"
                 size="sm"
                 onClick={() => onOpenAuthModal(false)}
-                className="gap-1.5 text-xs font-bold border-slate-700"
+                className="gap-1.5 text-xs font-bold border-slate-700 cursor-pointer"
               >
                 <LogIn className="w-3.5 h-3.5 text-amber-400" />
                 <span>Log In</span>
@@ -189,7 +168,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 variant="primary"
                 size="sm"
                 onClick={() => onOpenAuthModal(true)}
-                className="gap-1.5 text-xs font-bold shadow-md shadow-amber-500/20"
+                className="gap-1.5 text-xs font-bold shadow-md shadow-amber-500/20 cursor-pointer"
               >
                 <UserPlus className="w-3.5 h-3.5" />
                 <span>Sign Up</span>

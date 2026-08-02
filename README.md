@@ -53,18 +53,8 @@ Every official AWS certification features **10 full practice exam sets** (65 que
 
 ### 4. Candidate Profile Management & Top-Right Auth
 - Top-right corner **Log In** and **Sign Up** buttons for Guest candidates.
-- Candidate Profile pill and dropdown menu with **Log Out (Continue as Guest)** capability.
+- Candidate Profile pill and dropdown menu with **My Performance Dashboard** and **Log Out (Continue as Guest)** capability.
 - Persistent user progress sync with SQLite backend database.
-
----
-
-## 🛠️ Technology Stack
-
-- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Lucide React icons.
-- **Backend API**: Node.js, Express.js.
-- **Persistence**: SQLite stored locally in `./db/aws_exam_guide.db`.
-- **Testing**: Vitest, React Testing Library.
-- **Containerization**: Docker, Docker Compose.
 
 ---
 
@@ -115,6 +105,22 @@ Open your browser at `http://localhost:4000`.
 ```bash
 docker compose down
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Lucide React Icons, Canvas Confetti.
+- **Backend API**: Node.js, Express 5.x.
+- **Database / Persistence**: Better-SQLite3, persistent file database stored in `./db/aws_exam_guide.db`.
+- **Testing**: Vitest, React Testing Library.
+- **Containerization**: Multi-stage Dockerfile, Docker Compose.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
 
 ---
 

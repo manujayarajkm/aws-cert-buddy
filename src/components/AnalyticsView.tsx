@@ -4,6 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/Card';
 import { Badge } from './ui/Badge';
 import { Progress } from './ui/Progress';
 import { Button } from './ui/Button';
+import { Modal } from './ui/Modal';
+import { formatTime } from '../engine/examEngine';
+import { EXAM_CATALOG } from '../data/examCatalog';
 import {
   BarChart3,
   Trophy,
@@ -24,7 +27,9 @@ import {
   Calendar,
   Layers,
   ChevronRight,
-  ArrowLeft
+  ArrowLeft,
+  Eye,
+  ExternalLink
 } from 'lucide-react';
 
 export interface AnalyticsViewProps {
@@ -39,6 +44,7 @@ export const AnalyticsView: React.FC<AnalyticsViewProps> = ({
   onHomeClick
 }) => {
   const [activeTab, setActiveTab] = useState<'overview' | 'trends' | 'suggestions' | 'history'>('overview');
+  const [isAttendedModalOpen, setIsAttendedModalOpen] = useState<boolean>(false);
 
   const totalTaken = stats.totalExamsTaken;
   const passedCount = stats.passedExamsCount;
@@ -190,15 +196,26 @@ export const AnalyticsView: React.FC<AnalyticsViewProps> = ({
 
           {/* Key Metrics Cards */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card variant="glass" className="p-5 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
-                <BookOpen className="w-6 h-6" />
+            <Card
+              variant="glass"
+              className="p-5 flex items-center justify-between gap-4 cursor-pointer hover:border-amber-500/60 hover:bg-slate-900/90 transition-all group relative overflow-hidden"
+              onClick={() => setIsAttendedModalOpen(true)}
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <BookOpen className="w-6 h-6" />
+                </div>
+                <div>
+                  <span className="text-xs text-slate-400 font-semibold block">Exams Attended</span>
+                  <span className="text-2xl font-black text-slate-100">{totalTaken}</span>
+                  <span className="text-[10px] text-amber-400 font-bold block group-hover:underline">
+                    Click to view detailed list →
+                  </span>
+                </div>
               </div>
-              <div>
-                <span className="text-xs text-slate-400 font-semibold block">Exams Attended</span>
-                <span className="text-2xl font-black text-slate-100">{totalTaken}</span>
-                <span className="text-[10px] text-slate-400 block">Total sittings</span>
-              </div>
+              <Badge variant="warning" className="text-[10px] uppercase font-bold shrink-0">
+                {stats.recentResults.length} Sittings
+              </Badge>
             </Card>
 
             <Card variant="glass" className="p-5 flex items-center gap-4">
@@ -465,6 +482,121 @@ export const AnalyticsView: React.FC<AnalyticsViewProps> = ({
           </CardContent>
         </Card>
       )}
+
+      {/* Attended Exams Details Modal */}
+      <Modal
+        isOpen={isAttendedModalOpen}
+        onClose={() => setIsAttendedModalOpen(false)}
+        title={`Attended Exams & Performance Breakdown (${stats.recentResults.length} Total Sittings)`}
+        maxWidth="2xl"
+        footer={
+          <Button variant="secondary" onClick={() => setIsAttendedModalOpen(false)} className="cursor-pointer">
+            Close Breakdown
+          </Button>
+        }
+      >
+        {stats.recentResults.length > 0 ? (
+          <div className="space-y-4">
+            {stats.recentResults.map((res, index) => {
+              const meta = EXAM_CATALOG[res.examCode];
+              const examTitle = meta?.title || res.examCode;
+
+              return (
+                <div
+                  key={index}
+                  className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4 hover:border-slate-700 transition-all"
+                >
+                  {/* Header: Exam Title, Set & Status */}
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-3">
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <Badge variant="aws" className="text-[10px] font-black">{res.examCode}</Badge>
+                        <Badge variant="outline" className="text-[10px]">Set {res.setId}</Badge>
+                        <span className="text-[11px] text-slate-400">{res.date}</span>
+                      </div>
+                      <h4 className="font-extrabold text-slate-100 text-sm">{examTitle}</h4>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <Badge variant={res.passed ? 'success' : 'danger'} className="px-3 py-1 text-xs font-extrabold">
+                        {res.passed ? 'PASSED' : 'NEEDS PRACTICE'}
+                      </Badge>
+                    </div>
+                  </div>
+
+                  {/* Score & Metrics Grid */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                    <div>
+                      <span className="text-slate-400 block text-[10px] uppercase font-bold">AWS Scaled Score</span>
+                      <span className={`text-base font-black font-mono ${res.passed ? 'text-emerald-400' : 'text-rose-400'}`}>
+                        {res.scaledScore} / 1000
+                      </span>
+                    </div>
+
+                    <div>
+                      <span className="text-slate-400 block text-[10px] uppercase font-bold">Scored Questions</span>
+                      <span className="text-slate-200 font-bold font-mono">
+                        {res.scoredCorrect} / 50 <span className="text-[10px] text-slate-400">({res.percentage}%)</span>
+                      </span>
+                    </div>
+
+                    <div>
+                      <span className="text-slate-400 block text-[10px] uppercase font-bold">Unscored Beta</span>
+                      <span className="text-indigo-300 font-bold font-mono">
+                        {res.unscoredCorrect} / 15
+                      </span>
+                    </div>
+
+                    <div>
+                      <span className="text-slate-400 block text-[10px] uppercase font-bold">Time Spent</span>
+                      <span className="text-slate-200 font-bold font-mono">
+                        {formatTime(res.timeSpentSeconds)}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Mode & Domain Performance Badges */}
+                  <div className="space-y-2 pt-1">
+                    <div className="flex items-center justify-between text-[11px] text-slate-400">
+                      <span>Exam Mode: <strong className="text-slate-200">{res.mode === 'practice' ? 'Mode A (Instant Feedback)' : 'Mode B (Full Simulation)'}</strong></span>
+                    </div>
+
+                    {res.domainScores && res.domainScores.length > 0 && (
+                      <div className="space-y-1.5">
+                        <span className="text-[11px] font-bold text-slate-400 block">Domain Accuracy Breakdown:</span>
+                        <div className="flex flex-wrap gap-2">
+                          {res.domainScores.map((d, dIdx) => (
+                            <span
+                              key={dIdx}
+                              className={`px-2.5 py-1 rounded-lg text-[11px] font-bold border ${
+                                d.percentage >= 80
+                                  ? 'bg-emerald-950/50 border-emerald-500/40 text-emerald-300'
+                                  : d.percentage >= 65
+                                  ? 'bg-amber-950/50 border-amber-500/40 text-amber-300'
+                                  : 'bg-rose-950/50 border-rose-500/40 text-rose-300'
+                              }`}
+                            >
+                              {d.domainName}: <strong className="font-mono">{d.percentage}%</strong>
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="text-center py-12 space-y-3">
+            <BookOpen className="w-12 h-12 text-slate-600 mx-auto" />
+            <h4 className="font-bold text-slate-200 text-base">No Exam Sittings Recorded Yet</h4>
+            <p className="text-xs text-slate-400 max-w-sm mx-auto">
+              Complete any 65-question practice exam set to record detailed performance logs here.
+            </p>
+          </div>
+        )}
+      </Modal>
 
     </div>
   );
