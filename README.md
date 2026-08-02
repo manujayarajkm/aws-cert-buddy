@@ -4,6 +4,8 @@ A comprehensive, one-stop AWS Certification simulation and learning platform cov
 
 Featuring authentic **65-question exam simulations**, **50 scored vs 15 experimental beta question splits**, **retake question & option scrambling**, **candidate analytics dashboard**, and **persistent local data storage**.
 
+![AWS Certification Suite Walkthrough Demo](./demo.gif)
+
 ---
 
 ## 🌟 Key Features
