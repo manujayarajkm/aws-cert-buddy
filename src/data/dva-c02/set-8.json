@@ -1,0 +1,2290 @@
+[
+  {
+    "id": "dva-8-1",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q1] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-2",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q2] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-3",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q3] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-4",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q4] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+      },
+      {
+        "id": "B",
+        "text": "Increase the Kinesis Shard count by 100."
+      },
+      {
+        "id": "C",
+        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+      },
+      {
+        "id": "D",
+        "text": "Set Lambda Reserved Concurrency to 0."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-5",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q5] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-6",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q6] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-7",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q7] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-8",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q8] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BatchWriteItem"
+      },
+      {
+        "id": "B",
+        "text": "TransactWriteItems"
+      },
+      {
+        "id": "C",
+        "text": "PutItem with conditional expressions"
+      },
+      {
+        "id": "D",
+        "text": "ExecuteStatement with SQL JOIN"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-9",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q9] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-10",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q10] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-11",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q11] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-12",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q12] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
+      },
+      {
+        "id": "B",
+        "text": "Hardcode credentials in the application's package.json."
+      },
+      {
+        "id": "C",
+        "text": "Embed credentials directly in public git commits."
+      },
+      {
+        "id": "D",
+        "text": "Store plaintext credentials in EC2 user data scripts."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-13",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q13] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-14",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q14] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-15",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q15] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-16",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q16] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+      },
+      {
+        "id": "B",
+        "text": "Increase the Kinesis Shard count by 100."
+      },
+      {
+        "id": "C",
+        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+      },
+      {
+        "id": "D",
+        "text": "Set Lambda Reserved Concurrency to 0."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-17",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q17] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-18",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q18] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-19",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q19] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-20",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q20] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-21",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q21] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-22",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q22] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-23",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q23] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-24",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q24] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
+      },
+      {
+        "id": "B",
+        "text": "Hardcode credentials in the application's package.json."
+      },
+      {
+        "id": "C",
+        "text": "Embed credentials directly in public git commits."
+      },
+      {
+        "id": "D",
+        "text": "Store plaintext credentials in EC2 user data scripts."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-25",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q25] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-26",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q26] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-27",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q27] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-28",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q28] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+      },
+      {
+        "id": "B",
+        "text": "Increase the Kinesis Shard count by 100."
+      },
+      {
+        "id": "C",
+        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+      },
+      {
+        "id": "D",
+        "text": "Set Lambda Reserved Concurrency to 0."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-29",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q29] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-30",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q30] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-31",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q31] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-32",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q32] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BatchWriteItem"
+      },
+      {
+        "id": "B",
+        "text": "TransactWriteItems"
+      },
+      {
+        "id": "C",
+        "text": "PutItem with conditional expressions"
+      },
+      {
+        "id": "D",
+        "text": "ExecuteStatement with SQL JOIN"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-33",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q33] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-34",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q34] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-35",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q35] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-36",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q36] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
+      },
+      {
+        "id": "B",
+        "text": "Hardcode credentials in the application's package.json."
+      },
+      {
+        "id": "C",
+        "text": "Embed credentials directly in public git commits."
+      },
+      {
+        "id": "D",
+        "text": "Store plaintext credentials in EC2 user data scripts."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-37",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q37] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-38",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q38] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-39",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q39] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-40",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q40] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-8-41",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q41] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-42",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q42] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-43",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q43] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-44",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q44] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BatchWriteItem"
+      },
+      {
+        "id": "B",
+        "text": "TransactWriteItems"
+      },
+      {
+        "id": "C",
+        "text": "PutItem with conditional expressions"
+      },
+      {
+        "id": "D",
+        "text": "ExecuteStatement with SQL JOIN"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-45",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q45] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-46",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q46] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-47",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q47] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-48",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q48] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
+      },
+      {
+        "id": "B",
+        "text": "Hardcode credentials in the application's package.json."
+      },
+      {
+        "id": "C",
+        "text": "Embed credentials directly in public git commits."
+      },
+      {
+        "id": "D",
+        "text": "Store plaintext credentials in EC2 user data scripts."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-49",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q49] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-50",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DVA-C02 Set 8 - Q50] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-51",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q51] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-52",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q52] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+      },
+      {
+        "id": "B",
+        "text": "Increase the Kinesis Shard count by 100."
+      },
+      {
+        "id": "C",
+        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+      },
+      {
+        "id": "D",
+        "text": "Set Lambda Reserved Concurrency to 0."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-53",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q53] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-54",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q54] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-55",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q55] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-56",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q56] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BatchWriteItem"
+      },
+      {
+        "id": "B",
+        "text": "TransactWriteItems"
+      },
+      {
+        "id": "C",
+        "text": "PutItem with conditional expressions"
+      },
+      {
+        "id": "D",
+        "text": "ExecuteStatement with SQL JOIN"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-57",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q57] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-58",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q58] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-59",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q59] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-60",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q60] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-61",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q61] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Key Management Service (AWS KMS)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-62",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q62] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS::Serverless::Function"
+      },
+      {
+        "id": "B",
+        "text": "AWS::Lambda::Function"
+      },
+      {
+        "id": "C",
+        "text": "AWS::EC2::Instance"
+      },
+      {
+        "id": "D",
+        "text": "AWS::CloudFormation::Stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-63",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q63] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the Lambda function."
+      },
+      {
+        "id": "B",
+        "text": "Increase function memory allocation to 10,240 MB."
+      },
+      {
+        "id": "C",
+        "text": "Move initialization code into the Lambda handler function body."
+      },
+      {
+        "id": "D",
+        "text": "Switch from Node.js runtime to Java 17 runtime."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-64",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q64] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+      },
+      {
+        "id": "B",
+        "text": "Increase the Kinesis Shard count by 100."
+      },
+      {
+        "id": "C",
+        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+      },
+      {
+        "id": "D",
+        "text": "Set Lambda Reserved Concurrency to 0."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dva-8-65",
+    "setId": 8,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "[DVA-C02 Set 8 - Q65] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+      },
+      {
+        "id": "B",
+        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+      },
+      {
+        "id": "C",
+        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+      },
+      {
+        "id": "D",
+        "text": "Disable CORS on API Gateway to allow requests from any origin."
+      },
+      {
+        "id": "E",
+        "text": "Grant full AdministratorAccess to the Lambda execution role."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "difficulty": "Complex"
+  }
+]

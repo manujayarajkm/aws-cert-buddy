@@ -1,0 +1,2290 @@
+[
+  {
+    "id": "dea-4-1",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q1] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-2",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q2] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-3",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q3] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-4",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q4] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-5",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q5] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-6",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q6] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-7",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q7] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-8",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q8] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-9",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q9] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-10",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q10] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-11",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q11] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-12",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q12] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-13",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q13] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-14",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q14] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-15",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q15] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-16",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q16] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-17",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q17] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-18",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q18] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-19",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q19] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-20",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q20] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-21",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q21] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-22",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q22] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-23",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q23] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-24",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q24] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-25",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q25] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-26",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q26] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-27",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q27] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-28",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q28] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-29",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q29] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-30",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q30] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-31",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q31] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-32",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q32] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-33",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q33] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-34",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q34] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-35",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q35] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-36",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q36] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-37",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q37] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-38",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q38] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-39",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q39] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-40",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q40] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-4-41",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q41] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-42",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q42] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-43",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q43] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-44",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q44] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-45",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q45] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-46",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q46] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-47",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q47] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-48",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q48] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-49",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q49] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-50",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "[DEA-C01 Set 4 - Q50] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-51",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q51] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-52",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q52] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-53",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q53] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-54",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q54] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-55",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q55] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-56",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q56] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-57",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q57] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-58",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q58] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-59",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q59] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-60",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q60] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-61",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q61] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+      },
+      {
+        "id": "B",
+        "text": "s3://my-datalake/all_sales_files_in_root/"
+      },
+      {
+        "id": "C",
+        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+      },
+      {
+        "id": "D",
+        "text": "s3://my-datalake/sales.zip"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-62",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q62] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+      },
+      {
+        "id": "B",
+        "text": "Poll the Step Functions API manually using a bash script."
+      },
+      {
+        "id": "C",
+        "text": "Store logs in S3 Glacier."
+      },
+      {
+        "id": "D",
+        "text": "Re-run the state machine every minute continuously."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-63",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q63] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS KMS"
+      },
+      {
+        "id": "C",
+        "text": "AWS Shield Advanced"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-64",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q64] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge physical ship device daily."
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue batch job running once every 24 hours."
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Glacier Select queries."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
+    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dea-4-65",
+    "setId": 4,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "[DEA-C01 Set 4 - Q65] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+      },
+      {
+        "id": "B",
+        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 latency routing records."
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge physical storage export devices."
+      },
+      {
+        "id": "E",
+        "text": "Amazon CloudFront distribution origins."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "difficulty": "Complex"
+  }
+]

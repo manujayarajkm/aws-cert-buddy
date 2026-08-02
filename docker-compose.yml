@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  aws-cert-suite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aws_cert_suite_app
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./db:/app/db
+    restart: unless-stopped
+    environment:
+      - PORT=4000
+      - NODE_ENV=production
