@@ -117,6 +117,71 @@ docker compose down
 
 ---
 
+## ➕ How to Add New Question Sets via JSON
+
+The platform features an automated dynamic loader (`src/engine/questionLoader.ts`) powered by Vite eager glob imports. **You can add new practice or simulation sets simply by dropping a new JSON file into the data folder—no code modifications or manual registration required!**
+
+### 1. File Placement & Naming Conventions
+Navigate to `src/data/<exam-code-lowercase>/` for your target certification (e.g., `src/data/dva-c02/` or `src/data/saa-c03/`):
+
+- **Practice Mode Sets (Mode A)**: Name the file `set-<number>.json` (e.g., `set-11.json`).
+- **Simulation Mode Sets (Mode B)**: Name the file `sim-set-<number>.json` (e.g., `sim-set-11.json`).
+
+---
+
+### 2. JSON Question Structure Schema
+Each JSON file must contain a JSON array of `Question` objects. Below is a sample schema for a question:
+
+```json
+[
+  {
+    "id": "dva-c02-s11-q1",
+    "setId": 11,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is writing an e-commerce application using Amazon DynamoDB. The application needs to perform atomic updates across multiple order and inventory tables in an all-or-nothing transaction. Which DynamoDB API operation should be used?",
+    "codeSnippet": "aws dynamodb transact-write-items --transact-items file://items.json",
+    "options": [
+      { "id": "A", "text": "TransactWriteItems" },
+      { "id": "B", "text": "BatchWriteItem" },
+      { "id": "C", "text": "PutItem with ConditionExpression" },
+      { "id": "D", "text": "UpdateItem with ReturnValues" }
+    ],
+    "correctAnswer": ["A"],
+    "explanation": "TransactWriteItems enables atomic, coordinated write operations across multiple items within and across DynamoDB tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+    "difficulty": "Standard"
+  }
+]
+```
+
+#### Field Specifications:
+- `id`: *(string)* Unique identifier (e.g., `dva-c02-s11-q1` or `dva-c02-sim-s11-q1`).
+- `setId`: *(number)* The numeric set number matching your filename (e.g., `11`).
+- `examCode`: *(string)* Exam identifier (e.g., `"CLF-C02"`, `"AIF-C01"`, `"SAA-C03"`, `"DVA-C02"`, `"SOA-C02"`, `"DEA-C01"`, `"MLA-C01"`, `"SAP-C02"`, `"DOP-C02"`, `"ANS-C01"`, `"SCS-C02"`, `"MLS-C01"`).
+- `domainId` & `domainName`: *(string)* Official AWS exam blueprint domain.
+- `questionType`: *(string)* `"single"` for single-choice radio buttons or `"multiple"` for multi-select checkboxes.
+- `selectCount`: *(number)* Number of options candidate must select (`1` for single, `2` or `3` for multiple choice).
+- `isScored`: *(boolean)* `true` for Scored questions (Q1–Q50), `false` for Experimental Beta questions (Q51–Q65).
+- `scenario`: *(string)* The full scenario stem.
+- `codeSnippet`: *(string, optional)* Code or CLI command snippet.
+- `options`: *(array)* List of choices with `id` (`"A"`, `"B"`, `"C"`, `"D"`, `"E"`) and `text`.
+- `correctAnswer`: *(array of strings)* Array of correct option IDs (e.g., `["A"]` or `["A", "B"]`).
+- `explanation`: *(string)* Detailed explanation revealed in Mode A or post-exam review.
+- `awsDocUrl`: *(string)* Link to official AWS Documentation.
+- `difficulty`: *(string)* `"Standard"`, `"Challenging"`, or `"Complex"`.
+
+---
+
+### 3. Automatic Discovery & Zero Rebuild Required
+Once the `.json` file is saved inside `src/data/<exam-dir>/`, Vite's eager glob import automatically discovers and parses the set on next application load or hot-reload. The UI set selector in `ExamSelector.tsx` will automatically render the new set button for candidates!
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Lucide React Icons, Canvas Confetti.
