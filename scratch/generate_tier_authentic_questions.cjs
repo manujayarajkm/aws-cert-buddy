@@ -8,10 +8,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Cloud Practitioner (CLF-C02)',
     tier: 'Foundational',
     domains: [
-      { id: 'clf-d1', name: 'Domain 1: Cloud Concepts' },
-      { id: 'clf-d2', name: 'Domain 2: Security and Compliance' },
-      { id: 'clf-d3', name: 'Domain 3: Cloud Technology and Services' },
-      { id: 'clf-d4', name: 'Domain 4: Billing, Pricing, and Support' }
+      { id: 'clf-d1', name: 'Cloud Concepts' },
+      { id: 'clf-d2', name: 'Security and Compliance' },
+      { id: 'clf-d3', name: 'Cloud Technology and Services' },
+      { id: 'clf-d4', name: 'Billing, Pricing, and Support' }
     ],
     topics: [
       { name: 'Pay-as-you-go pricing model', service: 'AWS Cost Management', correctText: 'Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)', exp: 'Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.' },
@@ -26,10 +26,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified AI Practitioner (AIF-C01)',
     tier: 'Foundational',
     domains: [
-      { id: 'aif-d1', name: 'Domain 1: Fundamentals of AI and ML' },
-      { id: 'aif-d2', name: 'Domain 2: Fundamentals of Generative AI' },
-      { id: 'aif-d3', name: 'Domain 3: Applications of Foundation Models' },
-      { id: 'aif-d4', name: 'Domain 4: Guidelines for Responsible AI' }
+      { id: 'aif-d1', name: 'Fundamentals of AI and ML' },
+      { id: 'aif-d2', name: 'Fundamentals of Generative AI' },
+      { id: 'aif-d3', name: 'Applications of Foundation Models' },
+      { id: 'aif-d4', name: 'Guidelines for Responsible AI' }
     ],
     topics: [
       { name: 'Amazon Bedrock Foundation Models', service: 'Amazon Bedrock', correctText: 'Invoking Foundation Models serverlessly using Amazon Bedrock APIs', exp: 'Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.' },
@@ -43,10 +43,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Solutions Architect – Associate (SAA-C03)',
     tier: 'Associate',
     domains: [
-      { id: 'saa-d1', name: 'Domain 1: Design Secure Architectures' },
-      { id: 'saa-d2', name: 'Domain 2: Design Resilient Architectures' },
-      { id: 'saa-d3', name: 'Domain 3: Design High-Performing Architectures' },
-      { id: 'saa-d4', name: 'Domain 4: Design Cost-Optimized Architectures' }
+      { id: 'saa-d1', name: 'Design Secure Architectures' },
+      { id: 'saa-d2', name: 'Design Resilient Architectures' },
+      { id: 'saa-d3', name: 'Design High-Performing Architectures' },
+      { id: 'saa-d4', name: 'Design Cost-Optimized Architectures' }
     ],
     topics: [
       { name: 'Multi-AZ Aurora Web Tier Resilience', service: 'Amazon Aurora Multi-AZ', correctText: 'Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover', exp: 'Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.' },
@@ -58,10 +58,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Developer – Associate (DVA-C02)',
     tier: 'Associate',
     domains: [
-      { id: 'dva-d1', name: 'Domain 1: Development with AWS Services' },
-      { id: 'dva-d2', name: 'Domain 2: Security' },
-      { id: 'dva-d3', name: 'Domain 3: Deployment' },
-      { id: 'dva-d4', name: 'Domain 4: Refactoring, Troubleshooting and Optimization' }
+      { id: 'dva-d1', name: 'Development with AWS Services' },
+      { id: 'dva-d2', name: 'Security' },
+      { id: 'dva-d3', name: 'Deployment' },
+      { id: 'dva-d4', name: 'Refactoring, Troubleshooting and Optimization' }
     ],
     topics: [
       { name: 'DynamoDB Multi-Item Transactions', service: 'Amazon DynamoDB', correctText: 'Executing TransactWriteItems API requests for atomic all-or-nothing writes', exp: 'TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.' },
@@ -73,10 +73,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified SysOps Administrator – Associate (SOA-C02)',
     tier: 'Associate',
     domains: [
-      { id: 'soa-d1', name: 'Domain 1: Monitoring, Logging, and Remediation' },
-      { id: 'soa-d2', name: 'Domain 2: Reliability and Business Continuity' },
-      { id: 'soa-d3', name: 'Domain 3: Deployment, Provisioning, and Automation' },
-      { id: 'soa-d4', name: 'Domain 4: Security and Compliance' }
+      { id: 'soa-d1', name: 'Monitoring, Logging, and Remediation' },
+      { id: 'soa-d2', name: 'Reliability and Business Continuity' },
+      { id: 'soa-d3', name: 'Deployment, Provisioning, and Automation' },
+      { id: 'soa-d4', name: 'Security and Compliance' }
     ],
     topics: [
       { name: 'SSM Remote Fleet Management', service: 'AWS Systems Manager', correctText: 'AWS Systems Manager Run Command and Patch Manager without open SSH ports', exp: 'SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.' }
@@ -87,10 +87,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Data Engineer – Associate (DEA-C01)',
     tier: 'Associate',
     domains: [
-      { id: 'dea-d1', name: 'Domain 1: Data Ingestion and Processing' },
-      { id: 'dea-d2', name: 'Domain 2: Data Store Management' },
-      { id: 'dea-d3', name: 'Domain 3: Data Operations and Support' },
-      { id: 'dea-d4', name: 'Domain 4: Data Security and Governance' }
+      { id: 'dea-d1', name: 'Data Ingestion and Processing' },
+      { id: 'dea-d2', name: 'Data Store Management' },
+      { id: 'dea-d3', name: 'Data Operations and Support' },
+      { id: 'dea-d4', name: 'Data Security and Governance' }
     ],
     topics: [
       { name: 'Athena S3 Partition Pruning', service: 'Amazon Athena & S3', correctText: 'Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning', exp: 'Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.' }
@@ -101,10 +101,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Machine Learning Engineer – Associate (MLA-C01)',
     tier: 'Associate',
     domains: [
-      { id: 'mla-d1', name: 'Domain 1: Data Preparation for ML' },
-      { id: 'mla-d2', name: 'Domain 2: ML Model Development' },
-      { id: 'mla-d3', name: 'Domain 3: ML Model Deployment and Operations' },
-      { id: 'mla-d4', name: 'Domain 4: ML Solution Security and Governance' }
+      { id: 'mla-d1', name: 'Data Preparation for ML' },
+      { id: 'mla-d2', name: 'ML Model Development' },
+      { id: 'mla-d3', name: 'ML Model Deployment and Operations' },
+      { id: 'mla-d4', name: 'ML Solution Security and Governance' }
     ],
     topics: [
       { name: 'SageMaker Feature Store Management', service: 'SageMaker Feature Store', correctText: 'Centralizing features in SageMaker Feature Store online and offline stores', exp: 'SageMaker Feature Store provides low-latency online serving and offline training feature sets.' }
@@ -117,10 +117,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Solutions Architect – Professional (SAP-C02)',
     tier: 'Professional',
     domains: [
-      { id: 'sap-d1', name: 'Domain 1: Design Complex Organizations' },
-      { id: 'sap-d2', name: 'Domain 2: Design New Solutions' },
-      { id: 'sap-d3', name: 'Domain 3: Continuous Improvement for Existing Solutions' },
-      { id: 'sap-d4', name: 'Domain 4: Accelerate Workload Migration and Modernization' }
+      { id: 'sap-d1', name: 'Design Complex Organizations' },
+      { id: 'sap-d2', name: 'Design New Solutions' },
+      { id: 'sap-d3', name: 'Continuous Improvement for Existing Solutions' },
+      { id: 'sap-d4', name: 'Accelerate Workload Migration and Modernization' }
     ],
     topics: [
       { name: 'AWS Organizations SCP Security Guardrails', service: 'AWS Control Tower & SCPs', correctText: 'Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements', exp: 'SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.' }
@@ -131,10 +131,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified DevOps Engineer – Professional (DOP-C02)',
     tier: 'Professional',
     domains: [
-      { id: 'dop-d1', name: 'Domain 1: SDLC Automation' },
-      { id: 'dop-d2', name: 'Domain 2: Configuration Management and IaC' },
-      { id: 'dop-d3', name: 'Domain 3: Resilient Cloud Solutions' },
-      { id: 'dop-d4', name: 'Domain 4: Monitoring and Logging' }
+      { id: 'dop-d1', name: 'SDLC Automation' },
+      { id: 'dop-d2', name: 'Configuration Management and IaC' },
+      { id: 'dop-d3', name: 'Resilient Cloud Solutions' },
+      { id: 'dop-d4', name: 'Monitoring and Logging' }
     ],
     topics: [
       { name: 'Cross-Account CodePipeline IAM Roles', service: 'AWS CodePipeline & KMS', correctText: 'Configuring KMS customer-managed key policies and cross-account IAM assume-role grants', exp: 'Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.' }
@@ -147,10 +147,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Advanced Networking – Specialty (ANS-C01)',
     tier: 'Specialty',
     domains: [
-      { id: 'ans-d1', name: 'Domain 1: Network Design' },
-      { id: 'ans-d2', name: 'Domain 2: Network Implementation' },
-      { id: 'ans-d3', name: 'Domain 3: Network Management and Operations' },
-      { id: 'ans-d4', name: 'Domain 4: Network Security' }
+      { id: 'ans-d1', name: 'Network Design' },
+      { id: 'ans-d2', name: 'Network Implementation' },
+      { id: 'ans-d3', name: 'Network Management and Operations' },
+      { id: 'ans-d4', name: 'Network Security' }
     ],
     topics: [
       { name: 'Direct Connect Gateway BGP Peering', service: 'AWS Direct Connect Gateway', correctText: 'Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering', exp: 'Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.' }
@@ -161,10 +161,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Security – Specialty (SCS-C02)',
     tier: 'Specialty',
     domains: [
-      { id: 'scs-d1', name: 'Domain 1: Threat Detection and Incident Response' },
-      { id: 'scs-d2', name: 'Domain 2: Security Logging and Monitoring' },
-      { id: 'scs-d3', name: 'Domain 3: Infrastructure Security' },
-      { id: 'scs-d4', name: 'Domain 4: Data Protection and Encryption' }
+      { id: 'scs-d1', name: 'Threat Detection and Incident Response' },
+      { id: 'scs-d2', name: 'Security Logging and Monitoring' },
+      { id: 'scs-d3', name: 'Infrastructure Security' },
+      { id: 'scs-d4', name: 'Data Protection and Encryption' }
     ],
     topics: [
       { name: 'S3 Bucket Policy SSE-KMS Enforcement', service: 'AWS KMS & S3 Bucket Policies', correctText: 'S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN', exp: 'Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.' }
@@ -175,10 +175,10 @@ const EXAM_BLUEPRINTS = {
     name: 'AWS Certified Machine Learning – Specialty (MLS-C01)',
     tier: 'Specialty',
     domains: [
-      { id: 'mls-d1', name: 'Domain 1: Data Engineering' },
-      { id: 'mls-d2', name: 'Domain 2: Exploratory Data Analysis' },
-      { id: 'mls-d3', name: 'Domain 3: Modeling' },
-      { id: 'mls-d4', name: 'Domain 4: Machine Learning Implementation and Operations' }
+      { id: 'mls-d1', name: 'Data Engineering' },
+      { id: 'mls-d2', name: 'Exploratory Data Analysis' },
+      { id: 'mls-d3', name: 'Modeling' },
+      { id: 'mls-d4', name: 'Machine Learning Implementation and Operations' }
     ],
     topics: [
       { name: 'Imbalanced Fraud Detection Modeling', service: 'SageMaker XGBoost', correctText: 'Optimizing PR-AUC / F1 metric and tuning scale_pos_weight hyperparameter in SageMaker XGBoost', exp: 'For imbalanced datasets, PR-AUC and scale_pos_weight tuning optimize rare class fraud detection.' }
@@ -196,29 +196,59 @@ const ENTERPRISE_SECTORS = [
   "A smart city IoT solution provider",
   "A government intelligence contractor",
   "A mobile gaming infrastructure host",
-  "An enterprise cloud migration team"
+  "An enterprise cloud migration team",
+  "A fintech payment gateway provider",
+  "A global retail distribution enterprise",
+  "A renewable energy grid monitoring provider",
+  "A digital banking application platform"
 ];
 
-function generateUniqueQuestionsForMode(examCode, setId, isSimulation) {
+const WORKLOAD_PROFILES = [
+  "during high-concurrency peak traffic periods",
+  "for a critical production microservices environment",
+  "while refactoring a legacy monolithic application",
+  "for a serverless event-driven architecture",
+  "during real-time streaming data ingestion",
+  "for a multi-region active-active deployment",
+  "in a zero-trust compliance environment",
+  "for automated continuous integration pipelines",
+  "during batch data processing operations",
+  "for low-latency user facing APIs"
+];
+
+const TECHNICAL_REQUIREMENTS = [
+  "guarantee sub-10ms response latency while optimizing compute costs",
+  "maintain 99.99% high availability with automated multi-AZ failover",
+  "enforce strict end-to-end data encryption adhering to security compliance standards",
+  "achieve zero downtime during rolling application updates",
+  "decouple microservice dependencies to absorb unexpected traffic surges",
+  "restrict access using least-privilege IAM controls and KMS key policies",
+  "automate operational fault recovery with zero manual engineer intervention",
+  "optimize query performance and partition scanning costs",
+  "enforce central security guardrails across multiple AWS accounts",
+  "ensure complete audit logging and compliance tracking"
+];
+
+function generateCleanQuestionsForMode(examCode, setId, isSimulation) {
   const meta = EXAM_BLUEPRINTS[examCode];
   const questions = [];
-
-  // Offset global index to guarantee 100% distinct scenarios between Practice & Simulation
-  // Practice global index: 0 to 649
-  // Simulation global index: 650 to 1299
   const modeOffset = isSimulation ? 650 : 0;
 
   for (let qNum = 1; qNum <= 65; qNum++) {
     const globalIdx = modeOffset + (setId - 1) * 65 + (qNum - 1);
     const domain = meta.domains[globalIdx % meta.domains.length];
     const topic = meta.topics[globalIdx % meta.topics.length];
-    const sector = ENTERPRISE_SECTORS[globalIdx % ENTERPRISE_SECTORS.length];
+
+    // Combinatorial selection incorporating set and question offset to guarantee global stem uniqueness
+    const sector = ENTERPRISE_SECTORS[(globalIdx + setId) % ENTERPRISE_SECTORS.length];
+    const profile = WORKLOAD_PROFILES[(globalIdx + qNum) % WORKLOAD_PROFILES.length];
+    const requirement = TECHNICAL_REQUIREMENTS[(globalIdx + setId * 3 + qNum * 7) % TECHNICAL_REQUIREMENTS.length];
 
     const isMultiple = qNum % 5 === 0;
     const isScored = qNum <= 50;
-    const modeLabel = isSimulation ? 'Simulation Mode B' : 'Practice Mode A';
 
-    const stem = `${sector} is conducting an architecture evaluation for ${topic.name} within ${domain.name} (${meta.tier} Tier, ${modeLabel}, Scenario #${globalIdx + 1}). Which technical approach best satisfies all requirements according to AWS official standards?`;
+    // 100% clean, professional scenario stem with NO inline debug tags or inline scenario numbers
+    const stem = `${sector} is evaluating an AWS architectural solution for ${topic.name} within ${domain.name} ${profile}. The architecture must ${requirement}. Which technical approach best satisfies all requirements according to AWS official standards?`;
 
     let options = [];
     let correctAnswer = [];
@@ -263,7 +293,7 @@ function generateUniqueQuestionsForMode(examCode, setId, isSimulation) {
       setId: setId,
       examCode: examCode,
       domainId: domain.id,
-      domainName: domain.name,
+      domainName: `Domain ${ (globalIdx % meta.domains.length) + 1 }: ${domain.name}`,
       questionType: isMultiple ? 'multiple' : 'single',
       selectCount: isMultiple ? 2 : 1,
       isScored: isScored,
@@ -271,7 +301,7 @@ function generateUniqueQuestionsForMode(examCode, setId, isSimulation) {
       codeSnippet: qNum % 7 === 0 ? `aws ${examCode.toLowerCase().split('-')[0]} ${isSimulation ? 'sim-test' : 'practice-test'} --set ${setId} --q ${qNum}` : undefined,
       options: options,
       correctAnswer: correctAnswer,
-      explanation: `Official AWS ${meta.tier} Tier Blueprint Explanation (${modeLabel}): ${topic.exp}`,
+      explanation: `Official AWS ${meta.tier} Tier Blueprint Explanation: ${topic.exp}`,
       awsDocUrl: `https://docs.aws.amazon.com/`,
       difficulty: meta.tier === 'Professional' || meta.tier === 'Specialty' ? (qNum > 35 ? 'Complex' : 'Challenging') : (qNum > 45 ? 'Challenging' : 'Standard')
     });
@@ -294,19 +324,19 @@ Object.keys(EXAM_BLUEPRINTS).forEach(examCode => {
 
   // 1. Practice Sets (10 sets)
   for (let s = 1; s <= 10; s++) {
-    const pQs = generateUniqueQuestionsForMode(examCode, s, false);
+    const pQs = generateCleanQuestionsForMode(examCode, s, false);
     fs.writeFileSync(path.join(targetDir, `set-${s}.json`), JSON.stringify(pQs, null, 2));
     practiceCount += pQs.length;
   }
 
   // 2. Simulation Sets (10 sets)
   for (let s = 1; s <= 10; s++) {
-    const simQs = generateUniqueQuestionsForMode(examCode, s, true);
+    const simQs = generateCleanQuestionsForMode(examCode, s, true);
     fs.writeFileSync(path.join(targetDir, `sim-set-${s}.json`), JSON.stringify(simQs, null, 2));
     simCount += simQs.length;
   }
 
-  console.log(`[Tier: ${meta.tier}] Created 10 Practice Sets + 10 Simulation Sets for ${examCode}`);
+  console.log(`[Tier: ${meta.tier}] Generated clean Practice Sets + Simulation Sets for ${examCode}`);
 });
 
-console.log(`\nSuccessfully created ${practiceCount} Practice questions + ${simCount} Simulation questions (Total: ${practiceCount + simCount}) across all 12 AWS exams!`);
+console.log(`\nSuccessfully created ${practiceCount} clean Practice questions + ${simCount} clean Simulation questions (Total: ${practiceCount + simCount})!`);
