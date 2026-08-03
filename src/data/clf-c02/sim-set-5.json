@@ -1,6 +1,6 @@
 [
   {
-    "id": "clf-c02-sim-s5-q1",
+    "id": "clfc02-s5-q1",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -8,69 +8,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Cloud Technology and Services for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS database service is a fully managed graph database used for applications that need to query highly connected datasets like social networks or recommendation engines?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "Amazon DynamoDB"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Neptune"
       },
       {
         "id": "C",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
+        "text": "Amazon DocumentDB"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Timestream"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon Neptune is a fully managed graph database supporting Apache TinkerPop Gremlin and W3C SPARQL. It's optimized for traversing billions of relationships with millisecond latency—ideal for social graphs, knowledge graphs, fraud detection, and recommendation engines. DynamoDB is key-value; DocumentDB is document-oriented; Timestream is for time-series data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/neptune/latest/userguide/intro.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q2",
+    "id": "clfc02-s5-q2",
     "setId": 5,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Billing, Pricing, and Support for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service allows you to run containerized applications without managing the underlying server infrastructure?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
+        "text": "Amazon EC2"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Fargate"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon S3"
       },
       {
         "id": "D",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
+        "text": "AWS Elastic Beanstalk"
       }
     ],
     "correctAnswer": [
-      "D"
+      "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Fargate is a serverless compute engine for containers. It runs containers without requiring you to provision, configure, or scale clusters of VMs. You define your container image, CPU, and memory requirements—Fargate handles the infrastructure. EC2 requires server management; S3 is storage; Elastic Beanstalk is a deployment platform.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q3",
+    "id": "clfc02-s5-q3",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d1",
@@ -78,34 +78,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Cloud Concepts for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "What does the AWS Well-Architected Framework help organizations accomplish?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
+        "text": "Automatically fix all security vulnerabilities in AWS accounts"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
+        "text": "Evaluate architectures against best practices across six pillars including security, reliability, and cost optimization"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Generate compliance certifications for regulatory bodies"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Migrate on-premises servers to AWS automatically"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "The Well-Architected Framework provides architectural best practices across six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. It helps teams make informed decisions through Well-Architected Reviews, not automated fixes or migrations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q4",
+    "id": "clfc02-s5-q4",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A large organization with multiple AWS accounts wants to receive a single consolidated bill and share volume pricing discounts across all accounts. Which feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Cost Explorer with linked account filtering"
+      },
+      {
+        "id": "B",
+        "text": "AWS Organizations with consolidated billing"
+      },
+      {
+        "id": "C",
+        "text": "AWS Budgets with multi-account tracking"
+      },
+      {
+        "id": "D",
+        "text": "IAM cross-account billing access"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Organizations consolidated billing combines usage across all member accounts into a single bill. This aggregates usage for volume pricing tiers (e.g., S3 and EC2), enabling the organization to reach higher discount tiers faster. Reserved Instance and Savings Plan benefits can be shared across accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q5",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d2",
@@ -113,34 +148,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Budgets Alerting within Security and Compliance for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to meet compliance requirements and wants to download AWS audit reports, certifications, and compliance documentation (SOC, PCI, ISO). Which service provides these?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "AWS Trusted Advisor"
       },
       {
         "id": "B",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
+        "text": "AWS Artifact"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Config"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Security Hub"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Artifact is a self-service portal for accessing AWS compliance reports and documentation, including SOC reports, PCI DSS attestation, ISO certifications, and HIPAA documentation. These are official third-party audit reports. Trusted Advisor checks best practices; Config tracks resource compliance; Security Hub aggregates security findings.",
+    "awsDocUrl": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q5",
+    "id": "clfc02-s5-q6",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -148,74 +183,39 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Cloud Technology and Services for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to build a serverless web application. Which TWO services would form the core compute and API layer? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
+        "text": "AWS Lambda for serverless backend compute functions"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Cloud Technology and Services"
+        "text": "Amazon API Gateway for creating, publishing, and managing RESTful APIs"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon EC2 for hosting web server instances"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Elastic Beanstalk for deploying web applications on managed servers"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Amazon ECS for running Docker containers"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Lambda provides serverless compute that runs code without provisioning servers—you pay per invocation. API Gateway creates RESTful HTTP endpoints that trigger Lambda functions, forming a fully serverless backend. EC2 and ECS require managing servers or containers; Elastic Beanstalk manages infrastructure but still uses EC2.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q6",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Billing, Pricing, and Support for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q7",
+    "id": "clfc02-s5-q7",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d1",
@@ -223,70 +223,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Cloud Concepts for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 7",
+    "scenario": "A company wants to migrate their on-premises VMware workloads to AWS with minimal changes to the VMs themselves. Which AWS service helps with this lift-and-shift migration?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
+        "text": "AWS Snowball for physical data transfer"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
+        "text": "AWS Application Migration Service (MGN) for automated server migration"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Database Migration Service for database migration"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q8",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Security and Compliance for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Lightsail for simple applications"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Application Migration Service (MGN) automates lift-and-shift migration by continuously replicating source servers to AWS. It minimizes cutover time and supports most OS and applications without changes. Snowball is for large data transfer, DMS is for databases, and Lightsail is for simple pre-configured deployments.",
+    "awsDocUrl": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q9",
+    "id": "clfc02-s5-q8",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer wants to run code in response to events (like a file upload to S3) without provisioning or managing servers. The code runs for a few seconds per invocation. Which AWS service is BEST suited?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon EC2 with Auto Scaling"
+      },
+      {
+        "id": "B",
+        "text": "AWS Lambda"
+      },
+      {
+        "id": "C",
+        "text": "Amazon ECS with Fargate"
+      },
+      {
+        "id": "D",
+        "text": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Lambda is a serverless compute service that runs code in response to events without provisioning servers. You pay only for the compute time consumed (per millisecond). Lambda automatically scales and is ideal for short-duration, event-driven functions. EC2 requires server management; ECS runs containers; Elastic Beanstalk is a deployment platform.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q9",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -294,144 +293,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for AWS Budgets Alerting within Cloud Technology and Services for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to send notification emails, SMS messages, and push notifications to multiple subscribers simultaneously when a new order is placed. Which AWS service provides this pub/sub messaging capability?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "Amazon SQS"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SNS (Simple Notification Service)"
       },
       {
         "id": "C",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
+        "text": "Amazon SES (Simple Email Service)"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q10",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Billing, Pricing, and Support for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Billing, Pricing, and Support"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q11",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Cloud Concepts for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q12",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Security and Compliance for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Step Functions"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon SNS is a fully managed pub/sub messaging service. When a message is published to an SNS topic, it's immediately delivered to all subscribers (email, SMS, HTTP/S, Lambda, SQS, mobile push). SQS is a queue (pull-based); SES is email-specific; Step Functions orchestrates workflows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sns/latest/dg/welcome.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q13",
+    "id": "clfc02-s5-q10",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -439,145 +328,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Cloud Technology and Services for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service can distribute incoming application traffic across multiple EC2 instances in different Availability Zones?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "Amazon Route 53"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Elastic Load Balancing (ELB)"
       },
       {
         "id": "C",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
+        "text": "AWS Auto Scaling"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q14",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for AWS Budgets Alerting within Billing, Pricing, and Support for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 14",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q15",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Cloud Concepts for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q16",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Security and Compliance for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon CloudFront"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Elastic Load Balancing (ELB) automatically distributes incoming traffic across multiple targets (EC2, containers, Lambda, IPs) in one or more AZs. It offers three types: Application LB (HTTP/HTTPS), Network LB (TCP/UDP), and Gateway LB (third-party appliances). Route 53 is DNS; Auto Scaling adjusts capacity; CloudFront is a CDN.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q17",
+    "id": "clfc02-s5-q11",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -585,285 +363,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Cloud Technology and Services for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service provides managed DNS (Domain Name System) and can route users to the closest healthy endpoint?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "Amazon CloudFront"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Route 53"
       },
       {
         "id": "C",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
+        "text": "AWS Direct Connect"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q18",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Billing, Pricing, and Support for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q19",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Budgets Alerting within Cloud Concepts for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q20",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Security and Compliance for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security and Compliance"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q21",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Cloud Technology and Services for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 21",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q22",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Billing, Pricing, and Support for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q23",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Cloud Concepts for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q24",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for AWS Budgets Alerting within Security and Compliance for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Elastic Load Balancing"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon Route 53 is a highly available, scalable DNS web service. It translates domain names to IP addresses and supports routing policies including latency-based, geolocation, failover, and weighted routing to direct users optimally. CloudFront is a CDN; Direct Connect is dedicated networking; ELB distributes traffic across instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q25",
+    "id": "clfc02-s5-q12",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -871,39 +398,39 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Cloud Technology and Services for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which TWO services are used for object storage and block storage respectively on AWS? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
+        "text": "Amazon S3 for scalable object storage of files, images, and backups"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Cloud Technology and Services"
+        "text": "Amazon EBS for persistent block storage volumes attached to EC2 instances"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon RDS for storing database records"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Lambda for temporary data processing storage"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Amazon SQS for message storage and queuing"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "S3 is AWS's object storage service—ideal for files, images, logs, and backups with virtually unlimited scalability. EBS provides persistent block storage volumes (like virtual hard drives) attached to EC2 instances, suitable for databases and file systems. RDS is a database service; Lambda is serverless compute; SQS is message queuing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q26",
+    "id": "clfc02-s5-q13",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d4",
@@ -911,69 +438,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Billing, Pricing, and Support for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service or feature allows customers to tag resources and then use those tags to track and allocate costs by project, department, or environment?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
+        "text": "AWS Organizations organizational units (OUs)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Cost allocation tags used with AWS Cost Explorer"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "IAM resource-level permissions"
       },
       {
         "id": "D",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
+        "text": "CloudFormation stack names"
       }
     ],
     "correctAnswer": [
-      "D"
+      "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Cost allocation tags (user-defined or AWS-generated) label resources with metadata like Project, Department, or Environment. Once activated in the Billing Console, these tags appear in Cost Explorer and Cost and Usage Reports, enabling detailed cost breakdown and chargeback. OUs organize accounts; IAM controls access; CloudFormation names identify stacks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q27",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Cloud Concepts for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q28",
+    "id": "clfc02-s5-q14",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d2",
@@ -981,35 +473,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Security and Compliance for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 28",
+    "scenario": "What is the principle of least privilege in the context of AWS IAM?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "Granting all users full administrator access for maximum productivity"
       },
       {
         "id": "B",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
+        "text": "Granting users only the minimum permissions they need to perform their specific job functions"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Creating a single shared IAM account for the entire team"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Applying the same permissions to all users regardless of their role"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Least privilege means granting only the exact permissions required for a task—nothing more. This limits the potential damage from compromised credentials, accidental actions, or insider threats. Start with no permissions and add only what's needed. Regular access reviews help maintain least privilege over time.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q29",
+    "id": "clfc02-s5-q15",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An architect needs to store and retrieve any amount of data at any time from anywhere on the web. The storage must be highly durable (11 nines). Which AWS service meets this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon EBS (Elastic Block Store)"
+      },
+      {
+        "id": "B",
+        "text": "Amazon S3 (Simple Storage Service)"
+      },
+      {
+        "id": "C",
+        "text": "Amazon EFS (Elastic File System)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Storage Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon S3 provides 99.999999999% (11 nines) durability for object storage. It stores data as objects in buckets, accessible via HTTP/HTTPS from anywhere. S3 automatically replicates data across at least 3 AZs. EBS is block storage for EC2, EFS is file storage, and Storage Gateway is for hybrid environments.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q16",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -1017,34 +543,1204 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Budgets Alerting within Cloud Technology and Services for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service enables you to create and manage a secure data lake built on Amazon S3?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "Amazon Redshift Spectrum"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Lake Formation"
       },
       {
         "id": "C",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
+        "text": "Amazon EMR"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Glue"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Lake Formation simplifies building, securing, and managing data lakes on S3. It handles data ingestion, cataloging, cleaning, and fine-grained access control. Redshift Spectrum queries S3 data from Redshift; EMR runs big data frameworks; Glue is an ETL service that Lake Formation builds upon.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q17",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Under the Shared Responsibility Model, which of the following is AWS's responsibility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring security group rules for EC2 instances"
+      },
+      {
+        "id": "B",
+        "text": "Patching the guest operating system on EC2 instances"
+      },
+      {
+        "id": "C",
+        "text": "Physical security of the data centers hosting AWS infrastructure"
+      },
+      {
+        "id": "D",
+        "text": "Encrypting customer data stored in S3 buckets"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS is responsible for security OF the cloud: physical data center security, hardware maintenance, network infrastructure, and hypervisor patching. Customers handle security group rules, OS patching, and data encryption choices. This division is fundamental to understanding cloud security.",
+    "awsDocUrl": "https://aws.amazon.com/compliance/shared-responsibility-model/",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q30",
+    "id": "clfc02-s5-q18",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service helps centrally view and manage security alerts and compliance status across multiple AWS accounts?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Detective"
+      },
+      {
+        "id": "D",
+        "text": "AWS Audit Manager"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Security Hub aggregates security findings from multiple AWS services (GuardDuty, Inspector, Macie, Firewall Manager, IAM Access Analyzer) and third-party tools into a single dashboard. It provides compliance checks against standards like CIS Benchmarks and PCI DSS. Macie focuses on data classification; Detective investigates findings; Audit Manager helps with audit preparation.",
+    "awsDocUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q19",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company's on-premises data center requires 3 months to procure new servers. After migrating to AWS, they can deploy new environments in minutes. Which advantage of cloud computing does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Economy of scale"
+      },
+      {
+        "id": "B",
+        "text": "Elasticity"
+      },
+      {
+        "id": "C",
+        "text": "Increased speed and agility"
+      },
+      {
+        "id": "D",
+        "text": "Global infrastructure"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Speed and agility means IT resources are available in minutes instead of weeks or months. Developers can experiment, test, and launch faster because they don't need to wait for hardware procurement, racking, and configuration.",
+    "awsDocUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q20",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to add an extra layer of login security for their AWS root account. What should they enable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Shield for DDoS protection"
+      },
+      {
+        "id": "B",
+        "text": "Multi-Factor Authentication (MFA) on the root account"
+      },
+      {
+        "id": "C",
+        "text": "AWS WAF to filter malicious requests"
+      },
+      {
+        "id": "D",
+        "text": "VPC Flow Logs to monitor network access"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "MFA requires a second verification factor (virtual MFA device, hardware token, or security key) beyond the password when signing in. Enabling MFA on the root account is a critical security best practice because the root account has unrestricted access. AWS strongly recommends hardware MFA for root accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q21",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to encrypt an Amazon RDS database. When should encryption be enabled?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encryption can be enabled or disabled at any time on an existing database"
+      },
+      {
+        "id": "B",
+        "text": "Encryption must be enabled when the RDS instance is first created"
+      },
+      {
+        "id": "C",
+        "text": "Encryption is automatically enabled by default and cannot be disabled"
+      },
+      {
+        "id": "D",
+        "text": "Encryption only applies to the data in transit, not data at rest"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "RDS encryption at rest must be enabled at database creation time — it cannot be added to an existing unencrypted instance. To encrypt an existing database, you must create an encrypted snapshot copy and restore from it. RDS encryption uses KMS and covers storage, backups, replicas, and snapshots.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q22",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service provides temporary, on-demand access to a virtual desktop in the cloud that users can access from any device?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon EC2"
+      },
+      {
+        "id": "B",
+        "text": "Amazon WorkSpaces for persistent cloud desktops or Amazon AppStream 2.0 for application streaming"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Connect"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon WorkSpaces provides fully managed, persistent cloud desktops (Windows or Linux). Amazon AppStream 2.0 streams applications to any browser. Both provide secure access from any device without managing VDI infrastructure. EC2 requires self-managing RDP/VNC; Session Manager is for server access; Connect is a contact center service.",
+    "awsDocUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q23",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service automatically adjusts the number of EC2 instances in a fleet based on demand?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elastic Load Balancing"
+      },
+      {
+        "id": "B",
+        "text": "Amazon EC2 Auto Scaling"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Route 53"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "EC2 Auto Scaling automatically increases or decreases the number of instances based on defined scaling policies (target tracking, step, scheduled). It ensures you have the right number of instances to handle load while minimizing costs. ELB distributes traffic; CloudFormation provisions infrastructure; Route 53 is DNS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q24",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which EC2 pricing model provides the LOWEST cost for workloads that can tolerate interruptions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "On-Demand Instances — pay by the hour with no commitment"
+      },
+      {
+        "id": "B",
+        "text": "Reserved Instances — 1 or 3-year commitment for steady workloads"
+      },
+      {
+        "id": "C",
+        "text": "Spot Instances — up to 90% discount for interruptible workloads"
+      },
+      {
+        "id": "D",
+        "text": "Dedicated Hosts — physical servers dedicated to your use"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Spot Instances offer up to 90% discount compared to On-Demand by using spare EC2 capacity. AWS can reclaim Spot Instances with a 2-minute warning, making them ideal for fault-tolerant workloads like batch processing, CI/CD, and data analysis. On-Demand has no discount; Reserved Instances require commitment but guarantee availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q25",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which type of AWS service helps protect against Distributed Denial of Service (DDoS) attacks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Shield (Standard and Advanced)"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Inspector"
+      },
+      {
+        "id": "D",
+        "text": "AWS Config"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Shield provides DDoS protection. Shield Standard is free and automatically protects all AWS customers against common layer 3/4 attacks. Shield Advanced ($3,000/month) provides enhanced protection for ELB, CloudFront, Route 53, and Global Accelerator, plus 24/7 DDoS Response Team (DRT) access and cost protection.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q26",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "What is an AWS Region?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A single data center building operated by AWS"
+      },
+      {
+        "id": "B",
+        "text": "A geographic area containing two or more isolated Availability Zones"
+      },
+      {
+        "id": "C",
+        "text": "An edge location used by CloudFront for content caching"
+      },
+      {
+        "id": "D",
+        "text": "A virtual private network segment within AWS"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "An AWS Region is a separate geographic area (e.g., us-east-1, eu-west-1) containing multiple isolated Availability Zones (AZs). Each AZ is one or more discrete data centers with redundant power, networking, and connectivity. Regions are fully independent, and users choose Regions based on latency, compliance, and service availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q27",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which level of AWS Support is included at NO additional cost for all AWS accounts?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Developer Support with business-hours email access"
+      },
+      {
+        "id": "B",
+        "text": "Basic Support with 24/7 access to documentation, whitepapers, and limited Trusted Advisor checks"
+      },
+      {
+        "id": "C",
+        "text": "Business Support with 24/7 phone and chat"
+      },
+      {
+        "id": "D",
+        "text": "Enterprise Support with a Technical Account Manager"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Basic Support is free for all AWS customers. It includes 24/7 access to customer service, documentation, whitepapers, AWS re:Post community, and 7 core Trusted Advisor checks. It does NOT include technical support — that requires Developer ($29+/month), Business ($100+/month), or Enterprise ($15,000+/month) plans.",
+    "awsDocUrl": "https://aws.amazon.com/premiumsupport/plans/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q28",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service records all API calls made in an AWS account for auditing and compliance purposes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon CloudWatch"
+      },
+      {
+        "id": "B",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config"
+      },
+      {
+        "id": "D",
+        "text": "VPC Flow Logs"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS CloudTrail logs every API call made in your account — who made it, when, from where, and what was changed. This creates an audit trail essential for compliance, forensic investigation, and operational troubleshooting. CloudWatch monitors metrics/logs; Config tracks resource state; Flow Logs capture network traffic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q29",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service allows a company to run virtual servers in the cloud with full control over the operating system and installed software?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon S3"
+      },
+      {
+        "id": "B",
+        "text": "Amazon EC2"
+      },
+      {
+        "id": "C",
+        "text": "AWS Lambda"
+      },
+      {
+        "id": "D",
+        "text": "Amazon RDS"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon EC2 (Elastic Compute Cloud) provides resizable virtual servers (instances) in the cloud. Users have full control over the OS, can install any software, and choose from many instance types. S3 is object storage, Lambda is serverless compute, and RDS is managed databases.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q30",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service provides centralized management of user identities, authentication, and access permissions across AWS services?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM (Identity and Access Management)"
+      },
+      {
+        "id": "C",
+        "text": "AWS Directory Service"
+      },
+      {
+        "id": "D",
+        "text": "Amazon GuardDuty"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS IAM controls who (authentication) can do what (authorization) in your AWS account. It manages users, groups, roles, and policies. Cognito is for application end-user identity; Directory Service integrates with Microsoft AD; GuardDuty is for threat detection, not identity management.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q31",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs a managed relational database service that handles backups, patching, and replication. They don't want to manage the underlying OS or database software. Which service should they use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon EC2 with self-managed MySQL installed"
+      },
+      {
+        "id": "B",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "id": "C",
+        "text": "Amazon RDS"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Amazon RDS (Relational Database Service) is a managed service handling database administration tasks: automated backups, software patching, Multi-AZ replication, and monitoring. Customers choose the engine (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server) without managing the underlying infrastructure. EC2 is self-managed; DynamoDB is NoSQL; S3 is object storage.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q32",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service provides a virtual private network within AWS where you can launch resources in an isolated network that you define?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Direct Connect"
+      },
+      {
+        "id": "B",
+        "text": "Amazon VPC (Virtual Private Cloud)"
+      },
+      {
+        "id": "C",
+        "text": "AWS PrivateLink"
+      },
+      {
+        "id": "D",
+        "text": "AWS Transit Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon VPC lets you create a logically isolated network within AWS. You control IP address ranges, subnets, route tables, network gateways, and security settings. VPC is the foundational networking service — virtually all AWS resources run within a VPC. Direct Connect is for on-premises links; PrivateLink is for private service access; Transit Gateway connects VPCs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q33",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to know which AWS compliance programs and certifications apply to specific AWS services in their region. Where can they find this information?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Trusted Advisor dashboard"
+      },
+      {
+        "id": "B",
+        "text": "AWS Artifact for compliance reports and the AWS Services in Scope page"
+      },
+      {
+        "id": "C",
+        "text": "AWS Personal Health Dashboard"
+      },
+      {
+        "id": "D",
+        "text": "AWS Support Center"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Artifact provides on-demand access to compliance reports (SOC, PCI, ISO), and the AWS Services in Scope page lists exactly which services are covered under each compliance program by region. This is the authoritative source for compliance certification information.",
+    "awsDocUrl": "https://aws.amazon.com/compliance/services-in-scope/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q34",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "Which TWO practices are AWS security best practices for IAM? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Grant least privilege — give users only the permissions they need"
+      },
+      {
+        "id": "B",
+        "text": "Enable MFA for all human users, especially privileged accounts"
+      },
+      {
+        "id": "C",
+        "text": "Use the root account for daily administrative tasks"
+      },
+      {
+        "id": "D",
+        "text": "Share IAM credentials among team members for convenience"
+      },
+      {
+        "id": "E",
+        "text": "Embed access keys directly in application source code"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Least privilege ensures users can only access what they need, limiting blast radius if credentials are compromised. MFA adds a second authentication factor, dramatically reducing unauthorized access risk. Root should be used only for account-level tasks, credentials should never be shared, and access keys should never be in source code.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q35",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service provides a managed message queue that decouples application components?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon SNS"
+      },
+      {
+        "id": "B",
+        "text": "Amazon SQS"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Kinesis"
+      },
+      {
+        "id": "D",
+        "text": "AWS Step Functions"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon SQS (Simple Queue Service) is a fully managed message queuing service that enables decoupling of distributed system components. Producers send messages; consumers process them independently. SNS is pub/sub notifications; Kinesis is real-time data streaming; Step Functions orchestrates workflows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q36",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "Which TWO tasks are the customer's responsibility under the AWS Shared Responsibility Model? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring operating system firewalls and patching the guest OS on EC2"
+      },
+      {
+        "id": "B",
+        "text": "Encrypting application data before storing it in AWS services"
+      },
+      {
+        "id": "C",
+        "text": "Replacing faulty hardware disks in AWS data centers"
+      },
+      {
+        "id": "D",
+        "text": "Securing the physical network cables between Availability Zones"
+      },
+      {
+        "id": "E",
+        "text": "Patching the firmware on AWS storage devices"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Customers are responsible for managing their guest OS (updates, patches, firewall configuration) and protecting their data (encryption, access controls, backup strategies). AWS handles all physical infrastructure: hardware replacement, network cabling, and firmware patching.",
+    "awsDocUrl": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q37",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to estimate the monthly cost of running a specific set of AWS resources before deploying them. Which tool should they use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Cost Explorer for historical spending analysis"
+      },
+      {
+        "id": "B",
+        "text": "AWS Pricing Calculator for estimating costs of proposed architectures"
+      },
+      {
+        "id": "C",
+        "text": "AWS Budgets for setting spending alerts"
+      },
+      {
+        "id": "D",
+        "text": "AWS Trusted Advisor for cost optimization recommendations"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Pricing Calculator allows users to model and estimate the cost of AWS architectures before deployment. Users select services, configure resource specifications, and get a monthly cost estimate. Cost Explorer analyzes historical spend; Budgets sets alerts on current spending; Trusted Advisor recommends optimizations.",
+    "awsDocUrl": "https://calculator.aws/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q38",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A retail company experiences 10x traffic during holiday sales but low traffic the rest of the year. They want infrastructure that automatically adjusts capacity based on demand. Which cloud computing characteristic does this describe?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fault tolerance"
+      },
+      {
+        "id": "B",
+        "text": "Elasticity — the ability to scale resources up and down automatically"
+      },
+      {
+        "id": "C",
+        "text": "High durability of stored data"
+      },
+      {
+        "id": "D",
+        "text": "Disaster recovery across regions"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Elasticity allows you to acquire resources when needed and release them when no longer required. Auto Scaling automatically adjusts compute capacity to maintain steady, predictable performance at the lowest possible cost during demand fluctuations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q39",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which type of Elastic Load Balancer operates at the application layer (Layer 7) and can route traffic based on URL paths, hostnames, and HTTP headers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Network Load Balancer (NLB) for TCP/UDP traffic"
+      },
+      {
+        "id": "B",
+        "text": "Application Load Balancer (ALB) for HTTP/HTTPS traffic"
+      },
+      {
+        "id": "C",
+        "text": "Gateway Load Balancer (GWLB) for third-party virtual appliances"
+      },
+      {
+        "id": "D",
+        "text": "Classic Load Balancer for basic load balancing"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "ALB operates at Layer 7 (HTTP/HTTPS) and supports content-based routing using path patterns (/api/*, /images/*), host headers, HTTP methods, and query strings. NLB operates at Layer 4 (TCP/UDP) for ultra-low latency. GWLB routes to security appliances. Classic LB is the legacy option.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q40",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service provides a firewall to protect web applications from common exploits like SQL injection, cross-site scripting, and bot attacks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Shield"
+      },
+      {
+        "id": "B",
+        "text": "AWS WAF (Web Application Firewall)"
+      },
+      {
+        "id": "C",
+        "text": "Security Groups"
+      },
+      {
+        "id": "D",
+        "text": "Network ACLs"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS WAF protects web applications by filtering HTTP/HTTPS requests based on customizable rules. It blocks SQL injection, XSS, and other OWASP Top 10 attacks. Shield protects against DDoS; Security Groups are instance-level firewalls; NACLs are subnet-level stateless firewalls—none inspect application-layer content.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q41",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Under the AWS Shared Responsibility Model, which of the following is the CUSTOMER'S responsibility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical security of AWS data centers"
+      },
+      {
+        "id": "B",
+        "text": "Patching the hypervisor software on EC2 host servers"
+      },
+      {
+        "id": "C",
+        "text": "Managing IAM user accounts and their access permissions"
+      },
+      {
+        "id": "D",
+        "text": "Maintaining the global network infrastructure between AWS Regions"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "In the Shared Responsibility Model, AWS manages security OF the cloud (infrastructure, hypervisors, physical data centers), while customers manage security IN the cloud (IAM users/roles, OS patches on EC2 instances, data encryption, security group rules, and application security).",
+    "awsDocUrl": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q42",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An administrator accidentally deleted an important IAM policy. Which AWS service would help them identify when the deletion occurred and who performed the action?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "B",
+        "text": "AWS CloudTrail event history"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config resource timeline"
+      },
+      {
+        "id": "D",
+        "text": "Amazon GuardDuty findings"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "CloudTrail records all IAM API calls, including DeletePolicy. By searching the CloudTrail event history, the administrator can find the exact timestamp, the IAM identity that made the call, the source IP address, and the request parameters. CloudWatch monitors performance metrics; Config tracks resource state changes; GuardDuty detects threats.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q43",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company stores large amounts of data on-premises and wants to extend their storage to AWS for backup. They need local caching for frequently accessed data. Which service provides this hybrid cloud storage?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS DataSync for one-time data migration"
+      },
+      {
+        "id": "B",
+        "text": "AWS Storage Gateway for hybrid cloud storage with local caching"
+      },
+      {
+        "id": "C",
+        "text": "Amazon S3 Transfer Acceleration for fast uploads"
+      },
+      {
+        "id": "D",
+        "text": "AWS Snow Family for offline data transfer"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Storage Gateway provides hybrid cloud storage by connecting on-premises environments to AWS cloud storage (S3, EBS, Glacier). It provides local caching for low-latency access to frequently used data while storing the full dataset in AWS. DataSync is for migration/sync; Transfer Acceleration speeds uploads; Snow Family is for offline bulk transfer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q44",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A startup wants to launch a web application without purchasing physical servers. They want to pay only for the compute resources they actually consume. Which cloud benefit does this describe?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High availability through multiple data centers"
+      },
+      {
+        "id": "B",
+        "text": "Trade fixed capital expense (CapEx) for variable operational expense (OpEx)"
+      },
+      {
+        "id": "C",
+        "text": "Increased speed and agility for deployments"
+      },
+      {
+        "id": "D",
+        "text": "Global reach through edge locations"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "The pay-as-you-go model lets companies avoid upfront hardware purchases (CapEx) and instead pay only for resources consumed (OpEx). This eliminates the need to predict capacity and invest in data centers before knowing demand.",
+    "awsDocUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q45",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service is a fully managed NoSQL database that provides single-digit millisecond performance at any scale?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon RDS"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Redshift"
+      },
+      {
+        "id": "C",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Aurora"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "DynamoDB is a fully managed NoSQL key-value and document database. It delivers single-digit millisecond performance with built-in security, backup, and in-memory caching (DAX). RDS and Aurora are relational databases; Redshift is a data warehouse for analytics.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q46",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service provides a managed Kubernetes control plane for running containerized applications?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon ECS (Elastic Container Service)"
+      },
+      {
+        "id": "B",
+        "text": "Amazon EKS (Elastic Kubernetes Service)"
+      },
+      {
+        "id": "C",
+        "text": "AWS Fargate"
+      },
+      {
+        "id": "D",
+        "text": "AWS App Runner"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon EKS is a managed Kubernetes service that runs the Kubernetes control plane across multiple AZs. It's compatible with standard Kubernetes tools and plugins. ECS is AWS's proprietary container orchestration; Fargate is a serverless compute engine for both ECS and EKS; App Runner is for simple container deployments from source code.",
+    "awsDocUrl": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q47",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to monitor CPU utilization, network traffic, and disk I/O of their EC2 instances and set alarms when thresholds are exceeded. Which service should they use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudWatch"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config"
+      },
+      {
+        "id": "D",
+        "text": "AWS X-Ray"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon CloudWatch collects and monitors metrics, logs, and events from AWS resources. It can set alarms to trigger notifications (SNS) or actions (Auto Scaling) when metrics exceed thresholds. CloudTrail logs API calls; Config tracks resource configuration; X-Ray traces application requests across distributed services.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q48",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A data analytics team needs to run SQL queries on petabytes of structured data in a managed data warehouse. Which AWS service is purpose-built for this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon RDS"
+      },
+      {
+        "id": "B",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Redshift"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Athena"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Amazon Redshift is a fully managed, petabyte-scale data warehouse using columnar storage and massively parallel processing (MPP). It's designed for complex analytical queries across large datasets. RDS is for transactional databases; DynamoDB is NoSQL; Athena is serverless ad-hoc SQL on S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q49",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A CTO is presenting the business benefits of migrating to AWS to their board of directors. Which TWO are advantages of cloud computing over on-premises data centers? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Benefit from massive economies of scale that reduce per-unit costs"
+      },
+      {
+        "id": "B",
+        "text": "Stop spending money running and maintaining data centers"
+      },
+      {
+        "id": "C",
+        "text": "Guarantee that application bugs will not occur in the cloud"
+      },
+      {
+        "id": "D",
+        "text": "Eliminate the need for any IT security practices"
+      },
+      {
+        "id": "E",
+        "text": "Ensure zero downtime under all circumstances"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS aggregates usage from hundreds of thousands of customers, achieving economies of scale that translate to lower pay-as-you-go prices. Moving to cloud eliminates data center operations (power, cooling, racking, patching). Cloud doesn't eliminate bugs or security needs, and no system guarantees zero downtime.",
+    "awsDocUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q50",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d4",
@@ -1052,797 +1748,494 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Billing, Pricing, and Support for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which TWO AWS tools help a company understand and manage their AWS costs? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
+        "text": "AWS Cost Explorer for visualizing, understanding, and analyzing spending patterns over time"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Billing, Pricing, and Support"
+        "text": "AWS Budgets for setting spending limits and receiving proactive alerts"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon CloudWatch for monitoring resource performance metrics"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS CloudFormation for provisioning infrastructure as code"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Amazon Inspector for security vulnerability scanning"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Cost Explorer provides interactive graphs and reports to analyze cost and usage data, filter by service/account/tag, and identify trends. Budgets lets you set custom spending thresholds and receive automated alerts. CloudWatch monitors performance metrics; CloudFormation provisions resources; Inspector finds security vulnerabilities.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q31",
+    "id": "clfc02-s5-q51",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d1",
     "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Cloud Concepts for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "Which pillar of the AWS Well-Architected Framework focuses on recovering from infrastructure or service disruptions and dynamically acquiring computing resources to meet demand?",
     "options": [
       {
         "id": "A",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
+        "text": "Security pillar"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
+        "text": "Reliability pillar"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Performance Efficiency pillar"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Operational Excellence pillar"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "The Reliability pillar focuses on ensuring a workload performs its intended function correctly and consistently. It covers recovery from failures, meeting demand through dynamic scaling, and mitigating disruptions. Security covers data protection; Performance Efficiency covers efficient resource use; Operational Excellence covers operational procedures.",
+    "awsDocUrl": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q32",
+    "id": "clfc02-s5-q52",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company wants to commit to a consistent amount of compute usage (measured in $/hr) in exchange for lower prices, but wants flexibility to change instance families, sizes, or regions. Which pricing option fits this need?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Standard Reserved Instances locked to a specific instance type"
+      },
+      {
+        "id": "B",
+        "text": "Compute Savings Plans with flexible application across EC2, Fargate, and Lambda"
+      },
+      {
+        "id": "C",
+        "text": "Spot Instances for surplus capacity"
+      },
+      {
+        "id": "D",
+        "text": "On-Demand pricing with no commitment"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Compute Savings Plans provide up to 66% savings on a $/hr commitment that applies automatically to any EC2 instance (any family, size, OS, tenancy, region), Fargate, and Lambda usage. Standard Reserved Instances are locked to specific instance type and region, offering less flexibility.",
+    "awsDocUrl": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q53",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d2",
     "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Security and Compliance for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A company needs to enforce password complexity requirements and mandatory password rotation for all IAM users. Which IAM feature should they configure?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "IAM access keys rotation policy"
       },
       {
         "id": "B",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
+        "text": "IAM password policy with minimum length, complexity, and rotation requirements"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Multi-factor authentication settings"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "IAM permissions boundary"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "IAM password policies define requirements for IAM user passwords: minimum length, character requirements (uppercase, lowercase, numbers, symbols), password expiration period, and reuse prevention. This is separate from MFA (which adds a second factor) and access key rotation (which applies to programmatic access).",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q33",
+    "id": "clfc02-s5-q54",
     "setId": 5,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Cloud Technology and Services for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "Which AWS service continuously monitors AWS account activity for malicious behavior and unauthorized access using machine learning and threat intelligence?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "AWS Config"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Inspector"
       },
       {
         "id": "C",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
+        "text": "Amazon GuardDuty"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Trusted Advisor"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior using ML, anomaly detection, and integrated threat intelligence. It analyzes CloudTrail logs, VPC Flow Logs, and DNS logs. Config tracks resource configuration; Inspector scans for vulnerabilities; Trusted Advisor checks best practices.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q34",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Budgets Alerting within Billing, Pricing, and Support for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q35",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Cloud Concepts for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q36",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Security and Compliance for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q37",
+    "id": "clfc02-s5-q55",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
     "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Cloud Technology and Services for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "Which AWS service enables Infrastructure as Code (IaC) by allowing you to define cloud resources in templates and provision them in an automated, repeatable manner?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "AWS Systems Manager"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS CloudFormation"
       },
       {
         "id": "C",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
+        "text": "AWS OpsWorks"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CodeDeploy"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS CloudFormation uses JSON or YAML templates to define AWS resources declaratively. It provisions and manages the entire stack as a single unit, enabling version control, repeatability, and rollback. Systems Manager manages operational tasks; OpsWorks uses Chef/Puppet; CodeDeploy automates code deployments.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q56",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A developer wants to build a generative AI application that accesses foundation models from Amazon, AI21 Labs, Anthropic, and Meta. Which AWS service provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon SageMaker for custom model training"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Bedrock for accessing foundation models via API"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Comprehend for NLP analysis"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Rekognition for image analysis"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon Bedrock is a fully managed service that provides access to high-performing foundation models (FMs) from leading AI providers through a single API. You can customize models with your data using fine-tuning and RAG without managing infrastructure. SageMaker is for building/training custom models; Comprehend is NLP; Rekognition is computer vision.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q57",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "Which cloud computing model provides the customer with the MOST control over the underlying infrastructure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Software as a Service (SaaS) — e.g., Salesforce, Gmail"
+      },
+      {
+        "id": "B",
+        "text": "Platform as a Service (PaaS) — e.g., AWS Elastic Beanstalk"
+      },
+      {
+        "id": "C",
+        "text": "Infrastructure as a Service (IaaS) — e.g., Amazon EC2"
+      },
+      {
+        "id": "D",
+        "text": "Function as a Service (FaaS) — e.g., AWS Lambda"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "IaaS provides the highest level of control and flexibility. With EC2, customers manage the OS, middleware, runtime, and applications. PaaS abstracts the OS/runtime (customer manages applications and data). SaaS abstracts everything (customer only uses the software). FaaS abstracts all infrastructure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/types-of-cloud-computing.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q38",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Billing, Pricing, and Support for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q39",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for AWS Budgets Alerting within Cloud Concepts for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q40",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Security and Compliance for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security and Compliance"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-sim-s5-q41",
+    "id": "clfc02-s5-q58",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
     "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Cloud Technology and Services for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A company needs a managed service to run Apache Kafka for real-time data streaming without managing cluster infrastructure. Which AWS service should they use?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
+        "text": "Amazon Kinesis Data Streams"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon MSK (Managed Streaming for Apache Kafka)"
       },
       {
         "id": "C",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
+        "text": "Amazon SQS"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon SNS"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Amazon MSK is a fully managed Apache Kafka service. It handles cluster provisioning, configuration, patching, and scaling, letting teams focus on building streaming applications. Kinesis Data Streams is AWS's native streaming service (not Kafka-compatible); SQS is message queuing; SNS is pub/sub notifications.",
+    "awsDocUrl": "https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "clfc02-s5-q59",
+    "setId": 5,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "Which AWS service provides a global content delivery network (CDN) that caches content at edge locations close to users to reduce latency?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Route 53"
+      },
+      {
+        "id": "B",
+        "text": "AWS Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Global Accelerator"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon CloudFront is AWS's CDN service with 450+ Points of Presence (edge locations) worldwide. It caches static and dynamic content close to viewers, reducing latency. Route 53 is DNS, Direct Connect is dedicated network links, and Global Accelerator optimizes TCP/UDP routing over the AWS network.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q42",
+    "id": "clfc02-s5-q60",
     "setId": 5,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Billing, Pricing, and Support for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 42",
+    "isScored": false,
+    "scenario": "Which feature allows you to control inbound and outbound network traffic to Amazon EC2 instances?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
+        "text": "IAM policies"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Security Groups"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS WAF rules"
       },
       {
         "id": "D",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
+        "text": "S3 bucket policies"
       }
     ],
     "correctAnswer": [
-      "D"
+      "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Security Groups act as virtual firewalls for EC2 instances, controlling inbound and outbound traffic at the instance level. They are stateful (return traffic is automatically allowed). IAM policies control API permissions; WAF protects web apps; S3 bucket policies control S3 access—none directly control EC2 network traffic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q43",
+    "id": "clfc02-s5-q61",
     "setId": 5,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Cloud Concepts for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "An application team wants to grant their EC2 instances access to S3 and DynamoDB without storing access keys on the instances. What should they use?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
+        "text": "IAM user with programmatic access keys stored in environment variables"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
+        "text": "IAM role attached to the EC2 instance via an instance profile"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Root account credentials with restricted permissions"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Security group rules allowing outbound traffic to S3 and DynamoDB"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "IAM roles provide temporary, automatically-rotated credentials to EC2 instances through the instance metadata service. This is more secure than storing long-term access keys. The instance profile links the role to the instance. Security groups control network traffic, not API authorization.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q44",
+    "id": "clfc02-s5-q62",
     "setId": 5,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Budgets Alerting within Security and Compliance for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A company needs to connect their on-premises data center to their AWS VPC with a dedicated, private network connection that doesn't traverse the public internet. Which service should they use?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "AWS VPN (Site-to-Site)"
       },
       {
         "id": "B",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
+        "text": "AWS Direct Connect"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "VPC Peering"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Transit Gateway"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Direct Connect provides a dedicated, private network connection from on-premises to AWS. Traffic does not traverse the public internet, providing consistent network performance and reduced bandwidth costs. VPN uses encrypted tunnels over the internet; VPC Peering connects VPCs; Transit Gateway is a hub for network connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q45",
+    "id": "clfc02-s5-q63",
     "setId": 5,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Cloud Technology and Services for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company wants to receive automated email alerts when their monthly AWS spending is forecasted to exceed $10,000. Which service should they use?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
+        "text": "AWS Cost Explorer for visualizing historical spending trends"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Cloud Technology and Services"
+        "text": "AWS Budgets with email alerts configured at the $10,000 threshold"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Trusted Advisor for cost optimization recommendations"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Pricing Calculator for estimating future costs"
       }
     ],
     "correctAnswer": [
-      "A",
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Budgets lets you set custom cost or usage thresholds and receive alerts via email or SNS when actual or forecasted spending exceeds them. You can set monthly, quarterly, or annual budget periods. Cost Explorer shows historical data; Trusted Advisor recommends savings; Pricing Calculator estimates hypothetical costs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
     "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q46",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Billing, Pricing, and Support for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q47",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Cloud Concepts for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q48",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Security and Compliance for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q49",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Budgets Alerting within Cloud Technology and Services for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 49",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q50",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Billing, Pricing, and Support for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Billing, Pricing, and Support"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q51",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Cloud Concepts for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q52",
+    "id": "clfc02-s5-q64",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d2",
@@ -1850,250 +2243,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Security and Compliance for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to encrypt data stored in Amazon S3. Which service manages encryption keys and provides a centralized key management solution?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "AWS Certificate Manager (ACM)"
       },
       {
         "id": "B",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
+        "text": "AWS Key Management Service (KMS)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Secrets Manager"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CloudHSM"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS KMS creates and manages cryptographic keys used to encrypt data across AWS services (S3, EBS, RDS, etc.). KMS integrates natively with 100+ AWS services. ACM manages SSL/TLS certificates; Secrets Manager stores passwords/API keys; CloudHSM provides dedicated hardware security modules for strict compliance.",
+    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "clf-c02-sim-s5-q53",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Cloud Technology and Services for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q54",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for AWS Budgets Alerting within Billing, Pricing, and Support for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q55",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Cloud Concepts for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q56",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Security and Compliance for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 56",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q57",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Cloud Technology and Services for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q58",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Billing, Pricing, and Support for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q59",
+    "id": "clfc02-s5-q65",
     "setId": 5,
     "examCode": "CLF-C02",
     "domainId": "clf-d1",
@@ -2101,251 +2278,30 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Budgets Alerting within Cloud Concepts for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A small business wants to experiment with AWS services before committing to a paid plan. Which offering allows them to try certain AWS services for free within defined usage limits?",
     "options": [
       {
         "id": "A",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
+        "text": "AWS Enterprise Support Plan"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
+        "text": "AWS Free Tier which provides free usage of select services within limits"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Marketplace free trials"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q60",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Security and Compliance for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security and Compliance"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q61",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Pay-as-you-go pricing model within Cloud Technology and Services for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Technology and Services"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q62",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Shared Responsibility Model within Billing, Pricing, and Support for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Billing, Pricing, and Support"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring IAM user access permissions and security group inbound rules"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q63",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Amazon S3 Standard Storage Class within Cloud Concepts for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws clf sim-test --set 5 --q 63",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Cloud Concepts"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q64",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for AWS Budgets Alerting within Security and Compliance for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Creating custom spending alert thresholds with AWS Budgets"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Partner Network consulting credits"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "clf-c02-sim-s5-q65",
-    "setId": 5,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for AWS Enterprise Support Plan within Cloud Technology and Services for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Cloud Technology and Services"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "The AWS Free Tier lets new and existing customers explore services at no cost. It includes Always Free (e.g., 1 million Lambda requests/month), 12-Month Free (e.g., 750 hours t2.micro EC2/month), and Trials for specific services. No paid plan is required to start.",
+    "awsDocUrl": "https://aws.amazon.com/free/",
+    "difficulty": "Standard"
   }
 ]

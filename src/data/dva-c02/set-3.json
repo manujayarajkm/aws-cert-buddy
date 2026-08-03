@@ -1,111 +1,6 @@
 [
   {
-    "id": "dva-c02-s3-q1",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q2",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q3",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q4",
+    "id": "dvac02-s3-q1",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
@@ -113,109 +8,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which environment variable in AWS Lambda provides temporary credentials automatically to the AWS SDK running inside the function execution environment?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
+        "text": "AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN"
       },
       {
         "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "AWS_LAMBDA_FUNCTION_NAME and AWS_REGION"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "LAMBDA_SECURITY_TOKEN"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS_KMS_KEY_ARN"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Lambda automatically injects AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN into the function's execution environment. The AWS SDK uses these automatically.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q5",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Deployment"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q6",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q7",
+    "id": "dvac02-s3-q2",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -223,145 +43,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 7",
+    "scenario": "A developer is creating an AWS Lambda function that processes video files from S3. The execution time often exceeds 5 minutes. What is the maximum timeout that can be configured for a Lambda function?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "5 minutes"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
+        "text": "10 minutes"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "15 minutes"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q8",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q9",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "30 minutes"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Lambda functions have a maximum configurable execution timeout of 15 minutes (900 seconds). For tasks exceeding 15 minutes, AWS Step Functions, AWS Batch, or ECS tasks should be used.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q10",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q11",
+    "id": "dvac02-s3-q3",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -369,69 +78,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to allow frontend web users to upload files directly to an S3 bucket without routing through the backend server or exposing AWS credentials. What is the BEST solution?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Generate an S3 Presigned URL on the backend and return it to the frontend"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
+        "text": "Pass AWS access keys to the browser client securely"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Configure an S3 Bucket Policy allowing anonymous public PUT access"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Use AWS STS to create long-term IAM users for each website visitor"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Presigned URLs grant temporary permissions to perform specific S3 operations (such as PUT uploads). The backend generates a signed URL using IAM credentials and hands it to the client, keeping credentials safe.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q12",
+    "id": "dvac02-s3-q4",
     "setId": 3,
     "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer is using AWS Step Functions to orchestrate a order processing workflow. Which state type should be used to execute multiple sub-tasks concurrently?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
+        "text": "Choice state"
       },
       {
         "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "Task state"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Parallel state"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Pass state"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "A Parallel state in Step Functions allows execution of multiple branch state machines concurrently. Execution continues only after all parallel branches complete.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q13",
+    "id": "dvac02-s3-q5",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -439,70 +148,104 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer is deploying a multi-container application using Elastic Beanstalk. Which configuration file specifies the container definitions and volume mounts?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "Dockerrun.aws.json"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "buildspec.yml"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Procfile"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "cron.yaml"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "For Elastic Beanstalk multi-container or ECS environments, Dockerrun.aws.json specifies how Docker containers are configured and deployed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-container-docker-v2.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q14",
+    "id": "dvac02-s3-q6",
     "setId": 3,
     "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 14",
+    "scenario": "A developer is using AWS CodeDeploy to deploy an update to an application running on EC2. The deployment must update instances one at a time, ensuring that at least half the instances remain operational throughout. Which deployment configuration should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
+        "text": "CodeDeployDefault.OneAtATime"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "CodeDeployDefault.HalfAtATime"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "CodeDeployDefault.AllAtOnce"
       },
       {
         "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "CodeDeployDefault.Canary10Percent30Minutes"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "CodeDeployDefault.OneAtATime deploys the revision to one instance at a time. As long as the fleet size is >= 2, at least half of the instances remain online during the deployment.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q15",
+    "id": "dvac02-s3-q7",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile application requires authenticated access to user-specific folders in Amazon S3 after signing in with Google or Facebook. Which service provides federated identity management and temporary AWS credentials?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools and Identity Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "AWS STS GetSessionToken"
+      },
+      {
+        "id": "D",
+        "text": "Amazon API Gateway Lambda Authorizer"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Cognito User Pools handle user sign-in and social identity federation. Cognito Identity Pools convert identity tokens into temporary, scoped IAM credentials for accessing AWS resources like S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q8",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -510,74 +253,39 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to upload large 5GB files to Amazon S3 using the AWS SDK. Which TWO techniques optimize the upload speed and reliability? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Use S3 Multipart Upload API to upload parts in parallel"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Development with AWS Services"
+        "text": "Use S3 Transfer Acceleration to route data through AWS edge locations"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Enable S3 Object Lock before initiating the upload"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Use client-side encryption with a local static key"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Store the file in DynamoDB first before moving to S3"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Multipart Upload allows files larger than 100MB to be split and uploaded concurrently in parts, automatically retrying failed parts. S3 Transfer Acceleration leverages CloudFront's edge network for faster data transfer over long distances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q16",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q17",
+    "id": "dvac02-s3-q9",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -585,69 +293,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer uses AWS CodeBuild to compile code and build Docker images. Where are the build commands and environment phases defined?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "appspec.yml"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "buildspec.yml"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Dockerfile"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "samconfig.toml"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS CodeBuild uses a buildspec.yml file located in the root of the source directory to define phases (install, pre_build, build, post_build) and run shell commands.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q18",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q19",
+    "id": "dvac02-s3-q10",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -655,74 +328,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to allow frontend web users to upload files directly to an S3 bucket without routing through the backend server or exposing AWS credentials. What is the BEST solution?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Generate an S3 Presigned URL on the backend and return it to the frontend"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
+        "text": "Pass AWS access keys to the browser client securely"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Configure an S3 Bucket Policy allowing anonymous public PUT access"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Use AWS STS to create long-term IAM users for each website visitor"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Presigned URLs grant temporary permissions to perform specific S3 operations (such as PUT uploads). The backend generates a signed URL using IAM credentials and hands it to the client, keeping credentials safe.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q20",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q21",
+    "id": "dvac02-s3-q11",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -730,140 +363,139 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 21",
+    "scenario": "A developer wants to test Lambda functions locally before deploying to AWS. Which CLI tool provides local execution capabilities by emulating Lambda and API Gateway?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "AWS SAM CLI"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS CLI v2"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "AWS Amplify CLI"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q22",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q23",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CDK CLI"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS SAM CLI provides commands like `sam local invoke` and `sam local start-api` to run and debug serverless applications locally using Docker containers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-debugging.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q24",
+    "id": "dvac02-s3-q12",
     "setId": 3,
     "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "What happens if a CloudFormation stack creation fails while creating one of the resources in the stack by default?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
+        "text": "Failed resources are skipped and stack creation completes"
       },
       {
         "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "CloudFormation automatically rolls back the entire stack, deleting created resources"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "The stack stays in CREATE_IN_PROGRESS state indefinitely"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "The stack converts into a Drift Detection mode"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "By default, if a resource creation fails during stack creation, AWS CloudFormation triggers a rollback (ROLLBACK_IN_PROGRESS) and deletes all resources created up to that point.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-describing-stacks.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q25",
+    "id": "dvac02-s3-q13",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A Lambda function experiences frequent cold starts, adding 2 seconds of latency to user requests. How can the developer eliminate cold start latency for critical functions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Provisioned Concurrency for the function"
+      },
+      {
+        "id": "B",
+        "text": "Increase the function memory allocation to 10240 MB"
+      },
+      {
+        "id": "C",
+        "text": "Set the function timeout to 15 minutes"
+      },
+      {
+        "id": "D",
+        "text": "Use SQS dead-letter queues"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Provisioned Concurrency initializes requested execution environments ahead of time so functions respond immediately to incoming requests without cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q14",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer notices that an API Gateway REST API returns HTTP 429 Too Many Requests errors during peak traffic hours. What is the root cause of this error?",
+    "options": [
+      {
+        "id": "A",
+        "text": "API Gateway throttling limits have been exceeded"
+      },
+      {
+        "id": "B",
+        "text": "The client sent an unauthenticated request"
+      },
+      {
+        "id": "C",
+        "text": "The backend Lambda function threw an unhandled exception"
+      },
+      {
+        "id": "D",
+        "text": "API Gateway experienced an internal gateway timeout"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "HTTP status code 429 indicates that rate limits or throttling limits configured on API Gateway (or default account limit of 10,000 rps) have been exceeded.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q15",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -871,109 +503,74 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to containerize a web app and store the Docker images securely in a private repository. Which TWO services should be used together? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Amazon Elastic Container Registry (ECR) for hosting private Docker images"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Deployment"
+        "text": "AWS CodeBuild or local Docker CLI to build and push images to ECR"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS CodeArtifact for storing npm packages"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Amazon S3 static website hosting"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Elastic Beanstalk single instance mode"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon ECR is a managed Docker container registry. AWS CodeBuild or Docker CLI can authenticate with ECR to build, tag, and push container images into ECR repositories.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q26",
+    "id": "dvac02-s3-q16",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A Lambda function connected to an Amazon RDS PostgreSQL database suffers from database connection timeouts during concurrent invocations. Which solution prevents database connection exhaustion?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
+        "text": "Create an Amazon RDS Proxy and point Lambda database connections to the proxy"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Increase Lambda function memory to maximum"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Use SQS FIFO queue in front of Lambda"
       },
       {
         "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "Enable Multi-AZ on the RDS database"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon RDS Proxy pools and shares database connections, protecting the database from running out of connections during traffic spikes from Lambda functions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q27",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q28",
+    "id": "dvac02-s3-q17",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
@@ -981,35 +578,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 28",
+    "scenario": "An application running on an Amazon EC2 instance needs to access an S3 bucket and an SQS queue. Which approach is MOST secure for authenticating the application?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
+        "text": "Hardcode IAM access keys in the application configuration file"
       },
       {
         "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "Store IAM access keys in environment variables on the instance"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Assign an IAM Role to the EC2 instance via an instance profile"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Use AWS STS AssumeRole with long-term IAM credentials stored in code"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Assigning an IAM Role to an EC2 instance profile automatically provides temporary credentials via the Instance Metadata Service (IMDS). This avoids storing or managing static keys on disk.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q29",
+    "id": "dvac02-s3-q18",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile application requires authenticated access to user-specific folders in Amazon S3 after signing in with Google or Facebook. Which service provides federated identity management and temporary AWS credentials?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Cognito User Pools and Identity Pools"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "C",
+        "text": "AWS STS GetSessionToken"
+      },
+      {
+        "id": "D",
+        "text": "Amazon API Gateway Lambda Authorizer"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Cognito User Pools handle user sign-in and social identity federation. Cognito Identity Pools convert identity tokens into temporary, scoped IAM credentials for accessing AWS resources like S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q19",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -1017,144 +648,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer is building a SAM (Serverless Application Model) template. Which section of the SAM template defines the AWS resources to be provisioned?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "Parameters"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Resources"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Globals"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Transform"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Like CloudFormation templates, the Resources section in AWS SAM templates defines the AWS resources (such as AWS::Serverless::Function, AWS::Serverless::SimpleTable, etc.) to provision.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q20",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A Lambda function connected to an Amazon RDS PostgreSQL database suffers from database connection timeouts during concurrent invocations. Which solution prevents database connection exhaustion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create an Amazon RDS Proxy and point Lambda database connections to the proxy"
+      },
+      {
+        "id": "B",
+        "text": "Increase Lambda function memory to maximum"
+      },
+      {
+        "id": "C",
+        "text": "Use SQS FIFO queue in front of Lambda"
+      },
+      {
+        "id": "D",
+        "text": "Enable Multi-AZ on the RDS database"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon RDS Proxy pools and shares database connections, protecting the database from running out of connections during traffic spikes from Lambda functions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q30",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q31",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q32",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q33",
+    "id": "dvac02-s3-q21",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -1162,145 +718,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to provision AWS infrastructure using TypeScript instead of writing raw JSON/YAML templates. Which framework should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "AWS Cloud Development Kit (AWS CDK)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Serverless Application Model (AWS SAM)"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "AWS CloudFormation CLI"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Amplify SDK"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS CDK allows developers to define cloud infrastructure using familiar programming languages like TypeScript, Python, Java, and C#.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/home.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q34",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q35",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q36",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q37",
+    "id": "dvac02-s3-q22",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -1308,69 +753,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to provision AWS infrastructure using TypeScript instead of writing raw JSON/YAML templates. Which framework should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "AWS Cloud Development Kit (AWS CDK)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Serverless Application Model (AWS SAM)"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "AWS CloudFormation CLI"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Amplify SDK"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS CDK allows developers to define cloud infrastructure using familiar programming languages like TypeScript, Python, Java, and C#.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/home.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q38",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q39",
+    "id": "dvac02-s3-q23",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -1378,145 +788,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer is using AWS Step Functions to orchestrate a order processing workflow. Which state type should be used to execute multiple sub-tasks concurrently?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Choice state"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
+        "text": "Task state"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Parallel state"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q40",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q41",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Pass state"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "A Parallel state in Step Functions allows execution of multiple branch state machines concurrently. Execution continues only after all parallel branches complete.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q42",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 42",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q43",
+    "id": "dvac02-s3-q24",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -1524,69 +823,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An application sends user activity events to an Amazon SQS queue. The developer wants to process events in parallel while ensuring that events for the same user ID are processed sequentially in the exact order received. What should be configured?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "SQS Standard queue with a custom sorting attribute"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
+        "text": "SQS FIFO queue with the MessageGroupId set to the user ID"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "SNS topic with multiple SQS subscriptions"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-c02-s3-q44",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "SQS Standard queue with short polling"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "SQS FIFO queues preserve message ordering within a MessageGroupId group. By setting MessageGroupId to the user ID, events for that specific user are strictly ordered and processed sequentially, while events for different users can be processed concurrently.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-message-group-id.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q45",
+    "id": "dvac02-s3-q25",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -1594,74 +858,74 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to containerize a web app and store the Docker images securely in a private repository. Which TWO services should be used together? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Amazon Elastic Container Registry (ECR) for hosting private Docker images"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Deployment"
+        "text": "AWS CodeBuild or local Docker CLI to build and push images to ECR"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS CodeArtifact for storing npm packages"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Amazon S3 static website hosting"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Elastic Beanstalk single instance mode"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon ECR is a managed Docker container registry. AWS CodeBuild or Docker CLI can authenticate with ECR to build, tag, and push container images into ECR repositories.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q46",
+    "id": "dvac02-s3-q26",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer needs to measure memory usage inside an EC2 instance. CloudWatch standard metrics do not show memory utilization. What must be installed on the EC2 instance to send memory metrics to CloudWatch?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
+        "text": "Unified CloudWatch Agent"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Agent (SSM Agent)"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS X-Ray Daemon"
       },
       {
         "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "AWS CodeDeploy Agent"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Hypervisor metrics for EC2 only include CPU, Disk I/O, and Network. To track OS-level metrics like RAM usage or disk space, the CloudWatch Agent must be installed inside the guest OS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q47",
+    "id": "dvac02-s3-q27",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -1669,69 +933,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A web application receives unpredictable bursts of read requests for popular user profiles stored in DynamoDB. The developer wants to achieve microsecond read latency without increasing provisioned read capacity. Which service should be added?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Amazon ElastiCache for Redis"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
+        "text": "Amazon DynamoDB Accelerator (DAX)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon CloudFront"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q48",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon RDS Proxy"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache specifically built for DynamoDB. It reduces read latency to microseconds and is API-compatible, requiring no application rewrite.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q49",
+    "id": "dvac02-s3-q28",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -1739,436 +968,814 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 49",
+    "scenario": "A developer is using AWS CodeDeploy to deploy an update to an application running on EC2. The deployment must update instances one at a time, ensuring that at least half the instances remain operational throughout. Which deployment configuration should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "CodeDeployDefault.OneAtATime"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "CodeDeployDefault.HalfAtATime"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "CodeDeployDefault.AllAtOnce"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "CodeDeployDefault.Canary10Percent30Minutes"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CodeDeployDefault.OneAtATime deploys the revision to one instance at a time. As long as the fleet size is >= 2, at least half of the instances remain online during the deployment.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q29",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is building a serverless web application. The application needs to process incoming requests via REST endpoints, validate the request body, and store records in DynamoDB. Which combination of services should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "API Gateway REST API, AWS Lambda, and Amazon DynamoDB"
+      },
+      {
+        "id": "B",
+        "text": "Application Load Balancer, Amazon EC2, and Amazon RDS"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront, AWS Elastic Beanstalk, and Amazon ElastiCache"
+      },
+      {
+        "id": "D",
+        "text": "API Gateway WebSocket API, AWS Fargate, and Amazon DocumentDB"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "API Gateway provides REST API endpoints with built-in request validation. AWS Lambda handles backend processing logic, and DynamoDB provides serverless key-value storage. This forms the standard serverless application architecture.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q30",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer wants to restrict access to an API Gateway endpoint to requests coming only from a specific Amazon CloudFront distribution. How can this be accomplished?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure CloudFront to send a custom secret header and validate it in an API Gateway Lambda Authorizer or WAF"
+      },
+      {
+        "id": "B",
+        "text": "Use Security Groups on API Gateway to allow only CloudFront IP ranges"
+      },
+      {
+        "id": "C",
+        "text": "Enable S3 Bucket Policies on API Gateway"
+      },
+      {
+        "id": "D",
+        "text": "Attach an IAM Role directly to the CloudFront distribution"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "To restrict API Gateway to CloudFront, you can add a custom header in CloudFront origin settings and verify that header in API Gateway using AWS WAF, a custom Lambda authorizer, or resource policies.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-s3-corners.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q31",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application running on an Amazon EC2 instance needs to access an S3 bucket and an SQS queue. Which approach is MOST secure for authenticating the application?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hardcode IAM access keys in the application configuration file"
+      },
+      {
+        "id": "B",
+        "text": "Store IAM access keys in environment variables on the instance"
+      },
+      {
+        "id": "C",
+        "text": "Assign an IAM Role to the EC2 instance via an instance profile"
+      },
+      {
+        "id": "D",
+        "text": "Use AWS STS AssumeRole with long-term IAM credentials stored in code"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Assigning an IAM Role to an EC2 instance profile automatically provides temporary credentials via the Instance Metadata Service (IMDS). This avoids storing or managing static keys on disk.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q50",
+    "id": "dvac02-s3-q32",
     "setId": 3,
     "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A Lambda function requires database access credentials. The credentials must be stored securely, encrypted at rest, and automatically rotated every 30 days. Which service should the developer use?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "AWS Systems Manager Parameter Store (String parameter)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Refactoring, Troubleshooting and Optimization"
+        "text": "AWS Secrets Manager with auto-rotation enabled"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Environment variables inside the Lambda function configuration"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "An S3 object encrypted with SSE-S3"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AWS Secrets Manager is designed specifically to manage, rotate, and retrieve secrets such as database credentials securely. It natively supports built-in auto-rotation using AWS Lambda functions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q33",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application sends user activity events to an Amazon SQS queue. The developer wants to process events in parallel while ensuring that events for the same user ID are processed sequentially in the exact order received. What should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SQS Standard queue with a custom sorting attribute"
+      },
+      {
+        "id": "B",
+        "text": "SQS FIFO queue with the MessageGroupId set to the user ID"
+      },
+      {
+        "id": "C",
+        "text": "SNS topic with multiple SQS subscriptions"
+      },
+      {
+        "id": "D",
+        "text": "SQS Standard queue with short polling"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "SQS FIFO queues preserve message ordering within a MessageGroupId group. By setting MessageGroupId to the user ID, events for that specific user are strictly ordered and processed sequentially, while events for different users can be processed concurrently.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-message-group-id.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q34",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which environment variable in AWS Lambda provides temporary credentials automatically to the AWS SDK running inside the function execution environment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN"
+      },
+      {
+        "id": "B",
+        "text": "AWS_LAMBDA_FUNCTION_NAME and AWS_REGION"
+      },
+      {
+        "id": "C",
+        "text": "LAMBDA_SECURITY_TOKEN"
+      },
+      {
+        "id": "D",
+        "text": "AWS_KMS_KEY_ARN"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Lambda automatically injects AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN into the function's execution environment. The AWS SDK uses these automatically.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q35",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to encrypt payload data sent between an Application Load Balancer and backend EC2 instances. Which protocol configuration ensures end-to-end encryption in transit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure an HTTP listener on ALB and HTTP target group"
+      },
+      {
+        "id": "B",
+        "text": "Configure an HTTPS listener on ALB and HTTPS target group with valid certificates on targets"
+      },
+      {
+        "id": "C",
+        "text": "Enable SSE-KMS on the target EC2 EBS root volumes"
+      },
+      {
+        "id": "D",
+        "text": "Use VPC Flow Logs to encrypt network packets"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "End-to-end transit encryption requires an HTTPS listener on the ALB to encrypt client-to-ALB traffic, and an HTTPS target group so ALB re-encrypts traffic sent to backend EC2 instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q36",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer receives HTTP 504 Gateway Timeout from an Application Load Balancer. What is the cause of this error?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The target application on EC2 or Lambda failed to respond before the ALB idle timeout expired"
+      },
+      {
+        "id": "B",
+        "text": "The client SSL certificate is invalid"
+      },
+      {
+        "id": "C",
+        "text": "The security group blocked inbound HTTP traffic"
+      },
+      {
+        "id": "D",
+        "text": "The target group has zero registered targets"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "HTTP 504 Gateway Timeout occurs when the load balancer connected to a target, but the target did not send a response before the ALB idle timeout limit (default 60s) elapsed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html#http-504-issues",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q37",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application reading from a Kinesis Data Stream falls behind and records a high GetRecords.IteratorAgeMilliseconds metric value. What does this indicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Consumers are reading data slower than producers are writing data to the stream"
+      },
+      {
+        "id": "B",
+        "text": "The stream has run out of storage space"
+      },
+      {
+        "id": "C",
+        "text": "The consumer application credentials have expired"
+      },
+      {
+        "id": "D",
+        "text": "Kinesis Data Stream KMS key is disabled"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "IteratorAgeMilliseconds measures the age of the last record processed relative to when it arrived in the stream. A high value means consumers cannot keep up with write throughput.",
+    "awsDocUrl": "https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q38",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer receives an AccessDenied error when attempting to read an encrypted object from S3. The object was encrypted using SSE-KMS with a customer managed key. The developer has s3:GetObject permission. What missing permission caused the error?",
+    "options": [
+      {
+        "id": "A",
+        "text": "kms:Decrypt permission on the KMS key policy"
+      },
+      {
+        "id": "B",
+        "text": "s3:PutObject permission on the S3 bucket policy"
+      },
+      {
+        "id": "C",
+        "text": "kms:GenerateDataKey permission on the KMS key policy"
+      },
+      {
+        "id": "D",
+        "text": "iam:PassRole permission on the developer's IAM policy"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "When reading an SSE-KMS encrypted object in S3, the principal needs both s3:GetObject permission on the object and kms:Decrypt permission on the KMS key used to encrypt it.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q39",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is using AWS KMS to encrypt sensitive application data locally before saving it to a database. Which API operation should be used to obtain an encryption key for local envelope encryption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "kms:Encrypt"
+      },
+      {
+        "id": "B",
+        "text": "kms:GenerateDataKey"
+      },
+      {
+        "id": "C",
+        "text": "kms:Decrypt"
+      },
+      {
+        "id": "D",
+        "text": "kms:CreateKey"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "kms:GenerateDataKey returns a plaintext data key and an encrypted copy of that key (encrypted by a KMS CMK). The application uses the plaintext key to encrypt data locally, then discards the plaintext key and stores the encrypted data key alongside the data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q40",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to run a lightweight containerized web API with automatic scaling and no server management. Which AWS service allows deploying container images directly from a source code repository or container registry with minimal configuration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS App Runner"
+      },
+      {
+        "id": "B",
+        "text": "Amazon EC2"
+      },
+      {
+        "id": "C",
+        "text": "AWS Elastic Beanstalk (EC2 mode)"
+      },
+      {
+        "id": "D",
+        "text": "Amazon EMR"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS App Runner makes it easy to quickly deploy containerized web applications and APIs from container images or source code directly to AWS with zero infrastructure configuration required.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q41",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is building a SAM (Serverless Application Model) template. Which section of the SAM template defines the AWS resources to be provisioned?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parameters"
+      },
+      {
+        "id": "B",
+        "text": "Resources"
+      },
+      {
+        "id": "C",
+        "text": "Globals"
+      },
+      {
+        "id": "D",
+        "text": "Transform"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Like CloudFormation templates, the Resources section in AWS SAM templates defines the AWS resources (such as AWS::Serverless::Function, AWS::Serverless::SimpleTable, etc.) to provision.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q42",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A developer wants to upload large 5GB files to Amazon S3 using the AWS SDK. Which TWO techniques optimize the upload speed and reliability? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use S3 Multipart Upload API to upload parts in parallel"
+      },
+      {
+        "id": "B",
+        "text": "Use S3 Transfer Acceleration to route data through AWS edge locations"
+      },
+      {
+        "id": "C",
+        "text": "Enable S3 Object Lock before initiating the upload"
+      },
+      {
+        "id": "D",
+        "text": "Use client-side encryption with a local static key"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Store the file in DynamoDB first before moving to S3"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Multipart Upload allows files larger than 100MB to be split and uploaded concurrently in parts, automatically retrying failed parts. S3 Transfer Acceleration leverages CloudFront's edge network for faster data transfer over long distances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q51",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q52",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q53",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q54",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q55",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q56",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 56",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q57",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q58",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q59",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q60",
+    "id": "dvac02-s3-q43",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "multiple",
     "selectCount": 2,
-    "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": true,
+    "scenario": "A developer wants to protect an Amazon API Gateway REST API from unauthorized access. Which TWO authentication/authorization methods can be implemented natively? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "IAM Permissions (AWS_IAM authorization)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security"
+        "text": "Amazon Cognito User Pools authorizers"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Basic Authentication headers stored in plaintext"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Hardcoded IP whitelist in API Gateway route definitions"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS KMS Key Policies attached directly to API resources"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "API Gateway natively supports AWS_IAM authorization (for signing requests with Signature Version 4) and Amazon Cognito User Pools authorizers (using JWT tokens). Custom Lambda authorizers are also supported.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-to-api.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q61",
+    "id": "dvac02-s3-q44",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to run a lightweight containerized web API with automatic scaling and no server management. Which AWS service allows deploying container images directly from a source code repository or container registry with minimal configuration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS App Runner"
+      },
+      {
+        "id": "B",
+        "text": "Amazon EC2"
+      },
+      {
+        "id": "C",
+        "text": "AWS Elastic Beanstalk (EC2 mode)"
+      },
+      {
+        "id": "D",
+        "text": "Amazon EMR"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS App Runner makes it easy to quickly deploy containerized web applications and APIs from container images or source code directly to AWS with zero infrastructure configuration required.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q45",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to run a lightweight containerized web API with automatic scaling and no server management. Which AWS service allows deploying container images directly from a source code repository or container registry with minimal configuration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS App Runner"
+      },
+      {
+        "id": "B",
+        "text": "Amazon EC2"
+      },
+      {
+        "id": "C",
+        "text": "AWS Elastic Beanstalk (EC2 mode)"
+      },
+      {
+        "id": "D",
+        "text": "Amazon EMR"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS App Runner makes it easy to quickly deploy containerized web applications and APIs from container images or source code directly to AWS with zero infrastructure configuration required.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q46",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is using AWS KMS to encrypt sensitive application data locally before saving it to a database. Which API operation should be used to obtain an encryption key for local envelope encryption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "kms:Encrypt"
+      },
+      {
+        "id": "B",
+        "text": "kms:GenerateDataKey"
+      },
+      {
+        "id": "C",
+        "text": "kms:Decrypt"
+      },
+      {
+        "id": "D",
+        "text": "kms:CreateKey"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "kms:GenerateDataKey returns a plaintext data key and an encrypted copy of that key (encrypted by a KMS CMK). The application uses the plaintext key to encrypt data locally, then discards the plaintext key and stores the encrypted data key alongside the data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q47",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to implement optimistic locking in Amazon DynamoDB to ensure that concurrent updates to an item do not overwrite each other. Which feature should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DynamoDB Transactions"
+      },
+      {
+        "id": "B",
+        "text": "Condition expressions using a version attribute"
+      },
+      {
+        "id": "C",
+        "text": "DynamoDB Accelerator (DAX)"
+      },
+      {
+        "id": "D",
+        "text": "Global Secondary Indexes"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Optimistic locking with condition expressions (e.g., attribute_exists or version = :expectedVersion) ensures an update only succeeds if the item's version attribute has not changed since it was read. If another process updated it, the conditional check fails.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q48",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to implement optimistic locking in Amazon DynamoDB to ensure that concurrent updates to an item do not overwrite each other. Which feature should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DynamoDB Transactions"
+      },
+      {
+        "id": "B",
+        "text": "Condition expressions using a version attribute"
+      },
+      {
+        "id": "C",
+        "text": "DynamoDB Accelerator (DAX)"
+      },
+      {
+        "id": "D",
+        "text": "Global Secondary Indexes"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Optimistic locking with condition expressions (e.g., attribute_exists or version = :expectedVersion) ensures an update only succeeds if the item's version attribute has not changed since it was read. If another process updated it, the conditional check fails.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q49",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application publishes order notification events to an Amazon SNS topic. Three different microservices need to receive all messages. How should this fan-out architecture be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create an SQS queue for each microservice and subscribe all 3 queues to the SNS topic"
+      },
+      {
+        "id": "B",
+        "text": "Have each microservice poll the SNS topic directly using the AWS SDK"
+      },
+      {
+        "id": "C",
+        "text": "Route SNS events directly to an S3 bucket and trigger microservices via S3 events"
+      },
+      {
+        "id": "D",
+        "text": "Use API Gateway to broadcast SNS messages to microservices"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The SNS fan-out pattern subscribes multiple SQS queues to a single SNS topic. When a message is published to the topic, SNS delivers a copy to each queue, allowing the microservices to process messages independently and asynchronously.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-common-scenarios.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q50",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to store configuration parameters (like API URLs) and encrypted strings (like database passwords) centrally for multiple microservices. The solution must be low-cost and integrate natively with IAM. Which service should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "B",
+        "text": "AWS Key Management Service"
+      },
+      {
+        "id": "C",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "id": "D",
+        "text": "AWS Secrets Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "SSM Parameter Store allows storing plain text strings and encrypted SecureString parameters (via KMS). It is free for standard parameters and low-cost for advanced parameters, making it ideal for general app parameters.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q51",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -2176,69 +1783,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for a critical production microservices environment. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer is deploying a multi-container application using Elastic Beanstalk. Which configuration file specifies the container definitions and volume mounts?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment"
+        "text": "Dockerrun.aws.json"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "buildspec.yml"
       },
       {
         "id": "C",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "Procfile"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "cron.yaml"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "For Elastic Beanstalk multi-container or ECS environments, Dockerrun.aws.json specifies how Docker containers are configured and deployed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-container-docker-v2.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q62",
-    "setId": 3,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Refactoring, Troubleshooting and Optimization for a serverless event-driven architecture. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Refactoring, Troubleshooting and Optimization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dva-c02-s3-q63",
+    "id": "dvac02-s3-q52",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -2246,35 +1818,174 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Development with AWS Services for a multi-region active-active deployment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dva practice-test --set 3 --q 63",
+    "scenario": "A developer is building a serverless web application. The application needs to process incoming requests via REST endpoints, validate the request body, and store records in DynamoDB. Which combination of services should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "API Gateway REST API, AWS Lambda, and Amazon DynamoDB"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Development with AWS Services"
+        "text": "Application Load Balancer, Amazon EC2, and Amazon RDS"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon CloudFront, AWS Elastic Beanstalk, and Amazon ElastiCache"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "API Gateway WebSocket API, AWS Fargate, and Amazon DocumentDB"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "API Gateway provides REST API endpoints with built-in request validation. AWS Lambda handles backend processing logic, and DynamoDB provides serverless key-value storage. This forms the standard serverless application architecture.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q64",
+    "id": "dvac02-s3-q53",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An application publishes order notification events to an Amazon SNS topic. Three different microservices need to receive all messages. How should this fan-out architecture be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create an SQS queue for each microservice and subscribe all 3 queues to the SNS topic"
+      },
+      {
+        "id": "B",
+        "text": "Have each microservice poll the SNS topic directly using the AWS SDK"
+      },
+      {
+        "id": "C",
+        "text": "Route SNS events directly to an S3 bucket and trigger microservices via S3 events"
+      },
+      {
+        "id": "D",
+        "text": "Use API Gateway to broadcast SNS messages to microservices"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The SNS fan-out pattern subscribes multiple SQS queues to a single SNS topic. When a message is published to the topic, SNS delivers a copy to each queue, allowing the microservices to process messages independently and asynchronously.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-common-scenarios.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q54",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "What happens if a CloudFormation stack creation fails while creating one of the resources in the stack by default?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Failed resources are skipped and stack creation completes"
+      },
+      {
+        "id": "B",
+        "text": "CloudFormation automatically rolls back the entire stack, deleting created resources"
+      },
+      {
+        "id": "C",
+        "text": "The stack stays in CREATE_IN_PROGRESS state indefinitely"
+      },
+      {
+        "id": "D",
+        "text": "The stack converts into a Drift Detection mode"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "By default, if a resource creation fails during stack creation, AWS CloudFormation triggers a rollback (ROLLBACK_IN_PROGRESS) and deletes all resources created up to that point.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-describing-stacks.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q55",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "Which CloudWatch Logs metric feature allows transforming raw log text (such as 'ERROR') into a numerical metric for triggering alarms?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metric Filters"
+      },
+      {
+        "id": "B",
+        "text": "Log Streams"
+      },
+      {
+        "id": "C",
+        "text": "Subscription Filters"
+      },
+      {
+        "id": "D",
+        "text": "CloudWatch Insights"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Metric Filters search for terms or patterns in CloudWatch log streams and turn matching occurrences into numeric CloudWatch metrics, which can then trigger alarms.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogDataUsingFilters.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q56",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A developer is creating an AWS Lambda function that processes video files from S3. The execution time often exceeds 5 minutes. What is the maximum timeout that can be configured for a Lambda function?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 minutes"
+      },
+      {
+        "id": "B",
+        "text": "10 minutes"
+      },
+      {
+        "id": "C",
+        "text": "15 minutes"
+      },
+      {
+        "id": "D",
+        "text": "30 minutes"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "AWS Lambda functions have a maximum configurable execution timeout of 15 minutes (900 seconds). For tasks exceeding 15 minutes, AWS Step Functions, AWS Batch, or ECS tasks should be used.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q57",
     "setId": 3,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
@@ -2282,70 +1993,320 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Lambda Cold Start Elimination within Security for automated continuous integration pipelines. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to restrict access to an API Gateway endpoint to requests coming only from a specific Amazon CloudFront distribution. How can this be accomplished?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security"
+        "text": "Configure CloudFront to send a custom secret header and validate it in an API Gateway Lambda Authorizer or WAF"
       },
       {
         "id": "B",
-        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+        "text": "Use Security Groups on API Gateway to allow only CloudFront IP ranges"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Enable S3 Bucket Policies on API Gateway"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Attach an IAM Role directly to the CloudFront distribution"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "To restrict API Gateway to CloudFront, you can add a custom header in CloudFront origin settings and verify that header in API Gateway using AWS WAF, a custom Lambda authorizer, or resource policies.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-s3-corners.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-c02-s3-q65",
+    "id": "dvac02-s3-q58",
     "setId": 3,
     "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for DynamoDB Multi-Item Transactions within Deployment for low-latency user facing APIs. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer needs to store configuration parameters (like API URLs) and encrypted strings (like database passwords) centrally for multiple microservices. The solution must be low-cost and integrate natively with IAM. Which service should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+        "text": "AWS Systems Manager Parameter Store"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Deployment"
+        "text": "AWS Key Management Service"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon DynamoDB"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Secrets Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "SSM Parameter Store allows storing plain text strings and encrypted SecureString parameters (via KMS). It is free for standard parameters and low-cost for advanced parameters, making it ideal for general app parameters.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q59",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A developer wants to protect an Amazon API Gateway REST API from unauthorized access. Which TWO authentication/authorization methods can be implemented natively? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "IAM Permissions (AWS_IAM authorization)"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Cognito User Pools authorizers"
+      },
+      {
+        "id": "C",
+        "text": "Basic Authentication headers stored in plaintext"
+      },
+      {
+        "id": "D",
+        "text": "Hardcoded IP whitelist in API Gateway route definitions"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS KMS Key Policies attached directly to API resources"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "API Gateway natively supports AWS_IAM authorization (for signing requests with Signature Version 4) and Amazon Cognito User Pools authorizers (using JWT tokens). Custom Lambda authorizers are also supported.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-to-api.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q60",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A developer wants to implement a canary deployment strategy for an AWS Lambda function using AWS SAM and AWS CodeDeploy. Which SAM deployment preference shifts 10% of traffic to the new version first, then shifts the remaining 90% after 10 minutes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Canary10Percent10Minutes"
+      },
+      {
+        "id": "B",
+        "text": "Linear10Percent10Minutes"
+      },
+      {
+        "id": "C",
+        "text": "AllAtOnce"
+      },
+      {
+        "id": "D",
+        "text": "PreTrafficHook"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Canary10Percent10Minutes shifts 10 percent of traffic to the new version. After a 10-minute bake period without alarms, the remaining 90 percent is shifted.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q61",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An application writing to a DynamoDB table receives ProvisionedThroughputExceededException errors. Which strategy should the developer implement first in the application code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Implement exponential backoff with jitter in the application retry logic"
+      },
+      {
+        "id": "B",
+        "text": "Increase the table read/write capacity units to maximum"
+      },
+      {
+        "id": "C",
+        "text": "Re-create the table as a Global Table"
+      },
+      {
+        "id": "D",
+        "text": "Switch from DynamoDB to S3"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS SDKs automatically implement exponential backoff and jitter for retrying requests hit by ProvisionedThroughputExceededException. Adding backoff prevents request flooding.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html#Programming.Errors.RetryAndBackoff",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q62",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A web application receives unpredictable bursts of read requests for popular user profiles stored in DynamoDB. The developer wants to achieve microsecond read latency without increasing provisioned read capacity. Which service should be added?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon ElastiCache for Redis"
+      },
+      {
+        "id": "B",
+        "text": "Amazon DynamoDB Accelerator (DAX)"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "Amazon RDS Proxy"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache specifically built for DynamoDB. It reduces read latency to microseconds and is API-compatible, requiring no application rewrite.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q63",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A developer wants to inspect custom log messages emitted by a NodeJS Lambda function. Which TWO CloudWatch features help view and query these logs efficiently? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon CloudWatch Logs Streams generated automatically per Lambda container"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudWatch Logs Insights to run interactive SQL-like queries across log groups"
+      },
+      {
+        "id": "C",
+        "text": "AWS X-Ray Active Tracing"
+      },
+      {
+        "id": "D",
+        "text": "Amazon CloudWatch Metric Filters"
+      },
+      {
+        "id": "E",
+        "text": "AWS CloudTrail Event History"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Lambda automatically streams console.log messages to CloudWatch Log Streams under /aws/lambda/<function-name>. CloudWatch Logs Insights allows querying across these log streams.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q64",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A distributed application composed of API Gateway, Lambda, and DynamoDB is experiencing elevated response latencies. The developer needs to trace requests across all microservices to identify bottlenecks. Which service should be enabled?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS X-Ray"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS X-Ray helps developers analyze and debug distributed, microservice-based applications. It generates service maps and traces end-to-end user requests.",
+    "awsDocUrl": "https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dvac02-s3-q65",
+    "setId": 3,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "Which file in an application source code repository instructs AWS CodeDeploy how to deploy the application onto EC2 or on-premises instances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "buildspec.yml"
+      },
+      {
+        "id": "B",
+        "text": "appspec.yml"
+      },
+      {
+        "id": "C",
+        "text": "template.yaml"
+      },
+      {
+        "id": "D",
+        "text": "dockerrun.aws.json"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "The AppSpec file (appspec.yml or appspec.json) is used by AWS CodeDeploy to define deployment actions, file mappings, and lifecycle hooks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html",
+    "difficulty": "Standard"
   }
 ]

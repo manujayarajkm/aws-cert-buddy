@@ -1,2351 +1,2307 @@
 [
   {
-    "id": "ans-c01-sim-s4-q1",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q2",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q3",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q4",
+    "id": "ansc01-s4-q1",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A network architect is designing a multi-region VPC routing topology connecting 100 VPCs to a corporate data center via a 10 Gbps AWS Direct Connect Dedicated Connection. Which component provides scalable multi-region Transit Gateway routing over Direct Connect?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Direct Connect Gateway attached to regional AWS Transit Gateways"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "VPC Peering full mesh"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Virtual Private Gateway with BGP active-passive"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS VPN CloudHub"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Direct Connect Gateway allows a Direct Connect location to connect to AWS Transit Gateways across any AWS region, providing scalable multi-region hybrid networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q5",
+    "id": "ansc01-s4-q2",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise requires a dedicated 10 Gbps physical link to AWS. The network team needs maximum security against eavesdropping by encrypting all traffic over the physical Direct Connect circuit at Layer 2. Which technology provides Layer 2 encryption?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "MACsec (Media Access Control Security)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Implementation"
+        "text": "IPsec VPN over Direct Connect"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "TLS 1.3 over HTTPS"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "SSL VPN"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "MACsec (IEEE 802.1AE) provides point-to-point Layer 2 encryption over dedicated 10 Gbps and 100 Gbps AWS Direct Connect connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-macsec.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q3",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which Network Load Balancer (NLB) feature preserves the original client IP address in TCP packet headers forwarded to backend EC2 targets without requiring HTTP headers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Target Group Client IP Preservation setting"
+      },
+      {
+        "id": "B",
+        "text": "Proxy Protocol v2"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Alias Record"
+      },
+      {
+        "id": "D",
+        "text": "AWS Global Accelerator Anycast"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "NLBs natively preserve client IP addresses for targets registered by instance ID, allowing backend servers to see true source client IPs without Proxy Protocol.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#client-ip-preservation",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q4",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to route outgoing internet traffic from 50 private VPC subnets through a centralized inspection VPC containing a fleet of third-party firewall appliances. Which feature routes traffic seamlessly through virtual appliances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Gateway Load Balancer (GWLB) with Transit Gateway appliance VPC routing"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering mesh"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Resolver"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway in every private subnet"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Gateway Load Balancer (GWLB) simplifies deploying, scaling, and managing third-party virtual appliances by combining a transparent network gateway and load balancer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q5",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network engineer needs to establish dynamic BGP routing over an AWS Site-to-Site IPsec VPN connection between an on-premises router and an AWS Transit Gateway. How many IPsec tunnels does a standard AWS Site-to-Site VPN provide for high availability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two active IPsec tunnels per VPN connection"
+      },
+      {
+        "id": "B",
+        "text": "One single tunnel"
+      },
+      {
+        "id": "C",
+        "text": "Four passive tunnels"
+      },
+      {
+        "id": "D",
+        "text": "Eight redundant tunnels"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "An AWS Site-to-Site VPN connection consists of two redundant IPsec tunnels configured with separate endpoint IP addresses for high availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q6",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network architect is designing a multi-region VPC routing topology connecting 100 VPCs to a corporate data center via a 10 Gbps AWS Direct Connect Dedicated Connection. Which component provides scalable multi-region Transit Gateway routing over Direct Connect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Direct Connect Gateway attached to regional AWS Transit Gateways"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering full mesh"
+      },
+      {
+        "id": "C",
+        "text": "Virtual Private Gateway with BGP active-passive"
+      },
+      {
+        "id": "D",
+        "text": "AWS VPN CloudHub"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Direct Connect Gateway allows a Direct Connect location to connect to AWS Transit Gateways across any AWS region, providing scalable multi-region hybrid networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q7",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which Network Load Balancer (NLB) feature preserves the original client IP address in TCP packet headers forwarded to backend EC2 targets without requiring HTTP headers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Target Group Client IP Preservation setting"
+      },
+      {
+        "id": "B",
+        "text": "Proxy Protocol v2"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Alias Record"
+      },
+      {
+        "id": "D",
+        "text": "AWS Global Accelerator Anycast"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "NLBs natively preserve client IP addresses for targets registered by instance ID, allowing backend servers to see true source client IPs without Proxy Protocol.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#client-ip-preservation",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q8",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to route outgoing internet traffic from 50 private VPC subnets through a centralized inspection VPC containing a fleet of third-party firewall appliances. Which feature routes traffic seamlessly through virtual appliances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Gateway Load Balancer (GWLB) with Transit Gateway appliance VPC routing"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering mesh"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Resolver"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway in every private subnet"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Gateway Load Balancer (GWLB) simplifies deploying, scaling, and managing third-party virtual appliances by combining a transparent network gateway and load balancer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q9",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network administrator needs to capture raw packet payloads and TCP header flags from ENIs in a private subnet and stream them to an out-of-band network monitoring virtual appliance in another VPC. Which feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Traffic Mirroring"
+      },
+      {
+        "id": "B",
+        "text": "VPC Flow Logs"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Traffic Mirroring allows copying raw network traffic (L2-L4 payloads) from elastic network interfaces and forwarding it to in-line monitoring or security tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q10",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise requires a dedicated 10 Gbps physical link to AWS. The network team needs maximum security against eavesdropping by encrypting all traffic over the physical Direct Connect circuit at Layer 2. Which technology provides Layer 2 encryption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MACsec (Media Access Control Security)"
+      },
+      {
+        "id": "B",
+        "text": "IPsec VPN over Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "TLS 1.3 over HTTPS"
+      },
+      {
+        "id": "D",
+        "text": "SSL VPN"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "MACsec (IEEE 802.1AE) provides point-to-point Layer 2 encryption over dedicated 10 Gbps and 100 Gbps AWS Direct Connect connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-macsec.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q11",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network engineer needs to establish dynamic BGP routing over an AWS Site-to-Site IPsec VPN connection between an on-premises router and an AWS Transit Gateway. How many IPsec tunnels does a standard AWS Site-to-Site VPN provide for high availability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two active IPsec tunnels per VPN connection"
+      },
+      {
+        "id": "B",
+        "text": "One single tunnel"
+      },
+      {
+        "id": "C",
+        "text": "Four passive tunnels"
+      },
+      {
+        "id": "D",
+        "text": "Eight redundant tunnels"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "An AWS Site-to-Site VPN connection consists of two redundant IPsec tunnels configured with separate endpoint IP addresses for high availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q12",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A company needs to configure private DNS resolution between on-premises Active Directory DNS servers and Route 53 Private Hosted Zones in an AWS VPC. Which TWO Route 53 Resolver components are required? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Route 53 Resolver Inbound Endpoint (receives DNS queries from on-premises)"
+      },
+      {
+        "id": "B",
+        "text": "Route 53 Resolver Outbound Endpoint (forwards VPC DNS queries to on-premises)"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Traffic Flow"
+      },
+      {
+        "id": "D",
+        "text": "Route 53 Latency Routing Policy"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "CloudFront Origin Group"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Inbound Resolver Endpoints allow on-prem DNS servers to resolve AWS Private Hosted Zones. Outbound Resolver Endpoints forward VPC DNS queries to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q6",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q7",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 7",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q8",
+    "id": "ansc01-s4-q13",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise requires 100 Gbps network bandwidth between specialized EC2 instances running in a single Availability Zone for high-performance computing (HPC) workloads. Which network technology enables low-latency OS bypass RDMA communication?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Elastic Fabric Adapter (EFA)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "Elastic Network Adapter (ENA)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Virtual Private Gateway"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "VPC Gateway Endpoint"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Elastic Fabric Adapter (EFA) is a network interface for EC2 instances that provides OS-bypass capability, enabling HPC applications to achieve ultra-low latency RDMA communication.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q9",
+    "id": "ansc01-s4-q14",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An application hosted on EC2 in us-east-1 requires static IP addresses to whitelist with client firewalls, while routing incoming user traffic across multiple AWS regions over the AWS global network backbone with lowest latency. Which service satisfies this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
+        "text": "AWS Global Accelerator"
       },
       {
         "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Amazon Route 53 Geolocation Routing"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon CloudFront"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Direct Connect"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Global Accelerator provides two static Anycast IP addresses that serve as a fixed entry point and route incoming traffic over the AWS global network to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "ans-c01-sim-s4-q10",
+    "id": "ansc01-s4-q15",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to route outgoing internet traffic from 50 private VPC subnets through a centralized inspection VPC containing a fleet of third-party firewall appliances. Which feature routes traffic seamlessly through virtual appliances?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "AWS Gateway Load Balancer (GWLB) with Transit Gateway appliance VPC routing"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Management and Operations"
+        "text": "VPC Peering mesh"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Route 53 Resolver"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "NAT Gateway in every private subnet"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Gateway Load Balancer (GWLB) simplifies deploying, scaling, and managing third-party virtual appliances by combining a transparent network gateway and load balancer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q16",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to route outgoing internet traffic from 50 private VPC subnets through a centralized inspection VPC containing a fleet of third-party firewall appliances. Which feature routes traffic seamlessly through virtual appliances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Gateway Load Balancer (GWLB) with Transit Gateway appliance VPC routing"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering mesh"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Resolver"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway in every private subnet"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Gateway Load Balancer (GWLB) simplifies deploying, scaling, and managing third-party virtual appliances by combining a transparent network gateway and load balancer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q17",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise requires a dedicated 10 Gbps physical link to AWS. The network team needs maximum security against eavesdropping by encrypting all traffic over the physical Direct Connect circuit at Layer 2. Which technology provides Layer 2 encryption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MACsec (Media Access Control Security)"
+      },
+      {
+        "id": "B",
+        "text": "IPsec VPN over Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "TLS 1.3 over HTTPS"
+      },
+      {
+        "id": "D",
+        "text": "SSL VPN"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "MACsec (IEEE 802.1AE) provides point-to-point Layer 2 encryption over dedicated 10 Gbps and 100 Gbps AWS Direct Connect connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-macsec.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q18",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which Network Load Balancer (NLB) feature preserves the original client IP address in TCP packet headers forwarded to backend EC2 targets without requiring HTTP headers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Target Group Client IP Preservation setting"
+      },
+      {
+        "id": "B",
+        "text": "Proxy Protocol v2"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Alias Record"
+      },
+      {
+        "id": "D",
+        "text": "AWS Global Accelerator Anycast"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "NLBs natively preserve client IP addresses for targets registered by instance ID, allowing backend servers to see true source client IPs without Proxy Protocol.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#client-ip-preservation",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q19",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network administrator needs to capture raw packet payloads and TCP header flags from ENIs in a private subnet and stream them to an out-of-band network monitoring virtual appliance in another VPC. Which feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Traffic Mirroring"
+      },
+      {
+        "id": "B",
+        "text": "VPC Flow Logs"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Traffic Mirroring allows copying raw network traffic (L2-L4 payloads) from elastic network interfaces and forwarding it to in-line monitoring or security tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q20",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network engineer needs to connect a private application in VPC A to a database in VPC B. Both VPCs have overlapping IPv4 CIDR blocks (`10.0.0.0/16`). VPC Peering cannot be established due to CIDR overlap. What is the MOST effective solution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expose the database via an AWS PrivateLink (VPC Endpoint Service) behind a Network Load Balancer"
+      },
+      {
+        "id": "B",
+        "text": "Force VPC Peering with NAT translation rules"
+      },
+      {
+        "id": "C",
+        "text": "Migrate all subnets to public IPv4 space"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the entire AWS account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS PrivateLink uses Network Load Balancers and Interface VPC Endpoints to route traffic privately across overlapping CIDRs without needing network-level IP peering.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q21",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise requires 100 Gbps network bandwidth between specialized EC2 instances running in a single Availability Zone for high-performance computing (HPC) workloads. Which network technology enables low-latency OS bypass RDMA communication?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elastic Fabric Adapter (EFA)"
+      },
+      {
+        "id": "B",
+        "text": "Elastic Network Adapter (ENA)"
+      },
+      {
+        "id": "C",
+        "text": "Virtual Private Gateway"
+      },
+      {
+        "id": "D",
+        "text": "VPC Gateway Endpoint"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Elastic Fabric Adapter (EFA) is a network interface for EC2 instances that provides OS-bypass capability, enabling HPC applications to achieve ultra-low latency RDMA communication.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q22",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application hosted on EC2 in us-east-1 requires static IP addresses to whitelist with client firewalls, while routing incoming user traffic across multiple AWS regions over the AWS global network backbone with lowest latency. Which service satisfies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator provides two static Anycast IP addresses that serve as a fixed entry point and route incoming traffic over the AWS global network to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q23",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application hosted on EC2 in us-east-1 requires static IP addresses to whitelist with client firewalls, while routing incoming user traffic across multiple AWS regions over the AWS global network backbone with lowest latency. Which service satisfies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator provides two static Anycast IP addresses that serve as a fixed entry point and route incoming traffic over the AWS global network to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q24",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to route outgoing internet traffic from 50 private VPC subnets through a centralized inspection VPC containing a fleet of third-party firewall appliances. Which feature routes traffic seamlessly through virtual appliances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Gateway Load Balancer (GWLB) with Transit Gateway appliance VPC routing"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering mesh"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Resolver"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway in every private subnet"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Gateway Load Balancer (GWLB) simplifies deploying, scaling, and managing third-party virtual appliances by combining a transparent network gateway and load balancer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q25",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application hosted on EC2 in us-east-1 requires static IP addresses to whitelist with client firewalls, while routing incoming user traffic across multiple AWS regions over the AWS global network backbone with lowest latency. Which service satisfies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator provides two static Anycast IP addresses that serve as a fixed entry point and route incoming traffic over the AWS global network to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q26",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network architect is designing a multi-region VPC routing topology connecting 100 VPCs to a corporate data center via a 10 Gbps AWS Direct Connect Dedicated Connection. Which component provides scalable multi-region Transit Gateway routing over Direct Connect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Direct Connect Gateway attached to regional AWS Transit Gateways"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering full mesh"
+      },
+      {
+        "id": "C",
+        "text": "Virtual Private Gateway with BGP active-passive"
+      },
+      {
+        "id": "D",
+        "text": "AWS VPN CloudHub"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Direct Connect Gateway allows a Direct Connect location to connect to AWS Transit Gateways across any AWS region, providing scalable multi-region hybrid networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q27",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which Network Load Balancer (NLB) feature preserves the original client IP address in TCP packet headers forwarded to backend EC2 targets without requiring HTTP headers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Target Group Client IP Preservation setting"
+      },
+      {
+        "id": "B",
+        "text": "Proxy Protocol v2"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Alias Record"
+      },
+      {
+        "id": "D",
+        "text": "AWS Global Accelerator Anycast"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "NLBs natively preserve client IP addresses for targets registered by instance ID, allowing backend servers to see true source client IPs without Proxy Protocol.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#client-ip-preservation",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q28",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to route outgoing internet traffic from 50 private VPC subnets through a centralized inspection VPC containing a fleet of third-party firewall appliances. Which feature routes traffic seamlessly through virtual appliances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Gateway Load Balancer (GWLB) with Transit Gateway appliance VPC routing"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering mesh"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Resolver"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway in every private subnet"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Gateway Load Balancer (GWLB) simplifies deploying, scaling, and managing third-party virtual appliances by combining a transparent network gateway and load balancer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q29",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which Network Load Balancer (NLB) feature preserves the original client IP address in TCP packet headers forwarded to backend EC2 targets without requiring HTTP headers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Target Group Client IP Preservation setting"
+      },
+      {
+        "id": "B",
+        "text": "Proxy Protocol v2"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Alias Record"
+      },
+      {
+        "id": "D",
+        "text": "AWS Global Accelerator Anycast"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "NLBs natively preserve client IP addresses for targets registered by instance ID, allowing backend servers to see true source client IPs without Proxy Protocol.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#client-ip-preservation",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q30",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network engineer needs to connect a private application in VPC A to a database in VPC B. Both VPCs have overlapping IPv4 CIDR blocks (`10.0.0.0/16`). VPC Peering cannot be established due to CIDR overlap. What is the MOST effective solution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expose the database via an AWS PrivateLink (VPC Endpoint Service) behind a Network Load Balancer"
+      },
+      {
+        "id": "B",
+        "text": "Force VPC Peering with NAT translation rules"
+      },
+      {
+        "id": "C",
+        "text": "Migrate all subnets to public IPv4 space"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the entire AWS account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS PrivateLink uses Network Load Balancers and Interface VPC Endpoints to route traffic privately across overlapping CIDRs without needing network-level IP peering.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q31",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network administrator needs to capture raw packet payloads and TCP header flags from ENIs in a private subnet and stream them to an out-of-band network monitoring virtual appliance in another VPC. Which feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Traffic Mirroring"
+      },
+      {
+        "id": "B",
+        "text": "VPC Flow Logs"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Traffic Mirroring allows copying raw network traffic (L2-L4 payloads) from elastic network interfaces and forwarding it to in-line monitoring or security tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q32",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A company needs to configure private DNS resolution between on-premises Active Directory DNS servers and Route 53 Private Hosted Zones in an AWS VPC. Which TWO Route 53 Resolver components are required? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Route 53 Resolver Inbound Endpoint (receives DNS queries from on-premises)"
+      },
+      {
+        "id": "B",
+        "text": "Route 53 Resolver Outbound Endpoint (forwards VPC DNS queries to on-premises)"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Traffic Flow"
+      },
+      {
+        "id": "D",
+        "text": "Route 53 Latency Routing Policy"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "CloudFront Origin Group"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Inbound Resolver Endpoints allow on-prem DNS servers to resolve AWS Private Hosted Zones. Outbound Resolver Endpoints forward VPC DNS queries to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q11",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q12",
+    "id": "ansc01-s4-q33",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise requires a dedicated 10 Gbps physical link to AWS. The network team needs maximum security against eavesdropping by encrypting all traffic over the physical Direct Connect circuit at Layer 2. Which technology provides Layer 2 encryption?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "MACsec (Media Access Control Security)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "IPsec VPN over Direct Connect"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "TLS 1.3 over HTTPS"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "SSL VPN"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "MACsec (IEEE 802.1AE) provides point-to-point Layer 2 encryption over dedicated 10 Gbps and 100 Gbps AWS Direct Connect connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-macsec.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q13",
+    "id": "ansc01-s4-q34",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A network administrator needs to capture raw packet payloads and TCP header flags from ENIs in a private subnet and stream them to an out-of-band network monitoring virtual appliance in another VPC. Which feature enables this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
+        "text": "VPC Traffic Mirroring"
       },
       {
         "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "VPC Flow Logs"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon CloudWatch Logs"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CloudTrail"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "VPC Traffic Mirroring allows copying raw network traffic (L2-L4 payloads) from elastic network interfaces and forwarding it to in-line monitoring or security tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q14",
+    "id": "ansc01-s4-q35",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 14",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q15",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to configure private DNS resolution between on-premises Active Directory DNS servers and Route 53 Private Hosted Zones in an AWS VPC. Which TWO Route 53 Resolver components are required? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Route 53 Resolver Inbound Endpoint (receives DNS queries from on-premises)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Security"
+        "text": "Route 53 Resolver Outbound Endpoint (forwards VPC DNS queries to on-premises)"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Route 53 Traffic Flow"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Route 53 Latency Routing Policy"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "CloudFront Origin Group"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Inbound Resolver Endpoints allow on-prem DNS servers to resolve AWS Private Hosted Zones. Outbound Resolver Endpoints forward VPC DNS queries to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q16",
+    "id": "ansc01-s4-q36",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A network architect is designing a multi-region VPC routing topology connecting 100 VPCs to a corporate data center via a 10 Gbps AWS Direct Connect Dedicated Connection. Which component provides scalable multi-region Transit Gateway routing over Direct Connect?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Direct Connect Gateway attached to regional AWS Transit Gateways"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "VPC Peering full mesh"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Virtual Private Gateway with BGP active-passive"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS VPN CloudHub"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Direct Connect Gateway allows a Direct Connect location to connect to AWS Transit Gateways across any AWS region, providing scalable multi-region hybrid networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q17",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q18",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q19",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q20",
+    "id": "ansc01-s4-q37",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A network engineer needs to establish dynamic BGP routing over an AWS Site-to-Site IPsec VPN connection between an on-premises router and an AWS Transit Gateway. How many IPsec tunnels does a standard AWS Site-to-Site VPN provide for high availability?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Two active IPsec tunnels per VPN connection"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Design"
+        "text": "One single tunnel"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Four passive tunnels"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Eight redundant tunnels"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "An AWS Site-to-Site VPN connection consists of two redundant IPsec tunnels configured with separate endpoint IP addresses for high availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q38",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A company needs to configure private DNS resolution between on-premises Active Directory DNS servers and Route 53 Private Hosted Zones in an AWS VPC. Which TWO Route 53 Resolver components are required? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Route 53 Resolver Inbound Endpoint (receives DNS queries from on-premises)"
+      },
+      {
+        "id": "B",
+        "text": "Route 53 Resolver Outbound Endpoint (forwards VPC DNS queries to on-premises)"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Traffic Flow"
+      },
+      {
+        "id": "D",
+        "text": "Route 53 Latency Routing Policy"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "CloudFront Origin Group"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Inbound Resolver Endpoints allow on-prem DNS servers to resolve AWS Private Hosted Zones. Outbound Resolver Endpoints forward VPC DNS queries to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q21",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 21",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q22",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q23",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q24",
+    "id": "ansc01-s4-q39",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise requires 100 Gbps network bandwidth between specialized EC2 instances running in a single Availability Zone for high-performance computing (HPC) workloads. Which network technology enables low-latency OS bypass RDMA communication?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Elastic Fabric Adapter (EFA)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "Elastic Network Adapter (ENA)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Virtual Private Gateway"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "VPC Gateway Endpoint"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Elastic Fabric Adapter (EFA) is a network interface for EC2 instances that provides OS-bypass capability, enabling HPC applications to achieve ultra-low latency RDMA communication.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q25",
+    "id": "ansc01-s4-q40",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A network engineer needs to connect a private application in VPC A to a database in VPC B. Both VPCs have overlapping IPv4 CIDR blocks (`10.0.0.0/16`). VPC Peering cannot be established due to CIDR overlap. What is the MOST effective solution?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Expose the database via an AWS PrivateLink (VPC Endpoint Service) behind a Network Load Balancer"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Implementation"
+        "text": "Force VPC Peering with NAT translation rules"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Migrate all subnets to public IPv4 space"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Re-create the entire AWS account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS PrivateLink uses Network Load Balancers and Interface VPC Endpoints to route traffic privately across overlapping CIDRs without needing network-level IP peering.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q41",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise requires a dedicated 10 Gbps physical link to AWS. The network team needs maximum security against eavesdropping by encrypting all traffic over the physical Direct Connect circuit at Layer 2. Which technology provides Layer 2 encryption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MACsec (Media Access Control Security)"
+      },
+      {
+        "id": "B",
+        "text": "IPsec VPN over Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "TLS 1.3 over HTTPS"
+      },
+      {
+        "id": "D",
+        "text": "SSL VPN"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "MACsec (IEEE 802.1AE) provides point-to-point Layer 2 encryption over dedicated 10 Gbps and 100 Gbps AWS Direct Connect connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-macsec.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q42",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network architect is designing a multi-region VPC routing topology connecting 100 VPCs to a corporate data center via a 10 Gbps AWS Direct Connect Dedicated Connection. Which component provides scalable multi-region Transit Gateway routing over Direct Connect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Direct Connect Gateway attached to regional AWS Transit Gateways"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering full mesh"
+      },
+      {
+        "id": "C",
+        "text": "Virtual Private Gateway with BGP active-passive"
+      },
+      {
+        "id": "D",
+        "text": "AWS VPN CloudHub"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Direct Connect Gateway allows a Direct Connect location to connect to AWS Transit Gateways across any AWS region, providing scalable multi-region hybrid networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q43",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application hosted on EC2 in us-east-1 requires static IP addresses to whitelist with client firewalls, while routing incoming user traffic across multiple AWS regions over the AWS global network backbone with lowest latency. Which service satisfies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator provides two static Anycast IP addresses that serve as a fixed entry point and route incoming traffic over the AWS global network to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q44",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network architect is designing a multi-region VPC routing topology connecting 100 VPCs to a corporate data center via a 10 Gbps AWS Direct Connect Dedicated Connection. Which component provides scalable multi-region Transit Gateway routing over Direct Connect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Direct Connect Gateway attached to regional AWS Transit Gateways"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering full mesh"
+      },
+      {
+        "id": "C",
+        "text": "Virtual Private Gateway with BGP active-passive"
+      },
+      {
+        "id": "D",
+        "text": "AWS VPN CloudHub"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Direct Connect Gateway allows a Direct Connect location to connect to AWS Transit Gateways across any AWS region, providing scalable multi-region hybrid networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q45",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network engineer needs to connect a private application in VPC A to a database in VPC B. Both VPCs have overlapping IPv4 CIDR blocks (`10.0.0.0/16`). VPC Peering cannot be established due to CIDR overlap. What is the MOST effective solution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expose the database via an AWS PrivateLink (VPC Endpoint Service) behind a Network Load Balancer"
+      },
+      {
+        "id": "B",
+        "text": "Force VPC Peering with NAT translation rules"
+      },
+      {
+        "id": "C",
+        "text": "Migrate all subnets to public IPv4 space"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the entire AWS account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS PrivateLink uses Network Load Balancers and Interface VPC Endpoints to route traffic privately across overlapping CIDRs without needing network-level IP peering.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q46",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application hosted on EC2 in us-east-1 requires static IP addresses to whitelist with client firewalls, while routing incoming user traffic across multiple AWS regions over the AWS global network backbone with lowest latency. Which service satisfies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator provides two static Anycast IP addresses that serve as a fixed entry point and route incoming traffic over the AWS global network to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q47",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application hosted on EC2 in us-east-1 requires static IP addresses to whitelist with client firewalls, while routing incoming user traffic across multiple AWS regions over the AWS global network backbone with lowest latency. Which service satisfies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator provides two static Anycast IP addresses that serve as a fixed entry point and route incoming traffic over the AWS global network to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q48",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise requires 100 Gbps network bandwidth between specialized EC2 instances running in a single Availability Zone for high-performance computing (HPC) workloads. Which network technology enables low-latency OS bypass RDMA communication?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elastic Fabric Adapter (EFA)"
+      },
+      {
+        "id": "B",
+        "text": "Elastic Network Adapter (ENA)"
+      },
+      {
+        "id": "C",
+        "text": "Virtual Private Gateway"
+      },
+      {
+        "id": "D",
+        "text": "VPC Gateway Endpoint"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Elastic Fabric Adapter (EFA) is a network interface for EC2 instances that provides OS-bypass capability, enabling HPC applications to achieve ultra-low latency RDMA communication.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q49",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which Network Load Balancer (NLB) feature preserves the original client IP address in TCP packet headers forwarded to backend EC2 targets without requiring HTTP headers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Target Group Client IP Preservation setting"
+      },
+      {
+        "id": "B",
+        "text": "Proxy Protocol v2"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Alias Record"
+      },
+      {
+        "id": "D",
+        "text": "AWS Global Accelerator Anycast"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "NLBs natively preserve client IP addresses for targets registered by instance ID, allowing backend servers to see true source client IPs without Proxy Protocol.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html#client-ip-preservation",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q50",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A network administrator needs to capture raw packet payloads and TCP header flags from ENIs in a private subnet and stream them to an out-of-band network monitoring virtual appliance in another VPC. Which feature enables this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Traffic Mirroring"
+      },
+      {
+        "id": "B",
+        "text": "VPC Flow Logs"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Traffic Mirroring allows copying raw network traffic (L2-L4 payloads) from elastic network interfaces and forwarding it to in-line monitoring or security tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q51",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A network engineer needs to connect a private application in VPC A to a database in VPC B. Both VPCs have overlapping IPv4 CIDR blocks (`10.0.0.0/16`). VPC Peering cannot be established due to CIDR overlap. What is the MOST effective solution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expose the database via an AWS PrivateLink (VPC Endpoint Service) behind a Network Load Balancer"
+      },
+      {
+        "id": "B",
+        "text": "Force VPC Peering with NAT translation rules"
+      },
+      {
+        "id": "C",
+        "text": "Migrate all subnets to public IPv4 space"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the entire AWS account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS PrivateLink uses Network Load Balancers and Interface VPC Endpoints to route traffic privately across overlapping CIDRs without needing network-level IP peering.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q52",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An enterprise requires a dedicated 10 Gbps physical link to AWS. The network team needs maximum security against eavesdropping by encrypting all traffic over the physical Direct Connect circuit at Layer 2. Which technology provides Layer 2 encryption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MACsec (Media Access Control Security)"
+      },
+      {
+        "id": "B",
+        "text": "IPsec VPN over Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "TLS 1.3 over HTTPS"
+      },
+      {
+        "id": "D",
+        "text": "SSL VPN"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "MACsec (IEEE 802.1AE) provides point-to-point Layer 2 encryption over dedicated 10 Gbps and 100 Gbps AWS Direct Connect connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-macsec.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q53",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A company needs to configure private DNS resolution between on-premises Active Directory DNS servers and Route 53 Private Hosted Zones in an AWS VPC. Which TWO Route 53 Resolver components are required? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Route 53 Resolver Inbound Endpoint (receives DNS queries from on-premises)"
+      },
+      {
+        "id": "B",
+        "text": "Route 53 Resolver Outbound Endpoint (forwards VPC DNS queries to on-premises)"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Traffic Flow"
+      },
+      {
+        "id": "D",
+        "text": "Route 53 Latency Routing Policy"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "CloudFront Origin Group"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Inbound Resolver Endpoints allow on-prem DNS servers to resolve AWS Private Hosted Zones. Outbound Resolver Endpoints forward VPC DNS queries to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q26",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q27",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q28",
+    "id": "ansc01-s4-q54",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 28",
+    "isScored": false,
+    "scenario": "An enterprise requires 100 Gbps network bandwidth between specialized EC2 instances running in a single Availability Zone for high-performance computing (HPC) workloads. Which network technology enables low-latency OS bypass RDMA communication?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Elastic Fabric Adapter (EFA)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "Elastic Network Adapter (ENA)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Virtual Private Gateway"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "VPC Gateway Endpoint"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Elastic Fabric Adapter (EFA) is a network interface for EC2 instances that provides OS-bypass capability, enabling HPC applications to achieve ultra-low latency RDMA communication.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q29",
+    "id": "ansc01-s4-q55",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "An enterprise requires a dedicated 10 Gbps physical link to AWS. The network team needs maximum security against eavesdropping by encrypting all traffic over the physical Direct Connect circuit at Layer 2. Which technology provides Layer 2 encryption?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
+        "text": "MACsec (Media Access Control Security)"
       },
       {
         "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "IPsec VPN over Direct Connect"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "TLS 1.3 over HTTPS"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "SSL VPN"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "MACsec (IEEE 802.1AE) provides point-to-point Layer 2 encryption over dedicated 10 Gbps and 100 Gbps AWS Direct Connect connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-macsec.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q30",
+    "id": "ansc01-s4-q56",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A network administrator needs to capture raw packet payloads and TCP header flags from ENIs in a private subnet and stream them to an out-of-band network monitoring virtual appliance in another VPC. Which feature enables this?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "VPC Traffic Mirroring"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Management and Operations"
+        "text": "VPC Flow Logs"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon CloudWatch Logs"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Traffic Mirroring allows copying raw network traffic (L2-L4 payloads) from elastic network interfaces and forwarding it to in-line monitoring or security tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q57",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A network architect is designing a multi-region VPC routing topology connecting 100 VPCs to a corporate data center via a 10 Gbps AWS Direct Connect Dedicated Connection. Which component provides scalable multi-region Transit Gateway routing over Direct Connect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Direct Connect Gateway attached to regional AWS Transit Gateways"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering full mesh"
+      },
+      {
+        "id": "C",
+        "text": "Virtual Private Gateway with BGP active-passive"
+      },
+      {
+        "id": "D",
+        "text": "AWS VPN CloudHub"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Direct Connect Gateway allows a Direct Connect location to connect to AWS Transit Gateways across any AWS region, providing scalable multi-region hybrid networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q58",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A network engineer needs to connect a private application in VPC A to a database in VPC B. Both VPCs have overlapping IPv4 CIDR blocks (`10.0.0.0/16`). VPC Peering cannot be established due to CIDR overlap. What is the MOST effective solution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expose the database via an AWS PrivateLink (VPC Endpoint Service) behind a Network Load Balancer"
+      },
+      {
+        "id": "B",
+        "text": "Force VPC Peering with NAT translation rules"
+      },
+      {
+        "id": "C",
+        "text": "Migrate all subnets to public IPv4 space"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the entire AWS account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS PrivateLink uses Network Load Balancers and Interface VPC Endpoints to route traffic privately across overlapping CIDRs without needing network-level IP peering.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ansc01-s4-q59",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A network engineer needs to establish dynamic BGP routing over an AWS Site-to-Site IPsec VPN connection between an on-premises router and an AWS Transit Gateway. How many IPsec tunnels does a standard AWS Site-to-Site VPN provide for high availability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two active IPsec tunnels per VPN connection"
+      },
+      {
+        "id": "B",
+        "text": "One single tunnel"
+      },
+      {
+        "id": "C",
+        "text": "Four passive tunnels"
+      },
+      {
+        "id": "D",
+        "text": "Eight redundant tunnels"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "An AWS Site-to-Site VPN connection consists of two redundant IPsec tunnels configured with separate endpoint IP addresses for high availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q60",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A network engineer needs to establish dynamic BGP routing over an AWS Site-to-Site IPsec VPN connection between an on-premises router and an AWS Transit Gateway. How many IPsec tunnels does a standard AWS Site-to-Site VPN provide for high availability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two active IPsec tunnels per VPN connection"
+      },
+      {
+        "id": "B",
+        "text": "One single tunnel"
+      },
+      {
+        "id": "C",
+        "text": "Four passive tunnels"
+      },
+      {
+        "id": "D",
+        "text": "Eight redundant tunnels"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "An AWS Site-to-Site VPN connection consists of two redundant IPsec tunnels configured with separate endpoint IP addresses for high availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "ansc01-s4-q61",
+    "setId": 4,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A company needs to configure private DNS resolution between on-premises Active Directory DNS servers and Route 53 Private Hosted Zones in an AWS VPC. Which TWO Route 53 Resolver components are required? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Route 53 Resolver Inbound Endpoint (receives DNS queries from on-premises)"
+      },
+      {
+        "id": "B",
+        "text": "Route 53 Resolver Outbound Endpoint (forwards VPC DNS queries to on-premises)"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Traffic Flow"
+      },
+      {
+        "id": "D",
+        "text": "Route 53 Latency Routing Policy"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "CloudFront Origin Group"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Inbound Resolver Endpoints allow on-prem DNS servers to resolve AWS Private Hosted Zones. Outbound Resolver Endpoints forward VPC DNS queries to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q31",
+    "id": "ansc01-s4-q62",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A network administrator needs to capture raw packet payloads and TCP header flags from ENIs in a private subnet and stream them to an out-of-band network monitoring virtual appliance in another VPC. Which feature enables this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
+        "text": "VPC Traffic Mirroring"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "VPC Flow Logs"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon CloudWatch Logs"
       },
       {
         "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "AWS CloudTrail"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "VPC Traffic Mirroring allows copying raw network traffic (L2-L4 payloads) from elastic network interfaces and forwarding it to in-line monitoring or security tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q32",
+    "id": "ansc01-s4-q63",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "An enterprise requires 100 Gbps network bandwidth between specialized EC2 instances running in a single Availability Zone for high-performance computing (HPC) workloads. Which network technology enables low-latency OS bypass RDMA communication?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Elastic Fabric Adapter (EFA)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "Elastic Network Adapter (ENA)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Virtual Private Gateway"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "VPC Gateway Endpoint"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Elastic Fabric Adapter (EFA) is a network interface for EC2 instances that provides OS-bypass capability, enabling HPC applications to achieve ultra-low latency RDMA communication.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q33",
+    "id": "ansc01-s4-q64",
     "setId": 4,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A company needs to route outgoing internet traffic from 50 private VPC subnets through a centralized inspection VPC containing a fleet of third-party firewall appliances. Which feature routes traffic seamlessly through virtual appliances?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
+        "text": "AWS Gateway Load Balancer (GWLB) with Transit Gateway appliance VPC routing"
       },
       {
         "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "VPC Peering mesh"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Route 53 Resolver"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "NAT Gateway in every private subnet"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Gateway Load Balancer (GWLB) simplifies deploying, scaling, and managing third-party virtual appliances by combining a transparent network gateway and load balancer.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-sim-s4-q34",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q35",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Security"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "ans-c01-sim-s4-q36",
+    "id": "ansc01-s4-q65",
     "setId": 4,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainName": "Domain 1: Network Design, Implementation & Security",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A network engineer needs to establish dynamic BGP routing over an AWS Site-to-Site IPsec VPN connection between an on-premises router and an AWS Transit Gateway. How many IPsec tunnels does a standard AWS Site-to-Site VPN provide for high availability?",
     "options": [
       {
         "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+        "text": "Two active IPsec tunnels per VPN connection"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
+        "text": "One single tunnel"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Four passive tunnels"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Eight redundant tunnels"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q37",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q38",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q39",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q40",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Design"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q41",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q42",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 42",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q43",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q44",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q45",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Implementation"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q46",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q47",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q48",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q49",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 49",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q50",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Management and Operations"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q51",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q52",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q53",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q54",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q55",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Security"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q56",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 56",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q57",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q58",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q59",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q60",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Design"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q61",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Implementation"
-      },
-      {
-        "id": "B",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q62",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Management and Operations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Management and Operations"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q63",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Security during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws ans sim-test --set 4 --q 63",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q64",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Design while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Network Design"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-sim-s4-q65",
-    "setId": 4,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Direct Connect Gateway BGP Peering within Network Implementation during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Network Implementation"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "An AWS Site-to-Site VPN connection consists of two redundant IPsec tunnels configured with separate endpoint IP addresses for high availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
+    "difficulty": "Standard"
   }
 ]

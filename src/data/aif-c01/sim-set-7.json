@@ -1,6 +1,6 @@
 [
   {
-    "id": "aif-c01-sim-s7-q1",
+    "id": "aifc01-s7-q1",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d1",
@@ -8,34 +8,104 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of AI and ML for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service provides pre-trained computer vision capabilities (such as object detection, face analysis, and text extraction from images) via API without requiring custom model training?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Amazon Rekognition"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
+        "text": "Amazon Comprehend"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Polly"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Transcribe"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon Rekognition makes it easy to add image and video analysis to applications using pre-trained computer vision models via simple API calls.",
+    "awsDocUrl": "https://docs.aws.amazon.com/rekognition/latest/dg/what-is-rekognition.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q2",
+    "id": "aifc01-s7-q2",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A financial regulator requires auditing machine learning models for demographic bias, feature importance, and model explainability. Which Amazon SageMaker feature provides bias detection and model explainability reports?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon SageMaker Clarify"
+      },
+      {
+        "id": "B",
+        "text": "Amazon SageMaker Model Monitor"
+      },
+      {
+        "id": "C",
+        "text": "Amazon SageMaker Debugger"
+      },
+      {
+        "id": "D",
+        "text": "Amazon SageMaker Neo"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon SageMaker Clarify provides tools to detect potential bias during data preparation and model training, and generates explainability reports using SHAP feature attribution values.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q3",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d1",
+    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to build a machine learning model to detect credit card fraud from structured transaction tables. They need a fully managed AWS service to build, train, evaluate, and deploy custom ML models. Which service should they use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon SageMaker"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Comprehend"
+      },
+      {
+        "id": "D",
+        "text": "AWS Glue DataBrew"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to build, train, tune, and deploy custom ML models quickly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q4",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d2",
@@ -43,34 +113,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of Generative AI for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to adapt an open-weight foundation model to follow specific domain terminology and formatting instructions by training it on a labeled dataset of 5,000 prompt-response pairs. Which technique is this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
+        "text": "Instruction Fine-Tuning (Supervised Fine-Tuning)"
       },
       {
         "id": "B",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Retrieval-Augmented Generation"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Zero-Shot Prompting"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Pre-training from scratch"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Supervised Fine-Tuning (SFT) updates model weights using a curated dataset of labeled prompt-response pairs to specialize the model for specific tasks or domain styles.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q3",
+    "id": "aifc01-s7-q5",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d3",
@@ -78,109 +148,104 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Applications of Foundation Models for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise software developer needs an AI coding assistant integrated into VS Code to generate code suggestions, complete inline functions, and perform security scans on application source code. Which AWS service provides this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
+        "text": "Amazon Q Developer"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Bedrock Studio"
       },
       {
         "id": "C",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "Amazon SageMaker Canvas"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CodeArtifact"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon Q Developer (formerly Amazon CodeWhisperer) is a generative AI conversational assistant and inline code generator that integrates into IDEs to write code, debug errors, and scan for security vulnerabilities.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is-amazonq.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q4",
+    "id": "aifc01-s7-q6",
     "setId": 7,
     "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Guidelines for Responsible AI for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer needs to deploy a fine-tuned open-source Hugging Face model on Amazon SageMaker with dedicated GPU compute endpoints. Which SageMaker feature provides pre-built model cards and 1-click deployment for foundation models?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
+        "text": "Amazon SageMaker JumpStart"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SageMaker Pipelines"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon SageMaker Data Wrangler"
       },
       {
         "id": "D",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Amazon SageMaker Feature Store"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "SageMaker JumpStart provides a hub of pre-trained foundation models, algorithms, and end-to-end solution templates that can be deployed with a few clicks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q5",
+    "id": "aifc01-s7-q7",
     "setId": 7,
     "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of AI and ML for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service converts spoken audio streams (such as customer service call recordings) into written text transcripts?",
     "options": [
       {
         "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Amazon Transcribe"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Fundamentals of AI and ML"
+        "text": "Amazon Polly"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon Lex"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Amazon Comprehend"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon Transcribe uses automatic speech recognition (ASR) deep learning models to convert speech into text quickly and accurately.",
+    "awsDocUrl": "https://docs.aws.amazon.com/transcribe/latest/dg/what-is-transcribe.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q6",
+    "id": "aifc01-s7-q8",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d2",
@@ -188,140 +253,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of Generative AI for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer writes a prompt that includes zero examples and directly asks the LLM to classify customer sentiment. What prompting technique is being used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
+        "text": "Zero-Shot Prompting"
       },
       {
         "id": "B",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "Few-Shot Prompting"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Chain-of-Thought Prompting"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q7",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Applications of Foundation Models for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 7",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q8",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Guidelines for Responsible AI for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q9",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of AI and ML for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "ReAct Prompting"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Zero-Shot Prompting provides no demonstration examples in the prompt, relying entirely on the model's pre-trained knowledge to perform the requested task.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q10",
+    "id": "aifc01-s7-q9",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d2",
@@ -329,109 +288,39 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of Generative AI for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which TWO techniques can help mitigate hallucinations in foundation model outputs? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Implementing Retrieval-Augmented Generation (RAG) with verified context"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Fundamentals of Generative AI"
+        "text": "Using Guardrails for Amazon Bedrock with contextual grounding checks"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Increasing temperature to 1.0"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Removing system prompts completely"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Decreasing vector embedding dimensions"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "RAG provides authoritative reference documents in the context window. Contextual Grounding checks in Bedrock Guardrails verify that model responses are directly supported by the retrieved context.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-contextual-grounding.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q11",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Applications of Foundation Models for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q12",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Guidelines for Responsible AI for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q13",
+    "id": "aifc01-s7-q10",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d1",
@@ -439,34 +328,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of AI and ML for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An autonomous driving agent learns optimal steering strategies through trial and error by receiving rewards for staying in lane and penalties for collision. Which ML learning paradigm is this?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Reinforcement Learning"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
+        "text": "Supervised Learning"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Unsupervised Learning"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Semi-supervised Learning"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Reinforcement Learning (RL) trains an agent to make a sequence of decisions by interacting with an environment to maximize cumulative rewards.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/reinforcement-learning.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q14",
+    "id": "aifc01-s7-q11",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A team wants to quickly build interactive conversational AI chatbots with natural language understanding (NLU) for customer support web portals. Which service provides natural language understanding and dialogue management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Rekognition"
+      },
+      {
+        "id": "D",
+        "text": "AWS App Runner"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Lex is a fully managed service for building conversational interfaces (chatbots) into applications using voice and text, powered by NLU and speech recognition.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lexv2/latest/dg/what-is-lex.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q12",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d2",
@@ -474,35 +398,954 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of Generative AI for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 14",
+    "scenario": "A developer wants to ground a Large Language Model's responses in an enterprise's private knowledge base (S3 documents) without retraining or fine-tuning the base model. Which architecture pattern should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
+        "text": "Retrieval-Augmented Generation (RAG)"
       },
       {
         "id": "B",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Full Model Fine-Tuning"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Supervised Pre-training"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Prompt Injection"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "RAG retrieves relevant document chunks from a vector database (knowledge base) and appends them into the prompt context sent to the LLM, grounding responses without model retraining.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q15",
+    "id": "aifc01-s7-q13",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d1",
+    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "What is the primary purpose of splitting a dataset into Training, Validation, and Test sets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To train the model, tune hyperparameters on validation, and evaluate unbiased generalization performance on test data"
+      },
+      {
+        "id": "B",
+        "text": "To speed up GPU training time"
+      },
+      {
+        "id": "C",
+        "text": "To compress data before uploading to S3"
+      },
+      {
+        "id": "D",
+        "text": "To automatically generate synthetic data samples"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Splitting data ensures the model learns parameters on Training data, tunes hyperparameters on Validation data, and measures final unbiased performance on unseen Test data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-model-eval.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q14",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A healthcare AI system must ensure that patients understand when they are interacting with an AI system rather than a human doctor. Which Responsible AI principle does this embody?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transparency / Disclosure"
+      },
+      {
+        "id": "B",
+        "text": "Data Anonymization"
+      },
+      {
+        "id": "C",
+        "text": "Latency Reduction"
+      },
+      {
+        "id": "D",
+        "text": "Model Compression"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Transparency mandates clearly informing users when they are interacting with automated AI agents or reading AI-generated recommendations.",
+    "awsDocUrl": "https://aws.amazon.com/responsible-ai/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q15",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise needs to ensure all API calls to Amazon Bedrock are logged for security auditing. Which AWS service captures Bedrock API calls?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudTrail"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "C",
+        "text": "AWS Artifact"
+      },
+      {
+        "id": "D",
+        "text": "AWS Glue"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CloudTrail records all API activity across AWS services, including Amazon Bedrock InvokeModel and CreateKnowledgeBase API calls.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/logging-using-cloudtrail.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q16",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer wants to build a generative AI application that accesses leading foundation models (Anthropic Claude, Meta Llama, Amazon Titan) through a unified API without managing infrastructure. Which AWS service should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "id": "B",
+        "text": "Amazon SageMaker JumpStart"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "D",
+        "text": "AWS HealthOmics"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Bedrock is a fully managed service that offers choice of high-performing foundation models from leading AI startups and Amazon via a single API, along with built-in security, RAG, and guardrails.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q17",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company uses Amazon Bedrock to generate customer emails. The security team must ensure that prompts submitted to Bedrock are NEVER used to train AWS base foundation models. What is AWS's data privacy guarantee for Amazon Bedrock?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Customer prompts and completions are encrypted and NOT used to train AWS or third-party base models"
+      },
+      {
+        "id": "B",
+        "text": "Prompts are publicly logged for AI research"
+      },
+      {
+        "id": "C",
+        "text": "Prompts are stored permanently in open-source datasets"
+      },
+      {
+        "id": "D",
+        "text": "Prompts are automatically shared with third-party model providers"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS guarantees that customer data processed by Amazon Bedrock is not used to train or improve AWS base models or third-party foundation models, protecting enterprise privacy.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/data-protection.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q18",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d1",
+    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A healthcare provider wants to group unlabelled patient records into distinct clusters based on medical history similarity without pre-defined diagnostic labels. Which machine learning approach should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unsupervised Learning (Clustering)"
+      },
+      {
+        "id": "B",
+        "text": "Supervised Learning (Regression)"
+      },
+      {
+        "id": "C",
+        "text": "Reinforcement Learning"
+      },
+      {
+        "id": "D",
+        "text": "Binary Classification"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Unsupervised learning algorithms (like K-Means clustering) analyze unlabelled datasets to uncover hidden patterns or groupings without human-provided target labels.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q19",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An attacker inputs malicious text into a Generative AI prompt attempting to bypass system instructions and force the LLM to output restricted corporate data. What type of attack is this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prompt Injection Attack"
+      },
+      {
+        "id": "B",
+        "text": "Denial of Service Attack"
+      },
+      {
+        "id": "C",
+        "text": "Man-in-the-Middle Attack"
+      },
+      {
+        "id": "D",
+        "text": "SQL Injection Attack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Prompt Injection attacks attempt to manipulate LLM behavior by injecting overriding instructions into user inputs to bypass guardrails or system prompts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q20",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d1",
+    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A machine learning team is training a supervised classification model. During testing, the model achieves 99% accuracy on training data but drops to 60% accuracy on unseen test data. Which machine learning problem does this indicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overfitting"
+      },
+      {
+        "id": "B",
+        "text": "Underfitting"
+      },
+      {
+        "id": "C",
+        "text": "Data Leakage"
+      },
+      {
+        "id": "D",
+        "text": "Vanishing Gradient"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Overfitting occurs when a model learns training data noise and details too closely, leading to high accuracy on training data but poor generalization on new, unseen test data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-model-eval.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q21",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which neural network architecture introduced the self-attention mechanism, forming the foundation of modern Large Language Models (LLMs) like Claude, Llama, and GPT?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transformer architecture"
+      },
+      {
+        "id": "B",
+        "text": "Convolutional Neural Networks (CNN)"
+      },
+      {
+        "id": "C",
+        "text": "Recurrent Neural Networks (RNN)"
+      },
+      {
+        "id": "D",
+        "text": "Multi-Layer Perceptron (MLP)"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Transformers rely on self-attention mechanisms to process sequential data in parallel, capturing long-range dependencies far more effectively than traditional RNNs or CNNs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q22",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "Which TWO security capabilities does Guardrails for Amazon Bedrock provide to protect Generative AI applications? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Automated PII redaction in prompts and completions"
+      },
+      {
+        "id": "B",
+        "text": "Blocking prompt injection attempts using sensitive filter rules"
+      },
+      {
+        "id": "C",
+        "text": "Automatic SQL database query optimization"
+      },
+      {
+        "id": "D",
+        "text": "EC2 instance OS patch installation"
+      },
+      {
+        "id": "E",
+        "text": "VPC Flow Log monitoring"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Guardrails for Amazon Bedrock detects and redacts PII (like SSNs and phone numbers) and filters out harmful prompt injection attempts and undesirable topics.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q23",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which Amazon SageMaker feature continuously monitors deployed production models for data drift (changes in input data distribution over time)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon SageMaker Model Monitor"
+      },
+      {
+        "id": "B",
+        "text": "Amazon SageMaker Clarify"
+      },
+      {
+        "id": "C",
+        "text": "Amazon SageMaker Studio"
+      },
+      {
+        "id": "D",
+        "text": "Amazon SageMaker Pipelines"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "SageMaker Model Monitor continuously tracks deployed endpoint metrics to detect data drift, concept drift, and quality degradation in production.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q24",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which parameter in text generation foundation models controls the randomness/creativity of generated output tokens?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Temperature"
+      },
+      {
+        "id": "B",
+        "text": "Top-K"
+      },
+      {
+        "id": "C",
+        "text": "Batch Size"
+      },
+      {
+        "id": "D",
+        "text": "Learning Rate"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Temperature adjusts the probability distribution of output tokens. Lower temperature (e.g. 0.1) makes output deterministic and focused; higher temperature (e.g. 0.8) increases variety and randomness.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q25",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer wants to ground a Large Language Model's responses in an enterprise's private knowledge base (S3 documents) without retraining or fine-tuning the base model. Which architecture pattern should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retrieval-Augmented Generation (RAG)"
+      },
+      {
+        "id": "B",
+        "text": "Full Model Fine-Tuning"
+      },
+      {
+        "id": "C",
+        "text": "Supervised Pre-training"
+      },
+      {
+        "id": "D",
+        "text": "Prompt Injection"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "RAG retrieves relevant document chunks from a vector database (knowledge base) and appends them into the prompt context sent to the LLM, grounding responses without model retraining.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q26",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to adapt an open-weight foundation model to follow specific domain terminology and formatting instructions by training it on a labeled dataset of 5,000 prompt-response pairs. Which technique is this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Instruction Fine-Tuning (Supervised Fine-Tuning)"
+      },
+      {
+        "id": "B",
+        "text": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "C",
+        "text": "Zero-Shot Prompting"
+      },
+      {
+        "id": "D",
+        "text": "Pre-training from scratch"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Supervised Fine-Tuning (SFT) updates model weights using a curated dataset of labeled prompt-response pairs to specialize the model for specific tasks or domain styles.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q27",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A financial regulator requires auditing machine learning models for demographic bias, feature importance, and model explainability. Which Amazon SageMaker feature provides bias detection and model explainability reports?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon SageMaker Clarify"
+      },
+      {
+        "id": "B",
+        "text": "Amazon SageMaker Model Monitor"
+      },
+      {
+        "id": "C",
+        "text": "Amazon SageMaker Debugger"
+      },
+      {
+        "id": "D",
+        "text": "Amazon SageMaker Neo"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon SageMaker Clarify provides tools to detect potential bias during data preparation and model training, and generates explainability reports using SHAP feature attribution values.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q28",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to enable employees to ask natural language questions over internal company wikis, Jira tickets, and SharePoint files. Which generative AI service provides a fully managed enterprise assistant with out-of-the-box connectors?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Q Business"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Kendra"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "D",
+        "text": "Amazon SageMaker Studio"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Q Business is a fully managed generative AI assistant for employees that connects to internal data sources (SharePoint, Salesforce, S3) with role-based access control.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazonq/latest/business-ug/what-is-amazonq-business.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q29",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which feature of Amazon Bedrock allows building multi-step conversational AI assistants that can automatically execute API tasks (such as looking up order status in a database or placing an order)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agents for Amazon Bedrock"
+      },
+      {
+        "id": "B",
+        "text": "Knowledge Bases for Amazon Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "Guardrails for Amazon Bedrock"
+      },
+      {
+        "id": "D",
+        "text": "Model Evaluation on Amazon Bedrock"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Agents for Amazon Bedrock orchestrate multi-step tasks across company systems by breaking down user requests, invoking API actions, and interacting with knowledge bases autonomously.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q30",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d1",
+    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A healthcare provider wants to group unlabelled patient records into distinct clusters based on medical history similarity without pre-defined diagnostic labels. Which machine learning approach should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unsupervised Learning (Clustering)"
+      },
+      {
+        "id": "B",
+        "text": "Supervised Learning (Regression)"
+      },
+      {
+        "id": "C",
+        "text": "Reinforcement Learning"
+      },
+      {
+        "id": "D",
+        "text": "Binary Classification"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Unsupervised learning algorithms (like K-Means clustering) analyze unlabelled datasets to uncover hidden patterns or groupings without human-provided target labels.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q31",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company uses Amazon Bedrock to generate customer emails. The security team must ensure that prompts submitted to Bedrock are NEVER used to train AWS base foundation models. What is AWS's data privacy guarantee for Amazon Bedrock?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Customer prompts and completions are encrypted and NOT used to train AWS or third-party base models"
+      },
+      {
+        "id": "B",
+        "text": "Prompts are publicly logged for AI research"
+      },
+      {
+        "id": "C",
+        "text": "Prompts are stored permanently in open-source datasets"
+      },
+      {
+        "id": "D",
+        "text": "Prompts are automatically shared with third-party model providers"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS guarantees that customer data processed by Amazon Bedrock is not used to train or improve AWS base models or third-party foundation models, protecting enterprise privacy.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/data-protection.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q32",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "Which TWO security capabilities does Guardrails for Amazon Bedrock provide to protect Generative AI applications? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Automated PII redaction in prompts and completions"
+      },
+      {
+        "id": "B",
+        "text": "Blocking prompt injection attempts using sensitive filter rules"
+      },
+      {
+        "id": "C",
+        "text": "Automatic SQL database query optimization"
+      },
+      {
+        "id": "D",
+        "text": "EC2 instance OS patch installation"
+      },
+      {
+        "id": "E",
+        "text": "VPC Flow Log monitoring"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Guardrails for Amazon Bedrock detects and redacts PII (like SSNs and phone numbers) and filters out harmful prompt injection attempts and undesirable topics.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q33",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which pillar of Responsible AI focuses on explaining HOW a model made a specific prediction so that stakeholders can understand its decision logic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Explainability / Transparency"
+      },
+      {
+        "id": "B",
+        "text": "Scalability"
+      },
+      {
+        "id": "C",
+        "text": "Latency Optimization"
+      },
+      {
+        "id": "D",
+        "text": "Cost Efficiency"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Explainability and Transparency ensure human stakeholders understand model outputs, feature influence, and algorithmic decisions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-model-explainability.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q34",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer writes a prompt that includes zero examples and directly asks the LLM to classify customer sentiment. What prompting technique is being used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zero-Shot Prompting"
+      },
+      {
+        "id": "B",
+        "text": "Few-Shot Prompting"
+      },
+      {
+        "id": "C",
+        "text": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "D",
+        "text": "ReAct Prompting"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Zero-Shot Prompting provides no demonstration examples in the prompt, relying entirely on the model's pre-trained knowledge to perform the requested task.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q35",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d1",
+    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An e-commerce platform wants to predict continuous house sale prices based on square footage, location, and bedroom count. Which machine learning task is appropriate for predicting continuous numeric values?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Regression"
+      },
+      {
+        "id": "B",
+        "text": "Classification"
+      },
+      {
+        "id": "C",
+        "text": "Clustering"
+      },
+      {
+        "id": "D",
+        "text": "Dimensionality Reduction"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Regression algorithms (like Linear Regression or XGBoost Regressor) predict continuous numerical target outputs (such as prices, temperatures, or counts).",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/algo-linear-direct-wiki.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q36",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A healthcare AI system must ensure that patients understand when they are interacting with an AI system rather than a human doctor. Which Responsible AI principle does this embody?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transparency / Disclosure"
+      },
+      {
+        "id": "B",
+        "text": "Data Anonymization"
+      },
+      {
+        "id": "C",
+        "text": "Latency Reduction"
+      },
+      {
+        "id": "D",
+        "text": "Model Compression"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Transparency mandates clearly informing users when they are interacting with automated AI agents or reading AI-generated recommendations.",
+    "awsDocUrl": "https://aws.amazon.com/responsible-ai/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q37",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service converts spoken audio streams (such as customer service call recordings) into written text transcripts?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Transcribe"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Polly"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Lex"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Comprehend"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Transcribe uses automatic speech recognition (ASR) deep learning models to convert speech into text quickly and accurately.",
+    "awsDocUrl": "https://docs.aws.amazon.com/transcribe/latest/dg/what-is-transcribe.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q38",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which parameter limits the pool of candidate tokens evaluated during generation to the top K highest probability tokens?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Top-K"
+      },
+      {
+        "id": "B",
+        "text": "Temperature"
+      },
+      {
+        "id": "C",
+        "text": "Top-P (Nucleus Sampling)"
+      },
+      {
+        "id": "D",
+        "text": "Max Tokens"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Top-K sampling restricts token selection to the K highest-probability tokens at each generation step, filtering out unlikely tail tokens.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q39",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d3",
@@ -510,290 +1353,109 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Applications of Foundation Models for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to set up a RAG pipeline in Amazon Bedrock. Which TWO components are required to configure Knowledge Bases for Amazon Bedrock? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "A vector database (such as Amazon OpenSearch Serverless vector engine or Pinecone)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Applications of Foundation Models"
+        "text": "An S3 data source containing enterprise documents"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "An EC2 GPU cluster running PyTorch"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Batch container jobs"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Amazon SageMaker HyperPod"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Knowledge Bases for Amazon Bedrock requires an S3 bucket with source documents and a vector database (like OpenSearch Serverless, Pinecone, or Aurora PostgreSQL vector) to index embeddings.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q16",
+    "id": "aifc01-s7-q40",
     "setId": 7,
     "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Guidelines for Responsible AI for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer needs to deploy a fine-tuned open-source Hugging Face model on Amazon SageMaker with dedicated GPU compute endpoints. Which SageMaker feature provides pre-built model cards and 1-click deployment for foundation models?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
+        "text": "Amazon SageMaker JumpStart"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SageMaker Pipelines"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon SageMaker Data Wrangler"
       },
       {
         "id": "D",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q17",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of AI and ML for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon SageMaker Feature Store"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "SageMaker JumpStart provides a hub of pre-trained foundation models, algorithms, and end-to-end solution templates that can be deployed with a few clicks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q18",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of Generative AI for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
-      },
-      {
-        "id": "B",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q19",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Applications of Foundation Models for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q20",
+    "id": "aifc01-s7-q41",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Guidelines for Responsible AI for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Guidelines for Responsible AI"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q21",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of AI and ML for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 21",
+    "scenario": "Which Amazon SageMaker feature continuously monitors deployed production models for data drift (changes in input data distribution over time)?",
     "options": [
       {
         "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "Amazon SageMaker Model Monitor"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
+        "text": "Amazon SageMaker Clarify"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SageMaker Studio"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon SageMaker Pipelines"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "SageMaker Model Monitor continuously tracks deployed endpoint metrics to detect data drift, concept drift, and quality degradation in production.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q22",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of Generative AI for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q23",
+    "id": "aifc01-s7-q42",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d3",
@@ -801,395 +1463,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Applications of Foundation Models for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which Amazon Bedrock capability enables comparing output quality across multiple foundation models using automated metrics (like ROUGE and BERTScore) or human evaluation panels?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
+        "text": "Amazon Bedrock Model Evaluation"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Bedrock Guardrails"
       },
       {
         "id": "C",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Amazon SageMaker Clarify"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q24",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Guidelines for Responsible AI for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q25",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of AI and ML for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q26",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of Generative AI for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
-      },
-      {
-        "id": "B",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q27",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Applications of Foundation Models for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q28",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Guidelines for Responsible AI for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 28",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q29",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of AI and ML for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Q Business"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon Bedrock Model Evaluation allows comparing and evaluating foundation models for specific use cases using built-in datasets/metrics or human reviewers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q30",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of Generative AI for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Fundamentals of Generative AI"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q31",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Applications of Foundation Models for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q32",
+    "id": "aifc01-s7-q43",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Guidelines for Responsible AI for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise needs to ensure all API calls to Amazon Bedrock are logged for security auditing. Which AWS service captures Bedrock API calls?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
+        "text": "AWS CloudTrail"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon CloudFront"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Artifact"
       },
       {
         "id": "D",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q33",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of AI and ML for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Glue"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS CloudTrail records all API activity across AWS services, including Amazon Bedrock InvokeModel and CreateKnowledgeBase API calls.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/logging-using-cloudtrail.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q34",
+    "id": "aifc01-s7-q44",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d2",
@@ -1197,255 +1533,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of Generative AI for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "What is the primary function of a Vector Embedding in generative AI applications?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
+        "text": "To represent unstructured text, images, or audio as dense numerical vectors preserving semantic meaning"
       },
       {
         "id": "B",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "To compress JPEG images into low-resolution previews"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "To encrypt prompt data in transit using AES-256"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q35",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Applications of Foundation Models for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Applications of Foundation Models"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q36",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Guidelines for Responsible AI for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q37",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of AI and ML for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "To compile Python code into bytecode execution format"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Vector embeddings convert tokens or unstructured assets into high-dimensional vectors where semantically similar concepts (e.g. 'king' and 'queen') lie close together in vector space.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-embeddings.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q38",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of Generative AI for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
-      },
-      {
-        "id": "B",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q39",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Applications of Foundation Models for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q40",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Guidelines for Responsible AI for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Guidelines for Responsible AI"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q41",
+    "id": "aifc01-s7-q45",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d1",
@@ -1453,70 +1568,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of AI and ML for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An autonomous driving agent learns optimal steering strategies through trial and error by receiving rewards for staying in lane and penalties for collision. Which ML learning paradigm is this?",
     "options": [
       {
         "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Reinforcement Learning"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
+        "text": "Supervised Learning"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Unsupervised Learning"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Semi-supervised Learning"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Reinforcement Learning (RL) trains an agent to make a sequence of decisions by interacting with an environment to maximize cumulative rewards.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/reinforcement-learning.html",
     "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q42",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of Generative AI for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 42",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
-      },
-      {
-        "id": "B",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q43",
+    "id": "aifc01-s7-q46",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d3",
@@ -1524,395 +1603,174 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Applications of Foundation Models for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service provides pre-trained text-to-speech capabilities that convert written content into natural-sounding spoken audio in dozens of languages?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
+        "text": "Amazon Polly"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Transcribe"
       },
       {
         "id": "C",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Amazon Translate"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q44",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Guidelines for Responsible AI for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q45",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of AI and ML for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "aif-c01-sim-s7-q46",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of Generative AI for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
-      },
-      {
-        "id": "B",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q47",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Applications of Foundation Models for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q48",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Guidelines for Responsible AI for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q49",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of AI and ML for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 49",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Comprehend"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon Polly turns text into lifelike speech using advanced deep learning technologies (including neural TTS), outputting audio formats like MP3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/polly/latest/dg/what-is-polly.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q50",
+    "id": "aifc01-s7-q47",
     "setId": 7,
     "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of Generative AI for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company wants to enable employees to ask natural language questions over internal company wikis, Jira tickets, and SharePoint files. Which generative AI service provides a fully managed enterprise assistant with out-of-the-box connectors?",
     "options": [
       {
         "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Amazon Q Business"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Fundamentals of Generative AI"
+        "text": "Amazon Kendra"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon Lex"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q51",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Applications of Foundation Models for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q52",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Guidelines for Responsible AI for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q53",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d1",
-    "domainName": "Domain 1: Fundamentals of AI and ML",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of AI and ML for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon SageMaker Studio"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon Q Business is a fully managed generative AI assistant for employees that connects to internal data sources (SharePoint, Salesforce, S3) with role-based access control.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazonq/latest/business-ug/what-is-amazonq-business.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q54",
+    "id": "aifc01-s7-q48",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A user notices that a Generative AI chatbot confidently generates plausible-sounding but factually incorrect statements. What is this phenomenon called in LLMs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hallucination"
+      },
+      {
+        "id": "B",
+        "text": "Catastrophic Forgetting"
+      },
+      {
+        "id": "C",
+        "text": "Underfitting"
+      },
+      {
+        "id": "D",
+        "text": "Model Drift"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Hallucination occurs when a generative AI model generates content that appears plausible and confident but is factually inaccurate or ungrounded in source data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q49",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which prompting technique instructs a Large Language Model to break down complex reasoning steps explicitly (e.g., 'Let's think step by step') before arriving at a final answer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chain-of-Thought (CoT) Prompting"
+      },
+      {
+        "id": "B",
+        "text": "Self-Consistency Prompting"
+      },
+      {
+        "id": "C",
+        "text": "Directional Stimulus Prompting"
+      },
+      {
+        "id": "D",
+        "text": "Generated Knowledge Prompting"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Chain-of-Thought (CoT) prompting encourages foundation models to generate intermediate reasoning steps, significantly improving performance on complex math, logic, and multi-step tasks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q50",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d2",
+    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which parameter limits the pool of candidate tokens evaluated during generation to the top K highest probability tokens?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Top-K"
+      },
+      {
+        "id": "B",
+        "text": "Temperature"
+      },
+      {
+        "id": "C",
+        "text": "Top-P (Nucleus Sampling)"
+      },
+      {
+        "id": "D",
+        "text": "Max Tokens"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Top-K sampling restricts token selection to the K highest-probability tokens at each generation step, filtering out unlikely tail tokens.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q51",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d2",
@@ -1920,110 +1778,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of Generative AI for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A user notices that a Generative AI chatbot confidently generates plausible-sounding but factually incorrect statements. What is this phenomenon called in LLMs?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
+        "text": "Hallucination"
       },
       {
         "id": "B",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "Catastrophic Forgetting"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Underfitting"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Model Drift"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Hallucination occurs when a generative AI model generates content that appears plausible and confident but is factually inaccurate or ungrounded in source data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q55",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d3",
-    "domainName": "Domain 3: Applications of Foundation Models",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Applications of Foundation Models for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Applications of Foundation Models"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q56",
-    "setId": 7,
-    "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Guidelines for Responsible AI for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 56",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "aif-c01-sim-s7-q57",
+    "id": "aifc01-s7-q52",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d1",
@@ -2031,69 +1813,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Fundamentals of AI and ML for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which metric is commonly used to evaluate the performance of a binary classification model when dealing with highly imbalanced datasets (e.g., fraud detection where positive cases are rare)?",
     "options": [
       {
         "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "F1 Score / Precision-Recall AUC"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
+        "text": "Mean Absolute Error (MAE)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "R-Squared (R²)"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Mean Squared Error (MSE)"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "F1 Score (harmonic mean of Precision and Recall) and Area Under Precision-Recall Curve are far better metrics for imbalanced datasets than simple Accuracy, which can be deceptively high by predicting only the majority class.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-model-monitor-metric-f1.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q58",
+    "id": "aifc01-s7-q53",
     "setId": 7,
     "examCode": "AIF-C01",
-    "domainId": "aif-d2",
-    "domainName": "Domain 2: Fundamentals of Generative AI",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of Generative AI for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which pillar of Responsible AI focuses on explaining HOW a model made a specific prediction so that stakeholders can understand its decision logic?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
+        "text": "Explainability / Transparency"
       },
       {
         "id": "B",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Scalability"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Latency Optimization"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Cost Efficiency"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Explainability and Transparency ensure human stakeholders understand model outputs, feature influence, and algorithmic decisions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-model-explainability.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q59",
+    "id": "aifc01-s7-q54",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d3",
@@ -2101,74 +1883,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Applications of Foundation Models for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A developer wants to build a generative AI application that accesses leading foundation models (Anthropic Claude, Meta Llama, Amazon Titan) through a unified API without managing infrastructure. Which AWS service should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
+        "text": "Amazon Bedrock"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SageMaker JumpStart"
       },
       {
         "id": "C",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Amazon Lex"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS HealthOmics"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon Bedrock is a fully managed service that offers choice of high-performing foundation models from leading AI startups and Amazon via a single API, along with built-in security, RAG, and guardrails.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q60",
+    "id": "aifc01-s7-q55",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Guidelines for Responsible AI for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "What is the primary risk of Data Poisoning in machine learning?",
     "options": [
       {
         "id": "A",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "An attacker maliciously alters training datasets to introduce backdoor vulnerabilities or corrupt model predictions"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Guidelines for Responsible AI"
+        "text": "The model runs out of GPU memory during training"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Data transfer costs increase due to large file sizes"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "The S3 bucket holding training data gets deleted"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Data poisoning occurs when an adversary manipulates the training data corpus to compromise model behavior, degrade accuracy, or introduce hidden backdoors.",
+    "awsDocUrl": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/security-pillar.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q61",
+    "id": "aifc01-s7-q56",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d1",
@@ -2176,34 +1953,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Fundamentals of AI and ML for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A machine learning team notices that their image classification model performs poorly because input images have widely different brightness and pixel intensity ranges. Which preprocessing step standardizes feature scales?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Normalization / Feature Scaling"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of AI and ML"
+        "text": "One-Hot Encoding"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Principal Component Analysis (PCA)"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Data Imputation"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Normalization (scaling pixel values to a 0-1 range or z-score standard distribution) ensures numerical features have comparable scales, speeding up gradient descent convergence.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/prep-feature-scaling.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q62",
+    "id": "aifc01-s7-q57",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d2",
@@ -2211,34 +1988,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of Generative AI for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which neural network architecture introduced the self-attention mechanism, forming the foundation of modern Large Language Models (LLMs) like Claude, Llama, and GPT?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Fundamentals of Generative AI"
+        "text": "Transformer architecture"
       },
       {
         "id": "B",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Convolutional Neural Networks (CNN)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Recurrent Neural Networks (RNN)"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Multi-Layer Perceptron (MLP)"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Transformers rely on self-attention mechanisms to process sequential data in parallel, capturing long-range dependencies far more effectively than traditional RNNs or CNNs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q63",
+    "id": "aifc01-s7-q58",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d3",
@@ -2246,70 +2023,104 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Retrieval-Augmented Generation (RAG) within Applications of Foundation Models for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws aif sim-test --set 7 --q 63",
+    "scenario": "Which Amazon Bedrock capability enables comparing output quality across multiple foundation models using automated metrics (like ROUGE and BERTScore) or human evaluation panels?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Applications of Foundation Models"
+        "text": "Amazon Bedrock Model Evaluation"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Bedrock Guardrails"
       },
       {
         "id": "C",
-        "text": "Implementing RAG using Knowledge Bases for Amazon Bedrock and OpenSearch Serverless"
+        "text": "Amazon SageMaker Clarify"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Q Business"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: RAG connects foundation models to company knowledge bases to ground responses in facts without retraining.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon Bedrock Model Evaluation allows comparing and evaluating foundation models for specific use cases using built-in datasets/metrics or human reviewers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q64",
+    "id": "aifc01-s7-q59",
     "setId": 7,
     "examCode": "AIF-C01",
-    "domainId": "aif-d4",
-    "domainName": "Domain 4: Guidelines for Responsible AI",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Guardrails for Amazon Bedrock within Guidelines for Responsible AI for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which AWS service provides pre-trained text-to-speech capabilities that convert written content into natural-sounding spoken audio in dozens of languages?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Guidelines for Responsible AI"
+        "text": "Amazon Polly"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Transcribe"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Translate"
       },
       {
         "id": "D",
-        "text": "Configuring Guardrails for Amazon Bedrock to filter PII and toxic content"
+        "text": "Amazon Comprehend"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Guardrails for Amazon Bedrock redacts sensitive PII and filters harmful topics automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon Polly turns text into lifelike speech using advanced deep learning technologies (including neural TTS), outputting audio formats like MP3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/polly/latest/dg/what-is-polly.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "aif-c01-sim-s7-q65",
+    "id": "aifc01-s7-q60",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d1",
+    "domainName": "Domain 1: Fundamentals of AI and ML",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A machine learning team is training a supervised classification model. During testing, the model achieves 99% accuracy on training data but drops to 60% accuracy on unseen test data. Which machine learning problem does this indicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overfitting"
+      },
+      {
+        "id": "B",
+        "text": "Underfitting"
+      },
+      {
+        "id": "C",
+        "text": "Data Leakage"
+      },
+      {
+        "id": "D",
+        "text": "Vanishing Gradient"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Overfitting occurs when a model learns training data noise and details too closely, leading to high accuracy on training data but poor generalization on new, unseen test data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-model-eval.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q61",
     "setId": 7,
     "examCode": "AIF-C01",
     "domainId": "aif-d1",
@@ -2317,35 +2128,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Amazon Bedrock Foundation Models within Fundamentals of AI and ML for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which TWO activities take place during the Data Preparation phase of the ML lifecycle? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Invoking Foundation Models serverlessly using Amazon Bedrock APIs"
+        "text": "Handling missing values and imputing null fields"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Fundamentals of AI and ML"
+        "text": "Feature scaling and normalizing numerical inputs"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Deploying real-time HTTPS inference endpoints"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Configuring hyperparameter optimization ranges"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Monitoring model drift in production"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Foundational Tier Blueprint Explanation: Amazon Bedrock provides serverless API access to leading foundation models like Anthropic Claude and Titan.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Data preparation involves cleaning data (imputing missing values, removing outliers) and feature engineering/scaling (normalization, one-hot encoding) before model training.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/prep.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q62",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A developer wants to set up a RAG pipeline in Amazon Bedrock. Which TWO components are required to configure Knowledge Bases for Amazon Bedrock? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vector database (such as Amazon OpenSearch Serverless vector engine or Pinecone)"
+      },
+      {
+        "id": "B",
+        "text": "An S3 data source containing enterprise documents"
+      },
+      {
+        "id": "C",
+        "text": "An EC2 GPU cluster running PyTorch"
+      },
+      {
+        "id": "D",
+        "text": "AWS Batch container jobs"
+      },
+      {
+        "id": "E",
+        "text": "Amazon SageMaker HyperPod"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Knowledge Bases for Amazon Bedrock requires an S3 bucket with source documents and a vector database (like OpenSearch Serverless, Pinecone, or Aurora PostgreSQL vector) to index embeddings.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q63",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d3",
+    "domainName": "Domain 3: Applications of Foundation Models",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "Which feature of Amazon Bedrock allows building multi-step conversational AI assistants that can automatically execute API tasks (such as looking up order status in a database or placing an order)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agents for Amazon Bedrock"
+      },
+      {
+        "id": "B",
+        "text": "Knowledge Bases for Amazon Bedrock"
+      },
+      {
+        "id": "C",
+        "text": "Guardrails for Amazon Bedrock"
+      },
+      {
+        "id": "D",
+        "text": "Model Evaluation on Amazon Bedrock"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Agents for Amazon Bedrock orchestrate multi-step tasks across company systems by breaking down user requests, invoking API actions, and interacting with knowledge bases autonomously.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q64",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An attacker inputs malicious text into a Generative AI prompt attempting to bypass system instructions and force the LLM to output restricted corporate data. What type of attack is this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prompt Injection Attack"
+      },
+      {
+        "id": "B",
+        "text": "Denial of Service Attack"
+      },
+      {
+        "id": "C",
+        "text": "Man-in-the-Middle Attack"
+      },
+      {
+        "id": "D",
+        "text": "SQL Injection Attack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Prompt Injection attacks attempt to manipulate LLM behavior by injecting overriding instructions into user inputs to bypass guardrails or system prompts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "aifc01-s7-q65",
+    "setId": 7,
+    "examCode": "AIF-C01",
+    "domainId": "aif-d4",
+    "domainName": "Domain 4: Responsible AI, Security, and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An enterprise wants to enforce safety policies on generative AI model outputs—filtering out hate speech, profane content, custom blocked words, and sensitive PII. Which feature should be configured in Amazon Bedrock?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Guardrails for Amazon Bedrock"
+      },
+      {
+        "id": "B",
+        "text": "AWS WAF"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "D",
+        "text": "AWS Shield Advanced"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Guardrails for Amazon Bedrock provides customizable safeguards to filter out inappropriate content, redact PII, block custom words/topics, and evaluate contextual grounding.",
+    "awsDocUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "difficulty": "Standard"
   }
 ]

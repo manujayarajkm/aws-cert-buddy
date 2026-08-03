@@ -1,221 +1,76 @@
 [
   {
-    "id": "sap-c02-s4-q1",
+    "id": "sapc02-s4-q1",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise needs to optimize network performance between two EC2 instances in different Availability Zones within the same region. Which network setting provides up to 100 Gbps network bandwidth?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
+        "text": "Enhanced Networking (SR-IOV / ENA) on supported EC2 instance types"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "VPC Peering with jumbo frames disabled"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Site-to-Site VPN"
       },
       {
         "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q2",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "NAT Gateway with Elastic IPs"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Enhanced Networking uses Single Root I/O Virtualization (SR-IOV) and Elastic Network Adapter (ENA) to deliver higher bandwidth, higher packet per second (PPS) performance, and lower inter-instance latency.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q3",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q4",
+    "id": "sapc02-s4-q2",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps team wants to centralize log analysis for 1,000 EC2 instances running across multiple accounts into a central Amazon OpenSearch Service cluster. Which log streaming pattern is recommended?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
+        "text": "CloudWatch Logs Subscription Filters streaming to Amazon Data Firehose into OpenSearch"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Manual SSH script copying logs daily"
       },
       {
         "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "S3 Glacier Vault Lock export"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q5",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q6",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Run Command"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "CloudWatch Logs subscription filters can stream log data continuously via Amazon Data Firehose directly into an Amazon OpenSearch Service cluster for real-time analysis.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_OpenSearch_Stream.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q7",
+    "id": "sapc02-s4-q3",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
@@ -223,396 +78,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 7",
+    "scenario": "A company is designing a microservice architecture where thousands of independent publishers send order events, and multiple downstream microservices consume only relevant subset events based on JSON message content filters. Which pattern is optimal?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
+        "text": "Amazon EventBridge Event Bus with Event Rules matching event content patterns"
       },
       {
         "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon SQS Standard queues with Lambda pollers"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SNS topics without filtering"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q8",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q9",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q10",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Design Complex Organizations"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q11",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q12",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q13",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q14",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 14",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Step Functions Parallel state"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon EventBridge provides content-based event filtering rules directly matching event JSON attributes, efficiently routing events to distinct target services.",
+    "awsDocUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q15",
+    "id": "sapc02-s4-q4",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
     "domainName": "Domain 2: Design New Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Design New Solutions"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q16",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A enterprise workflow requires coordinating microservice steps that include human approvals, long-running batch jobs, and conditional branching. Which serverless service orchestrates state machines reliably?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
+        "text": "AWS Step Functions"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SQS"
       },
       {
         "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon SNS"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Lambda"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Step Functions maintains workflow state, manages execution flow, handles retries, and coordinates serverless and containerized microservice workflows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q17",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q18",
+    "id": "sapc02-s4-q5",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d1",
@@ -620,109 +148,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A financial organization requires single sign-on (SSO) for 5,000 workforce users into hundreds of AWS accounts using their existing Active Directory identity provider via SAML 2.0. Which solution minimizes administrative management?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS IAM Identity Center (successor to AWS Single Sign-On) integrated with Active Directory"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "IAM Users created in each AWS account with trust relationships"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Individual IAM Identity Providers configured in every AWS account"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Cognito Identity Pools mapped to IAM Roles"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS IAM Identity Center integrates with Active Directory via SAML 2.0 or AWS Directory Service AD Connector. It centrally assigns account access and permission sets across the entire AWS Organization.",
+    "awsDocUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q19",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q20",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Continuous Improvement for Existing Solutions"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q21",
+    "id": "sapc02-s4-q6",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d4",
@@ -730,35 +183,244 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 21",
+    "scenario": "A company needs to continuously sync file storage between an on-premises NAS device and an Amazon EFS file system over AWS Direct Connect for a hybrid workflow. Which service automates continuous file synchronization?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
+        "text": "AWS DataSync"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Snowball Edge"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Database Migration Service"
       },
       {
         "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon S3 Transfer Acceleration"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS DataSync automates moving and synchronizing data between on-premises storage systems (NFS, SMB) and AWS storage services (S3, EFS, FSx) on a scheduled basis.",
+    "awsDocUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q7",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming application needs to route global user traffic to the geographically closest healthy Application Load Balancer endpoint in either us-west-2 or eu-central-1 using static Anycast IP addresses. Which network service fulfills this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator assigns two static Anycast IP addresses that route traffic over the AWS global backbone network directly to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q8",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A monolithic web application deployed on EC2 instances experiences frequent crashes when background image rendering jobs run. How should the architecture be decoupled to improve reliability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Offload image rendering jobs to SQS queue and process them with worker EC2 instances or Lambda"
+      },
+      {
+        "id": "B",
+        "text": "Increase the EC2 instance volume size"
+      },
+      {
+        "id": "C",
+        "text": "Put all rendering code inside the web server request handler thread"
+      },
+      {
+        "id": "D",
+        "text": "Use sticky sessions on the Application Load Balancer"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Decoupling web request processing from heavy background tasks using an SQS queue ensures web servers remain responsive while worker instances scale independently.",
+    "awsDocUrl": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_decouple_mechanisms.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q9",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A financial organization needs to migrate a 50TB Oracle database running on-premises to Amazon Aurora PostgreSQL with near-zero downtime. Which combination of services should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Schema Conversion Tool (AWS SCT) for schema conversion and AWS Database Migration Service (AWS DMS) for data replication with CDC"
+      },
+      {
+        "id": "B",
+        "text": "AWS DataSync and S3 Glacier"
+      },
+      {
+        "id": "C",
+        "text": "AWS Snowball Edge and Manual SQL DDL Scripts"
+      },
+      {
+        "id": "D",
+        "text": "AWS Storage Gateway Volume Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS SCT converts the database schema from Oracle to PostgreSQL, and AWS DMS handles heterogeneous data migration with Change Data Capture (CDC) for near-zero downtime cutover.",
+    "awsDocUrl": "https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Heterogeneous.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q22",
+    "id": "sapc02-s4-q10",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A enterprise application requires a relational database that scales write capacity beyond a single database instance without application partitioning code changes. Which Amazon Aurora feature supports multi-master write capabilities across an AZ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Aurora Multi-Master"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Aurora Read Replicas"
+      },
+      {
+        "id": "C",
+        "text": "Amazon RDS Multi-AZ"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Aurora Serverless v2"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Aurora Multi-Master enables creation of multiple read-write database instances across multiple AZs in a single region, providing continuous write availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master-devs.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "sapc02-s4-q11",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A financial application requires disaster recovery with RTO < 1 minute and RPO < 1 second across two AWS regions. The relational database must handle high transactional write volume. Which solution meets these metrics?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Aurora Global Database with automated cross-region failover"
+      },
+      {
+        "id": "B",
+        "text": "Amazon RDS PostgreSQL with cross-region read replicas"
+      },
+      {
+        "id": "C",
+        "text": "Amazon EC2 running self-managed PostgreSQL with asynchronous WAL streaming"
+      },
+      {
+        "id": "D",
+        "text": "Amazon DynamoDB with daily S3 backups"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Aurora Global Database provides cross-region replication latency under 1 second (RPO < 1s) and managed failover in under 1 minute (RTO < 1 min).",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "sapc02-s4-q12",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to containerize a legacy Java monolithic application running on Windows Server EC2 instances and migrate it to Amazon ECS on Fargate. Which tool assists with automatically containerizing applications?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS App2Container (A2C)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Application Migration Service"
+      },
+      {
+        "id": "C",
+        "text": "AWS Elastic Beanstalk"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeBuild"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS App2Container (A2C) is a command-line tool that analyzes and automatically containerizes Java and .NET applications running on virtual machines into ECS/EKS container images.",
+    "awsDocUrl": "https://docs.aws.amazon.com/app2container/latest/userguide/what-is-a2c.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q13",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d1",
@@ -766,144 +428,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise uses AWS Organizations with consolidated billing. The CFO wants to allocate AWS charges to specific business units based on custom tag keys like `CostCenter`. What step must be completed in the Master account?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Activate User-Defined Cost Allocation Tags in the AWS Billing Console"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "Create separate billing accounts for each business unit"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Enable AWS KMS key tagging"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Export billing data to S3 via CloudTrail"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "User-defined cost allocation tags must be explicitly activated in the AWS Billing Console (Management account) before they appear in Cost Explorer or AWS Cost and Usage Reports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q23",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q24",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "sap-c02-s4-q25",
+    "id": "sapc02-s4-q14",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d4",
     "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company is planning a large-scale migration of 200 applications. They need a single central dashboard to track the progress of migrations across AWS MGN, AWS DMS, and partner tools. Which service provides this tracking?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS Migration Hub"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Accelerate Workload Migration and Modernization"
+        "text": "AWS Organizations"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Systems Manager Explorer"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Service Catalog"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Migration Hub provides a single location to track the progress of application migrations across multiple AWS and partner tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/migrationhub/latest/ug/whatis.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q26",
+    "id": "sapc02-s4-q15",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d1",
@@ -911,105 +498,104 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company wants to manage centralized IT service catalog templates (CloudFormation products) and govern which AWS products engineering teams can launch across all member accounts. Which service provides this governance?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS Service Catalog"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "AWS License Manager"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Control Tower"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS OpsWorks"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Service Catalog allows organizations to create and manage catalogs of approved AWS infrastructure products (CloudFormation stacks) and share them centrally across accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q27",
+    "id": "sapc02-s4-q16",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise needs to connect 50 VPCs across 5 AWS regions to an on-premises data center connected via a 10 Gbps AWS Direct Connect link. Which architecture provides scalable multi-region routing?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
+        "text": "AWS Transit Gateway in each region connected via Transit Gateway Peering and a Direct Connect Gateway"
       },
       {
         "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "VPC Peering full mesh between all 50 VPCs and 5 VPN connections"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "VPC Gateway Endpoints created in each region pointing to Direct Connect"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Transit Gateway in us-east-1 only with cross-region VPC peering"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Direct Connect Gateway attached to regional Transit Gateways (interconnected via Transit Gateway Peering) provides scalable, low-latency multi-region networking between on-prem and all VPCs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q28",
+    "id": "sapc02-s4-q17",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 28",
+    "scenario": "A SysOps team wants to centralize log analysis for 1,000 EC2 instances running across multiple accounts into a central Amazon OpenSearch Service cluster. Which log streaming pattern is recommended?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
+        "text": "CloudWatch Logs Subscription Filters streaming to Amazon Data Firehose into OpenSearch"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Manual SSH script copying logs daily"
       },
       {
         "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "S3 Glacier Vault Lock export"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Run Command"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "CloudWatch Logs subscription filters can stream log data continuously via Amazon Data Firehose directly into an Amazon OpenSearch Service cluster for real-time analysis.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_OpenSearch_Stream.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q29",
+    "id": "sapc02-s4-q18",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d4",
@@ -1017,34 +603,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An organization wants to assess their on-premises data center inventory, identify server dependencies, and estimate AWS infrastructure costs prior to migration. Which AWS service provides automated discovery?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
+        "text": "AWS Application Discovery Service"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Migration Hub Orchestrator"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Control Tower"
       },
       {
         "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS Config"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Application Discovery Service collects server specification, performance, and network connection data from on-premises servers to assist with migration planning.",
+    "awsDocUrl": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q30",
+    "id": "sapc02-s4-q19",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d1",
@@ -1052,39 +638,39 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A multi-national corporation wants to centralize DNS resolution for private domains (`corp.internal`) between on-premises DNS servers and private hosted zones in 20 AWS VPCs. Which TWO components are required? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Route 53 Resolver Outbound Endpoints with forwarding rules targeting on-premises DNS servers"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Design Complex Organizations"
+        "text": "Route 53 Resolver Inbound Endpoints allowing on-premises DNS servers to query private hosted zones"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "VPC Peering mesh between all 20 VPCs and on-premises routers"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Elastic Load Balancer with UDP listeners on port 53"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CloudFront custom origin with DNS rewrite"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Route 53 Resolver Inbound Endpoints allow on-prem DNS to resolve AWS Private Hosted Zones. Outbound Endpoints forward VPC DNS queries for `corp.internal` to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q31",
+    "id": "sapc02-s4-q20",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
@@ -1092,250 +678,574 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A high-performance computing (HPC) financial simulation cluster running across 100 EC2 instances requires low-latency, high-throughput inter-node network communication. Which configuration minimizes latency between instances?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
+        "text": "Deploy EC2 instances in a Cluster Placement Group within a single Availability Zone with EFA (Elastic Fabric Adapter)"
       },
       {
         "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Deploy instances across multiple Availability Zones in a Spread Placement Group"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Use Partition Placement Groups across 3 regions"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Attach multiple Elastic IP addresses"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "A Cluster Placement Group packs instances close together within one AZ, and Elastic Fabric Adapter (EFA) bypasses the OS kernel to provide low-latency RDMA networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q32",
+    "id": "sapc02-s4-q21",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise needs to transfer 800TB of historical archive data stored on-premises to Amazon S3. The company has a slow 100 Mbps internet connection. Which data transfer mechanism is MOST practical and cost-effective?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
+        "text": "Order multiple AWS Snowball Edge Storage Optimized appliances"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Use AWS DataSync over the internet connection"
       },
       {
         "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Use S3 Transfer Acceleration"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Set up an AWS Site-to-Site VPN"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Transferring 800TB over a 100 Mbps internet link would take over 2 years. Using multiple AWS Snowball Edge appliances physically transports petabyte-scale data in days.",
+    "awsDocUrl": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatissnowball.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q22",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to manage centralized IT service catalog templates (CloudFormation products) and govern which AWS products engineering teams can launch across all member accounts. Which service provides this governance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Service Catalog"
+      },
+      {
+        "id": "B",
+        "text": "AWS License Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Control Tower"
+      },
+      {
+        "id": "D",
+        "text": "AWS OpsWorks"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Service Catalog allows organizations to create and manage catalogs of approved AWS infrastructure products (CloudFormation stacks) and share them centrally across accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q23",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global web application serves users in Asia, Europe, and America. Users in Asia report slow page rendering times for static images stored in an S3 bucket in us-east-1. Which solution improves latency globally?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create an Amazon CloudFront distribution with origin pointing to the S3 bucket"
+      },
+      {
+        "id": "B",
+        "text": "Enable S3 Versioning"
+      },
+      {
+        "id": "C",
+        "text": "Replicate the S3 bucket to eu-west-1 only"
+      },
+      {
+        "id": "D",
+        "text": "Configure S3 Block Public Access"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon CloudFront caches static assets at over 450 global Edge Locations, dramatically reducing download latency for users regardless of their distance from the origin S3 bucket.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q24",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A serverless application using AWS Lambda and DynamoDB experiences database connection failures during sudden traffic spikes. What component should be placed between Lambda and the database?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon RDS Proxy (if using RDS) or DynamoDB Adaptive Capacity with DAX"
+      },
+      {
+        "id": "B",
+        "text": "AWS Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Route 53 Resolver"
+      },
+      {
+        "id": "D",
+        "text": "AWS Transit Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "RDS Proxy manages database connection pools for relational databases, while DAX and Adaptive Capacity optimize DynamoDB throughput under sudden traffic bursts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q25",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An organization wants to assess their on-premises data center inventory, identify server dependencies, and estimate AWS infrastructure costs prior to migration. Which AWS service provides automated discovery?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Application Discovery Service"
+      },
+      {
+        "id": "B",
+        "text": "AWS Migration Hub Orchestrator"
+      },
+      {
+        "id": "C",
+        "text": "AWS Control Tower"
+      },
+      {
+        "id": "D",
+        "text": "AWS Config"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Application Discovery Service collects server specification, performance, and network connection data from on-premises servers to assist with migration planning.",
+    "awsDocUrl": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q26",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A company's monthly AWS bill shows significant spend on idle EC2 dev instances and unattached EBS volumes. Which TWO tools provide automated findings and rightsizing recommendations? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Compute Optimizer for instance rightsizing recommendations"
+      },
+      {
+        "id": "B",
+        "text": "AWS Trusted Advisor for identifying idle resources and unattached EBS volumes"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudTrail for log filtering"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeArtifact for package management"
+      },
+      {
+        "id": "E",
+        "text": "AWS Storage Gateway for S3 caching"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Compute Optimizer uses machine learning metrics to recommend optimal EC2 instance types. AWS Trusted Advisor highlights unattached EBS volumes, unassociated IPs, and low-utilization instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q27",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise needs to migrate 500 physical and virtual servers from an on-premises data center to AWS with minimal downtime. Which service automates block-level continuous replication of physical, virtual, and cloud servers into AWS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Application Migration Service (AWS MGN)"
+      },
+      {
+        "id": "B",
+        "text": "AWS DataSync"
+      },
+      {
+        "id": "C",
+        "text": "AWS Database Migration Service (AWS DMS)"
+      },
+      {
+        "id": "D",
+        "text": "AWS Snowball Edge"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Application Migration Service (MGN) automates lift-and-shift server migration by continuously replicating block-level storage from source physical or virtual servers to AWS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q28",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application running on EC2 instances accesses S3 buckets. Security policies require that all S3 API traffic from the VPC must not pass over the internet or use NAT Gateways. Which VPC feature satisfies this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Gateway VPC Endpoint"
+      },
+      {
+        "id": "B",
+        "text": "Internet Gateway"
+      },
+      {
+        "id": "C",
+        "text": "Egress-Only Internet Gateway"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "S3 Gateway VPC Endpoints route traffic from instances in private subnets directly to S3 within the AWS network without internet gateways or NAT devices.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q29",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise uses AWS Organizations with consolidated billing. The CFO wants to allocate AWS charges to specific business units based on custom tag keys like `CostCenter`. What step must be completed in the Master account?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Activate User-Defined Cost Allocation Tags in the AWS Billing Console"
+      },
+      {
+        "id": "B",
+        "text": "Create separate billing accounts for each business unit"
+      },
+      {
+        "id": "C",
+        "text": "Enable AWS KMS key tagging"
+      },
+      {
+        "id": "D",
+        "text": "Export billing data to S3 via CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "User-defined cost allocation tags must be explicitly activated in the AWS Billing Console (Management account) before they appear in Cost Explorer or AWS Cost and Usage Reports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q30",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise needs to connect 50 VPCs across 5 AWS regions to an on-premises data center connected via a 10 Gbps AWS Direct Connect link. Which architecture provides scalable multi-region routing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Transit Gateway in each region connected via Transit Gateway Peering and a Direct Connect Gateway"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering full mesh between all 50 VPCs and 5 VPN connections"
+      },
+      {
+        "id": "C",
+        "text": "VPC Gateway Endpoints created in each region pointing to Direct Connect"
+      },
+      {
+        "id": "D",
+        "text": "Transit Gateway in us-east-1 only with cross-region VPC peering"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Direct Connect Gateway attached to regional Transit Gateways (interconnected via Transit Gateway Peering) provides scalable, low-latency multi-region networking between on-prem and all VPCs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q33",
+    "id": "sapc02-s4-q31",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to ingest real-time telemetry from 500,000 IoT devices emitting 100KB payloads per second, store raw data durably in S3, and stream real-time analytics to a dashboard. Which TWO services form the foundation of this ingestion pipeline? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
+        "text": "Amazon Kinesis Data Streams for high-throughput stream ingestion"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Data Firehose for buffering and batch writing stream data to S3"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Storage Gateway File Gateway"
       },
       {
         "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon SQS Standard Queue with 14-day retention"
+      },
+      {
+        "id": "E",
+        "text": "AWS Batch cluster with EC2 Spot instances"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A",
+      "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Kinesis Data Streams ingests massive streaming telemetry concurrently, while Amazon Data Firehose continuously converts and buffers stream records into Amazon S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q34",
+    "id": "sapc02-s4-q32",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A legacy application runs on EC2 instances behind an Application Load Balancer. The database is experiencing read bottlenecks during peak hours. The database queries are static catalog lookups. What is the MOST cost-effective architectural improvement to reduce database load?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Implement an Amazon ElastiCache cluster to cache query results with TTL"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "Upgrade the RDS instance to a larger db.m6g instance class"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Add 5 RDS Read Replicas across regions"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Convert the ALB to a Network Load Balancer"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Caching static database query results in Amazon ElastiCache (Redis/Memcached) offloads reads from the database with sub-millisecond responses, providing optimal cost-performance.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Strategies.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q33",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company is planning a large-scale migration of 200 applications. They need a single central dashboard to track the progress of migrations across AWS MGN, AWS DMS, and partner tools. Which service provides this tracking?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Migration Hub"
+      },
+      {
+        "id": "B",
+        "text": "AWS Organizations"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Explorer"
+      },
+      {
+        "id": "D",
+        "text": "AWS Service Catalog"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Migration Hub provides a single location to track the progress of application migrations across multiple AWS and partner tools.",
+    "awsDocUrl": "https://docs.aws.amazon.com/migrationhub/latest/ug/whatis.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q34",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A multi-national corporation wants to centralize DNS resolution for private domains (`corp.internal`) between on-premises DNS servers and private hosted zones in 20 AWS VPCs. Which TWO components are required? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Route 53 Resolver Outbound Endpoints with forwarding rules targeting on-premises DNS servers"
+      },
+      {
+        "id": "B",
+        "text": "Route 53 Resolver Inbound Endpoints allowing on-premises DNS servers to query private hosted zones"
+      },
+      {
+        "id": "C",
+        "text": "VPC Peering mesh between all 20 VPCs and on-premises routers"
+      },
+      {
+        "id": "D",
+        "text": "Elastic Load Balancer with UDP listeners on port 53"
+      },
+      {
+        "id": "E",
+        "text": "AWS CloudFront custom origin with DNS rewrite"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Route 53 Resolver Inbound Endpoints allow on-prem DNS to resolve AWS Private Hosted Zones. Outbound Endpoints forward VPC DNS queries for `corp.internal` to on-premises DNS servers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q35",
+    "id": "sapc02-s4-q35",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 35",
+    "scenario": "A company needs to audit resource configurations continuously across 100 AWS accounts and aggregate compliance results into a single security operations account. Which service combination provides centralized compliance governance?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS Config Aggregator spanning AWS Organizations with AWS Security Hub"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Design New Solutions"
+        "text": "Amazon CloudWatch Logs Subscriptions with Kinesis Data Firehose"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS CloudTrail Organization Trails with S3 Object Lock"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Systems Manager State Manager with SNS"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "An AWS Config Aggregator collects configuration and compliance data across all accounts in an AWS Organization. Security Hub integrates with Config to provide centralized compliance dashboards.",
+    "awsDocUrl": "https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q36",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q37",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q38",
+    "id": "sapc02-s4-q36",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d1",
@@ -1343,180 +1253,74 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A enterprise software provider wants to share a private microservice API running behind a Network Load Balancer in Account A with thousands of customer AWS accounts securely without exposing traffic over the internet or requiring VPC CIDR overlap resolution. What mechanism should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS PrivateLink (VPC Endpoint Services)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "VPC Peering"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Site-to-Site VPN"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Transit Gateway"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS PrivateLink (VPC Endpoint Service) exposes service endpoints privately across AWS accounts without requiring VPC peering or worrying about overlapping CIDR blocks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q39",
+    "id": "sapc02-s4-q37",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
     "domainName": "Domain 2: Design New Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q40",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to ingest real-time telemetry from 500,000 IoT devices emitting 100KB payloads per second, store raw data durably in S3, and stream real-time analytics to a dashboard. Which TWO services form the foundation of this ingestion pipeline? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon Kinesis Data Streams for high-throughput stream ingestion"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Continuous Improvement for Existing Solutions"
+        "text": "Amazon Data Firehose for buffering and batch writing stream data to S3"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Storage Gateway File Gateway"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Amazon SQS Standard Queue with 14-day retention"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Batch cluster with EC2 Spot instances"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Kinesis Data Streams ingests massive streaming telemetry concurrently, while Amazon Data Firehose continuously converts and buffers stream records into Amazon S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+    "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q41",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q42",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 42",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q43",
+    "id": "sapc02-s4-q38",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
@@ -1524,69 +1328,174 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An analytics platform needs to process petabytes of unstructured logs stored in S3 using serverless SQL queries with no cluster management overhead. Which service provides pay-per-query SQL analytics directly on S3?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
+        "text": "Amazon Athena"
       },
       {
         "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon Redshift RA3"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon EMR Hive"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon RDS PostgreSQL"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Amazon Athena is an interactive, serverless query service that allows analyzing data in Amazon S3 using standard SQL syntax, charging only per byte scanned.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q44",
+    "id": "sapc02-s4-q39",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A central security team needs to enforce KMS key policies across 50 accounts so that key deletion requests must undergo a 30-day waiting period and generate EventBridge notifications. Which mechanism ensures accounts cannot bypass this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
+        "text": "AWS Organizations SCP restricting kms:ScheduleKeyDeletion or setting minimum waiting period"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS KMS default AWS Managed Keys"
       },
       {
         "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "IAM user policies in member accounts"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Secrets Manager policies"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "SCPs in AWS Organizations prevent member accounts from performing restricted KMS actions (like bypassing deletion waiting periods) even if local admins have full IAM rights.",
+    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-default.html",
+    "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q45",
+    "id": "sapc02-s4-q40",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A enterprise workflow requires coordinating microservice steps that include human approvals, long-running batch jobs, and conditional branching. Which serverless service orchestrates state machines reliably?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Step Functions"
+      },
+      {
+        "id": "B",
+        "text": "Amazon SQS"
+      },
+      {
+        "id": "C",
+        "text": "Amazon SNS"
+      },
+      {
+        "id": "D",
+        "text": "AWS Lambda"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Step Functions maintains workflow state, manages execution flow, handles retries, and coordinates serverless and containerized microservice workflows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q41",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming application needs to route global user traffic to the geographically closest healthy Application Load Balancer endpoint in either us-west-2 or eu-central-1 using static Anycast IP addresses. Which network service fulfills this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Global Accelerator"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Route 53 Geolocation Routing"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator assigns two static Anycast IP addresses that route traffic over the AWS global backbone network directly to optimal regional endpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q42",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global e-commerce application requires sub-second multi-region active-active database writes with automatic conflict resolution between us-east-1 and eu-west-1. Which database solution provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon DynamoDB Global Tables"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Aurora PostgreSQL Multi-Region Read Replicas"
+      },
+      {
+        "id": "C",
+        "text": "Amazon RDS MySQL Multi-AZ"
+      },
+      {
+        "id": "D",
+        "text": "Amazon DocumentDB Global Clusters"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon DynamoDB Global Tables provide fully managed multi-region, multi-active database replication with single-digit millisecond read/write latency in all regions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "sapc02-s4-q43",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d4",
@@ -1594,74 +1503,74 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A data engineering team needs to transfer tens of millions of small files (totaling 100TB) from an on-premises NFS storage server to Amazon S3 over an existing AWS Direct Connect link. Which TWO features of AWS DataSync optimize this transfer? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS DataSync parallel network transfer architecture optimized for small files"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Accelerate Workload Migration and Modernization"
+        "text": "AWS DataSync built-in data integrity verification during transfer"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Snowcone physical shipping"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Storage Gateway Tape Gateway"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CloudTrail Event History logging"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS DataSync uses a custom transfer protocol and parallel architecture specifically optimized to accelerate moving millions of small files over Direct Connect while automatically verifying data integrity.",
+    "awsDocUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html",
+    "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q46",
+    "id": "sapc02-s4-q44",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company requires a shared file system for a Linux web server fleet that automatically scales storage up to petabytes without pre-provisioning capacity and supports concurrent POSIX access across multiple AZs. Which service should be selected?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon EFS (Elastic File System)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "Amazon EBS (Elastic Block Store) gp3"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon FSx for Windows File Server"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Storage Gateway Volume Gateway"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Amazon EFS provides scalable POSIX-compliant shared storage accessible simultaneously across multiple Availability Zones via NFSv4.",
+    "awsDocUrl": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q47",
+    "id": "sapc02-s4-q45",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
@@ -1669,396 +1578,244 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company is designing a microservice architecture where thousands of independent publishers send order events, and multiple downstream microservices consume only relevant subset events based on JSON message content filters. Which pattern is optimal?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
+        "text": "Amazon EventBridge Event Bus with Event Rules matching event content patterns"
       },
       {
         "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon SQS Standard queues with Lambda pollers"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon SNS topics without filtering"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q48",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q49",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 49",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q50",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Design Complex Organizations"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q51",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q52",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q53",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q54",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d1",
-    "domainName": "Domain 1: Design Complex Organizations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Step Functions Parallel state"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Amazon EventBridge provides content-based event filtering rules directly matching event JSON attributes, efficiently routing events to distinct target services.",
+    "awsDocUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q55",
+    "id": "sapc02-s4-q46",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
     "domainName": "Domain 2: Design New Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-performance computing (HPC) financial simulation cluster running across 100 EC2 instances requires low-latency, high-throughput inter-node network communication. Which configuration minimizes latency between instances?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Deploy EC2 instances in a Cluster Placement Group within a single Availability Zone with EFA (Elastic Fabric Adapter)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Design New Solutions"
+        "text": "Deploy instances across multiple Availability Zones in a Spread Placement Group"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Use Partition Placement Groups across 3 regions"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Attach multiple Elastic IP addresses"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "A Cluster Placement Group packs instances close together within one AZ, and Elastic Fabric Adapter (EFA) bypasses the OS kernel to provide low-latency RDMA networking.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html",
+    "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q56",
+    "id": "sapc02-s4-q47",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global e-commerce application requires sub-second multi-region active-active database writes with automatic conflict resolution between us-east-1 and eu-west-1. Which database solution provides this capability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon DynamoDB Global Tables"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Aurora PostgreSQL Multi-Region Read Replicas"
+      },
+      {
+        "id": "C",
+        "text": "Amazon RDS MySQL Multi-AZ"
+      },
+      {
+        "id": "D",
+        "text": "Amazon DocumentDB Global Clusters"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon DynamoDB Global Tables provide fully managed multi-region, multi-active database replication with single-digit millisecond read/write latency in all regions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "sapc02-s4-q48",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 56",
+    "isScored": true,
+    "scenario": "A serverless application using AWS Lambda and DynamoDB experiences database connection failures during sudden traffic spikes. What component should be placed between Lambda and the database?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
+        "text": "Amazon RDS Proxy (if using RDS) or DynamoDB Adaptive Capacity with DAX"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Direct Connect"
       },
       {
         "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon Route 53 Resolver"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Transit Gateway"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "RDS Proxy manages database connection pools for relational databases, while DAX and Adaptive Capacity optimize DynamoDB throughput under sudden traffic bursts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q57",
+    "id": "sapc02-s4-q49",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": true,
+    "scenario": "A global enterprise with 300 AWS accounts needs to enforce a central security policy that prevents member account root users from terminating AWS Config or CloudTrail across all accounts. What is the MOST effective architecture?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
+        "text": "Apply an Organization-level Service Control Policy (SCP) at the root OU level in AWS Organizations"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Create IAM policies in each account and assign them to root"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Use AWS Config Rules with Lambda auto-remediation in every account"
       },
       {
         "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Deploy an AWS CloudFormation StackSet with local SCPs"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Service Control Policies (SCPs) in AWS Organizations set maximum permissions for member accounts. SCPs override even root user permissions in member accounts, ensuring central guardrails cannot be bypassed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html",
+    "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q58",
+    "id": "sapc02-s4-q50",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise needs to optimize network performance between two EC2 instances in different Availability Zones within the same region. Which network setting provides up to 100 Gbps network bandwidth?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enhanced Networking (SR-IOV / ENA) on supported EC2 instance types"
+      },
+      {
+        "id": "B",
+        "text": "VPC Peering with jumbo frames disabled"
+      },
+      {
+        "id": "C",
+        "text": "AWS Site-to-Site VPN"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway with Elastic IPs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Enhanced Networking uses Single Root I/O Virtualization (SR-IOV) and Elastic Network Adapter (ENA) to deliver higher bandwidth, higher packet per second (PPS) performance, and lower inter-instance latency.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q51",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company wants to perform canary deployments for a microservice deployed on AWS Fargate behind an Application Load Balancer. The deployment must shift 10% of traffic to the new revision, wait 15 minutes, and automatically rollback if CloudWatch alarms fire. Which tool automates this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CodeDeploy with Blue/Green deployment configuration"
+      },
+      {
+        "id": "B",
+        "text": "AWS CloudFormation StackSets"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Elastic Beanstalk All-at-Once"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeDeploy natively supports Blue/Green canary deployments for ECS/Fargate services, managing traffic shifting via ALB listener rules and monitoring CloudWatch alarms for automated rollback.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-ecs.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "sapc02-s4-q52",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d1",
@@ -2066,109 +1823,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A financial organization requires single sign-on (SSO) for 5,000 workforce users into hundreds of AWS accounts using their existing Active Directory identity provider via SAML 2.0. Which solution minimizes administrative management?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS IAM Identity Center (successor to AWS Single Sign-On) integrated with Active Directory"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "IAM Users created in each AWS account with trust relationships"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Individual IAM Identity Providers configured in every AWS account"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Cognito Identity Pools mapped to IAM Roles"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS IAM Identity Center integrates with Active Directory via SAML 2.0 or AWS Directory Service AD Connector. It centrally assigns account access and permission sets across the entire AWS Organization.",
+    "awsDocUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q59",
-    "setId": 4,
-    "examCode": "SAP-C02",
-    "domainId": "sap-d2",
-    "domainName": "Domain 2: Design New Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "sap-c02-s4-q60",
+    "id": "sapc02-s4-q53",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A monolithic web application deployed on EC2 instances experiences frequent crashes when background image rendering jobs run. How should the architecture be decoupled to improve reliability?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Offload image rendering jobs to SQS queue and process them with worker EC2 instances or Lambda"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Continuous Improvement for Existing Solutions"
+        "text": "Increase the EC2 instance volume size"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Put all rendering code inside the web server request handler thread"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Use sticky sessions on the Application Load Balancer"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Decoupling web request processing from heavy background tasks using an SQS queue ensures web servers remain responsive while worker instances scale independently.",
+    "awsDocUrl": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_decouple_mechanisms.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q61",
+    "id": "sapc02-s4-q54",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d4",
@@ -2176,34 +1893,104 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization in a zero-trust compliance environment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise is migrating a mainframe COBOL workload to AWS. They want a fully managed environment designed to refactor, test, and run mainframe workloads on AWS. Which service provides this platform?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Accelerate Workload Migration and Modernization"
+        "text": "AWS Mainframe Modernization"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Application Migration Service"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Batch"
       },
       {
         "id": "D",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon EMR"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS Mainframe Modernization provides tools and managed runtime environments to migrate, modernize, and run mainframe workloads on AWS cloud infrastructure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/m2/latest/userguide/what-is-m2.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q62",
+    "id": "sapc02-s4-q55",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company needs to audit all infrastructure changes deployed via CloudFormation templates to detect resource property drift across 50 production stacks. Which feature provides this visibility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudFormation Drift Detection"
+      },
+      {
+        "id": "B",
+        "text": "CloudFormation Change Sets"
+      },
+      {
+        "id": "C",
+        "text": "CloudFormation StackSets"
+      },
+      {
+        "id": "D",
+        "text": "CloudFormation Rollback"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudFormation Drift Detection allows identifying resources that have been modified outside of CloudFormation template control across stacks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q56",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company wants to migrate an existing VMware vSphere environment directly to AWS without converting VM formats or modifying operational management tools. Which joint solution supports native VMware SDDC on AWS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VMware Cloud on AWS"
+      },
+      {
+        "id": "B",
+        "text": "AWS Application Migration Service"
+      },
+      {
+        "id": "C",
+        "text": "Amazon EC2 Bare Metal"
+      },
+      {
+        "id": "D",
+        "text": "AWS Outposts"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VMware Cloud on AWS allows organizations to run their VMware vSphere Software-Defined Data Center (SDDC) environment natively on AWS bare metal infrastructure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vmware-cloud-on-aws/latest/userguide/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q57",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d1",
@@ -2211,34 +1998,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design Complex Organizations during batch data processing operations. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A enterprise software provider wants to share a private microservice API running behind a Network Load Balancer in Account A with thousands of customer AWS accounts securely without exposing traffic over the internet or requiring VPC CIDR overlap resolution. What mechanism should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS PrivateLink (VPC Endpoint Services)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design Complex Organizations"
+        "text": "VPC Peering"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Site-to-Site VPN"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Transit Gateway"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS PrivateLink (VPC Endpoint Service) exposes service endpoints privately across AWS accounts without requiring VPC peering or worrying about overlapping CIDR blocks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service-overview.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q63",
+    "id": "sapc02-s4-q58",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d4",
+    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company needs to continuously sync file storage between an on-premises NAS device and an Amazon EFS file system over AWS Direct Connect for a hybrid workflow. Which service automates continuous file synchronization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS DataSync"
+      },
+      {
+        "id": "B",
+        "text": "AWS Snowball Edge"
+      },
+      {
+        "id": "C",
+        "text": "AWS Database Migration Service"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Transfer Acceleration"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS DataSync automates moving and synchronizing data between on-premises storage systems (NFS, SMB) and AWS storage services (S3, EFS, FSx) on a scheduled basis.",
+    "awsDocUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q59",
     "setId": 4,
     "examCode": "SAP-C02",
     "domainId": "sap-d2",
@@ -2246,106 +2068,240 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Design New Solutions during high-concurrency peak traffic periods. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws sap practice-test --set 4 --q 63",
+    "scenario": "A enterprise application requires a relational database that scales write capacity beyond a single database instance without application partitioning code changes. Which Amazon Aurora feature supports multi-master write capabilities across an AZ?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Design New Solutions"
+        "text": "Amazon Aurora Multi-Master"
       },
       {
         "id": "B",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon Aurora Read Replicas"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon RDS Multi-AZ"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Aurora Serverless v2"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Amazon Aurora Multi-Master enables creation of multiple read-write database instances across multiple AZs in a single region, providing continuous write availability.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master-devs.html",
+    "difficulty": "Challenging"
   },
   {
-    "id": "sap-c02-s4-q64",
+    "id": "sapc02-s4-q60",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d3",
-    "domainName": "Domain 3: Continuous Improvement for Existing Solutions",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Continuous Improvement for Existing Solutions while refactoring a legacy monolithic application. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company requires a shared file system for a Linux web server fleet that automatically scales storage up to petabytes without pre-provisioning capacity and supports concurrent POSIX access across multiple AZs. Which service should be selected?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Continuous Improvement for Existing Solutions"
+        "text": "Amazon EFS (Elastic File System)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon EBS (Elastic Block Store) gp3"
       },
       {
         "id": "C",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "Amazon FSx for Windows File Server"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Storage Gateway Volume Gateway"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Amazon EFS provides scalable POSIX-compliant shared storage accessible simultaneously across multiple Availability Zones via NFSv4.",
+    "awsDocUrl": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "sap-c02-s4-q65",
+    "id": "sapc02-s4-q61",
     "setId": 4,
     "examCode": "SAP-C02",
-    "domainId": "sap-d4",
-    "domainName": "Domain 4: Accelerate Workload Migration and Modernization",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for AWS Organizations SCP Security Guardrails within Accelerate Workload Migration and Modernization during real-time streaming data ingestion. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A central security team needs to enforce KMS key policies across 50 accounts so that key deletion requests must undergo a 30-day waiting period and generate EventBridge notifications. Which mechanism ensures accounts cannot bypass this?",
     "options": [
       {
         "id": "A",
-        "text": "Applying Service Control Policies (SCPs) at the OU level with explicit Deny statements"
+        "text": "AWS Organizations SCP restricting kms:ScheduleKeyDeletion or setting minimum waiting period"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Accelerate Workload Migration and Modernization"
+        "text": "AWS KMS default AWS Managed Keys"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "IAM user policies in member accounts"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Secrets Manager policies"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: SCPs enforce enterprise guardrails across member accounts that local IAM admins cannot bypass.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "SCPs in AWS Organizations prevent member accounts from performing restricted KMS actions (like bypassing deletion waiting periods) even if local admins have full IAM rights.",
+    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-default.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "sapc02-s4-q62",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d2",
+    "domainName": "Domain 2: Design New Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An analytics platform needs to process petabytes of unstructured logs stored in S3 using serverless SQL queries with no cluster management overhead. Which service provides pay-per-query SQL analytics directly on S3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Athena"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Redshift RA3"
+      },
+      {
+        "id": "C",
+        "text": "Amazon EMR Hive"
+      },
+      {
+        "id": "D",
+        "text": "Amazon RDS PostgreSQL"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Athena is an interactive, serverless query service that allows analyzing data in Amazon S3 using standard SQL syntax, charging only per byte scanned.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q63",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An application running on EC2 instances accesses S3 buckets. Security policies require that all S3 API traffic from the VPC must not pass over the internet or use NAT Gateways. Which VPC feature satisfies this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Gateway VPC Endpoint"
+      },
+      {
+        "id": "B",
+        "text": "Internet Gateway"
+      },
+      {
+        "id": "C",
+        "text": "Egress-Only Internet Gateway"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "S3 Gateway VPC Endpoints route traffic from instances in private subnets directly to S3 within the AWS network without internet gateways or NAT devices.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q64",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d1",
+    "domainName": "Domain 1: Design Complex Organizations",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A large enterprise needs to set up a multi-account environment following AWS best practices with automated landing zone setup, mandatory guardrails, and centralized account creation. Which service should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Control Tower"
+      },
+      {
+        "id": "B",
+        "text": "AWS Organizations only"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation StackSets"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Control Tower provides a managed service to set up and govern a secure, multi-account AWS environment based on AWS landing zone best practices.",
+    "awsDocUrl": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "sapc02-s4-q65",
+    "setId": 4,
+    "examCode": "SAP-C02",
+    "domainId": "sap-d3",
+    "domainName": "Domain 3: Continuously Improve Existing Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company wants to perform canary deployments for a microservice deployed on AWS Fargate behind an Application Load Balancer. The deployment must shift 10% of traffic to the new revision, wait 15 minutes, and automatically rollback if CloudWatch alarms fire. Which tool automates this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CodeDeploy with Blue/Green deployment configuration"
+      },
+      {
+        "id": "B",
+        "text": "AWS CloudFormation StackSets"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Elastic Beanstalk All-at-Once"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeDeploy natively supports Blue/Green canary deployments for ECS/Fargate services, managing traffic shifting via ALB listener rules and monitoring CloudWatch alarms for automated rollback.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-ecs.html",
+    "difficulty": "Challenging"
   }
 ]

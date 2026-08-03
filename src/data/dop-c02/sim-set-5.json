@@ -1,2351 +1,2312 @@
 [
   {
-    "id": "dop-c02-sim-s5-q1",
+    "id": "dopc02-s5-q1",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps engineer needs to monitor disk utilization percentage on Linux EC2 instances. Which CloudWatch metric dimension namespace contains custom metrics pushed by the CloudWatch Agent?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
+        "text": "CWAgent"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS/EC2"
       },
       {
         "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS/Logs"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q2",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q3",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS/SystemsManager"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Metrics published by the Unified CloudWatch Agent (such as disk_used_percent or mem_used_percent) are published under the default `CWAgent` custom namespace.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q4",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q5",
+    "id": "dopc02-s5-q2",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team detects an compromised IAM access key used by a developer. The DevOps incident responder must immediately invalidate all active sessions for that IAM user. Which IAM action achieves this?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Attach an inline IAM policy denying all actions with a condition checking `aws:TokenIssueTime` before the revocation timestamp"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Resilient Cloud Solutions"
+        "text": "Delete the S3 bucket policies in the account"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Disable VPC Flow Logs"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Re-create the AWS Organization root account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Revoking active IAM user sessions requires attaching a policy that denies all API requests where `aws:TokenIssueTime` is earlier than the revocation timestamp, invalidating existing temporary credentials.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_revoke-tokens.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dopc02-s5-q3",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A DevOps team wants to deploy a serverless application using AWS SAM. Which TWO actions take place during the execution of `sam deploy --guided`? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "SAM CLI packages local artifacts, uploads them to S3, and creates an AWS CloudFormation changeset"
+      },
+      {
+        "id": "B",
+        "text": "CloudFormation executes the changeset to provision/update AWS resources"
+      },
+      {
+        "id": "C",
+        "text": "SAM launches EC2 instances locally to test functions"
+      },
+      {
+        "id": "D",
+        "text": "CodeBuild compiles C++ binaries natively"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS AppRunner provisions container clusters"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "`sam deploy` packages application code, uploads zip artifacts to S3, creates a CloudFormation changeset from the transformed SAM template, and executes it to provision resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q6",
+    "id": "dopc02-s5-q4",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to implement cross-region automated backup copy for Amazon RDS PostgreSQL databases. Which service centrally manages backup schedules, cross-region replication, and lifecycle retention policies?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
+        "text": "AWS Backup"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Data Lifecycle Manager"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager State Manager"
       },
       {
         "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q7",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 7",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CloudFormation StackSets"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Backup provides centralized management for database and volume backups, supporting automated cross-region and cross-account backup copy policies.",
+    "awsDocUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q8",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q9",
+    "id": "dopc02-s5-q5",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q10",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps incident responder wants to automate operational response when GuardDuty detects a High Severity finding (such as a compromised EC2 instance communicating with a C2 server). Which TWO services orchestrate automated isolation? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Amazon EventBridge to catch GuardDuty findings"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Monitoring and Logging"
+        "text": "AWS Systems Manager Automation or Lambda to detach IAM roles and isolate EC2 security groups"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon CloudFront CDN invalidation"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Storage Gateway snapshot upload"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CodeArtifact repository publish"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "GuardDuty publishes findings to EventBridge. An EventBridge rule can trigger a Lambda function or SSM Automation runbook to modify the EC2 instance's security group and isolate it.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediating.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-sim-s5-q11",
+    "id": "dopc02-s5-q6",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps team needs to query 500GB of JSON application log files stored in Amazon S3 over the past year to find specific error messages using SQL without launching any servers. Which service should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Amazon Athena"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
+        "text": "Amazon OpenSearch Service"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Redshift Spectrum"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Session Manager"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon Athena is a serverless interactive query service that enables querying data directly in S3 using standard ANSI SQL without managing database infrastructure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q12",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q13",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q14",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 14",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q15",
+    "id": "dopc02-s5-q7",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to provision infrastructure stacks in member accounts whenever a new account is added to an AWS Organization landing zone. Which service combination automates this account customization?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Control Tower Account Factory with Customizations for AWS Control Tower (CfCT)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for SDLC Automation"
+        "text": "AWS CodeBuild with cron jobs"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Systems Manager Parameter Store"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Customizations for AWS Control Tower (CfCT) uses AWS CloudFormation StackSets and AWS Control Tower lifecycle events to automatically deploy resources when new accounts are provisioned.",
+    "awsDocUrl": "https://docs.aws.amazon.com/controltower/latest/userguide/cfct-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dopc02-s5-q8",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A critical production application experiences intermittent network packet drops. The DevOps team needs to analyze TCP flag details and packet payload headers captured at the ENI level. Which VPC feature captures actual network packets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Traffic Mirroring"
+      },
+      {
+        "id": "B",
+        "text": "VPC Flow Logs"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Traffic Mirroring copies actual network traffic (L2-L4 payloads and TCP flags) from Elastic Network Interfaces (ENIs) and forwards it to out-of-band security/monitoring appliances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dopc02-s5-q9",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer wants to ensure that CloudTrail log files delivered to an S3 bucket have not been tampered with, deleted, or modified after delivery. Which CloudTrail feature provides cryptographic proof of log integrity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudTrail Log File Integrity Validation"
+      },
+      {
+        "id": "B",
+        "text": "CloudTrail Organization Trails"
+      },
+      {
+        "id": "C",
+        "text": "S3 Versioning"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS SSE-S3"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudTrail Log File Integrity Validation generates SHA-256 digital signatures and RSA hashes for log files, allowing cryptographic validation that logs were unaltered.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q10",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer needs to troubleshoot high latency in a distributed microservices application involving API Gateway, AWS Lambda, Amazon DynamoDB, and external HTTP APIs. Which tracing service provides visual trace timelines of sub-segment calls?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS X-Ray with Active Tracing enabled"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudTrail Management Events"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager OpsCenter"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS X-Ray collects trace data from distributed microservices, rendering visual end-to-end service graphs and timeline breakdowns of sub-segment requests to identify bottlenecks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q11",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team wants to automatically rollback a deployment in AWS CodeDeploy if an Application Load Balancer target group HTTP 5xx error rate metric exceeds 5% during traffic shifting. How is this configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attach a CloudWatch Alarm monitoring 5xx error rates to the CodeDeploy Deployment Group automatic rollback configuration"
+      },
+      {
+        "id": "B",
+        "text": "Configure an SQS dead-letter queue"
+      },
+      {
+        "id": "C",
+        "text": "Use AWS Lambda polling every 10 seconds"
+      },
+      {
+        "id": "D",
+        "text": "Add an EC2 status check action"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CodeDeploy supports automatic rollbacks triggered by CloudWatch alarms. If a specified alarm fires during deployment or traffic shifting, CodeDeploy immediately stops and rolls back.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-rollback-automated.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q12",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team manages a continuous delivery pipeline using AWS CodePipeline. They want to execute a blue/green deployment for an Amazon ECS task set running on AWS Fargate. Which deployment service handles traffic shifting between target groups using ALB rules?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CodeDeploy"
+      },
+      {
+        "id": "B",
+        "text": "AWS Elastic Beanstalk"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeDeploy natively handles blue/green deployments for ECS task sets, using ALB listener rules to manage linear, canary, or all-at-once traffic shifting with automatic rollback.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-ecs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q13",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to provision infrastructure stacks in member accounts whenever a new account is added to an AWS Organization landing zone. Which service combination automates this account customization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Control Tower Account Factory with Customizations for AWS Control Tower (CfCT)"
+      },
+      {
+        "id": "B",
+        "text": "AWS CodeBuild with cron jobs"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "D",
+        "text": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Customizations for AWS Control Tower (CfCT) uses AWS CloudFormation StackSets and AWS Control Tower lifecycle events to automatically deploy resources when new accounts are provisioned.",
+    "awsDocUrl": "https://docs.aws.amazon.com/controltower/latest/userguide/cfct-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dopc02-s5-q14",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to manage formal operational change requests (such as approving maintenance window deployments) with multi-level manager approvals and audit trails. Which Systems Manager feature handles change governance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Change Manager"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Session Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Systems Manager Change Manager simplifies how you request, approve, implement, and report on operational changes to application infrastructure across AWS accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q15",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer wants to provision AWS infrastructure across 100 accounts in an organization using reusable Infrastructure as Code modules defined in TypeScript. Which framework compiles TypeScript into CloudFormation templates?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Cloud Development Kit (AWS CDK) with CDK Pipelines"
+      },
+      {
+        "id": "B",
+        "text": "AWS SAM CLI"
+      },
+      {
+        "id": "C",
+        "text": "AWS CodeBuild"
+      },
+      {
+        "id": "D",
+        "text": "AWS Config Conformance Packs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CDK allows developers to write infrastructure using TypeScript, Python, or Java, synthesizing CloudFormation templates and deploying across accounts with CDK Pipelines.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/cdk_pipeline.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q16",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A DevOps team wants to deploy a serverless application using AWS SAM. Which TWO actions take place during the execution of `sam deploy --guided`? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "SAM CLI packages local artifacts, uploads them to S3, and creates an AWS CloudFormation changeset"
+      },
+      {
+        "id": "B",
+        "text": "CloudFormation executes the changeset to provision/update AWS resources"
+      },
+      {
+        "id": "C",
+        "text": "SAM launches EC2 instances locally to test functions"
+      },
+      {
+        "id": "D",
+        "text": "CodeBuild compiles C++ binaries natively"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS AppRunner provisions container clusters"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "`sam deploy` packages application code, uploads zip artifacts to S3, creates a CloudFormation changeset from the transformed SAM template, and executes it to provision resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q16",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q17",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q18",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q19",
+    "id": "dopc02-s5-q17",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainName": "Domain 1: SDLC Automation and IaC",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps engineer needs to manage software configuration state (such as installing specific RPM packages and running configuration scripts) on 500 EC2 instances on a recurring schedule. Which feature should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Systems Manager State Manager with Association documents"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
+        "text": "AWS CodePipeline"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS CloudFormation StackSets"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Config Rules"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Systems Manager State Manager automates keeping EC2 instances in a defined state using SSM documents run on a defined schedule (associations).",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q20",
+    "id": "dopc02-s5-q18",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps engineer wants to provision AWS infrastructure across 100 accounts in an organization using reusable Infrastructure as Code modules defined in TypeScript. Which framework compiles TypeScript into CloudFormation templates?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Cloud Development Kit (AWS CDK) with CDK Pipelines"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Configuration Management and IaC"
+        "text": "AWS SAM CLI"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS CodeBuild"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Config Conformance Packs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CDK allows developers to write infrastructure using TypeScript, Python, or Java, synthesizing CloudFormation templates and deploying across accounts with CDK Pipelines.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/cdk_pipeline.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q19",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team needs to aggregate security findings from GuardDuty, Inspector, Macie, and IAM Access Analyzer across 100 accounts into a single dashboard. Which service acts as the central security management hub?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "B",
+        "text": "AWS Trusted Advisor"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager OpsCenter"
+      },
+      {
+        "id": "D",
+        "text": "AWS Shield Advanced"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Security Hub aggregates, organizes, and prioritizes security findings from multiple AWS security services and third-party partner products across AWS Organizations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q20",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer needs to enforce static code analysis and security vulnerability scanning during the build stage of an AWS CodePipeline pipeline. Where should these security scanning commands be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inside the buildspec.yml file of AWS CodeBuild"
+      },
+      {
+        "id": "B",
+        "text": "In the appspec.yml file of AWS CodeDeploy"
+      },
+      {
+        "id": "C",
+        "text": "In a CloudFormation stack template"
+      },
+      {
+        "id": "D",
+        "text": "In an S3 lifecycle rule"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeBuild executes build specifications defined in `buildspec.yml`. Security tools (like SonarQube, Snyk, or Trivy) run during the build phases (pre_build, build, post_build).",
+    "awsDocUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q21",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application running on EC2 instances needs to access Secrets Manager. Security mandates that credentials must not be stored on disk and network traffic must not traverse the public internet. Which configuration satisfies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attach an IAM Instance Profile to the EC2 instance and create a Secrets Manager Interface VPC Endpoint (AWS PrivateLink)"
+      },
+      {
+        "id": "B",
+        "text": "Hardcode credentials in environment variables over NAT Gateway"
+      },
+      {
+        "id": "C",
+        "text": "Use AWS STS AssumeRole with public IP endpoints"
+      },
+      {
+        "id": "D",
+        "text": "Store credentials in plaintext in S3"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "IAM instance profiles provide temporary credentials in memory, and VPC Interface Endpoints (PrivateLink) keep API traffic strictly within the AWS private network.",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/vpc-endpoint-overview.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q22",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to audit open security group rules across 50 accounts to ensure port 22 (SSH) and port 3389 (RDP) are not open to 0.0.0.0/0. Which AWS service provides pre-built rules and managed conformance packs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Config Conformance Packs"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Distributor"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation StackSets"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodePipeline"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Config Conformance Packs bundle AWS Config rules and remediation actions into a single deployment package across an entire AWS Organization.",
+    "awsDocUrl": "https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q23",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team needs to aggregate security findings from GuardDuty, Inspector, Macie, and IAM Access Analyzer across 100 accounts into a single dashboard. Which service acts as the central security management hub?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "B",
+        "text": "AWS Trusted Advisor"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager OpsCenter"
+      },
+      {
+        "id": "D",
+        "text": "AWS Shield Advanced"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Security Hub aggregates, organizes, and prioritizes security findings from multiple AWS security services and third-party partner products across AWS Organizations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q24",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team needs to host private npm and PyPI software packages internally for developers while caching upstream public packages from npmjs and PyPI. Which AWS service provides a fully managed artifact repository?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CodeArtifact"
+      },
+      {
+        "id": "B",
+        "text": "AWS CodeCommit"
+      },
+      {
+        "id": "C",
+        "text": "Amazon ECR"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Distributor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeArtifact is a fully managed artifact repository service that makes it easy for organizations to securely store, publish, and share software packages (npm, PyPI, Maven, NuGet).",
+    "awsDocUrl": "https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q25",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise security team requires that all Secrets Manager database credentials be rotated automatically every 30 days. What AWS resource performs the underlying secret rotation logic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lambda function created specifically for secret rotation"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager State Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Rule"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeBuild project"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Secrets Manager relies on an AWS Lambda function to execute the custom or built-in database password rotation logic (updating both the database and the secret value).",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q26",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer needs to troubleshoot high latency in a distributed microservices application involving API Gateway, AWS Lambda, Amazon DynamoDB, and external HTTP APIs. Which tracing service provides visual trace timelines of sub-segment calls?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS X-Ray with Active Tracing enabled"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudTrail Management Events"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager OpsCenter"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS X-Ray collects trace data from distributed microservices, rendering visual end-to-end service graphs and timeline breakdowns of sub-segment requests to identify bottlenecks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q27",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to aggregate, filter, and stream application logs from 500 EC2 instances into an Amazon Kinesis Data Stream for real-time analytics. Which agent should be installed on the EC2 instances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unified CloudWatch Agent or AWS Kinesis Agent"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager SSM Agent"
+      },
+      {
+        "id": "C",
+        "text": "AWS CodeDeploy Agent"
+      },
+      {
+        "id": "D",
+        "text": "AWS X-Ray Daemon"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The Unified CloudWatch Agent and AWS Kinesis Agent can tail application log files on EC2 instances and stream them continuously into Kinesis Data Streams or CloudWatch Logs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartSendLogs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q28",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise application runs across two AWS regions in an active-active setup behind AWS Global Accelerator. The DevOps team needs to automatically route 100% of user traffic away from a region if regional health checks fail. How should health checks be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Global Accelerator Endpoint Group health checks with custom health check paths and thresholds"
+      },
+      {
+        "id": "B",
+        "text": "Use Route 53 latency routing without health checks"
+      },
+      {
+        "id": "C",
+        "text": "Enable S3 Multi-Region Access Points"
+      },
+      {
+        "id": "D",
+        "text": "Configure EC2 Auto Scaling default timers"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Global Accelerator continuously monitors the health of endpoints in its endpoint groups. If an endpoint or region becomes unhealthy, traffic is rerouted within seconds to healthy endpoints in another region.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpoint-groups-health-checking.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q29",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer wants to ensure that CloudTrail log files delivered to an S3 bucket have not been tampered with, deleted, or modified after delivery. Which CloudTrail feature provides cryptographic proof of log integrity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudTrail Log File Integrity Validation"
+      },
+      {
+        "id": "B",
+        "text": "CloudTrail Organization Trails"
+      },
+      {
+        "id": "C",
+        "text": "S3 Versioning"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS SSE-S3"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudTrail Log File Integrity Validation generates SHA-256 digital signatures and RSA hashes for log files, allowing cryptographic validation that logs were unaltered.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q30",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A DevOps team wants to monitor real-time application metrics and trigger automated healing actions when an Auto Scaling Group instance fails. Which TWO components work together to automate replacement? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Auto Scaling Group ELB Health Checks to detect unhealthy instances"
+      },
+      {
+        "id": "B",
+        "text": "Auto Scaling Group Automatic Instance Replacement to launch a new instance"
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue DataBrew for log cleanup"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Transfer Acceleration for metrics"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CodeCommit webhooks"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Enabling ELB health checks on an ASG ensures application-level health is monitored. Unhealthy instances are automatically terminated and replaced by fresh instances from the launch template.",
+    "awsDocUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-elb-healthcheck.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q21",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 21",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q22",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q23",
+    "id": "dopc02-s5-q31",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainName": "Domain 1: SDLC Automation and IaC",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps engineer needs to manage software configuration state (such as installing specific RPM packages and running configuration scripts) on 500 EC2 instances on a recurring schedule. Which feature should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Systems Manager State Manager with Association documents"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
+        "text": "AWS CodePipeline"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS CloudFormation StackSets"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Config Rules"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Systems Manager State Manager automates keeping EC2 instances in a defined state using SSM documents run on a defined schedule (associations).",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q24",
+    "id": "dopc02-s5-q32",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps team needs to query 500GB of JSON application log files stored in Amazon S3 over the past year to find specific error messages using SQL without launching any servers. Which service should be used?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
+        "text": "Amazon Athena"
       },
       {
         "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Amazon OpenSearch Service"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Redshift Spectrum"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Session Manager"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon Athena is a serverless interactive query service that enables querying data directly in S3 using standard ANSI SQL without managing database infrastructure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q25",
+    "id": "dopc02-s5-q33",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps team wants to automatically rollback a deployment in AWS CodeDeploy if an Application Load Balancer target group HTTP 5xx error rate metric exceeds 5% during traffic shifting. How is this configured?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Attach a CloudWatch Alarm monitoring 5xx error rates to the CodeDeploy Deployment Group automatic rollback configuration"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Resilient Cloud Solutions"
+        "text": "Configure an SQS dead-letter queue"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Use AWS Lambda polling every 10 seconds"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Add an EC2 status check action"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CodeDeploy supports automatic rollbacks triggered by CloudWatch alarms. If a specified alarm fires during deployment or traffic shifting, CodeDeploy immediately stops and rolls back.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-rollback-automated.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q34",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A critical production application experiences intermittent network packet drops. The DevOps team needs to analyze TCP flag details and packet payload headers captured at the ENI level. Which VPC feature captures actual network packets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Traffic Mirroring"
+      },
+      {
+        "id": "B",
+        "text": "VPC Flow Logs"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Traffic Mirroring copies actual network traffic (L2-L4 payloads and TCP flags) from Elastic Network Interfaces (ENIs) and forwards it to out-of-band security/monitoring appliances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dopc02-s5-q35",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A DevOps incident responder wants to automate operational response when GuardDuty detects a High Severity finding (such as a compromised EC2 instance communicating with a C2 server). Which TWO services orchestrate automated isolation? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon EventBridge to catch GuardDuty findings"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Automation or Lambda to detach IAM roles and isolate EC2 security groups"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront CDN invalidation"
+      },
+      {
+        "id": "D",
+        "text": "AWS Storage Gateway snapshot upload"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CodeArtifact repository publish"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "GuardDuty publishes findings to EventBridge. An EventBridge rule can trigger a Lambda function or SSM Automation runbook to modify the EC2 instance's security group and isolate it.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediating.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-sim-s5-q26",
+    "id": "dopc02-s5-q36",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to audit open security group rules across 50 accounts to ensure port 22 (SSH) and port 3389 (RDP) are not open to 0.0.0.0/0. Which AWS service provides pre-built rules and managed conformance packs?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
+        "text": "AWS Config Conformance Packs"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Distributor"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CloudFormation StackSets"
       },
       {
         "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q27",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CodePipeline"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Config Conformance Packs bundle AWS Config rules and remediation actions into a single deployment package across an entire AWS Organization.",
+    "awsDocUrl": "https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q28",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 28",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q29",
+    "id": "dopc02-s5-q37",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps team needs to collect operational issues (OpsItems) across AWS resources and manage incident resolution workflows in a centralized console. Which Systems Manager tool handles operational issue tracking?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
+        "text": "AWS Systems Manager OpsCenter"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Explorer"
       },
       {
         "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Systems Manager Change Manager"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Patch Manager"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Systems Manager OpsCenter provides a central location where operations engineers and DevOps teams view, investigate, and resolve operational issues (OpsItems) related to AWS resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q30",
+    "id": "dopc02-s5-q38",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps team needs to host private npm and PyPI software packages internally for developers while caching upstream public packages from npmjs and PyPI. Which AWS service provides a fully managed artifact repository?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS CodeArtifact"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Monitoring and Logging"
+        "text": "AWS CodeCommit"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Amazon ECR"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Systems Manager Distributor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeArtifact is a fully managed artifact repository service that makes it easy for organizations to securely store, publish, and share software packages (npm, PyPI, Maven, NuGet).",
+    "awsDocUrl": "https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q39",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to implement cross-region automated backup copy for Amazon RDS PostgreSQL databases. Which service centrally manages backup schedules, cross-region replication, and lifecycle retention policies?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Backup"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Data Lifecycle Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager State Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudFormation StackSets"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Backup provides centralized management for database and volume backups, supporting automated cross-region and cross-account backup copy policies.",
+    "awsDocUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q40",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team manages a continuous delivery pipeline using AWS CodePipeline. They want to execute a blue/green deployment for an Amazon ECS task set running on AWS Fargate. Which deployment service handles traffic shifting between target groups using ALB rules?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CodeDeploy"
+      },
+      {
+        "id": "B",
+        "text": "AWS Elastic Beanstalk"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeDeploy natively handles blue/green deployments for ECS task sets, using ALB listener rules to manage linear, canary, or all-at-once traffic shifting with automatic rollback.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-ecs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q41",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team manages a continuous delivery pipeline using AWS CodePipeline. They want to execute a blue/green deployment for an Amazon ECS task set running on AWS Fargate. Which deployment service handles traffic shifting between target groups using ALB rules?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CodeDeploy"
+      },
+      {
+        "id": "B",
+        "text": "AWS Elastic Beanstalk"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeDeploy natively handles blue/green deployments for ECS task sets, using ALB listener rules to manage linear, canary, or all-at-once traffic shifting with automatic rollback.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-ecs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q42",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to provision infrastructure stacks in member accounts whenever a new account is added to an AWS Organization landing zone. Which service combination automates this account customization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Control Tower Account Factory with Customizations for AWS Control Tower (CfCT)"
+      },
+      {
+        "id": "B",
+        "text": "AWS CodeBuild with cron jobs"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "D",
+        "text": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Customizations for AWS Control Tower (CfCT) uses AWS CloudFormation StackSets and AWS Control Tower lifecycle events to automatically deploy resources when new accounts are provisioned.",
+    "awsDocUrl": "https://docs.aws.amazon.com/controltower/latest/userguide/cfct-overview.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dopc02-s5-q43",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company uses AWS CodePipeline. The QA environment approval step requires a senior engineer to manually inspect test results before deployment proceeds to Production. Which CodePipeline action handles manual intervention?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manual Approval Action configured with SNS notification topic"
+      },
+      {
+        "id": "B",
+        "text": "AWS Lambda Action with 1-hour sleep timeout"
+      },
+      {
+        "id": "C",
+        "text": "AWS CodeBuild Action with interactive prompt"
+      },
+      {
+        "id": "D",
+        "text": "CloudFormation StackSet Action"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CodePipeline includes built-in Manual Approval stage actions that publish notifications via SNS and pause pipeline execution until an authorized user approves or rejects the action.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q44",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company uses AWS CodeCommit to host git repositories. Developers must not be allowed to push commits directly to the `main` branch. All changes to `main` must be merged via approved Pull Requests with at least 2 approvals. How is this enforced?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create an IAM policy denying codecommit:GitPush on reference `refs/heads/main` and configure Pull Request Approval Templates"
+      },
+      {
+        "id": "B",
+        "text": "Apply an S3 bucket policy on CodeCommit"
+      },
+      {
+        "id": "C",
+        "text": "Use AWS Systems Manager State Manager"
+      },
+      {
+        "id": "D",
+        "text": "Configure a CloudWatch Log Metric Filter"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Combining IAM policies denying direct pushes to `refs/heads/main` with CodeCommit Approval Rule Templates enforces required PR approvals prior to merging.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-approval-rule-template.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dopc02-s5-q45",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer needs to monitor disk utilization percentage on Linux EC2 instances. Which CloudWatch metric dimension namespace contains custom metrics pushed by the CloudWatch Agent?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CWAgent"
+      },
+      {
+        "id": "B",
+        "text": "AWS/EC2"
+      },
+      {
+        "id": "C",
+        "text": "AWS/Logs"
+      },
+      {
+        "id": "D",
+        "text": "AWS/SystemsManager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Metrics published by the Unified CloudWatch Agent (such as disk_used_percent or mem_used_percent) are published under the default `CWAgent` custom namespace.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q46",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company wants to manage formal operational change requests (such as approving maintenance window deployments) with multi-level manager approvals and audit trails. Which Systems Manager feature handles change governance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Change Manager"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Session Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Systems Manager Change Manager simplifies how you request, approve, implement, and report on operational changes to application infrastructure across AWS accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q47",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps team wants to trigger an automated Lambda remediation script whenever an AWS Health event (such as an EC2 hardware degradation notification) is published for their account. Which service routes AWS Health events?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon EventBridge with an AWS Health event rule"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudWatch Logs Subscription Filter"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Conformance Pack"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Parameter Store"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Health integrates natively with EventBridge. You can create EventBridge rules matching `aws.health` event sources to automatically invoke Lambda functions or Systems Manager runbooks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q48",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise security team requires that all Secrets Manager database credentials be rotated automatically every 30 days. What AWS resource performs the underlying secret rotation logic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lambda function created specifically for secret rotation"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager State Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Rule"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeBuild project"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Secrets Manager relies on an AWS Lambda function to execute the custom or built-in database password rotation logic (updating both the database and the secret value).",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q49",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A DevOps team wants to deploy a serverless application using AWS SAM. Which TWO actions take place during the execution of `sam deploy --guided`? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "SAM CLI packages local artifacts, uploads them to S3, and creates an AWS CloudFormation changeset"
+      },
+      {
+        "id": "B",
+        "text": "CloudFormation executes the changeset to provision/update AWS resources"
+      },
+      {
+        "id": "C",
+        "text": "SAM launches EC2 instances locally to test functions"
+      },
+      {
+        "id": "D",
+        "text": "CodeBuild compiles C++ binaries natively"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS AppRunner provisions container clusters"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "`sam deploy` packages application code, uploads zip artifacts to S3, creates a CloudFormation changeset from the transformed SAM template, and executes it to provision resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q50",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A DevOps engineer needs to enforce static code analysis and security vulnerability scanning during the build stage of an AWS CodePipeline pipeline. Where should these security scanning commands be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inside the buildspec.yml file of AWS CodeBuild"
+      },
+      {
+        "id": "B",
+        "text": "In the appspec.yml file of AWS CodeDeploy"
+      },
+      {
+        "id": "C",
+        "text": "In a CloudFormation stack template"
+      },
+      {
+        "id": "D",
+        "text": "In an S3 lifecycle rule"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeBuild executes build specifications defined in `buildspec.yml`. Security tools (like SonarQube, Snyk, or Trivy) run during the build phases (pre_build, build, post_build).",
+    "awsDocUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q51",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A DevOps team needs to host private npm and PyPI software packages internally for developers while caching upstream public packages from npmjs and PyPI. Which AWS service provides a fully managed artifact repository?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CodeArtifact"
+      },
+      {
+        "id": "B",
+        "text": "AWS CodeCommit"
+      },
+      {
+        "id": "C",
+        "text": "Amazon ECR"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Distributor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CodeArtifact is a fully managed artifact repository service that makes it easy for organizations to securely store, publish, and share software packages (npm, PyPI, Maven, NuGet).",
+    "awsDocUrl": "https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q52",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A DevOps team needs to collect operational issues (OpsItems) across AWS resources and manage incident resolution workflows in a centralized console. Which Systems Manager tool handles operational issue tracking?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager OpsCenter"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Explorer"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Change Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Patch Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Systems Manager OpsCenter provides a central location where operations engineers and DevOps teams view, investigate, and resolve operational issues (OpsItems) related to AWS resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q53",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A DevOps team wants to monitor real-time application metrics and trigger automated healing actions when an Auto Scaling Group instance fails. Which TWO components work together to automate replacement? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Auto Scaling Group ELB Health Checks to detect unhealthy instances"
+      },
+      {
+        "id": "B",
+        "text": "Auto Scaling Group Automatic Instance Replacement to launch a new instance"
+      },
+      {
+        "id": "C",
+        "text": "AWS Glue DataBrew for log cleanup"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Transfer Acceleration for metrics"
+      },
+      {
+        "id": "E",
+        "text": "AWS CodeCommit webhooks"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Enabling ELB health checks on an ASG ensures application-level health is monitored. Unhealthy instances are automatically terminated and replaced by fresh instances from the launch template.",
+    "awsDocUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-elb-healthcheck.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q54",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company needs to aggregate, filter, and stream application logs from 500 EC2 instances into an Amazon Kinesis Data Stream for real-time analytics. Which agent should be installed on the EC2 instances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unified CloudWatch Agent or AWS Kinesis Agent"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager SSM Agent"
+      },
+      {
+        "id": "C",
+        "text": "AWS CodeDeploy Agent"
+      },
+      {
+        "id": "D",
+        "text": "AWS X-Ray Daemon"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The Unified CloudWatch Agent and AWS Kinesis Agent can tail application log files on EC2 instances and stream them continuously into Kinesis Data Streams or CloudWatch Logs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartSendLogs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q55",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A security team detects an compromised IAM access key used by a developer. The DevOps incident responder must immediately invalidate all active sessions for that IAM user. Which IAM action achieves this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attach an inline IAM policy denying all actions with a condition checking `aws:TokenIssueTime` before the revocation timestamp"
+      },
+      {
+        "id": "B",
+        "text": "Delete the S3 bucket policies in the account"
+      },
+      {
+        "id": "C",
+        "text": "Disable VPC Flow Logs"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the AWS Organization root account"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Revoking active IAM user sessions requires attaching a policy that denies all API requests where `aws:TokenIssueTime` is earlier than the revocation timestamp, invalidating existing temporary credentials.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_revoke-tokens.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-sim-s5-q31",
+    "id": "dopc02-s5-q56",
     "setId": 5,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "An enterprise application runs across two AWS regions in an active-active setup behind AWS Global Accelerator. The DevOps team needs to automatically route 100% of user traffic away from a region if regional health checks fail. How should health checks be configured?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Configure Global Accelerator Endpoint Group health checks with custom health check paths and thresholds"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
+        "text": "Use Route 53 latency routing without health checks"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Enable S3 Multi-Region Access Points"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Configure EC2 Auto Scaling default timers"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Global Accelerator continuously monitors the health of endpoints in its endpoint groups. If an endpoint or region becomes unhealthy, traffic is rerouted within seconds to healthy endpoints in another region.",
+    "awsDocUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpoint-groups-health-checking.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q57",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company uses AWS CodePipeline. The QA environment approval step requires a senior engineer to manually inspect test results before deployment proceeds to Production. Which CodePipeline action handles manual intervention?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manual Approval Action configured with SNS notification topic"
+      },
+      {
+        "id": "B",
+        "text": "AWS Lambda Action with 1-hour sleep timeout"
+      },
+      {
+        "id": "C",
+        "text": "AWS CodeBuild Action with interactive prompt"
+      },
+      {
+        "id": "D",
+        "text": "CloudFormation StackSet Action"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CodePipeline includes built-in Manual Approval stage actions that publish notifications via SNS and pause pipeline execution until an authorized user approves or rejects the action.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q58",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A DevOps team wants to perform Chaos Engineering experiments on their AWS infrastructure (such as injecting CPU stress, blocking subnet traffic, or stopping RDS instances) to test system resilience. Which AWS service provides fault injection capabilities?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Fault Injection Service (AWS FIS)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Trusted Advisor"
+      },
+      {
+        "id": "D",
+        "text": "AWS Security Hub"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Fault Injection Service (AWS FIS) is a fully managed service for running fault injection experiments on AWS to improve workload observability, recovery, and resilience.",
+    "awsDocUrl": "https://docs.aws.amazon.com/fis/latest/userguide/what-is.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dopc02-s5-q59",
+    "setId": 5,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company uses AWS CodeCommit to host git repositories. Developers must not be allowed to push commits directly to the `main` branch. All changes to `main` must be merged via approved Pull Requests with at least 2 approvals. How is this enforced?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Create an IAM policy denying codecommit:GitPush on reference `refs/heads/main` and configure Pull Request Approval Templates"
+      },
+      {
+        "id": "B",
+        "text": "Apply an S3 bucket policy on CodeCommit"
+      },
+      {
+        "id": "C",
+        "text": "Use AWS Systems Manager State Manager"
+      },
+      {
+        "id": "D",
+        "text": "Configure a CloudWatch Log Metric Filter"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Combining IAM policies denying direct pushes to `refs/heads/main` with CodeCommit Approval Rule Templates enforces required PR approvals prior to merging.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-approval-rule-template.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-sim-s5-q32",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q33",
+    "id": "dopc02-s5-q60",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "An application running on EC2 instances needs to access Secrets Manager. Security mandates that credentials must not be stored on disk and network traffic must not traverse the public internet. Which configuration satisfies this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
+        "text": "Attach an IAM Instance Profile to the EC2 instance and create a Secrets Manager Interface VPC Endpoint (AWS PrivateLink)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Hardcode credentials in environment variables over NAT Gateway"
       },
       {
         "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Use AWS STS AssumeRole with public IP endpoints"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q34",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q35",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "dop-c02-sim-s5-q36",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q37",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q38",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q39",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Store credentials in plaintext in S3"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "IAM instance profiles provide temporary credentials in memory, and VPC Interface Endpoints (PrivateLink) keep API traffic strictly within the AWS private network.",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/vpc-endpoint-overview.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q40",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Configuration Management and IaC"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q41",
+    "id": "dopc02-s5-q61",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A DevOps engineer needs to enforce a compliance requirement that no S3 buckets across an organization can have public read or write permissions. Which service combination detects and automatically fixes public S3 buckets?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
+        "text": "AWS Config Rules with AWS Systems Manager Automation remediation"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Inspector with EC2 Agent"
       },
       {
         "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Trusted Advisor with email notifications"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q42",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 42",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q43",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Shield Advanced"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS Config continuously evaluates S3 bucket configurations against rules (like `s3-bucket-public-read-prohibited`) and can trigger automatic SSM Automation runbooks to revoke public access.",
+    "awsDocUrl": "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q44",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q45",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Resilient Cloud Solutions"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q46",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q47",
+    "id": "dopc02-s5-q62",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainName": "Domain 1: SDLC Automation and IaC",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A DevOps team wants to automatically rollback a deployment in AWS CodeDeploy if an Application Load Balancer target group HTTP 5xx error rate metric exceeds 5% during traffic shifting. How is this configured?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Attach a CloudWatch Alarm monitoring 5xx error rates to the CodeDeploy Deployment Group automatic rollback configuration"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
+        "text": "Configure an SQS dead-letter queue"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Use AWS Lambda polling every 10 seconds"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Add an EC2 status check action"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "CodeDeploy supports automatic rollbacks triggered by CloudWatch alarms. If a specified alarm fires during deployment or traffic shifting, CodeDeploy immediately stops and rolls back.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-rollback-automated.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q48",
+    "id": "dopc02-s5-q63",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q49",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 49",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q50",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Monitoring and Logging"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q51",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps team wants to trigger an automated Lambda remediation script whenever an AWS Health event (such as an EC2 hardware degradation notification) is published for their account. Which service routes AWS Health events?",
     "options": [
       {
         "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "Amazon EventBridge with an AWS Health event rule"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
+        "text": "Amazon CloudWatch Logs Subscription Filter"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Config Conformance Pack"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Parameter Store"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS Health integrates natively with EventBridge. You can create EventBridge rules matching `aws.health` event sources to automatically invoke Lambda functions or Systems Manager runbooks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q52",
+    "id": "dopc02-s5-q64",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainName": "Domain 2: Resilient Cloud Solutions and Monitoring",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps team wants to perform Chaos Engineering experiments on their AWS infrastructure (such as injecting CPU stress, blocking subnet traffic, or stopping RDS instances) to test system resilience. Which AWS service provides fault injection capabilities?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
+        "text": "AWS Fault Injection Service (AWS FIS)"
       },
       {
         "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Systems Manager Patch Manager"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Trusted Advisor"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q53",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q54",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q55",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q56",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 56",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q57",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q58",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q59",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Security Hub"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS Fault Injection Service (AWS FIS) is a fully managed service for running fault injection experiments on AWS to improve workload observability, recovery, and resilience.",
+    "awsDocUrl": "https://docs.aws.amazon.com/fis/latest/userguide/what-is.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "dop-c02-sim-s5-q60",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Configuration Management and IaC"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q61",
+    "id": "dopc02-s5-q65",
     "setId": 5,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainName": "Domain 3: Security, Compliance, and Incident Response",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for a critical production microservices environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A DevOps engineer needs to enforce a compliance requirement that no S3 buckets across an organization can have public read or write permissions. Which service combination detects and automatically fixes public S3 buckets?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Resilient Cloud Solutions"
+        "text": "AWS Config Rules with AWS Systems Manager Automation remediation"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Inspector with EC2 Agent"
       },
       {
         "id": "C",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+        "text": "AWS Trusted Advisor with email notifications"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q62",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Monitoring and Logging for a serverless event-driven architecture. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring and Logging"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q63",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within SDLC Automation for a multi-region active-active deployment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws dop sim-test --set 5 --q 63",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for SDLC Automation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Shield Advanced"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q64",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Configuration Management and IaC for automated continuous integration pipelines. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Configuration Management and IaC"
-      },
-      {
-        "id": "B",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-sim-s5-q65",
-    "setId": 5,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for Cross-Account CodePipeline IAM Roles within Resilient Cloud Solutions for low-latency user facing APIs. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Resilient Cloud Solutions"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Professional Tier Blueprint Explanation: Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS Config continuously evaluates S3 bucket configurations against rules (like `s3-bucket-public-read-prohibited`) and can trigger automatic SSM Automation runbooks to revoke public access.",
+    "awsDocUrl": "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html",
+    "difficulty": "Standard"
   }
 ]

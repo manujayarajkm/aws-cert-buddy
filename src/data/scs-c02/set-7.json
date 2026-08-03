@@ -1,2351 +1,2317 @@
 [
   {
-    "id": "scs-c02-s7-q1",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q2",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q3",
+    "id": "scsc02-s7-q1",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which network security device in a VPC is stateless, operates at the subnet level, and processes rules in numerical order to evaluate inbound and outbound traffic?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Network Access Control List (NACL)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
+        "text": "Security Group"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS WAF"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Route Table"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Network ACLs (NACLs) are stateless subnet-level firewalls that evaluate inbound and outbound traffic using numbered rules sequentially.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q4",
+    "id": "scsc02-s7-q2",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team needs to enforce that developers cannot grant permissions beyond a defined boundary when creating new IAM roles. Which IAM feature restricts maximum achievable permissions?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
+        "text": "IAM Permissions Boundaries"
       },
       {
         "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "IAM Identity Center Permission Sets"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Organizations SCP"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "IAM Resource Policies"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "IAM Permissions Boundaries define the maximum permissions that an identity-based policy can grant to an IAM entity, preventing privilege escalation.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q5",
+    "id": "scsc02-s7-q3",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team wants to protect their infrastructure against large-scale layer 3/4 SYN floods and UDP reflection DDoS attacks. Which TWO services provide automatic DDoS mitigation? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS Shield Standard (included by default for all AWS customers)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Infrastructure Security"
+        "text": "AWS Shield Advanced with 24/7 Shield Response Team (SRT) support"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Config Conformance Packs"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Amazon Inspector vulnerability scanning"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CodeArtifact"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Shield Standard automatically mitigates common network/transport layer DDoS attacks. Shield Advanced adds enhanced protection, cost protection, and 24/7 SRT support.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q6",
+    "id": "scsc02-s7-q4",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An S3 bucket contains sensitive health records. The compliance team mandates that objects must be encrypted at rest using keys where key access generates audit logs in CloudTrail and key usage can be revoked. Which encryption mechanism fulfills this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
+        "text": "Server-Side Encryption with Customer Managed KMS Keys (SSE-KMS)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Server-Side Encryption with Amazon S3 Managed Keys (SSE-S3)"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Client-Side Encryption with plaintext S3"
       },
       {
         "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q7",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 7",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Bucket Access Control Lists"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "SSE-KMS using Customer Managed Keys (CMKs) provides granular key policies, automatic rotation options, and audit logging in AWS CloudTrail for every encrypt/decrypt request.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q8",
+    "id": "scsc02-s7-q5",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An organization uses AWS Organizations. The security administrator wants to prevent any user in member accounts from leaving the organization or disabling GuardDuty. Which policy type enforces this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
+        "text": "Service Control Policy (SCP)"
       },
       {
         "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "IAM Group Policy"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "S3 Bucket Policy"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS KMS Key Policy"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Service Control Policies (SCPs) define maximum allowed permissions across accounts in an AWS Organization, overriding member account administrator privileges.",
+    "awsDocUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q9",
+    "id": "scsc02-s7-q6",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A financial application requires blocking incoming HTTP requests from specific geographic countries. How can this be accomplished on an Application Load Balancer?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
+        "text": "Configure AWS WAF Geo Match rules attached to the ALB"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Use Security Groups with Geo-IP CIDR ranges"
       },
       {
         "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Use Network ACLs with domain names"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Configure Route 53 Geolocation routing with null targets"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS WAF Geo match statement allows blocking or allowing requests based on the country of origin derived from the client IP address.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-geo-match.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q10",
+    "id": "scsc02-s7-q7",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security engineer needs to aggregate security findings from GuardDuty, Inspector, Macie, and IAM Access Analyzer across 50 accounts into a single dashboard. Which service acts as the central security management hub?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Explorer"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Aggregator"
+      },
+      {
+        "id": "D",
+        "text": "AWS Trusted Advisor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Security Hub aggregates, organizes, and prioritizes security findings from multiple AWS security services and third-party products across AWS accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q8",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to store database credentials securely and rotate them automatically every 30 days without updating application code. Which service handles secret management and automated rotation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Secrets Manager"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Parameter Store (Standard)"
+      },
+      {
+        "id": "C",
+        "text": "Amazon S3 encrypted with SSE-S3"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Secrets Manager manages, rotates, and retrieves database credentials, API keys, and OAuth tokens securely using integrated Lambda rotation functions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q9",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to prevent any employee (including AWS Account Admins) from deleting compliance audit logs stored in an S3 bucket for 5 years. Which TWO settings ensure immutability? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Amazon S3 Object Lock in Compliance Mode"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Data Protection and Encryption"
+        "text": "S3 Bucket Policy denying s3:DeleteObject and s3:DeleteObjectVersion"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "S3 Intelligent Tiering"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "S3 Transfer Acceleration"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS KMS default key encryption"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "S3 Object Lock in Compliance mode combined with restrictive bucket policies ensures no user—including root—can delete objects before the retention period expires.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q11",
+    "id": "scsc02-s7-q10",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs dedicated hardware security modules (HSMs) in their VPC that meet FIPS 140-2 Level 3 compliance where the customer maintains exclusive control over cryptographic keys. Which service should be used?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS CloudHSM"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
+        "text": "AWS Key Management Service (KMS)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Secrets Manager"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Certificate Manager"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS CloudHSM provides dedicated single-tenant FIPS 140-2 Level 3 hardware security modules where customers retain sole management control of key material.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q12",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
-      },
-      {
-        "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q13",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q14",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 14",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q15",
+    "id": "scsc02-s7-q11",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An enterprise security officer needs to inspect software packages installed on EC2 instances and ECR container images for known Common Vulnerabilities and Exposures (CVEs). Which service provides automated vulnerability management?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Amazon Inspector"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Threat Detection and Incident Response"
+        "text": "Amazon GuardDuty"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Security Hub"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Systems Manager State Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Inspector automatically scans EC2 instances, ECR container images, and Lambda functions for software vulnerabilities (CVEs) and unintended network exposure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q12",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security team needs to enforce SSL/TLS encryption for all data in transit to an S3 bucket. Which bucket policy condition rejects non-HTTPS requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bucket Policy with Deny effect when `aws:SecureTransport` is false"
+      },
+      {
+        "id": "B",
+        "text": "Bucket Policy with Allow effect when `aws:CurrentTime` is set"
+      },
+      {
+        "id": "C",
+        "text": "IAM policy with `aws:MultiFactorAuthPresent`"
+      },
+      {
+        "id": "D",
+        "text": "S3 Block Public Access"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The aws:SecureTransport condition key evaluates to false if a request is sent over HTTP rather than HTTPS. A Deny policy with aws:SecureTransport: false enforces TLS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-2",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q13",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security engineer needs to analyze IAM policies across an AWS account to identify public or cross-account access granted to S3 buckets, KMS keys, or SQS queues. Which IAM feature provides this analysis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IAM Access Analyzer"
+      },
+      {
+        "id": "B",
+        "text": "IAM Policy Simulator"
+      },
+      {
+        "id": "C",
+        "text": "AWS Trusted Advisor"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "IAM Access Analyzer uses automated reasoning to analyze resource-based policies and identify resources shared externally outside the zone of trust.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q14",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to store database credentials securely and rotate them automatically every 30 days without updating application code. Which service handles secret management and automated rotation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Secrets Manager"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Parameter Store (Standard)"
+      },
+      {
+        "id": "C",
+        "text": "Amazon S3 encrypted with SSE-S3"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Secrets Manager manages, rotates, and retrieves database credentials, API keys, and OAuth tokens securely using integrated Lambda rotation functions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q15",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security team wants to isolate a compromised EC2 instance immediately after GuardDuty generates a High severity finding. Which service pattern automates this isolation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "EventBridge Rule catching GuardDuty finding -> AWS Lambda function modifying Security Group to deny all ingress/egress"
+      },
+      {
+        "id": "B",
+        "text": "CloudWatch Alarms modifying NACLs"
+      },
+      {
+        "id": "C",
+        "text": "S3 Lifecycle policy deleting instance volumes"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Patch Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "GuardDuty sends findings to EventBridge. EventBridge triggers a Lambda function that swaps the compromised EC2 instance's security group to an isolation security group with no inbound/outbound rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediating.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scsc02-s7-q16",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which network security device in a VPC is stateless, operates at the subnet level, and processes rules in numerical order to evaluate inbound and outbound traffic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Network Access Control List (NACL)"
+      },
+      {
+        "id": "B",
+        "text": "Security Group"
+      },
+      {
+        "id": "C",
+        "text": "AWS WAF"
+      },
+      {
+        "id": "D",
+        "text": "Route Table"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Network ACLs (NACLs) are stateless subnet-level firewalls that evaluate inbound and outbound traffic using numbered rules sequentially.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q17",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A company needs to prevent any employee (including AWS Account Admins) from deleting compliance audit logs stored in an S3 bucket for 5 years. Which TWO settings ensure immutability? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon S3 Object Lock in Compliance Mode"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy denying s3:DeleteObject and s3:DeleteObjectVersion"
+      },
+      {
+        "id": "C",
+        "text": "S3 Intelligent Tiering"
+      },
+      {
+        "id": "D",
+        "text": "S3 Transfer Acceleration"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS KMS default key encryption"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "S3 Object Lock in Compliance mode combined with restrictive bucket policies ensures no user—including root—can delete objects before the retention period expires.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q16",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
-      },
-      {
-        "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q17",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q18",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q19",
+    "id": "scsc02-s7-q18",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team detects an EC2 instance making unexpected outbound connection attempts to known malicious IP addresses. Which service automatically detects compromised instances using threat intelligence and VPC Flow Logs analysis?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Amazon GuardDuty"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
+        "text": "AWS WAF"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Inspector"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Security Hub"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Amazon GuardDuty uses machine learning, anomaly detection, and threat intelligence (like malicious IP feeds) to monitor VPC Flow Logs, DNS logs, and CloudTrail for compromised instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q20",
+    "id": "scsc02-s7-q19",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security engineer needs to deploy deep packet inspection (DPI) with stateful domain filtering and intrusion prevention system (IPS) rules across all VPC subnets. Which service should be used?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS Network Firewall"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security Logging and Monitoring"
+        "text": "AWS WAF"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Security Groups"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "VPC Flow Logs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Network Firewall is a managed network firewall service providing stateful inspection, intrusion prevention (IPS), and web filtering for entire VPCs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scsc02-s7-q20",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security audit requires verifying that CloudTrail log files saved in S3 have not been deleted, modified, or forged since creation. Which feature provides cryptographic validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudTrail Log File Integrity Validation"
+      },
+      {
+        "id": "B",
+        "text": "S3 Object Lock in Governance Mode"
+      },
+      {
+        "id": "C",
+        "text": "S3 Versioning"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS SSE-S3"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudTrail Log File Integrity Validation uses cryptographic hashes (SHA-256) and digital signatures (RSA) to prove log files were not modified or deleted.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q21",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security team needs to enforce SSL/TLS encryption for all data in transit to an S3 bucket. Which bucket policy condition rejects non-HTTPS requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bucket Policy with Deny effect when `aws:SecureTransport` is false"
+      },
+      {
+        "id": "B",
+        "text": "Bucket Policy with Allow effect when `aws:CurrentTime` is set"
+      },
+      {
+        "id": "C",
+        "text": "IAM policy with `aws:MultiFactorAuthPresent`"
+      },
+      {
+        "id": "D",
+        "text": "S3 Block Public Access"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The aws:SecureTransport condition key evaluates to false if a request is sent over HTTP rather than HTTPS. A Deny policy with aws:SecureTransport: false enforces TLS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-2",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q22",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which network security device in a VPC is stateless, operates at the subnet level, and processes rules in numerical order to evaluate inbound and outbound traffic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Network Access Control List (NACL)"
+      },
+      {
+        "id": "B",
+        "text": "Security Group"
+      },
+      {
+        "id": "C",
+        "text": "AWS WAF"
+      },
+      {
+        "id": "D",
+        "text": "Route Table"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Network ACLs (NACLs) are stateless subnet-level firewalls that evaluate inbound and outbound traffic using numbered rules sequentially.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q23",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security audit requires verifying that CloudTrail log files saved in S3 have not been deleted, modified, or forged since creation. Which feature provides cryptographic validation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudTrail Log File Integrity Validation"
+      },
+      {
+        "id": "B",
+        "text": "S3 Object Lock in Governance Mode"
+      },
+      {
+        "id": "C",
+        "text": "S3 Versioning"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS SSE-S3"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudTrail Log File Integrity Validation uses cryptographic hashes (SHA-256) and digital signatures (RSA) to prove log files were not modified or deleted.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q24",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which network security boundary in a VPC is stateful, operates at the instance/ENI level, and implicitly denies all inbound traffic by default unless explicitly allowed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Security Group"
+      },
+      {
+        "id": "B",
+        "text": "Network ACL (NACL)"
+      },
+      {
+        "id": "C",
+        "text": "AWS Network Firewall"
+      },
+      {
+        "id": "D",
+        "text": "Internet Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Security Groups act as stateful virtual firewalls attached directly to Elastic Network Interfaces (ENIs). Inbound traffic is denied by default unless an allow rule is present.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q25",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security engineer needs to aggregate security findings from GuardDuty, Inspector, Macie, and IAM Access Analyzer across 50 accounts into a single dashboard. Which service acts as the central security management hub?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Explorer"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Aggregator"
+      },
+      {
+        "id": "D",
+        "text": "AWS Trusted Advisor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Security Hub aggregates, organizes, and prioritizes security findings from multiple AWS security services and third-party products across AWS accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q26",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A security team wants to protect their infrastructure against large-scale layer 3/4 SYN floods and UDP reflection DDoS attacks. Which TWO services provide automatic DDoS mitigation? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Shield Standard (included by default for all AWS customers)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Shield Advanced with 24/7 Shield Response Team (SRT) support"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Conformance Packs"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector vulnerability scanning"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CodeArtifact"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Shield Standard automatically mitigates common network/transport layer DDoS attacks. Shield Advanced adds enhanced protection, cost protection, and 24/7 SRT support.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q21",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 21",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q22",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q23",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q24",
+    "id": "scsc02-s7-q27",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
-      },
-      {
-        "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q25",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to prevent any employee (including AWS Account Admins) from deleting compliance audit logs stored in an S3 bucket for 5 years. Which TWO settings ensure immutability? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Amazon S3 Object Lock in Compliance Mode"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Infrastructure Security"
+        "text": "S3 Bucket Policy denying s3:DeleteObject and s3:DeleteObjectVersion"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "S3 Intelligent Tiering"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "S3 Transfer Acceleration"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS KMS default key encryption"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "S3 Object Lock in Compliance mode combined with restrictive bucket policies ensures no user—including root—can delete objects before the retention period expires.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q26",
+    "id": "scsc02-s7-q28",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An S3 bucket contains sensitive health records. The compliance team mandates that objects must be encrypted at rest using keys where key access generates audit logs in CloudTrail and key usage can be revoked. Which encryption mechanism fulfills this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
+        "text": "Server-Side Encryption with Customer Managed KMS Keys (SSE-KMS)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Server-Side Encryption with Amazon S3 Managed Keys (SSE-S3)"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Client-Side Encryption with plaintext S3"
       },
       {
         "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q27",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Bucket Access Control Lists"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "SSE-KMS using Customer Managed Keys (CMKs) provides granular key policies, automatic rotation options, and audit logging in AWS CloudTrail for every encrypt/decrypt request.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q29",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security engineer needs to deploy deep packet inspection (DPI) with stateful domain filtering and intrusion prevention system (IPS) rules across all VPC subnets. Which service should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Network Firewall"
+      },
+      {
+        "id": "B",
+        "text": "AWS WAF"
+      },
+      {
+        "id": "C",
+        "text": "Security Groups"
+      },
+      {
+        "id": "D",
+        "text": "VPC Flow Logs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Network Firewall is a managed network firewall service providing stateful inspection, intrusion prevention (IPS), and web filtering for entire VPCs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q28",
+    "id": "scsc02-s7-q30",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 28",
+    "scenario": "A security audit requires verifying that CloudTrail log files saved in S3 have not been deleted, modified, or forged since creation. Which feature provides cryptographic validation?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
+        "text": "CloudTrail Log File Integrity Validation"
       },
       {
         "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "S3 Object Lock in Governance Mode"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "S3 Versioning"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS KMS SSE-S3"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "CloudTrail Log File Integrity Validation uses cryptographic hashes (SHA-256) and digital signatures (RSA) to prove log files were not modified or deleted.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q29",
+    "id": "scsc02-s7-q31",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security engineer needs to analyze IAM policies across an AWS account to identify public or cross-account access granted to S3 buckets, KMS keys, or SQS queues. Which IAM feature provides this analysis?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
+        "text": "IAM Access Analyzer"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "IAM Policy Simulator"
       },
       {
         "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS Trusted Advisor"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "IAM Access Analyzer uses automated reasoning to analyze resource-based policies and identify resources shared externally outside the zone of trust.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q32",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs dedicated hardware security modules (HSMs) in their VPC that meet FIPS 140-2 Level 3 compliance where the customer maintains exclusive control over cryptographic keys. Which service should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudHSM"
+      },
+      {
+        "id": "B",
+        "text": "AWS Key Management Service (KMS)"
+      },
+      {
+        "id": "C",
+        "text": "AWS Secrets Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Certificate Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CloudHSM provides dedicated single-tenant FIPS 140-2 Level 3 hardware security modules where customers retain sole management control of key material.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q30",
+    "id": "scsc02-s7-q33",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An enterprise security officer needs to inspect software packages installed on EC2 instances and ECR container images for known Common Vulnerabilities and Exposures (CVEs). Which service provides automated vulnerability management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Inspector"
+      },
+      {
+        "id": "B",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "id": "C",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager State Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Inspector automatically scans EC2 instances, ECR container images, and Lambda functions for software vulnerabilities (CVEs) and unintended network exposure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q34",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to discover and classify PII (Personally Identifiable Information) stored across hundreds of S3 buckets and alert when sensitive data is unencrypted. Which service fulfills this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "id": "C",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie uses machine learning and pattern matching to automatically discover, classify, and protect sensitive data (PII, financial data) in Amazon S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q35",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team wants to protect their infrastructure against large-scale layer 3/4 SYN floods and UDP reflection DDoS attacks. Which TWO services provide automatic DDoS mitigation? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS Shield Standard (included by default for all AWS customers)"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Data Protection and Encryption"
+        "text": "AWS Shield Advanced with 24/7 Shield Response Team (SRT) support"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Config Conformance Packs"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "Amazon Inspector vulnerability scanning"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS CodeArtifact"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Shield Standard automatically mitigates common network/transport layer DDoS attacks. Shield Advanced adds enhanced protection, cost protection, and 24/7 SRT support.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q36",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An organization uses AWS Organizations. The security administrator wants to prevent any user in member accounts from leaving the organization or disabling GuardDuty. Which policy type enforces this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Service Control Policy (SCP)"
+      },
+      {
+        "id": "B",
+        "text": "IAM Group Policy"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS Key Policy"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Service Control Policies (SCPs) define maximum allowed permissions across accounts in an AWS Organization, overriding member account administrator privileges.",
+    "awsDocUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q37",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs dedicated hardware security modules (HSMs) in their VPC that meet FIPS 140-2 Level 3 compliance where the customer maintains exclusive control over cryptographic keys. Which service should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudHSM"
+      },
+      {
+        "id": "B",
+        "text": "AWS Key Management Service (KMS)"
+      },
+      {
+        "id": "C",
+        "text": "AWS Secrets Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Certificate Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS CloudHSM provides dedicated single-tenant FIPS 140-2 Level 3 hardware security modules where customers retain sole management control of key material.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q31",
+    "id": "scsc02-s7-q38",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An organization uses AWS Organizations. The security administrator wants to prevent any user in member accounts from leaving the organization or disabling GuardDuty. Which policy type enforces this?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Service Control Policy (SCP)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
+        "text": "IAM Group Policy"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "S3 Bucket Policy"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS KMS Key Policy"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Service Control Policies (SCPs) define maximum allowed permissions across accounts in an AWS Organization, overriding member account administrator privileges.",
+    "awsDocUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q39",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which network security boundary in a VPC is stateful, operates at the instance/ENI level, and implicitly denies all inbound traffic by default unless explicitly allowed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Security Group"
+      },
+      {
+        "id": "B",
+        "text": "Network ACL (NACL)"
+      },
+      {
+        "id": "C",
+        "text": "AWS Network Firewall"
+      },
+      {
+        "id": "D",
+        "text": "Internet Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Security Groups act as stateful virtual firewalls attached directly to Elastic Network Interfaces (ENIs). Inbound traffic is denied by default unless an allow rule is present.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q40",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to block SQL injection and Cross-Site Scripting (XSS) attacks on an Application Load Balancer facing the internet. Which service provides rule-based layer 7 inspection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS WAF (Web Application Firewall)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Shield Standard"
+      },
+      {
+        "id": "C",
+        "text": "Security Groups"
+      },
+      {
+        "id": "D",
+        "text": "Network ACLs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS WAF operates at Layer 7 to inspect HTTP/HTTPS payloads, blocking OWASP Top 10 vulnerabilities including SQL injection and XSS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q41",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security team wants to isolate a compromised EC2 instance immediately after GuardDuty generates a High severity finding. Which service pattern automates this isolation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "EventBridge Rule catching GuardDuty finding -> AWS Lambda function modifying Security Group to deny all ingress/egress"
+      },
+      {
+        "id": "B",
+        "text": "CloudWatch Alarms modifying NACLs"
+      },
+      {
+        "id": "C",
+        "text": "S3 Lifecycle policy deleting instance volumes"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Patch Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "GuardDuty sends findings to EventBridge. EventBridge triggers a Lambda function that swaps the compromised EC2 instance's security group to an isolation security group with no inbound/outbound rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediating.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q32",
+    "id": "scsc02-s7-q42",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team detects an EC2 instance making unexpected outbound connection attempts to known malicious IP addresses. Which service automatically detects compromised instances using threat intelligence and VPC Flow Logs analysis?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
+        "text": "Amazon GuardDuty"
       },
       {
         "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS WAF"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Inspector"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Security Hub"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon GuardDuty uses machine learning, anomaly detection, and threat intelligence (like malicious IP feeds) to monitor VPC Flow Logs, DNS logs, and CloudTrail for compromised instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q43",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A financial application requires blocking incoming HTTP requests from specific geographic countries. How can this be accomplished on an Application Load Balancer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure AWS WAF Geo Match rules attached to the ALB"
+      },
+      {
+        "id": "B",
+        "text": "Use Security Groups with Geo-IP CIDR ranges"
+      },
+      {
+        "id": "C",
+        "text": "Use Network ACLs with domain names"
+      },
+      {
+        "id": "D",
+        "text": "Configure Route 53 Geolocation routing with null targets"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS WAF Geo match statement allows blocking or allowing requests based on the country of origin derived from the client IP address.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-geo-match.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q44",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security team wants to isolate a compromised EC2 instance immediately after GuardDuty generates a High severity finding. Which service pattern automates this isolation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "EventBridge Rule catching GuardDuty finding -> AWS Lambda function modifying Security Group to deny all ingress/egress"
+      },
+      {
+        "id": "B",
+        "text": "CloudWatch Alarms modifying NACLs"
+      },
+      {
+        "id": "C",
+        "text": "S3 Lifecycle policy deleting instance volumes"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Patch Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "GuardDuty sends findings to EventBridge. EventBridge triggers a Lambda function that swaps the compromised EC2 instance's security group to an isolation security group with no inbound/outbound rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediating.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q33",
+    "id": "scsc02-s7-q45",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to prevent any employee (including AWS Account Admins) from deleting compliance audit logs stored in an S3 bucket for 5 years. Which TWO settings ensure immutability? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
+        "text": "Amazon S3 Object Lock in Compliance Mode"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "S3 Bucket Policy denying s3:DeleteObject and s3:DeleteObjectVersion"
       },
       {
         "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "S3 Intelligent Tiering"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "S3 Transfer Acceleration"
+      },
+      {
+        "id": "E",
+        "text": "AWS KMS default key encryption"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "S3 Object Lock in Compliance mode combined with restrictive bucket policies ensures no user—including root—can delete objects before the retention period expires.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q34",
+    "id": "scsc02-s7-q46",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to block SQL injection and Cross-Site Scripting (XSS) attacks on an Application Load Balancer facing the internet. Which service provides rule-based layer 7 inspection?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
+        "text": "AWS WAF (Web Application Firewall)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Shield Standard"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Security Groups"
       },
       {
         "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Network ACLs"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS WAF operates at Layer 7 to inspect HTTP/HTTPS payloads, blocking OWASP Top 10 vulnerabilities including SQL injection and XSS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q47",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to store database credentials securely and rotate them automatically every 30 days without updating application code. Which service handles secret management and automated rotation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Secrets Manager"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Parameter Store (Standard)"
+      },
+      {
+        "id": "C",
+        "text": "Amazon S3 encrypted with SSE-S3"
+      },
+      {
+        "id": "D",
+        "text": "AWS KMS"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Secrets Manager manages, rotates, and retrieves database credentials, API keys, and OAuth tokens securely using integrated Lambda rotation functions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q48",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A financial application requires blocking incoming HTTP requests from specific geographic countries. How can this be accomplished on an Application Load Balancer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure AWS WAF Geo Match rules attached to the ALB"
+      },
+      {
+        "id": "B",
+        "text": "Use Security Groups with Geo-IP CIDR ranges"
+      },
+      {
+        "id": "C",
+        "text": "Use Network ACLs with domain names"
+      },
+      {
+        "id": "D",
+        "text": "Configure Route 53 Geolocation routing with null targets"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS WAF Geo match statement allows blocking or allowing requests based on the country of origin derived from the client IP address.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-geo-match.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q49",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A security team detects an EC2 instance making unexpected outbound connection attempts to known malicious IP addresses. Which service automatically detects compromised instances using threat intelligence and VPC Flow Logs analysis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "id": "B",
+        "text": "AWS WAF"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Inspector"
+      },
+      {
+        "id": "D",
+        "text": "AWS Security Hub"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon GuardDuty uses machine learning, anomaly detection, and threat intelligence (like malicious IP feeds) to monitor VPC Flow Logs, DNS logs, and CloudTrail for compromised instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q50",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to block SQL injection and Cross-Site Scripting (XSS) attacks on an Application Load Balancer facing the internet. Which service provides rule-based layer 7 inspection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS WAF (Web Application Firewall)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Shield Standard"
+      },
+      {
+        "id": "C",
+        "text": "Security Groups"
+      },
+      {
+        "id": "D",
+        "text": "Network ACLs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS WAF operates at Layer 7 to inspect HTTP/HTTPS payloads, blocking OWASP Top 10 vulnerabilities including SQL injection and XSS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q51",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An enterprise security officer needs to inspect software packages installed on EC2 instances and ECR container images for known Common Vulnerabilities and Exposures (CVEs). Which service provides automated vulnerability management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Inspector"
+      },
+      {
+        "id": "B",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "id": "C",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager State Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Inspector automatically scans EC2 instances, ECR container images, and Lambda functions for software vulnerabilities (CVEs) and unintended network exposure.",
+    "awsDocUrl": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q52",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A security team wants to protect their infrastructure against large-scale layer 3/4 SYN floods and UDP reflection DDoS attacks. Which TWO services provide automatic DDoS mitigation? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Shield Standard (included by default for all AWS customers)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Shield Advanced with 24/7 Shield Response Team (SRT) support"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Conformance Packs"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector vulnerability scanning"
+      },
+      {
+        "id": "E",
+        "text": "AWS CodeArtifact"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "AWS Shield Standard automatically mitigates common network/transport layer DDoS attacks. Shield Advanced adds enhanced protection, cost protection, and 24/7 SRT support.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q53",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "Which network security boundary in a VPC is stateful, operates at the instance/ENI level, and implicitly denies all inbound traffic by default unless explicitly allowed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Security Group"
+      },
+      {
+        "id": "B",
+        "text": "Network ACL (NACL)"
+      },
+      {
+        "id": "C",
+        "text": "AWS Network Firewall"
+      },
+      {
+        "id": "D",
+        "text": "Internet Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Security Groups act as stateful virtual firewalls attached directly to Elastic Network Interfaces (ENIs). Inbound traffic is denied by default unless an allow rule is present.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q54",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A company needs to discover and classify PII (Personally Identifiable Information) stored across hundreds of S3 buckets and alert when sensitive data is unencrypted. Which service fulfills this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Macie"
+      },
+      {
+        "id": "B",
+        "text": "Amazon GuardDuty"
+      },
+      {
+        "id": "C",
+        "text": "AWS Security Hub"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Inspector"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Macie uses machine learning and pattern matching to automatically discover, classify, and protect sensitive data (PII, financial data) in Amazon S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q55",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A security engineer needs to deploy deep packet inspection (DPI) with stateful domain filtering and intrusion prevention system (IPS) rules across all VPC subnets. Which service should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Network Firewall"
+      },
+      {
+        "id": "B",
+        "text": "AWS WAF"
+      },
+      {
+        "id": "C",
+        "text": "Security Groups"
+      },
+      {
+        "id": "D",
+        "text": "VPC Flow Logs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Network Firewall is a managed network firewall service providing stateful inspection, intrusion prevention (IPS), and web filtering for entire VPCs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html",
     "difficulty": "Challenging"
   },
   {
-    "id": "scs-c02-s7-q35",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "scs-c02-s7-q36",
+    "id": "scsc02-s7-q56",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A company needs to discover and classify PII (Personally Identifiable Information) stored across hundreds of S3 buckets and alert when sensitive data is unencrypted. Which service fulfills this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
+        "text": "Amazon Macie"
       },
       {
         "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Amazon GuardDuty"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Security Hub"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q37",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q38",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q39",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Inspector"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Amazon Macie uses machine learning and pattern matching to automatically discover, classify, and protect sensitive data (PII, financial data) in Amazon S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q40",
+    "id": "scsc02-s7-q57",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security Logging and Monitoring"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q41",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A security engineer needs to aggregate security findings from GuardDuty, Inspector, Macie, and IAM Access Analyzer across 50 accounts into a single dashboard. Which service acts as the central security management hub?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
+        "text": "AWS Security Hub"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Explorer"
       },
       {
         "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS Config Aggregator"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q42",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 42",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q43",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Trusted Advisor"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS Security Hub aggregates, organizes, and prioritizes security findings from multiple AWS security services and third-party products across AWS accounts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q44",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
-      },
-      {
-        "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q45",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Infrastructure Security"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q46",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q47",
+    "id": "scsc02-s7-q58",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "isScored": false,
+    "scenario": "A security team detects an EC2 instance making unexpected outbound connection attempts to known malicious IP addresses. Which service automatically detects compromised instances using threat intelligence and VPC Flow Logs analysis?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Amazon GuardDuty"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
+        "text": "AWS WAF"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon Inspector"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Security Hub"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "Amazon GuardDuty uses machine learning, anomaly detection, and threat intelligence (like malicious IP feeds) to monitor VPC Flow Logs, DNS logs, and CloudTrail for compromised instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q48",
+    "id": "scsc02-s7-q59",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
-      },
-      {
-        "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q49",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 49",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q50",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Data Protection and Encryption"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q51",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team needs to enforce that developers cannot grant permissions beyond a defined boundary when creating new IAM roles. Which IAM feature restricts maximum achievable permissions?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "IAM Permissions Boundaries"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
+        "text": "IAM Identity Center Permission Sets"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Organizations SCP"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "IAM Resource Policies"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "IAM Permissions Boundaries define the maximum permissions that an identity-based policy can grant to an IAM entity, preventing privilege escalation.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q52",
+    "id": "scsc02-s7-q60",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security engineer needs to analyze IAM policies across an AWS account to identify public or cross-account access granted to S3 buckets, KMS keys, or SQS queues. Which IAM feature provides this analysis?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
+        "text": "IAM Access Analyzer"
       },
       {
         "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "IAM Policy Simulator"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Trusted Advisor"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q53",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q54",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q55",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q56",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 56",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
-      },
-      {
-        "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q57",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q58",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q59",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "IAM Access Analyzer uses automated reasoning to analyze resource-based policies and identify resources shared externally outside the zone of trust.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q60",
+    "id": "scsc02-s7-q61",
     "setId": 7,
     "examCode": "SCS-C02",
     "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security Logging and Monitoring"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q61",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for a critical production microservices environment. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security team needs to enforce that developers cannot grant permissions beyond a defined boundary when creating new IAM roles. Which IAM feature restricts maximum achievable permissions?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Infrastructure Security"
+        "text": "IAM Permissions Boundaries"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "IAM Identity Center Permission Sets"
       },
       {
         "id": "C",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "AWS Organizations SCP"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q62",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d4",
-    "domainName": "Domain 4: Data Protection and Encryption",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Data Protection and Encryption for a serverless event-driven architecture. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Data Protection and Encryption"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "scs-c02-s7-q63",
-    "setId": 7,
-    "examCode": "SCS-C02",
-    "domainId": "scs-d1",
-    "domainName": "Domain 1: Threat Detection and Incident Response",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Threat Detection and Incident Response for a multi-region active-active deployment. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws scs practice-test --set 7 --q 63",
-    "options": [
-      {
-        "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Threat Detection and Incident Response"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "IAM Resource Policies"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "IAM Permissions Boundaries define the maximum permissions that an identity-based policy can grant to an IAM entity, preventing privilege escalation.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q64",
+    "id": "scsc02-s7-q62",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d2",
-    "domainName": "Domain 2: Security Logging and Monitoring",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection & Infrastructure Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Security Logging and Monitoring for automated continuous integration pipelines. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A financial application requires blocking incoming HTTP requests from specific geographic countries. How can this be accomplished on an Application Load Balancer?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security Logging and Monitoring"
+        "text": "Configure AWS WAF Geo Match rules attached to the ALB"
       },
       {
         "id": "B",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "Use Security Groups with Geo-IP CIDR ranges"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Use Network ACLs with domain names"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Configure Route 53 Geolocation routing with null targets"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "AWS WAF Geo match statement allows blocking or allowing requests based on the country of origin derived from the client IP address.",
+    "awsDocUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-geo-match.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "scs-c02-s7-q65",
+    "id": "scsc02-s7-q63",
     "setId": 7,
     "examCode": "SCS-C02",
-    "domainId": "scs-d3",
-    "domainName": "Domain 3: Infrastructure Security",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for S3 Bucket Policy SSE-KMS Enforcement within Infrastructure Security for low-latency user facing APIs. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A security audit requires verifying that CloudTrail log files saved in S3 have not been deleted, modified, or forged since creation. Which feature provides cryptographic validation?",
     "options": [
       {
         "id": "A",
-        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+        "text": "CloudTrail Log File Integrity Validation"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Infrastructure Security"
+        "text": "S3 Object Lock in Governance Mode"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "S3 Versioning"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS KMS SSE-S3"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Specialty Tier Blueprint Explanation: Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Complex"
+    "explanation": "CloudTrail Log File Integrity Validation uses cryptographic hashes (SHA-256) and digital signatures (RSA) to prove log files were not modified or deleted.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q64",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An S3 bucket contains sensitive health records. The compliance team mandates that objects must be encrypted at rest using keys where key access generates audit logs in CloudTrail and key usage can be revoked. Which encryption mechanism fulfills this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Server-Side Encryption with Customer Managed KMS Keys (SSE-KMS)"
+      },
+      {
+        "id": "B",
+        "text": "Server-Side Encryption with Amazon S3 Managed Keys (SSE-S3)"
+      },
+      {
+        "id": "C",
+        "text": "Client-Side Encryption with plaintext S3"
+      },
+      {
+        "id": "D",
+        "text": "Bucket Access Control Lists"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "SSE-KMS using Customer Managed Keys (CMKs) provides granular key policies, automatic rotation options, and audit logging in AWS CloudTrail for every encrypt/decrypt request.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "scsc02-s7-q65",
+    "setId": 7,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: IAM, Data Protection & Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A security team needs to enforce SSL/TLS encryption for all data in transit to an S3 bucket. Which bucket policy condition rejects non-HTTPS requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bucket Policy with Deny effect when `aws:SecureTransport` is false"
+      },
+      {
+        "id": "B",
+        "text": "Bucket Policy with Allow effect when `aws:CurrentTime` is set"
+      },
+      {
+        "id": "C",
+        "text": "IAM policy with `aws:MultiFactorAuthPresent`"
+      },
+      {
+        "id": "D",
+        "text": "S3 Block Public Access"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The aws:SecureTransport condition key evaluates to false if a request is sent over HTTP rather than HTTPS. A Deny policy with aws:SecureTransport: false enforces TLS.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-2",
+    "difficulty": "Standard"
   }
 ]

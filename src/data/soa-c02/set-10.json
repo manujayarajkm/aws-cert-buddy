@@ -1,111 +1,6 @@
 [
   {
-    "id": "soa-c02-s10-q1",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q2",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q3",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q4",
+    "id": "soac02-s10-q1",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -113,867 +8,1379 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator wants to automatically remediate non-compliant AWS Config rules (such as unencrypted S3 buckets). Which AWS Systems Manager feature executes automated remediation scripts?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS Systems Manager Automation"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
+        "text": "AWS Systems Manager Parameter Store"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Patch Manager"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager State Manager"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Systems Manager Automation allows defining runbooks (SSM Automation documents) to automatically fix non-compliant resources flagged by AWS Config rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q5",
+    "id": "soac02-s10-q2",
     "setId": 10,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator notices an EC2 instance in a private subnet becomes unreachable. The administrator wants to analyze real-time network traffic entering and leaving the network interfaces in that subnet. Which feature should be enabled?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "VPC Flow Logs"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Reliability and Business Continuity"
+        "text": "Amazon CloudWatch Application Insights"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS CloudTrail Event History"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS Systems Manager Session Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Flow Logs captures information about IP traffic going to and from network interfaces in a VPC, enabling troubleshooting of connectivity and security group issues.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q3",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to enforce strict password complexity, rotation every 90 days, and prevent reuse of the last 5 passwords for IAM users across an account. Where is this enforced?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IAM Account Password Policy"
+      },
+      {
+        "id": "B",
+        "text": "AWS Organizations SCP"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "D",
+        "text": "IAM Identity Center Permission Set"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The IAM Account Password Policy sets requirements for IAM user passwords, including length, character types, expiration period, and history prevention.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q4",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company has multiple development EC2 instances that only need to run during business hours (Monday-Friday, 8 AM - 6 PM). What is the MOST cost-effective way to manage instance lifecycle?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use AWS Instance Scheduler to automatically stop and start instances according to a tag-based schedule"
+      },
+      {
+        "id": "B",
+        "text": "Keep instances running 24/7 with 3-year Reserved Instances"
+      },
+      {
+        "id": "C",
+        "text": "Terminate instances every evening and re-create them via CloudFormation every morning"
+      },
+      {
+        "id": "D",
+        "text": "Convert all instances to Spot Instances"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Instance Scheduler automatically stops instances outside business hours, saving up to 70% of compute running costs without terminating resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q5",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to create an exact backup snapshot of an Amazon EBS volume connected to an EC2 instance every night at 2 AM and retain snapshots for 30 days automatically. Which service automates this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Data Lifecycle Manager (Amazon DLM)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Backup"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Maintenance Windows"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudFormation StackSets"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Data Lifecycle Manager (DLM) provides a simple, automated way to create, retain, and delete EBS volume snapshots and EBS-backed AMIs according to a policy schedule.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q6",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to automate OS security patching across a fleet of 200 EC2 instances without logging into instances manually. Which AWS Systems Manager feature handles scheduled patch baselines?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Parameter Store"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Patch Manager automates the process of patching managed instances with security-related updates and custom patch baselines according to defined maintenance windows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q7",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps team manages an AWS Auto Scaling group. They want to ensure that newly launched EC2 instances complete all application initialization scripts (bootstrapping) before receiving web traffic from an Application Load Balancer. What should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Auto Scaling Lifecycle Hooks"
+      },
+      {
+        "id": "B",
+        "text": "Auto Scaling Target Tracking Policy"
+      },
+      {
+        "id": "C",
+        "text": "EC2 Status Checks"
+      },
+      {
+        "id": "D",
+        "text": "ELB Connection Draining"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Auto Scaling Lifecycle hooks pause an instance after launch (Pending:Wait state) so custom setup scripts can complete before the instance enters service and receives ELB traffic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q8",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company's S3 bucket policy was modified by an unauthorized user. The SysOps team wants to detect when a CloudFormation stack's actual infrastructure state differs from its template definition. Which feature detects this drift?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudFormation Drift Detection"
+      },
+      {
+        "id": "B",
+        "text": "CloudFormation Rollback"
+      },
+      {
+        "id": "C",
+        "text": "CloudFormation StackSets"
+      },
+      {
+        "id": "D",
+        "text": "AWS Config Conformance Packs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudFormation Drift Detection identifies resources that have undergone manual property changes outside of CloudFormation template management.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q9",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator wants to automatically remediate non-compliant AWS Config rules (such as unencrypted S3 buckets). Which AWS Systems Manager feature executes automated remediation scripts?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Automation"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager State Manager"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Systems Manager Automation allows defining runbooks (SSM Automation documents) to automatically fix non-compliant resources flagged by AWS Config rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q10",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to automatically reboot an EC2 instance if its CloudWatch StatusCheckFailed_System metric evaluates to 1 for 2 consecutive minutes. Which service action should be configured on the CloudWatch alarm?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudWatch Alarm Action to Recover/Reboot the instance"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Lambda function triggered by S3"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Route 53 Failover Record"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudWatch alarms support EC2 actions directly, allowing automatic reboot, stop, terminate, or recover operations when an instance status check fails.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q11",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps team manages an AWS Auto Scaling group. They want to ensure that newly launched EC2 instances complete all application initialization scripts (bootstrapping) before receiving web traffic from an Application Load Balancer. What should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Auto Scaling Lifecycle Hooks"
+      },
+      {
+        "id": "B",
+        "text": "Auto Scaling Target Tracking Policy"
+      },
+      {
+        "id": "C",
+        "text": "EC2 Status Checks"
+      },
+      {
+        "id": "D",
+        "text": "ELB Connection Draining"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Auto Scaling Lifecycle hooks pause an instance after launch (Pending:Wait state) so custom setup scripts can complete before the instance enters service and receives ELB traffic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q12",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An administrator needs to execute a single shell command across 50 EC2 instances simultaneously without logging into each instance individually via SSH. Which Systems Manager feature should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Distributor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Run Command allows on-demand remote management of EC2 instances at scale without requiring open inbound ports or SSH key management.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/execute-remote-commands.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q13",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An EC2 instance in a private subnet requires SSH administrative access. Security policies strictly prohibit opening port 22 in security groups or assigning public IP addresses. How can the SysOps Administrator connect securely?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "B",
+        "text": "EC2 Instance Connect with Public IP"
+      },
+      {
+        "id": "C",
+        "text": "Bastion Host in Public Subnet with open port 22"
+      },
+      {
+        "id": "D",
+        "text": "Direct Connect with SSH key injection"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "SSM Session Manager provides secure one-click shell access to EC2 instances via the SSM Agent over HTTPS without opening inbound SSH ports or requiring public IPs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q14",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An Application Load Balancer target group marks all EC2 instances as unhealthy. What is the FIRST thing the SysOps Administrator should check?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify that security group rules allow traffic on the health check port from the ALB security group"
+      },
+      {
+        "id": "B",
+        "text": "Check whether S3 bucket public access block is enabled"
+      },
+      {
+        "id": "C",
+        "text": "Upgrade the EC2 instance type to a larger instance size"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the VPC internet gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Unhealthy target group status is most commonly caused by misconfigured security groups or NACLs blocking health check requests between the load balancer and instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html#target-subsystem-response",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q15",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "Which AWS service provides an interactive graphical interface for filtering historical cost and usage data by service, linked account, region, or cost allocation tag over the last 12 months?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Cost Explorer"
+      },
+      {
+        "id": "B",
+        "text": "AWS Budgets"
+      },
+      {
+        "id": "C",
+        "text": "AWS Pricing Calculator"
+      },
+      {
+        "id": "D",
+        "text": "AWS Billing Conductor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Cost Explorer provides visualization tools, customizable graphs, and detailed reporting to analyze spending trends over time.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q16",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to connect two VPCs in the same region so resources can communicate using private IP addresses. Network traffic should not traverse the public internet. What feature should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Peering"
+      },
+      {
+        "id": "B",
+        "text": "AWS Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "Internet Gateway"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Peering creates a private network routing connection between two VPCs, allowing instances to communicate directly using private IP addresses.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q17",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company has multiple development EC2 instances that only need to run during business hours (Monday-Friday, 8 AM - 6 PM). What is the MOST cost-effective way to manage instance lifecycle?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use AWS Instance Scheduler to automatically stop and start instances according to a tag-based schedule"
+      },
+      {
+        "id": "B",
+        "text": "Keep instances running 24/7 with 3-year Reserved Instances"
+      },
+      {
+        "id": "C",
+        "text": "Terminate instances every evening and re-create them via CloudFormation every morning"
+      },
+      {
+        "id": "D",
+        "text": "Convert all instances to Spot Instances"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Instance Scheduler automatically stops instances outside business hours, saving up to 70% of compute running costs without terminating resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/welcome.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q18",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company needs to create an exact backup snapshot of an Amazon EBS volume connected to an EC2 instance every night at 2 AM and retain snapshots for 30 days automatically. Which service automates this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon Data Lifecycle Manager (Amazon DLM)"
+      },
+      {
+        "id": "B",
+        "text": "AWS Backup"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Maintenance Windows"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudFormation StackSets"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon Data Lifecycle Manager (DLM) provides a simple, automated way to create, retain, and delete EBS volume snapshots and EBS-backed AMIs according to a policy schedule.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q19",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application running on EC2 calls Amazon S3 APIs. Currently traffic routes out through a NAT Gateway in a public subnet, incurring significant NAT data processing fees. What should be created to eliminate NAT processing charges for S3 traffic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Gateway VPC Endpoint"
+      },
+      {
+        "id": "B",
+        "text": "S3 Transfer Acceleration"
+      },
+      {
+        "id": "C",
+        "text": "VPC Peering link"
+      },
+      {
+        "id": "D",
+        "text": "AWS Direct Connect link"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "S3 Gateway VPC Endpoints route VPC traffic to S3 privately and are free of charge, completely eliminating NAT Gateway data processing fees for S3 traffic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q20",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A company uses AWS Organizations. The security manager wants to aggregate CloudWatch alarms and metrics across 50 AWS accounts into a single centralized monitoring dashboard. Which feature supports cross-account monitoring?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CloudWatch Cross-Account Cross-Region Dashboards"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Explorer"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Aggregator"
+      },
+      {
+        "id": "D",
+        "text": "AWS Hub Dashboard"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudWatch cross-account cross-region functionality lets you visualize, query, and alarm on metrics and logs across multiple AWS accounts and regions in unified dashboards.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cross-Account-Cross-Region.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q21",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to inspect all API calls made to modify security groups over the past 90 days. Which AWS service stores this audit log history?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudTrail Event History"
+      },
+      {
+        "id": "B",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "C",
+        "text": "AWS Config Resource Timeline"
+      },
+      {
+        "id": "D",
+        "text": "VPC Flow Logs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CloudTrail Event History provides a searchable 90-day record of management events (such as CreateSecurityGroup, AuthorizeSecurityGroupIngress) across all regions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q22",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to resolve custom internal domain names (e.g. `app.internal.company.com`) between an on-premises DNS server and Amazon Route 53 Private Hosted Zones in a VPC. Which Route 53 feature enables bidirectional DNS resolution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Route 53 Resolver Endpoints (Inbound and Outbound)"
+      },
+      {
+        "id": "B",
+        "text": "Route 53 Traffic Flow"
+      },
+      {
+        "id": "C",
+        "text": "Route 53 Health Checks"
+      },
+      {
+        "id": "D",
+        "text": "Route 53 Latency Routing"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Route 53 Resolver Inbound Endpoints allow on-prem DNS servers to resolve AWS private domain names, and Outbound Endpoints allow VPC instances to resolve on-prem domain names.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q23",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An EC2 instance in a private subnet requires SSH administrative access. Security policies strictly prohibit opening port 22 in security groups or assigning public IP addresses. How can the SysOps Administrator connect securely?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "B",
+        "text": "EC2 Instance Connect with Public IP"
+      },
+      {
+        "id": "C",
+        "text": "Bastion Host in Public Subnet with open port 22"
+      },
+      {
+        "id": "D",
+        "text": "Direct Connect with SSH key injection"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "SSM Session Manager provides secure one-click shell access to EC2 instances via the SSM Agent over HTTPS without opening inbound SSH ports or requiring public IPs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q24",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An Application Load Balancer target group marks all EC2 instances as unhealthy. What is the FIRST thing the SysOps Administrator should check?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify that security group rules allow traffic on the health check port from the ALB security group"
+      },
+      {
+        "id": "B",
+        "text": "Check whether S3 bucket public access block is enabled"
+      },
+      {
+        "id": "C",
+        "text": "Upgrade the EC2 instance type to a larger instance size"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the VPC internet gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Unhealthy target group status is most commonly caused by misconfigured security groups or NACLs blocking health check requests between the load balancer and instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html#target-subsystem-response",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q25",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps team manages an AWS Auto Scaling group. They want to ensure that newly launched EC2 instances complete all application initialization scripts (bootstrapping) before receiving web traffic from an Application Load Balancer. What should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Auto Scaling Lifecycle Hooks"
+      },
+      {
+        "id": "B",
+        "text": "Auto Scaling Target Tracking Policy"
+      },
+      {
+        "id": "C",
+        "text": "EC2 Status Checks"
+      },
+      {
+        "id": "D",
+        "text": "ELB Connection Draining"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Auto Scaling Lifecycle hooks pause an instance after launch (Pending:Wait state) so custom setup scripts can complete before the instance enters service and receives ELB traffic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q26",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An administrator needs to execute a single shell command across 50 EC2 instances simultaneously without logging into each instance individually via SSH. Which Systems Manager feature should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Distributor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Run Command allows on-demand remote management of EC2 instances at scale without requiring open inbound ports or SSH key management.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/execute-remote-commands.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q27",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An EC2 instance in a private subnet requires SSH administrative access. Security policies strictly prohibit opening port 22 in security groups or assigning public IP addresses. How can the SysOps Administrator connect securely?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "B",
+        "text": "EC2 Instance Connect with Public IP"
+      },
+      {
+        "id": "C",
+        "text": "Bastion Host in Public Subnet with open port 22"
+      },
+      {
+        "id": "D",
+        "text": "Direct Connect with SSH key injection"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "SSM Session Manager provides secure one-click shell access to EC2 instances via the SSM Agent over HTTPS without opening inbound SSH ports or requiring public IPs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q28",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to back up resources across multiple AWS accounts and regions (EBS, RDS, DynamoDB, S3) into a central backup vault with immutable compliance WORM policies. Which service should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Backup with Backup Vault Lock"
+      },
+      {
+        "id": "B",
+        "text": "AWS DataSync"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Data Lifecycle Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Organizations SCP"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Backup is a centralized backup service that supports cross-account, cross-region backups and vault locking (WORM - Write Once Read Many) to prevent backup deletion.",
+    "awsDocUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q29",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to connect two VPCs in the same region so resources can communicate using private IP addresses. Network traffic should not traverse the public internet. What feature should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VPC Peering"
+      },
+      {
+        "id": "B",
+        "text": "AWS Direct Connect"
+      },
+      {
+        "id": "C",
+        "text": "Internet Gateway"
+      },
+      {
+        "id": "D",
+        "text": "NAT Gateway"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "VPC Peering creates a private network routing connection between two VPCs, allowing instances to communicate directly using private IP addresses.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q30",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An organization has 20 VPCs across multiple AWS accounts and on-premises data centers. Connecting every VPC to every other VPC using individual VPC peering links is becoming unmanageable. Which hub-and-spoke networking service simplifies this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Transit Gateway"
+      },
+      {
+        "id": "B",
+        "text": "AWS Direct Connect Gateway"
+      },
+      {
+        "id": "C",
+        "text": "AWS PrivateLink"
+      },
+      {
+        "id": "D",
+        "text": "Amazon Route 53 Resolver"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Transit Gateway acts as a central cloud router (hub) connecting multiple VPCs, AWS accounts, and on-premises networks into a simplified topology.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q31",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A SysOps Administrator is configuring an AWS CloudFormation template to deploy an EC2 infrastructure stack across 10 AWS accounts in 3 regions. Which feature of CloudFormation supports multi-account, multi-region deployments? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudFormation StackSets"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM administrative execution roles in target accounts"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation Drift Detection"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeDeploy Agent"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Systems Manager State Manager"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS CloudFormation StackSets enables creating, updating, or deleting stacks across multiple AWS accounts and regions in a single operation using administrative execution roles.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q6",
+    "id": "soac02-s10-q32",
     "setId": 10,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company needs to create an exact backup snapshot of an Amazon EBS volume connected to an EC2 instance every night at 2 AM and retain snapshots for 30 days automatically. Which service automates this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
+        "text": "Amazon Data Lifecycle Manager (Amazon DLM)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Backup"
       },
       {
         "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS Systems Manager Maintenance Windows"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q7",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 7",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q8",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS CloudFormation StackSets"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon Data Lifecycle Manager (DLM) provides a simple, automated way to create, retain, and delete EBS volume snapshots and EBS-backed AMIs according to a policy schedule.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q9",
+    "id": "soac02-s10-q33",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator needs to enforce strict password complexity, rotation every 90 days, and prevent reuse of the last 5 passwords for IAM users across an account. Where is this enforced?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
+        "text": "IAM Account Password Policy"
       },
       {
         "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS Organizations SCP"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Parameter Store"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "IAM Identity Center Permission Set"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "The IAM Account Password Policy sets requirements for IAM user passwords, including length, character types, expiration period, and history prevention.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q10",
+    "id": "soac02-s10-q34",
     "setId": 10,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator is configuring an AWS CloudFormation template to deploy an EC2 infrastructure stack across 10 AWS accounts in 3 regions. Which feature of CloudFormation supports multi-account, multi-region deployments? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS CloudFormation StackSets"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Deployment, Provisioning, and Automation"
+        "text": "AWS IAM administrative execution roles in target accounts"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS CloudFormation Drift Detection"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS CodeDeploy Agent"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Systems Manager State Manager"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS CloudFormation StackSets enables creating, updating, or deleting stacks across multiple AWS accounts and regions in a single operation using administrative execution roles.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q11",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q12",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q13",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q14",
+    "id": "soac02-s10-q35",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 14",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q15",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator is looking for specific recommendations to identify idle or underutilized EC2 instances, unattached EBS volumes, and unassociated Elastic IP addresses. Which TWO services/tools provide these checks? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS Trusted Advisor"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security and Compliance"
+        "text": "AWS Compute Optimizer"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Systems Manager State Manager"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "AWS CloudTrail"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS License Manager"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Trusted Advisor flags idle resources (like low utilization EC2 instances and unattached EBS volumes). AWS Compute Optimizer uses ML to recommend optimal instance sizing based on CloudWatch telemetry.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q16",
+    "id": "soac02-s10-q36",
     "setId": 10,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company's S3 bucket policy was modified by an unauthorized user. The SysOps team wants to detect when a CloudFormation stack's actual infrastructure state differs from its template definition. Which feature detects this drift?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "CloudFormation Drift Detection"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
+        "text": "CloudFormation Rollback"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "CloudFormation StackSets"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Config Conformance Packs"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "CloudFormation Drift Detection identifies resources that have undergone manual property changes outside of CloudFormation template management.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q17",
+    "id": "soac02-s10-q37",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An EC2 instance in a private subnet requires SSH administrative access. Security policies strictly prohibit opening port 22 in security groups or assigning public IP addresses. How can the SysOps Administrator connect securely?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
+        "text": "AWS Systems Manager Session Manager"
       },
       {
         "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "EC2 Instance Connect with Public IP"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Bastion Host in Public Subnet with open port 22"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q18",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q19",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q20",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q21",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 21",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q22",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q23",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q24",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Direct Connect with SSH key injection"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "SSM Session Manager provides secure one-click shell access to EC2 instances via the SSM Agent over HTTPS without opening inbound SSH ports or requiring public IPs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q25",
+    "id": "soac02-s10-q38",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An Application Load Balancer target group marks all EC2 instances as unhealthy. What is the FIRST thing the SysOps Administrator should check?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Verify that security group rules allow traffic on the health check port from the ALB security group"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Reliability and Business Continuity"
+        "text": "Check whether S3 bucket public access block is enabled"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "Upgrade the EC2 instance type to a larger instance size"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "Re-create the VPC internet gateway"
       }
     ],
     "correctAnswer": [
-      "A",
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Unhealthy target group status is most commonly caused by misconfigured security groups or NACLs blocking health check requests between the load balancer and instances.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html#target-subsystem-response",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q26",
+    "id": "soac02-s10-q39",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "EC2 instances in a private subnet must connect to the internet to download software updates but must NOT accept any incoming connections from the internet. Which device should be deployed in a public subnet?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
+        "text": "NAT Gateway"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Internet Gateway"
       },
       {
         "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Egress-Only Internet Gateway"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Virtual Private Gateway"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "A NAT Gateway in a public subnet allows instances in private subnets to initiate outbound IPv4 connections to the internet while preventing inbound internet connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q27",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q28",
+    "id": "soac02-s10-q40",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -981,145 +1388,104 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 28",
+    "scenario": "A SysOps Administrator needs to receive real-time notifications about AWS service outages and scheduled infrastructure maintenance that specifically impact their AWS resources. Which service provides this personalized view?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS Health Dashboard (Personal Health Dashboard)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
+        "text": "AWS Service Health Dashboard (Public)"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Amazon CloudWatch Metrics"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Trusted Advisor"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact your specific account resources or scheduled maintenance.",
+    "awsDocUrl": "https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q29",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q30",
+    "id": "soac02-s10-q41",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q31",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company's S3 data transfer out charges to the internet are increasing rapidly. Analysis shows static website assets are requested directly from S3 by millions of users globally. How can the SysOps team reduce data transfer costs while improving load speed?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "Deploy an Amazon CloudFront distribution in front of the S3 bucket"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Enable S3 Transfer Acceleration on the bucket"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Use S3 Multi-Region Access Points"
       },
       {
         "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Increase S3 provisioned IOPS"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon CloudFront caches assets at edge locations worldwide. Transferring data from S3 to CloudFront is free, and CloudFront egress rates are significantly cheaper than direct S3 egress.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q32",
+    "id": "soac02-s10-q42",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A SysOps Administrator needs to back up resources across multiple AWS accounts and regions (EBS, RDS, DynamoDB, S3) into a central backup vault with immutable compliance WORM policies. Which service should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Backup with Backup Vault Lock"
+      },
+      {
+        "id": "B",
+        "text": "AWS DataSync"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Data Lifecycle Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Organizations SCP"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Backup is a centralized backup service that supports cross-account, cross-region backups and vault locking (WORM - Write Once Read Many) to prevent backup deletion.",
+    "awsDocUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q43",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -1127,285 +1493,139 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator needs to inspect all API calls made to modify security groups over the past 90 days. Which AWS service stores this audit log history?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS CloudTrail Event History"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
+        "text": "Amazon CloudWatch Logs"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Config Resource Timeline"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "VPC Flow Logs"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "CloudTrail Event History provides a searchable 90-day record of management events (such as CreateSecurityGroup, AuthorizeSecurityGroupIngress) across all regions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q33",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q34",
+    "id": "soac02-s10-q44",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "EC2 instances in a private subnet must connect to the internet to download software updates but must NOT accept any incoming connections from the internet. Which device should be deployed in a public subnet?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
+        "text": "NAT Gateway"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Internet Gateway"
       },
       {
         "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Egress-Only Internet Gateway"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q35",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security and Compliance"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q36",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Virtual Private Gateway"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "A NAT Gateway in a public subnet allows instances in private subnets to initiate outbound IPv4 connections to the internet while preventing inbound internet connections.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q37",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q38",
+    "id": "soac02-s10-q45",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator needs to resolve custom internal domain names (e.g. `app.internal.company.com`) between an on-premises DNS server and Amazon Route 53 Private Hosted Zones in a VPC. Which Route 53 feature enables bidirectional DNS resolution?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
+        "text": "Route 53 Resolver Endpoints (Inbound and Outbound)"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Route 53 Traffic Flow"
       },
       {
         "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Route 53 Health Checks"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Route 53 Latency Routing"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Route 53 Resolver Inbound Endpoints allow on-prem DNS servers to resolve AWS private domain names, and Outbound Endpoints allow VPC instances to resolve on-prem domain names.",
+    "awsDocUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q39",
+    "id": "soac02-s10-q46",
     "setId": 10,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator needs to automate OS security patching across a fleet of 200 EC2 instances without logging into instances manually. Which AWS Systems Manager feature handles scheduled patch baselines?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "AWS Systems Manager Patch Manager"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Run Command"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Session Manager"
       },
       {
         "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS Systems Manager Parameter Store"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Patch Manager automates the process of patching managed instances with security-related updates and custom patch baselines according to defined maintenance windows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q40",
+    "id": "soac02-s10-q47",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -1413,145 +1633,114 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which TWO CloudWatch Alarm statuses indicate that a monitored metric has crossed a defined threshold or is missing sufficient data? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "ALARM"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Monitoring, Logging, and Remediation"
+        "text": "INSUFFICIENT_DATA"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "OK"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "PENDING_APPROVAL"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "DEPRECATED"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "CloudWatch Alarms have 3 states: OK (metric within threshold), ALARM (metric outside threshold), and INSUFFICIENT_DATA (metric is missing or starting up).",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q41",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q42",
+    "id": "soac02-s10-q48",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 42",
+    "scenario": "A company's S3 data transfer out charges to the internet are increasing rapidly. Analysis shows static website assets are requested directly from S3 by millions of users globally. How can the SysOps team reduce data transfer costs while improving load speed?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
+        "text": "Deploy an Amazon CloudFront distribution in front of the S3 bucket"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Enable S3 Transfer Acceleration on the bucket"
       },
       {
         "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Use S3 Multi-Region Access Points"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Increase S3 provisioned IOPS"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "Amazon CloudFront caches assets at edge locations worldwide. Transferring data from S3 to CloudFront is free, and CloudFront egress rates are significantly cheaper than direct S3 egress.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q43",
+    "id": "soac02-s10-q49",
     "setId": 10,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator is looking for specific recommendations to identify idle or underutilized EC2 instances, unattached EBS volumes, and unassociated Elastic IP addresses. Which TWO services/tools provide these checks? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "AWS Trusted Advisor"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Compute Optimizer"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager State Manager"
       },
       {
         "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS CloudTrail"
+      },
+      {
+        "id": "E",
+        "text": "AWS License Manager"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A",
+      "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "AWS Trusted Advisor flags idle resources (like low utilization EC2 instances and unattached EBS volumes). AWS Compute Optimizer uses ML to recommend optimal instance sizing based on CloudWatch telemetry.",
+    "awsDocUrl": "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q44",
+    "id": "soac02-s10-q50",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -1559,576 +1748,209 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An application running on EC2 logs errors to a local log file /var/log/app.log. The SysOps team wants to aggregate these log files centrally in CloudWatch Logs and create an alarm when the word 'CRITICAL' appears. How can this be accomplished?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Configure the CloudWatch Agent to stream /var/log/app.log and create a CloudWatch Metric Filter matching 'CRITICAL'"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
+        "text": "Use AWS CloudTrail to read /var/log/app.log"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Configure VPC Flow Logs to inspect log content"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Enable S3 Server Access Logging on the root EBS volume"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "explanation": "The CloudWatch Agent can tail local log files and send them to CloudWatch Logs. Metric filters scan incoming log streams for patterns (like 'CRITICAL') and publish custom metrics to trigger alarms.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogDataUsingFilters.html",
     "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q45",
+    "id": "soac02-s10-q51",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Reliability and Business Continuity"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s10-q46",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q47",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q48",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q49",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 49",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q50",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q51",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator needs to automate OS security patching across a fleet of 200 EC2 instances without logging into instances manually. Which AWS Systems Manager feature handles scheduled patch baselines?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
+        "text": "AWS Systems Manager Patch Manager"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Systems Manager Run Command"
       },
       {
         "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Session Manager"
       },
       {
         "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q52",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A high-growth e-commerce marketplace is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Systems Manager Parameter Store"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "Patch Manager automates the process of patching managed instances with security-related updates and custom patch baselines according to defined maintenance windows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q53",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A multi-tenant SaaS software platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q54",
+    "id": "soac02-s10-q52",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A real-time logistics analytics company is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator wants to receive automated email alerts whenever total account spending exceeds 80% of a monthly budget limit of $5,000. Which tool should be configured?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
+        "text": "AWS Budgets"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Cost Explorer"
       },
       {
         "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS Trusted Advisor"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q55",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A media streaming broadcaster is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Security and Compliance"
-      },
-      {
-        "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
-      },
-      {
-        "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
-      },
-      {
-        "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q56",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A smart city IoT solution provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 56",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Compute Optimizer"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Budgets allows setting custom cost and usage limits and sending notifications via email or SNS when actual or forecasted spending crosses defined percentage thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q57",
+    "id": "soac02-s10-q53",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A government intelligence contractor is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A company's S3 bucket policy was modified by an unauthorized user. The SysOps team wants to detect when a CloudFormation stack's actual infrastructure state differs from its template definition. Which feature detects this drift?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
+        "text": "CloudFormation Drift Detection"
       },
       {
         "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "CloudFormation Rollback"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "CloudFormation StackSets"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS Config Conformance Packs"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "CloudFormation Drift Detection identifies resources that have undergone manual property changes outside of CloudFormation template management.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q58",
+    "id": "soac02-s10-q54",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A SysOps Administrator needs to automate OS security patching across a fleet of 200 EC2 instances without logging into instances manually. Which AWS Systems Manager feature handles scheduled patch baselines?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Parameter Store"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Patch Manager automates the process of patching managed instances with security-related updates and custom patch baselines according to defined maintenance windows.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q55",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainName": "Domain 3: Networking and Cost Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A mobile gaming infrastructure host is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An organization has 20 VPCs across multiple AWS accounts and on-premises data centers. Connecting every VPC to every other VPC using individual VPC peering links is becoming unmanageable. Which hub-and-spoke networking service simplifies this?",
     "options": [
       {
         "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
+        "text": "AWS Transit Gateway"
       },
       {
         "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "AWS Direct Connect Gateway"
       },
       {
         "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "AWS PrivateLink"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "Amazon Route 53 Resolver"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS Transit Gateway acts as a central cloud router (hub) connecting multiple VPCs, AWS accounts, and on-premises networks into a simplified topology.",
+    "awsDocUrl": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q59",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An enterprise cloud migration team is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q60",
+    "id": "soac02-s10-q56",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -2136,145 +1958,39 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": false,
-    "scenario": "A fintech payment gateway provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "Which TWO CloudWatch Alarm statuses indicate that a monitored metric has crossed a defined threshold or is missing sufficient data? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "ALARM"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Monitoring, Logging, and Remediation"
+        "text": "INSUFFICIENT_DATA"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "OK"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "PENDING_APPROVAL"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "DEPRECATED"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "CloudWatch Alarms have 3 states: OK (metric within threshold), ALARM (metric outside threshold), and INSUFFICIENT_DATA (metric is missing or starting up).",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q61",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A global retail distribution enterprise is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity in a zero-trust compliance environment. The architecture must enforce strict end-to-end data encryption adhering to security compliance standards. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Reliability and Business Continuity"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q62",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A renewable energy grid monitoring provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Deployment, Provisioning, and Automation during batch data processing operations. The architecture must guarantee sub-10ms response latency while optimizing compute costs. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Deployment, Provisioning, and Automation"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      },
-      {
-        "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q63",
-    "setId": 10,
-    "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A digital banking application platform is evaluating an AWS architectural solution for SSM Remote Fleet Management within Security and Compliance during high-concurrency peak traffic periods. The architecture must enforce central security guardrails across multiple AWS accounts. Which technical approach best satisfies all requirements according to AWS official standards?",
-    "codeSnippet": "aws soa practice-test --set 10 --q 63",
-    "options": [
-      {
-        "id": "A",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Security and Compliance"
-      },
-      {
-        "id": "B",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
-      },
-      {
-        "id": "C",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
-      },
-      {
-        "id": "D",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
-  },
-  {
-    "id": "soa-c02-s10-q64",
+    "id": "soac02-s10-q57",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -2282,70 +1998,315 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "A global financial services corporation is evaluating an AWS architectural solution for SSM Remote Fleet Management within Monitoring, Logging, and Remediation while refactoring a legacy monolithic application. The architecture must automate operational fault recovery with zero manual engineer intervention. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "An EC2 instance status check fails with 'StatusCheckFailed_Instance'. What does this metric specifically indicate?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "Software or operating system level issues on the EC2 instance (e.g., corrupted kernel, out of memory)"
       },
       {
         "id": "B",
-        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Monitoring, Logging, and Remediation"
+        "text": "Hardware or physical infrastructure failures on the underlying AWS host"
       },
       {
         "id": "C",
-        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+        "text": "Network gateway routing failure"
       },
       {
         "id": "D",
-        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+        "text": "AWS KMS key deletion"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "StatusCheckFailed_Instance monitors the operating system and software responsiveness of the instance. StatusCheckFailed_System monitors the underlying physical hardware host.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html",
+    "difficulty": "Standard"
   },
   {
-    "id": "soa-c02-s10-q65",
+    "id": "soac02-s10-q58",
     "setId": 10,
     "examCode": "SOA-C02",
     "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "A HIPAA-regulated healthcare provider is evaluating an AWS architectural solution for SSM Remote Fleet Management within Reliability and Business Continuity during real-time streaming data ingestion. The architecture must decouple microservice dependencies to absorb unexpected traffic surges. Which technical approach best satisfies all requirements according to AWS official standards?",
+    "scenario": "A SysOps Administrator needs to enforce strict password complexity, rotation every 90 days, and prevent reuse of the last 5 passwords for IAM users across an account. Where is this enforced?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+        "text": "IAM Account Password Policy"
       },
       {
         "id": "B",
-        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Reliability and Business Continuity"
+        "text": "AWS Organizations SCP"
       },
       {
         "id": "C",
-        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+        "text": "AWS Systems Manager Parameter Store"
       },
       {
         "id": "D",
-        "text": "Hardcode credentials in plain text application source code"
+        "text": "IAM Identity Center Permission Set"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The IAM Account Password Policy sets requirements for IAM user passwords, including length, character types, expiration period, and history prevention.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q59",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A SysOps Administrator is configuring an AWS CloudFormation template to deploy an EC2 infrastructure stack across 10 AWS accounts in 3 regions. Which feature of CloudFormation supports multi-account, multi-region deployments? (Select TWO.)",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS CloudFormation StackSets"
+      },
+      {
+        "id": "B",
+        "text": "AWS IAM administrative execution roles in target accounts"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudFormation Drift Detection"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeDeploy Agent"
       },
       {
         "id": "E",
-        "text": "Disable VPC Security Group stateful inbound traffic controls"
+        "text": "AWS Systems Manager State Manager"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Official AWS Associate Tier Blueprint Explanation: SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
-    "awsDocUrl": "https://docs.aws.amazon.com/",
-    "difficulty": "Challenging"
+    "explanation": "AWS CloudFormation StackSets enables creating, updating, or deleting stacks across multiple AWS accounts and regions in a single operation using administrative execution roles.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q60",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "An administrator needs to execute a single shell command across 50 EC2 instances simultaneously without logging into each instance individually via SSH. Which Systems Manager feature should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Session Manager"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Patch Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Distributor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Run Command allows on-demand remote management of EC2 instances at scale without requiring open inbound ports or SSH key management.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/execute-remote-commands.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q61",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "Which AWS service provides an interactive graphical interface for filtering historical cost and usage data by service, linked account, region, or cost allocation tag over the last 12 months?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Cost Explorer"
+      },
+      {
+        "id": "B",
+        "text": "AWS Budgets"
+      },
+      {
+        "id": "C",
+        "text": "AWS Pricing Calculator"
+      },
+      {
+        "id": "D",
+        "text": "AWS Billing Conductor"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Cost Explorer provides visualization tools, customizable graphs, and detailed reporting to analyze spending trends over time.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q62",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A SysOps Administrator needs to enforce strict password complexity, rotation every 90 days, and prevent reuse of the last 5 passwords for IAM users across an account. Where is this enforced?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IAM Account Password Policy"
+      },
+      {
+        "id": "B",
+        "text": "AWS Organizations SCP"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "D",
+        "text": "IAM Identity Center Permission Set"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The IAM Account Password Policy sets requirements for IAM user passwords, including length, character types, expiration period, and history prevention.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q63",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A SysOps Administrator needs to collect memory utilization and disk space metrics from Linux EC2 instances. These metrics are not reported by default EC2 CloudWatch metrics. What must be installed on the instances?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unified CloudWatch Agent"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager SSM Agent"
+      },
+      {
+        "id": "C",
+        "text": "AWS X-Ray Daemon"
+      },
+      {
+        "id": "D",
+        "text": "AWS CodeDeploy Agent"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The CloudWatch agent collects internal operating system metrics (such as memory usage, swap space, and disk space) and sends them to CloudWatch Logs and Metrics.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q64",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Networking and Cost Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A SysOps Administrator wants to receive automated email alerts whenever total account spending exceeds 80% of a monthly budget limit of $5,000. Which tool should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Budgets"
+      },
+      {
+        "id": "B",
+        "text": "AWS Cost Explorer"
+      },
+      {
+        "id": "C",
+        "text": "AWS Trusted Advisor"
+      },
+      {
+        "id": "D",
+        "text": "AWS Compute Optimizer"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Budgets allows setting custom cost and usage limits and sending notifications via email or SNS when actual or forecasted spending crosses defined percentage thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soac02-s10-q65",
+    "setId": 10,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability, Automation, and Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A SysOps Administrator needs to back up resources across multiple AWS accounts and regions (EBS, RDS, DynamoDB, S3) into a central backup vault with immutable compliance WORM policies. Which service should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Backup with Backup Vault Lock"
+      },
+      {
+        "id": "B",
+        "text": "AWS DataSync"
+      },
+      {
+        "id": "C",
+        "text": "Amazon Data Lifecycle Manager"
+      },
+      {
+        "id": "D",
+        "text": "AWS Organizations SCP"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Backup is a centralized backup service that supports cross-account, cross-region backups and vault locking (WORM - Write Once Read Many) to prevent backup deletion.",
+    "awsDocUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html",
+    "difficulty": "Standard"
   }
 ]
