@@ -3,957 +3,907 @@
     "id": "dop-c02-s3-q1",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #131). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q2",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #132). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
-      "B"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q3",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #133). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q4",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #134). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q5",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 5",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #135). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q6",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #136). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
-      "B"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q7",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #137). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 7",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q8",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #138). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q9",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #139). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q10",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 10",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #140). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Monitoring and Logging"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q11",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #141). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q12",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #142). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q13",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #143). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q14",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #144). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 14",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
-      "B"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q15",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 15",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #145). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q16",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #146). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q17",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #147). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q18",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #148). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
-      "B"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q19",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #149). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q20",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 20",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #150). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q21",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #151). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 21",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q22",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #152). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
-      "B"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q23",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #153). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q24",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #154). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q25",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 25",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #155). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "dop-c02-s3-q26",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q27",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-s3-q28",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d4",
@@ -961,34 +911,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #156). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q29",
+    "id": "dop-c02-s3-q27",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d1",
@@ -996,34 +946,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #157). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q30",
+    "id": "dop-c02-s3-q28",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d2",
@@ -1031,35 +981,35 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 30",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #158). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 28",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q31",
+    "id": "dop-c02-s3-q29",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
@@ -1067,34 +1017,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #159). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q32",
+    "id": "dop-c02-s3-q30",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d4",
@@ -1102,35 +1052,39 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #160). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Monitoring and Logging"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q33",
+    "id": "dop-c02-s3-q31",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d1",
@@ -1138,34 +1092,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #161). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q34",
+    "id": "dop-c02-s3-q32",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d2",
@@ -1173,34 +1127,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #162). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q35",
+    "id": "dop-c02-s3-q33",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d3",
@@ -1208,35 +1162,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 35",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #163). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dop-c02-s3-q36",
+    "id": "dop-c02-s3-q34",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d4",
@@ -1244,917 +1197,1084 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #164). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dop-c02-s3-q35",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #165). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 35",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: SDLC Automation"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dop-c02-s3-q36",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #166). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
+      },
+      {
+        "id": "B",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q37",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q38",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q39",
-    "setId": 3,
-    "examCode": "DOP-C02",
     "domainId": "dop-d3",
     "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #167). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q38",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #168). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q39",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #169). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q40",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 40",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #170). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q41",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #171). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q42",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #172). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 42",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
-      "B"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q43",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q44",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q45",
-    "setId": 3,
-    "examCode": "DOP-C02",
     "domainId": "dop-d1",
     "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 45",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #173). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q44",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #174). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
+      },
+      {
+        "id": "B",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q45",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #175). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Resilient Cloud Solutions"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q46",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #176). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
-      "B"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q47",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #177). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q48",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #178). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q49",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q50",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 50",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q51",
-    "setId": 3,
-    "examCode": "DOP-C02",
     "domainId": "dop-d3",
     "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #179). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 49",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q50",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #180). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Monitoring and Logging"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q51",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #181). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q52",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q53",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q54",
-    "setId": 3,
-    "examCode": "DOP-C02",
     "domainId": "dop-d2",
     "domainName": "Domain 2: Configuration Management and IaC",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #182). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q53",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #183). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q54",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #184). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q55",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 55",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #185). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q56",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #186). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 56",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q57",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #187). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q58",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d2",
-    "domainName": "Domain 2: Configuration Management and IaC",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q59",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q60",
-    "setId": 3,
-    "examCode": "DOP-C02",
     "domainId": "dop-d4",
     "domainName": "Domain 4: Monitoring and Logging",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 60",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #188). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Monitoring and Logging and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q59",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d1",
+    "domainName": "Domain 1: SDLC Automation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #189). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q60",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d2",
+    "domainName": "Domain 2: Configuration Management and IaC",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #190). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Configuration Management and IaC"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "dop-c02-s3-q61",
     "setId": 3,
     "examCode": "DOP-C02",
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #191). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Resilient Cloud Solutions"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q62",
+    "setId": 3,
+    "examCode": "DOP-C02",
+    "domainId": "dop-d4",
+    "domainName": "Domain 4: Monitoring and Logging",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 4: Monitoring and Logging (Professional Tier, Practice Mode A, Scenario #192). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Monitoring and Logging"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "dop-c02-s3-q63",
+    "setId": 3,
+    "examCode": "DOP-C02",
     "domainId": "dop-d1",
     "domainName": "Domain 1: SDLC Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CodePipeline CI/CD Blue/Green Deployments. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 1: SDLC Automation (Professional Tier, Practice Mode A, Scenario #193). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dop practice-test --set 3 --q 63",
     "options": [
       {
         "id": "A",
-        "text": "Implement CodePipeline CI/CD Blue/Green Deployments using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: SDLC Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CodePipeline CI/CD Blue/Green Deployments."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and CodePipeline CI/CD Blue/Green Deployments.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "dop-c02-s3-q62",
+    "id": "dop-c02-s3-q64",
     "setId": 3,
     "examCode": "DOP-C02",
     "domainId": "dop-d2",
@@ -2162,137 +2282,70 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation StackSets. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Configuration Management and IaC. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 2: Configuration Management and IaC (Professional Tier, Practice Mode A, Scenario #194). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation StackSets using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Configuration Management and IaC"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation StackSets."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Configuration Management and IaC and CloudFormation StackSets.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dop-c02-s3-q63",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d3",
-    "domainName": "Domain 3: Resilient Cloud Solutions",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Config Rule Auto-Remediation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Resilient Cloud Solutions. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Config Rule Auto-Remediation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Config Rule Auto-Remediation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Resilient Cloud Solutions and Config Rule Auto-Remediation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
-  },
-  {
-    "id": "dop-c02-s3-q64",
-    "setId": 3,
-    "examCode": "DOP-C02",
-    "domainId": "dop-d4",
-    "domainName": "Domain 4: Monitoring and Logging",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for X-Ray Microservice Tracing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Monitoring and Logging. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement X-Ray Microservice Tracing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of X-Ray Microservice Tracing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Monitoring and Logging and X-Ray Microservice Tracing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
   },
   {
     "id": "dop-c02-s3-q65",
     "setId": 3,
     "examCode": "DOP-C02",
-    "domainId": "dop-d1",
-    "domainName": "Domain 1: SDLC Automation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dop-d3",
+    "domainName": "Domain 3: Resilient Cloud Solutions",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for GuardDuty Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: SDLC Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws dop execute-operation --set-id 3 --q-num 65",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Cross-Account CodePipeline IAM Roles within Domain 3: Resilient Cloud Solutions (Professional Tier, Practice Mode A, Scenario #195). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement GuardDuty Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring KMS customer-managed key policies and cross-account IAM assume-role grants"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Resilient Cloud Solutions"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of GuardDuty Incident Automation."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified DevOps Engineer – Professional (DOP-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: SDLC Automation and GuardDuty Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Professional Tier Blueprint Explanation (Practice Mode A): Cross-account CodePipeline deployments require cross-account IAM role assumption and KMS key grants.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   }
 ]

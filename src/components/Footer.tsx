@@ -5,13 +5,13 @@ export const Footer: React.FC = () => {
   return (
     <footer className="w-full border-t border-slate-800/80 bg-slate-950/90 py-8 px-4 sm:px-6 lg:px-8 text-xs text-slate-400">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        
+
         {/* Left: Branding */}
         <div className="flex items-center gap-2">
           <Cloud className="w-4 h-4 text-amber-400" />
           <span className="font-semibold text-slate-300">AWS Certification Suite</span>
           <span className="text-slate-600">•</span>
-          <span>Official Exam Simulation Portal</span>
+          <span>Exam Simulation Portal</span>
         </div>
 
         {/* Center/Right: "Made with ❤️ from Manu Jayaraj" */}

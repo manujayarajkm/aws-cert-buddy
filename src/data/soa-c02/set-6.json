@@ -3,2158 +3,2172 @@
     "id": "soa-c02-s6-q1",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #326). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q2",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #327). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q3",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q4",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d4",
     "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #328). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q4",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #329). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q5",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 5",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #330). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q6",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q7",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d3",
     "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #331). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q7",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #332). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 7",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q8",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #333). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q9",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q10",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d2",
     "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 10",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #334). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q10",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #335). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Deployment, Provisioning, and Automation"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q11",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #336). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q12",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q13",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d1",
     "domainName": "Domain 1: Monitoring, Logging, and Remediation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #337). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q13",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #338). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q14",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #339). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 14",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q15",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 15",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q16",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d4",
     "domainName": "Domain 4: Security and Compliance",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #340). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Security and Compliance"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q16",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #341). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q17",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #342). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q18",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q19",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d3",
     "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #343). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q19",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #344). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q20",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 20",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #345). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q21",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q22",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d2",
     "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #346). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 21",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q22",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #347). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q23",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #348). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q24",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q25",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d1",
     "domainName": "Domain 1: Monitoring, Logging, and Remediation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 25",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #349). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q25",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #350). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Reliability and Business Continuity"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q26",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #351). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q27",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q28",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d4",
     "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #352). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q28",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #353). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 28",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q29",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #354). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q30",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 30",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #355). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q31",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #356). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q32",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #357). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q33",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q34",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d2",
     "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #358). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q34",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #359). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q35",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 35",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #360). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 35",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Security and Compliance"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q36",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q37",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d1",
     "domainName": "Domain 1: Monitoring, Logging, and Remediation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #361). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q37",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #362). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q38",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #363). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q39",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #364). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q40",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 40",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #365). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q41",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #366). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q42",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "soa-c02-s6-q43",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d3",
     "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #367). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 42",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "soa-c02-s6-q43",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #368). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q44",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #369). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q45",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 45",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #370). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "soa-c02-s6-q46",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #371). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q47",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #372). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q48",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #373). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q49",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #374). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 49",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q50",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 50",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #375). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q51",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #376). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q52",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #377). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q53",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #378). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q54",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #379). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q55",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "soa-d4",
+    "domainName": "Domain 4: Security and Compliance",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 55",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #380). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Security and Compliance"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q56",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d4",
-    "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "soa-d1",
+    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #381). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 56",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q57",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d1",
-    "domainName": "Domain 1: Monitoring, Logging, and Remediation",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #382). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q58",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d2",
-    "domainName": "Domain 2: Reliability and Business Continuity",
+    "domainId": "soa-d3",
+    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #383). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "soa-c02-s6-q59",
     "setId": 6,
     "examCode": "SOA-C02",
-    "domainId": "soa-d3",
-    "domainName": "Domain 3: Deployment, Provisioning, and Automation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "soa-c02-s6-q60",
-    "setId": 6,
-    "examCode": "SOA-C02",
     "domainId": "soa-d4",
     "domainName": "Domain 4: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 60",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #384). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Security and Compliance and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "soa-c02-s6-q61",
+    "id": "soa-c02-s6-q60",
     "setId": 6,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
     "domainName": "Domain 1: Monitoring, Logging, and Remediation",
-    "questionType": "single",
-    "selectCount": 1,
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch Alarms & EventBridge. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #385). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch Alarms & EventBridge using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch Alarms & EventBridge."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and CloudWatch Alarms & EventBridge.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "soa-c02-s6-q62",
+    "id": "soa-c02-s6-q61",
     "setId": 6,
     "examCode": "SOA-C02",
     "domainId": "soa-d2",
@@ -2162,34 +2176,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Systems Manager Incident Automation. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Reliability and Business Continuity. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #386). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Systems Manager Incident Automation using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Reliability and Business Continuity"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Systems Manager Incident Automation."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Reliability and Business Continuity and Systems Manager Incident Automation.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "soa-c02-s6-q63",
+    "id": "soa-c02-s6-q62",
     "setId": 6,
     "examCode": "SOA-C02",
     "domainId": "soa-d3",
@@ -2197,70 +2211,70 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudFormation Infrastructure as Code. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Deployment, Provisioning, and Automation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 3: Deployment, Provisioning, and Automation (Associate Tier, Practice Mode A, Scenario #387). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudFormation Infrastructure as Code using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment, Provisioning, and Automation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudFormation Infrastructure as Code."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Deployment, Provisioning, and Automation and CloudFormation Infrastructure as Code.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "soa-c02-s6-q64",
+    "id": "soa-c02-s6-q63",
     "setId": 6,
     "examCode": "SOA-C02",
     "domainId": "soa-d4",
     "domainName": "Domain 4: Security and Compliance",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for VPC Flow Logs & Transit Gateway. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 4: Security and Compliance (Associate Tier, Practice Mode A, Scenario #388). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws soa practice-test --set 6 --q 63",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC Flow Logs & Transit Gateway using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC Flow Logs & Transit Gateway."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Security and Compliance and VPC Flow Logs & Transit Gateway.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "soa-c02-s6-q65",
+    "id": "soa-c02-s6-q64",
     "setId": 6,
     "examCode": "SOA-C02",
     "domainId": "soa-d1",
@@ -2268,31 +2282,70 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Cost Optimization. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Monitoring, Logging, and Remediation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws soa execute-operation --set-id 6 --q-num 65",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 1: Monitoring, Logging, and Remediation (Associate Tier, Practice Mode A, Scenario #389). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Cost Optimization using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Monitoring, Logging, and Remediation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Cost Optimization."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified SysOps Administrator – Associate (SOA-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Monitoring, Logging, and Remediation and Cost Optimization.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "soa-c02-s6-q65",
+    "setId": 6,
+    "examCode": "SOA-C02",
+    "domainId": "soa-d2",
+    "domainName": "Domain 2: Reliability and Business Continuity",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for SSM Remote Fleet Management within Domain 2: Reliability and Business Continuity (Associate Tier, Practice Mode A, Scenario #390). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Systems Manager Run Command and Patch Manager without open SSH ports"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Reliability and Business Continuity"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): SSM Agent enables remote execution and OS patching securely without requiring inbound SSH ports.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   }
 ]

@@ -3,922 +3,907 @@
     "id": "ans-c01-s6-q1",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #326). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q2",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #327). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q3",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #328). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q4",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #329). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q5",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 5",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #330). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Network Implementation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q6",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #331). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q7",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #332). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 7",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q8",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #333). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q9",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #334). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q10",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 10",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #335). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Network Management and Operations"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q11",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #336). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q12",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #337). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q13",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #338). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q14",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #339). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 14",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q15",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 15",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #340). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Network Security"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q16",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #341). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q17",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #342). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q18",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #343). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q19",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #344). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q20",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 20",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #345). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q21",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #346). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 21",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q22",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #347). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q23",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #348). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q24",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #349). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q25",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 25",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #350). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Network Implementation"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q26",
-    "setId": 6,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q27",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d3",
@@ -926,34 +911,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #351). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-s6-q28",
+    "id": "ans-c01-s6-q27",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d4",
@@ -961,34 +946,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #352). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-s6-q29",
+    "id": "ans-c01-s6-q28",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
@@ -996,34 +981,35 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #353). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 28",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-s6-q30",
+    "id": "ans-c01-s6-q29",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d2",
@@ -1031,35 +1017,179 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 30",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #354). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ans-c01-s6-q30",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #355). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Network Management and Operations"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "ans-c01-s6-q31",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #356). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ans-c01-s6-q32",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #357). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ans-c01-s6-q33",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #358). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
+      },
+      {
+        "id": "B",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "ans-c01-s6-q34",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d3",
@@ -1067,34 +1197,34 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #359). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-s6-q32",
+    "id": "ans-c01-s6-q35",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d4",
@@ -1102,35 +1232,40 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #360). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 35",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Network Security"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "ans-c01-s6-q33",
+    "id": "ans-c01-s6-q36",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
@@ -1138,210 +1273,69 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #361). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "ans-c01-s6-q34",
-    "setId": 6,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q35",
-    "setId": 6,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 35",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q36",
-    "setId": 6,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q37",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q38",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d2",
     "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #362). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q39",
+    "id": "ans-c01-s6-q38",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d3",
@@ -1349,106 +1343,109 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #363). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q39",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #364). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q40",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 40",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #365). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q41",
-    "setId": 6,
-    "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q42",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d2",
@@ -1456,104 +1453,105 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #366). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q42",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #367). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 42",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q43",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q44",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d4",
     "domainName": "Domain 4: Network Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #368). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q45",
+    "id": "ans-c01-s6-q44",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
@@ -1561,317 +1559,325 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 45",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #369). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q45",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #370). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Network Implementation"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q46",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q47",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d3",
     "domainName": "Domain 3: Network Management and Operations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #371). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q47",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #372). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q48",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #373). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q49",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q50",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d2",
     "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 50",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #374). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 49",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q50",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #375). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Network Management and Operations"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q51",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
+    "domainId": "ans-d4",
+    "domainName": "Domain 4: Network Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #376). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q52",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d4",
-    "domainName": "Domain 4: Network Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "D"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q53",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d1",
     "domainName": "Domain 1: Network Design",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #377). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q54",
+    "id": "ans-c01-s6-q53",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d2",
@@ -1879,106 +1885,109 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #378). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q54",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d3",
+    "domainName": "Domain 3: Network Management and Operations",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #379). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q55",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d3",
-    "domainName": "Domain 3: Network Management and Operations",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 55",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q56",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d4",
     "domainName": "Domain 4: Network Security",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #380). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Network Security"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q57",
+    "id": "ans-c01-s6-q56",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
@@ -1986,104 +1995,105 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #381). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 56",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q57",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #382). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
+      },
+      {
+        "id": "B",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q58",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d2",
-    "domainName": "Domain 2: Network Implementation",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q59",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d3",
     "domainName": "Domain 3: Network Management and Operations",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #383). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q60",
+    "id": "ans-c01-s6-q59",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d4",
@@ -2091,105 +2101,109 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 60",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #384). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) D align with AWS best practices for Domain 4: Network Security and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q60",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d1",
+    "domainName": "Domain 1: Network Design",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #385). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Network Design"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
     "id": "ans-c01-s6-q61",
     "setId": 6,
     "examCode": "ANS-C01",
-    "domainId": "ans-d1",
-    "domainName": "Domain 1: Network Design",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Direct Connect Gateway & BGP Routing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Direct Connect Gateway & BGP Routing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Direct Connect Gateway & BGP Routing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Direct Connect Gateway & BGP Routing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "ans-c01-s6-q62",
-    "setId": 6,
-    "examCode": "ANS-C01",
     "domainId": "ans-d2",
     "domainName": "Domain 2: Network Implementation",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for VPC PrivateLink & Endpoints. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Network Implementation. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #386). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement VPC PrivateLink & Endpoints using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Network Implementation"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of VPC PrivateLink & Endpoints."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "B"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) B align with AWS best practices for Domain 2: Network Implementation and VPC PrivateLink & Endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q63",
+    "id": "ans-c01-s6-q62",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d3",
@@ -2197,70 +2211,70 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Transit Gateway Route Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Network Management and Operations. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 3: Network Management and Operations (Specialty Tier, Practice Mode A, Scenario #387). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Transit Gateway Route Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Network Management and Operations"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Transit Gateway Route Tables."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) C align with AWS best practices for Domain 3: Network Management and Operations and Transit Gateway Route Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q64",
+    "id": "ans-c01-s6-q63",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d4",
     "domainName": "Domain 4: Network Security",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Network Firewall & Route 53 Resolver. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Network Security. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 4: Network Security (Specialty Tier, Practice Mode A, Scenario #388). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws ans practice-test --set 6 --q 63",
     "options": [
       {
         "id": "A",
-        "text": "Implement Network Firewall & Route 53 Resolver using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Network Security"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Network Firewall & Route 53 Resolver."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Network Security and Network Firewall & Route 53 Resolver.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   },
   {
-    "id": "ans-c01-s6-q65",
+    "id": "ans-c01-s6-q64",
     "setId": 6,
     "examCode": "ANS-C01",
     "domainId": "ans-d1",
@@ -2268,31 +2282,70 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Global Accelerator. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Network Design. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws ans execute-operation --set-id 6 --q-num 65",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 1: Network Design (Specialty Tier, Practice Mode A, Scenario #389). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Global Accelerator using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Network Design"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Global Accelerator."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Advanced Networking – Specialty (ANS-C01) exam blueprint, option(s) A align with AWS best practices for Domain 1: Network Design and Global Accelerator.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "ans-c01-s6-q65",
+    "setId": 6,
+    "examCode": "ANS-C01",
+    "domainId": "ans-d2",
+    "domainName": "Domain 2: Network Implementation",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Direct Connect Gateway BGP Peering within Domain 2: Network Implementation (Specialty Tier, Practice Mode A, Scenario #390). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Attaching Direct Connect Gateway to multi-region Transit Gateways with BGP ASN peering"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Network Implementation"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Practice Mode A): Direct Connect Gateway attached to Transit Gateways provides multi-region redundant BGP routing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
   }
 ]

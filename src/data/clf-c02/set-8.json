@@ -3,2123 +3,1916 @@
     "id": "clf-c02-s8-q1",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #456). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q2",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #457). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q3",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #458). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q4",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for AWS Budgets Alerting within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #459). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q5",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 5",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #460). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q6",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #461). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q7",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #462). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 7",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q8",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #463). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q9",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for AWS Budgets Alerting within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #464). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q10",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 10",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #465). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q11",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #466). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q12",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #467). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q13",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #468). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q14",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for AWS Budgets Alerting within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #469). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 14",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q15",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 15",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #470). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security and Compliance"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q16",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #471). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q17",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #472). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q18",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #473). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q19",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for AWS Budgets Alerting within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #474). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q20",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 20",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #475). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q21",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #476). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 21",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q22",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #477). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q23",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #478). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q24",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for AWS Budgets Alerting within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #479). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q25",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 25",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #480). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q26",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #481). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q27",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #482). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q28",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #483). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 28",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q29",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for AWS Budgets Alerting within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #484). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q30",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 30",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #485). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q31",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #486). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q32",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #487). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q33",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #488). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q34",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for AWS Budgets Alerting within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #489). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q35",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 35",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #490). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 35",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security and Compliance"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q36",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #491). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q37",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #492). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q38",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #493). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q39",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for AWS Budgets Alerting within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #494). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q40",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 40",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #495). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q41",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #496). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q42",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #497). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 42",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q43",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #498). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q44",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for AWS Budgets Alerting within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #499). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q45",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 45",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #500). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "clf-c02-s8-q46",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #501). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "clf-c02-s8-q47",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #502). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "clf-c02-s8-q48",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #503). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "clf-c02-s8-q49",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for AWS Budgets Alerting within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #504). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 49",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "clf-c02-s8-q50",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 50",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #505). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "clf-c02-s8-q51",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #506). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "clf-c02-s8-q52",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #507). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "clf-c02-s8-q53",
     "setId": 8,
     "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-s8-q54",
-    "setId": 8,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "clf-c02-s8-q55",
-    "setId": 8,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 55",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-s8-q56",
-    "setId": 8,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d4",
-    "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-s8-q57",
-    "setId": 8,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d1",
-    "domainName": "Domain 1: Cloud Concepts",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "clf-c02-s8-q58",
-    "setId": 8,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d2",
-    "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-s8-q59",
-    "setId": 8,
-    "examCode": "CLF-C02",
-    "domainId": "clf-d3",
-    "domainName": "Domain 3: Cloud Technology and Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "clf-c02-s8-q60",
-    "setId": 8,
-    "examCode": "CLF-C02",
     "domainId": "clf-d4",
     "domainName": "Domain 4: Billing, Pricing, and Support",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 60",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #508). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) D align with AWS best practices for Domain 4: Billing, Pricing, and Support and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "clf-c02-s8-q61",
+    "id": "clf-c02-s8-q54",
     "setId": 8,
     "examCode": "CLF-C02",
     "domainId": "clf-d1",
@@ -2127,69 +1920,74 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for AWS IAM & Security. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for AWS Budgets Alerting within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #509). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement AWS IAM & Security using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of AWS IAM & Security."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and AWS IAM & Security.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "clf-c02-s8-q62",
+    "id": "clf-c02-s8-q55",
     "setId": 8,
     "examCode": "CLF-C02",
     "domainId": "clf-d2",
     "domainName": "Domain 2: Security and Compliance",
-    "questionType": "single",
-    "selectCount": 1,
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for EC2 & Elastic Load Balancing. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Security and Compliance. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #510). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement EC2 & Elastic Load Balancing using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security and Compliance"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of EC2 & Elastic Load Balancing."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) B align with AWS best practices for Domain 2: Security and Compliance and EC2 & Elastic Load Balancing.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "clf-c02-s8-q63",
+    "id": "clf-c02-s8-q56",
     "setId": 8,
     "examCode": "CLF-C02",
     "domainId": "clf-d3",
@@ -2197,70 +1995,70 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for S3 Storage Classes. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Cloud Technology and Services. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #511). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 56",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 Storage Classes using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 Storage Classes."
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) C align with AWS best practices for Domain 3: Cloud Technology and Services and S3 Storage Classes.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "clf-c02-s8-q64",
+    "id": "clf-c02-s8-q57",
     "setId": 8,
     "examCode": "CLF-C02",
     "domainId": "clf-d4",
     "domainName": "Domain 4: Billing, Pricing, and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Billing & Cost Explorer. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Billing, Pricing, and Support. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #512). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Billing & Cost Explorer using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Billing & Cost Explorer."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Configuring IAM user access permissions and security group inbound rules"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Billing, Pricing, and Support and Billing & Cost Explorer.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "clf-c02-s8-q65",
+    "id": "clf-c02-s8-q58",
     "setId": 8,
     "examCode": "CLF-C02",
     "domainId": "clf-d1",
@@ -2268,31 +2066,286 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for CloudWatch & CloudTrail. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Cloud Concepts. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws clf execute-operation --set-id 8 --q-num 65",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #513). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement CloudWatch & CloudTrail using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of CloudWatch & CloudTrail."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Cloud Practitioner (CLF-C02) exam blueprint, option(s) A align with AWS best practices for Domain 1: Cloud Concepts and CloudWatch & CloudTrail.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "clf-c02-s8-q59",
+    "setId": 8,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for AWS Budgets Alerting within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #514). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
+      },
+      {
+        "id": "B",
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "clf-c02-s8-q60",
+    "setId": 8,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #515). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Cloud Technology and Services"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "clf-c02-s8-q61",
+    "setId": 8,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Pay-as-you-go pricing model within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #516). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Billing, Pricing, and Support"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Pay-as-you-go pricing model eliminating upfront capital expenditure (CapEx)"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Trading capital expense for variable operational expense allows organizations to pay only for resources consumed.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "clf-c02-s8-q62",
+    "setId": 8,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d1",
+    "domainName": "Domain 1: Cloud Concepts",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for AWS Shared Responsibility Model within Domain 1: Cloud Concepts (Foundational Tier, Practice Mode A, Scenario #517). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring IAM user access permissions and security group inbound rules"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Cloud Concepts"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Customers are responsible for security IN the cloud, including IAM identity policies and firewall rules.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "clf-c02-s8-q63",
+    "setId": 8,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d2",
+    "domainName": "Domain 2: Security and Compliance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Amazon S3 Standard Storage Class within Domain 2: Security and Compliance (Foundational Tier, Practice Mode A, Scenario #518). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws clf practice-test --set 8 --q 63",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security and Compliance"
+      },
+      {
+        "id": "B",
+        "text": "Amazon Simple Storage Service (Amazon S3 Standard)"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Amazon S3 Standard provides 99.999999999% (11 9s) durability for object storage across multiple AZs.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "clf-c02-s8-q64",
+    "setId": 8,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d3",
+    "domainName": "Domain 3: Cloud Technology and Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for AWS Budgets Alerting within Domain 3: Cloud Technology and Services (Foundational Tier, Practice Mode A, Scenario #519). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Cloud Technology and Services"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Creating custom spending alert thresholds with AWS Budgets"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): AWS Budgets sends automated email notifications when estimated or actual spending exceeds set thresholds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "clf-c02-s8-q65",
+    "setId": 8,
+    "examCode": "CLF-C02",
+    "domainId": "clf-d4",
+    "domainName": "Domain 4: Billing, Pricing, and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for AWS Enterprise Support Plan within Domain 4: Billing, Pricing, and Support (Foundational Tier, Practice Mode A, Scenario #520). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Enterprise Support Plan with dedicated Technical Account Manager (TAM)"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Billing, Pricing, and Support"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Foundational Tier Blueprint Explanation (Practice Mode A): Enterprise Support provides a dedicated TAM and < 15-minute response time for critical system down events.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   }
 ]

@@ -73,8 +73,8 @@ export const App: React.FC = () => {
 
   // Start Exam Set
   const handleStartExam = (examCode: ExamCode, setId: number, mode: ExamMode) => {
-    // Automatically scramble questions and options on every attempt
-    const questions = loadQuestionsForSet(examCode, setId, true);
+    // Automatically scramble questions and options on every attempt; load mode-specific pool
+    const questions = loadQuestionsForSet(examCode, setId, true, mode);
 
     if (questions.length === 0) {
       alert(`No questions found for ${examCode} Set ${setId}`);
@@ -108,20 +108,28 @@ export const App: React.FC = () => {
   // Timer interval tick
   useEffect(() => {
     if (currentView === 'exam' && examState && examState.isStarted && !examState.isCompleted) {
-      timerRef.current = window.setInterval(() => {
-        setExamState(prev => {
-          if (!prev) return null;
-          if (prev.timeRemaining <= 1) {
-            handleFinishExam();
-            return { ...prev, timeRemaining: 0 };
-          }
-          return {
-            ...prev,
-            timeRemaining: prev.timeRemaining - 1,
-            elapsedSeconds: prev.elapsedSeconds + 1
-          };
-        });
-      }, 1000);
+      if (examState.mode === 'simulation') {
+        // Simulation Mode: Live countdown timer with auto-submit
+        timerRef.current = window.setInterval(() => {
+          setExamState(prev => {
+            if (!prev) return null;
+            if (prev.timeRemaining <= 1) {
+              handleFinishExam();
+              return { ...prev, timeRemaining: 0 };
+            }
+            return {
+              ...prev,
+              timeRemaining: prev.timeRemaining - 1,
+              elapsedSeconds: prev.elapsedSeconds + 1
+            };
+          });
+        }, 1000);
+      } else {
+        // Practice Mode: Untimed, track elapsed time for analytics without countdown pressure
+        timerRef.current = window.setInterval(() => {
+          setExamState(prev => prev ? { ...prev, elapsedSeconds: prev.elapsedSeconds + 1 } : null);
+        }, 1000);
+      }
     } else {
       if (timerRef.current) window.clearInterval(timerRef.current);
     }
@@ -129,7 +137,7 @@ export const App: React.FC = () => {
     return () => {
       if (timerRef.current) window.clearInterval(timerRef.current);
     };
-  }, [currentView, examState?.isStarted, examState?.isCompleted]);
+  }, [currentView, examState?.isStarted, examState?.isCompleted, examState?.mode]);
 
   // Option select handler
   const handleSelectOption = (questionId: string, optionId: string, isMultiple: boolean) => {

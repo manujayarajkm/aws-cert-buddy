@@ -1,0 +1,2351 @@
+[
+  {
+    "id": "scs-c02-sim-s6-q1",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #976). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q2",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #977). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q3",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #978). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q4",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #979). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q5",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #980). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q6",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #981). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q7",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #982). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 7",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q8",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #983). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q9",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #984). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q10",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #985). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q11",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #986). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q12",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #987). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q13",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #988). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q14",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #989). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 14",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q15",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #990). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q16",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #991). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q17",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #992). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q18",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #993). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q19",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #994). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q20",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #995). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q21",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #996). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 21",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q22",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #997). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q23",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #998). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q24",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #999). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q25",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1000). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q26",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1001). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q27",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1002). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q28",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1003). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 28",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q29",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1004). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q30",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1005). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q31",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1006). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q32",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1007). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q33",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1008). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q34",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1009). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q35",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1010). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 35",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "scs-c02-sim-s6-q36",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1011). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q37",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1012). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q38",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1013). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q39",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1014). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q40",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1015). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q41",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1016). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q42",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1017). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 42",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q43",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1018). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q44",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1019). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q45",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1020). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q46",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1021). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q47",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1022). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q48",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1023). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q49",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1024). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 49",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q50",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1025). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q51",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1026). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q52",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1027). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q53",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1028). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q54",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1029). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q55",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1030). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q56",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1031). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 56",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q57",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1032). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q58",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1033). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q59",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1034). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q60",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1035). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q61",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1036). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q62",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d1",
+    "domainName": "Domain 1: Threat Detection and Incident Response",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 1: Threat Detection and Incident Response (Specialty Tier, Simulation Mode B, Scenario #1037). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Threat Detection and Incident Response"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q63",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d2",
+    "domainName": "Domain 2: Security Logging and Monitoring",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 2: Security Logging and Monitoring (Specialty Tier, Simulation Mode B, Scenario #1038). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws scs sim-test --set 6 --q 63",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security Logging and Monitoring"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q64",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d3",
+    "domainName": "Domain 3: Infrastructure Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 3: Infrastructure Security (Specialty Tier, Simulation Mode B, Scenario #1039). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Infrastructure Security"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  },
+  {
+    "id": "scs-c02-sim-s6-q65",
+    "setId": 6,
+    "examCode": "SCS-C02",
+    "domainId": "scs-d4",
+    "domainName": "Domain 4: Data Protection and Encryption",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Bucket Policy SSE-KMS Enforcement within Domain 4: Data Protection and Encryption (Specialty Tier, Simulation Mode B, Scenario #1040). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Bucket Policy with explicit Deny when s3:x-amz-server-side-encryption-aws-kms-key-id does not match target KMS ARN"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Data Protection and Encryption"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Specialty Tier Blueprint Explanation (Simulation Mode B): Condition key matching with explicit Deny enforces specific KMS key encryption on object uploads.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Complex"
+  }
+]

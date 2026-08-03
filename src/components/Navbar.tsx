@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        
+
         {/* Left: App Logo & Title */}
         <div
           onClick={onHomeClick}
@@ -71,18 +71,17 @@ export const Navbar: React.FC<NavbarProps> = ({
               </Badge>
             </div>
             <span className="text-[11px] text-slate-400 font-medium block">
-              Official Exam Simulation Portal
+              Exam Simulation Portal
             </span>
           </div>
         </div>
 
-        {/* Center: Live Timer if in active exam */}
-        {isExamActive && (
+        {/* Center: Live Timer if in active simulation exam */}
+        {isExamActive && examState.mode === 'simulation' && (
           <div className="hidden md:flex items-center gap-3 px-4 py-1.5 rounded-full bg-slate-900 border border-amber-500/30">
             <span className="text-xs font-semibold text-slate-400">Time Remaining:</span>
-            <span className={`font-mono text-sm font-bold ${
-              examState.timeRemaining < 300 ? 'text-rose-400 animate-pulse' : 'text-amber-400'
-            }`}>
+            <span className={`font-mono text-sm font-bold ${examState.timeRemaining < 300 ? 'text-rose-400 animate-pulse' : 'text-amber-400'
+              }`}>
               {formatTime(examState.timeRemaining)}
             </span>
           </div>
@@ -90,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Right Navigation & User Auth */}
         <div className="flex items-center gap-3">
-          
+
           {/* Home Nav Link */}
           <Button
             variant="ghost"

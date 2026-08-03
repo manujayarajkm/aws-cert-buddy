@@ -3,2123 +3,1916 @@
     "id": "saa-c03-s8-q1",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #456). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q2",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #457). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q3",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #458). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q4",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #459). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q5",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 5",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #460). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q6",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #461). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q7",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #462). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 7",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q8",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #463). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q9",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #464). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q10",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 10",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #465). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q11",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #466). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q12",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #467). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q13",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #468). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q14",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #469). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 14",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q15",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 15",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #470). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q16",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #471). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q17",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #472). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q18",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #473). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q19",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #474). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q20",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 20",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #475). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "D"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q21",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #476). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 21",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q22",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #477). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q23",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #478). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q24",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #479). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q25",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 25",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #480). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q26",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #481). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q27",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #482). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q28",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #483). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 28",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q29",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #484). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q30",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 30",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #485). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q31",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #486). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q32",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #487). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q33",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #488). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q34",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #489). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q35",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 35",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #490). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 35",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "C"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q36",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #491). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q37",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #492). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q38",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #493). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q39",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #494). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q40",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 40",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #495). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q41",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #496). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q42",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #497). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 42",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q43",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #498). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q44",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #499). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q45",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 45",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #500). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
     "id": "saa-c03-s8-q46",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #501). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "saa-c03-s8-q47",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #502). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "saa-c03-s8-q48",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #503). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A",
       "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "saa-c03-s8-q49",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #504). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 49",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "saa-c03-s8-q50",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 50",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #505). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "saa-c03-s8-q51",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #506). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "C"
+      "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "saa-c03-s8-q52",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #507). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "D"
+      "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
     "id": "saa-c03-s8-q53",
     "setId": 8,
     "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "saa-c03-s8-q54",
-    "setId": 8,
-    "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "saa-c03-s8-q55",
-    "setId": 8,
-    "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 55",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "saa-c03-s8-q56",
-    "setId": 8,
-    "examCode": "SAA-C03",
-    "domainId": "saa-d4",
-    "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "saa-c03-s8-q57",
-    "setId": 8,
-    "examCode": "SAA-C03",
-    "domainId": "saa-d1",
-    "domainName": "Domain 1: Design Secure Architectures",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "saa-c03-s8-q58",
-    "setId": 8,
-    "examCode": "SAA-C03",
-    "domainId": "saa-d2",
-    "domainName": "Domain 2: Design Resilient Architectures",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "saa-c03-s8-q59",
-    "setId": 8,
-    "examCode": "SAA-C03",
-    "domainId": "saa-d3",
-    "domainName": "Domain 3: Design High-Performing Architectures",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
-      },
-      {
-        "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
-      },
-      {
-        "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
-      },
-      {
-        "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "saa-c03-s8-q60",
-    "setId": 8,
-    "examCode": "SAA-C03",
     "domainId": "saa-d4",
     "domainName": "Domain 4: Design Cost-Optimized Architectures",
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 60",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #508). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
       "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) D align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "saa-c03-s8-q61",
+    "id": "saa-c03-s8-q54",
     "setId": 8,
     "examCode": "SAA-C03",
     "domainId": "saa-d1",
@@ -2127,69 +1920,74 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Multi-AZ VPC Architecture. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #509). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Multi-AZ VPC Architecture using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Multi-AZ VPC Architecture."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Multi-AZ VPC Architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "saa-c03-s8-q62",
+    "id": "saa-c03-s8-q55",
     "setId": 8,
     "examCode": "SAA-C03",
     "domainId": "saa-d2",
     "domainName": "Domain 2: Design Resilient Architectures",
-    "questionType": "single",
-    "selectCount": 1,
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Auto Scaling & Resilience. The engineering team needs to satisfy AWS architectural best practices regarding Domain 2: Design Resilient Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #510). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Auto Scaling & Resilience using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Design Resilient Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Auto Scaling & Resilience."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) B align with AWS best practices for Domain 2: Design Resilient Architectures and Auto Scaling & Resilience.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "saa-c03-s8-q63",
+    "id": "saa-c03-s8-q56",
     "setId": 8,
     "examCode": "SAA-C03",
     "domainId": "saa-d3",
@@ -2197,70 +1995,70 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Aurora & DynamoDB Global Tables. The engineering team needs to satisfy AWS architectural best practices regarding Domain 3: Design High-Performing Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #511). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 56",
     "options": [
       {
         "id": "A",
-        "text": "Implement Aurora & DynamoDB Global Tables using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Aurora & DynamoDB Global Tables."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "C"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) C align with AWS best practices for Domain 3: Design High-Performing Architectures and Aurora & DynamoDB Global Tables.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "saa-c03-s8-q64",
+    "id": "saa-c03-s8-q57",
     "setId": 8,
     "examCode": "SAA-C03",
     "domainId": "saa-d4",
     "domainName": "Domain 4: Design Cost-Optimized Architectures",
-    "questionType": "multiple",
-    "selectCount": 2,
+    "questionType": "single",
+    "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for S3 & Elastic File System (EFS). The engineering team needs to satisfy AWS architectural best practices regarding Domain 4: Design Cost-Optimized Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #512). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement S3 & Elastic File System (EFS) using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of S3 & Elastic File System (EFS)."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
       }
     ],
     "correctAnswer": [
-      "A",
-      "C"
+      "D"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A, C align with AWS best practices for Domain 4: Design Cost-Optimized Architectures and S3 & Elastic File System (EFS).",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "saa-c03-s8-q65",
+    "id": "saa-c03-s8-q58",
     "setId": 8,
     "examCode": "SAA-C03",
     "domainId": "saa-d1",
@@ -2268,31 +2066,286 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": false,
-    "scenario": "An organization is operating a enterprise workload for Disaster Recovery Patterns. The engineering team needs to satisfy AWS architectural best practices regarding Domain 1: Design Secure Architectures. Which architectural design fulfills these requirements with minimal operational overhead?",
-    "codeSnippet": "aws saa execute-operation --set-id 8 --q-num 65",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #513). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Implement Disaster Recovery Patterns using AWS recommended managed architecture with automated multi-AZ failover and IAM encryption."
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
       },
       {
         "id": "B",
-        "text": "Deploy self-managed EC2 instances running custom scripts to sync data without leveraging AWS native IAM authentication."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
       },
       {
         "id": "C",
-        "text": "Configure AWS CloudWatch alarms with automated EventBridge targets for continuous governance of Disaster Recovery Patterns."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Utilize manual snapshots exported to local storage on a periodic schedule without KMS key rotation."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "According to the official AWS Certified Solutions Architect – Associate (SAA-C03) exam blueprint, option(s) A align with AWS best practices for Domain 1: Design Secure Architectures and Disaster Recovery Patterns.",
-    "awsDocUrl": "https://docs.aws.amazon.com/general/latest/gr/",
-    "difficulty": "Standard"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "saa-c03-s8-q59",
+    "setId": 8,
+    "examCode": "SAA-C03",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #514). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
+      },
+      {
+        "id": "B",
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "saa-c03-s8-q60",
+    "setId": 8,
+    "examCode": "SAA-C03",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #515). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Design High-Performing Architectures"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "saa-c03-s8-q61",
+    "setId": 8,
+    "examCode": "SAA-C03",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #516). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Design Cost-Optimized Architectures"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "saa-c03-s8-q62",
+    "setId": 8,
+    "examCode": "SAA-C03",
+    "domainId": "saa-d1",
+    "domainName": "Domain 1: Design Secure Architectures",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 1: Design Secure Architectures (Associate Tier, Practice Mode A, Scenario #517). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Design Secure Architectures"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "saa-c03-s8-q63",
+    "setId": 8,
+    "examCode": "SAA-C03",
+    "domainId": "saa-d2",
+    "domainName": "Domain 2: Design Resilient Architectures",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 2: Design Resilient Architectures (Associate Tier, Practice Mode A, Scenario #518). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws saa practice-test --set 8 --q 63",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Design Resilient Architectures"
+      },
+      {
+        "id": "B",
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "saa-c03-s8-q64",
+    "setId": 8,
+    "examCode": "SAA-C03",
+    "domainId": "saa-d3",
+    "domainName": "Domain 3: Design High-Performing Architectures",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Multi-AZ Aurora Web Tier Resilience within Domain 3: Design High-Performing Architectures (Associate Tier, Practice Mode A, Scenario #519). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Design High-Performing Architectures"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Deploying EC2 in Multi-AZ Auto Scaling with Amazon Aurora Multi-AZ automated reader failover"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Multi-AZ Auto Scaling combined with Aurora Multi-AZ provides high availability and sub-minute RTO.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "saa-c03-s8-q65",
+    "setId": 8,
+    "examCode": "SAA-C03",
+    "domainId": "saa-d4",
+    "domainName": "Domain 4: Design Cost-Optimized Architectures",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for S3 Lifecycle Archival Strategy within Domain 4: Design Cost-Optimized Architectures (Associate Tier, Practice Mode A, Scenario #520). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Lifecycle rules transitioning Standard -> Standard-IA -> Glacier Flexible Retrieval"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Design Cost-Optimized Architectures"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): S3 Lifecycle policies automatically move infrequently accessed objects to cheaper archival storage tiers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   }
 ]

@@ -1,494 +1,146 @@
 [
   {
-    "id": "dva-7-1",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q1] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
-      },
-      {
-        "id": "B",
-        "text": "Hardcode credentials in the application's package.json."
-      },
-      {
-        "id": "C",
-        "text": "Embed credentials directly in public git commits."
-      },
-      {
-        "id": "D",
-        "text": "Store plaintext credentials in EC2 user data scripts."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-2",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q2] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Cognito User Pools"
-      },
-      {
-        "id": "B",
-        "text": "AWS IAM Identity Center"
-      },
-      {
-        "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
-      },
-      {
-        "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-3",
+    "id": "dva-c02-s7-q1",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q3] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #391). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-4",
+    "id": "dva-c02-s7-q2",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q4] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #392). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-5",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q5] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
-      },
-      {
-        "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
-      },
-      {
-        "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
-      },
-      {
-        "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
-      },
-      {
-        "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-6",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q6] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Cognito User Pools"
-      },
-      {
-        "id": "B",
-        "text": "AWS IAM Identity Center"
-      },
-      {
-        "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
-      },
-      {
-        "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-7",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q7] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS::Serverless::Function"
-      },
-      {
-        "id": "B",
-        "text": "AWS::Lambda::Function"
-      },
-      {
-        "id": "C",
-        "text": "AWS::EC2::Instance"
-      },
-      {
-        "id": "D",
-        "text": "AWS::CloudFormation::Stack"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-8",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q8] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
-      },
-      {
-        "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
-      },
-      {
-        "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
-      },
-      {
-        "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-9",
+    "id": "dva-c02-s7-q3",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q9] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #393). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "BatchWriteItem"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "TransactWriteItems"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "PutItem with conditional expressions"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "ExecuteStatement with SQL JOIN"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-10",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q10] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
-      },
-      {
-        "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
-      },
-      {
-        "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
-      },
-      {
-        "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
-      },
-      {
-        "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-11",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q11] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS::Serverless::Function"
-      },
-      {
-        "id": "B",
-        "text": "AWS::Lambda::Function"
-      },
-      {
-        "id": "C",
-        "text": "AWS::EC2::Instance"
-      },
-      {
-        "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-12",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q12] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
-      },
-      {
-        "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
-      },
-      {
-        "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
-      },
-      {
-        "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-13",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q13] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
-      },
-      {
-        "id": "B",
-        "text": "Hardcode credentials in the application's package.json."
-      },
-      {
-        "id": "C",
-        "text": "Embed credentials directly in public git commits."
-      },
-      {
-        "id": "D",
-        "text": "Store plaintext credentials in EC2 user data scripts."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-14",
+    "id": "dva-c02-s7-q4",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q14] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #394). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-15",
+    "id": "dva-c02-s7-q5",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -496,175 +148,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q15] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #395). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Deployment"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-16",
+    "id": "dva-c02-s7-q6",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q16] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #396). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-17",
+    "id": "dva-c02-s7-q7",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q17] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #397). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 7",
     "options": [
       {
         "id": "A",
-        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Increase the Kinesis Shard count by 100."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Set Lambda Reserved Concurrency to 0."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-18",
+    "id": "dva-c02-s7-q8",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q18] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #398). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-19",
+    "id": "dva-c02-s7-q9",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q19] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #399). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-20",
+    "id": "dva-c02-s7-q10",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
@@ -672,175 +329,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q20] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #400). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-21",
+    "id": "dva-c02-s7-q11",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q21] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #401). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "BatchWriteItem"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "TransactWriteItems"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "PutItem with conditional expressions"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "ExecuteStatement with SQL JOIN"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-22",
+    "id": "dva-c02-s7-q12",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q22] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #402). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-23",
+    "id": "dva-c02-s7-q13",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q23] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #403). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-24",
+    "id": "dva-c02-s7-q14",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q24] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #404). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 14",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-25",
+    "id": "dva-c02-s7-q15",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -848,175 +510,179 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q25] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #405). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-26",
+    "id": "dva-c02-s7-q16",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q26] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #406). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-27",
+    "id": "dva-c02-s7-q17",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q27] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #407). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-28",
+    "id": "dva-c02-s7-q18",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q28] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #408). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-29",
+    "id": "dva-c02-s7-q19",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q29] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #409). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Increase the Kinesis Shard count by 100."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Set Lambda Reserved Concurrency to 0."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-30",
+    "id": "dva-c02-s7-q20",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
@@ -1024,175 +690,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q30] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #410). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-31",
+    "id": "dva-c02-s7-q21",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q31] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #411). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 21",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-32",
+    "id": "dva-c02-s7-q22",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q32] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #412). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-33",
+    "id": "dva-c02-s7-q23",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q33] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #413). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "BatchWriteItem"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "TransactWriteItems"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "PutItem with conditional expressions"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "ExecuteStatement with SQL JOIN"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dva-7-34",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q34] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Cognito User Pools"
-      },
-      {
-        "id": "B",
-        "text": "AWS IAM Identity Center"
-      },
-      {
-        "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
-      },
-      {
-        "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-35",
+    "id": "dva-c02-s7-q24",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #414). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
+      },
+      {
+        "id": "B",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-c02-s7-q25",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -1200,175 +871,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q35] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #415). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Deployment"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-36",
+    "id": "dva-c02-s7-q26",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q36] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #416). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-37",
+    "id": "dva-c02-s7-q27",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q37] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #417). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Hardcode credentials in the application's package.json."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Embed credentials directly in public git commits."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Store plaintext credentials in EC2 user data scripts."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-38",
+    "id": "dva-c02-s7-q28",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q38] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #418). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 28",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-39",
+    "id": "dva-c02-s7-q29",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q39] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #419). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-40",
+    "id": "dva-c02-s7-q30",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
@@ -1376,175 +1052,179 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q40] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #420). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dva-7-41",
+    "id": "dva-c02-s7-q31",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q41] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #421). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Increase the Kinesis Shard count by 100."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Set Lambda Reserved Concurrency to 0."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-42",
+    "id": "dva-c02-s7-q32",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q42] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #422). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-43",
+    "id": "dva-c02-s7-q33",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q43] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #423). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-44",
+    "id": "dva-c02-s7-q34",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q44] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #424). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-45",
+    "id": "dva-c02-s7-q35",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
@@ -1552,175 +1232,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q45] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #425). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 35",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-46",
+    "id": "dva-c02-s7-q36",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q46] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #426). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-47",
+    "id": "dva-c02-s7-q37",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q47] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #427). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-48",
+    "id": "dva-c02-s7-q38",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q48] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #428). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-49",
+    "id": "dva-c02-s7-q39",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q49] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #429). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Hardcode credentials in the application's package.json."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Embed credentials directly in public git commits."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Store plaintext credentials in EC2 user data scripts."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-50",
+    "id": "dva-c02-s7-q40",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
@@ -1728,175 +1413,903 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DVA-C02 Set 7 - Q50] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #430). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-51",
+    "id": "dva-c02-s7-q41",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q51] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #431). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS::Serverless::Function"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
       },
       {
         "id": "B",
-        "text": "AWS::Lambda::Function"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS::EC2::Instance"
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "D",
-        "text": "AWS::CloudFormation::Stack"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-52",
+    "id": "dva-c02-s7-q42",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q52] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #432). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 42",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
       },
       {
         "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-53",
+    "id": "dva-c02-s7-q43",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d1",
     "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q53] A developer is writing an AWS Lambda function in Node.js to read events from an Amazon Kinesis Data Stream. The function fails to process a record due to a malformed payload. How should the developer configure the event source mapping to handle poison pill records without blocking the entire stream shard?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #433). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure a Dead-Letter Queue (DLQ) or On-Failure Destination on the event source mapping and set Maximum Record Age."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Increase the Kinesis Shard count by 100."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
       },
       {
         "id": "C",
-        "text": "Throw an unhandled JavaScript exception to stop Kinesis processing."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Set Lambda Reserved Concurrency to 0."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Lambda Kinesis event source mappings support Destination on Failure, Maximum Record Age, and Bisect Batch on Function Error settings to isolate poison pill records into SQS/SNS without blocking stream progress.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dva-7-54",
+    "id": "dva-c02-s7-q44",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d2",
     "domainName": "Domain 2: Security",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q54] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #434). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Cognito User Pools"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
       },
       {
         "id": "B",
-        "text": "AWS IAM Identity Center"
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
       },
       {
         "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-c02-s7-q45",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #435). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Deployment"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dva-c02-s7-q46",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #436). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q47",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #437). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dva-7-55",
+    "id": "dva-c02-s7-q48",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #438). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
+      },
+      {
+        "id": "B",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q49",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #439). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 49",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q50",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #440). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Refactoring, Troubleshooting and Optimization"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q51",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #441). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q52",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #442). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
+      },
+      {
+        "id": "B",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q53",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #443). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q54",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #444). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q55",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #445). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Development with AWS Services"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q56",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #446). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 56",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
+      },
+      {
+        "id": "B",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q57",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #447). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q58",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #448). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q59",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #449). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q60",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #450). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Security"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q61",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #451). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Deployment"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q62",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 4: Refactoring, Troubleshooting and Optimization (Associate Tier, Practice Mode A, Scenario #452). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Refactoring, Troubleshooting and Optimization"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q63",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 1: Development with AWS Services (Associate Tier, Practice Mode A, Scenario #453). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dva practice-test --set 7 --q 63",
+    "options": [
+      {
+        "id": "A",
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Development with AWS Services"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q64",
+    "setId": 7,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Lambda Cold Start Elimination within Domain 2: Security (Associate Tier, Practice Mode A, Scenario #454). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Security"
+      },
+      {
+        "id": "B",
+        "text": "Configuring Provisioned Concurrency for production Lambda functions"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Provisioned Concurrency maintains hyper-warmed execution environments to eliminate cold starts.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dva-c02-s7-q65",
     "setId": 7,
     "examCode": "DVA-C02",
     "domainId": "dva-d3",
@@ -1904,387 +2317,35 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q55] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for DynamoDB Multi-Item Transactions within Domain 3: Deployment (Associate Tier, Practice Mode A, Scenario #455). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
+        "text": "Executing TransactWriteItems API requests for atomic all-or-nothing writes"
       },
       {
         "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Deployment"
       },
       {
         "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-56",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q56] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
-      },
-      {
-        "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
-      },
-      {
-        "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
-      },
-      {
-        "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-57",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q57] A developer is building a serverless e-commerce application using Amazon DynamoDB. The application needs to update a customer's account balance and record a transaction item atomically in a single request. Which DynamoDB API operation should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "BatchWriteItem"
-      },
-      {
-        "id": "B",
-        "text": "TransactWriteItems"
-      },
-      {
-        "id": "C",
-        "text": "PutItem with conditional expressions"
-      },
-      {
-        "id": "D",
-        "text": "ExecuteStatement with SQL JOIN"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "TransactWriteItems allows developers to execute atomic write operations across multiple items within and across DynamoDB tables in an all-or-nothing transaction.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-58",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q58] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Cognito User Pools"
-      },
-      {
-        "id": "B",
-        "text": "AWS IAM Identity Center"
-      },
-      {
-        "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
-      },
-      {
-        "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-59",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q59] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS::Serverless::Function"
-      },
-      {
-        "id": "B",
-        "text": "AWS::Lambda::Function"
-      },
-      {
-        "id": "C",
-        "text": "AWS::EC2::Instance"
-      },
-      {
-        "id": "D",
-        "text": "AWS::CloudFormation::Stack"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-60",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q60] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
-      },
-      {
-        "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
-      },
-      {
-        "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
-      },
-      {
-        "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
-      },
-      {
-        "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-61",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q61] An application hosted on AWS Elastic Beanstalk requires environment properties for database connections. How should the developer securely pass environment variables to Elastic Beanstalk applications without hardcoding them in source code?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Use Beanstalk Environment Properties or .ebextensions configuration files referencing SSM Parameter Store."
-      },
-      {
-        "id": "B",
-        "text": "Hardcode credentials in the application's package.json."
-      },
-      {
-        "id": "C",
-        "text": "Embed credentials directly in public git commits."
-      },
-      {
-        "id": "D",
-        "text": "Store plaintext credentials in EC2 user data scripts."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Elastic Beanstalk Environment Properties combined with AWS Systems Manager Parameter Store or Secrets Manager allow secure credential injection at runtime.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-softwaresettings.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-62",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q62] A web application requires user sign-up, sign-in, and multi-factor authentication (MFA). The application needs to issue OAuth 2.0 access and ID tokens upon successful authentication. Which AWS service provides these capabilities natively?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Cognito User Pools"
-      },
-      {
-        "id": "B",
-        "text": "AWS IAM Identity Center"
-      },
-      {
-        "id": "C",
-        "text": "Amazon Cognito Identity Pools (Federated Identities)"
-      },
-      {
-        "id": "D",
-        "text": "AWS Key Management Service (AWS KMS)"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Cognito User Pools serve as a user directory providing sign-up, sign-in, MFA, and OAuth 2.0 JWT token generation for web and mobile applications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-63",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q63] A developer is defining serverless infrastructure using AWS SAM (Serverless Application Model). The SAM template needs to provision an AWS Lambda function, an Amazon API Gateway, and an Amazon DynamoDB table. Which resource type in SAM represents a serverless function with built-in event triggers?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS::Serverless::Function"
-      },
-      {
-        "id": "B",
-        "text": "AWS::Lambda::Function"
-      },
-      {
-        "id": "C",
-        "text": "AWS::EC2::Instance"
-      },
-      {
-        "id": "D",
-        "text": "AWS::CloudFormation::Stack"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS::Serverless::Function is the SAM resource type that simplifies Lambda definition, automatically provisioning execution roles and event source integrations.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-64",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Refactoring, Troubleshooting and Optimization",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q64] A developer is inspecting slow AWS Lambda execution times. Tracing shows that cold starts take up to 4 seconds due to heavy SDK initialization code outside the handler function. Which action should the developer take to reduce cold start latency for critical production requests?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure Provisioned Concurrency for the Lambda function."
-      },
-      {
-        "id": "B",
-        "text": "Increase function memory allocation to 10,240 MB."
-      },
-      {
-        "id": "C",
-        "text": "Move initialization code into the Lambda handler function body."
-      },
-      {
-        "id": "D",
-        "text": "Switch from Node.js runtime to Java 17 runtime."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Provisioned Concurrency keeps Lambda instances initialized and hyper-warmed, eliminating cold start latency for critical production endpoints.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dva-7-65",
-    "setId": 7,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "[DVA-C02 Set 7 - Q65] A company is building a highly resilient serverless web application using AWS Lambda, Amazon API Gateway, and Amazon DynamoDB. Which TWO security and architectural patterns should the developer implement to secure the API and prevent unauthorized access?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Enable AWS WAF web ACL on API Gateway stages to block SQL injection and cross-site scripting (XSS) attacks."
-      },
-      {
-        "id": "B",
-        "text": "Use Amazon Cognito User Pools authorizers or custom Lambda authorizers to validate OAuth 2.0 JWT tokens."
-      },
-      {
-        "id": "C",
-        "text": "Store database credentials as hardcoded strings inside Lambda function source code."
-      },
-      {
-        "id": "D",
-        "text": "Disable CORS on API Gateway to allow requests from any origin."
-      },
-      {
-        "id": "E",
-        "text": "Grant full AdministratorAccess to the Lambda execution role."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Integrating AWS WAF with API Gateway provides layer 7 protection against common web exploits, while Cognito User Pool authorizers validate JWT tokens before invoking Lambda execution logic.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): TransactWriteItems coordinates atomic writes across multiple DynamoDB items and tables.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   }
 ]

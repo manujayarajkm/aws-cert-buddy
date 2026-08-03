@@ -109,12 +109,18 @@ export const ExamView: React.FC<ExamViewProps> = ({
           <Progress value={currentIndex + 1} max={total} showLabel />
         </div>
 
-        {/* Right Info: Timer & End Exam */}
+        {/* Right Info: Timer (Simulation Mode Only) & End Exam */}
         <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 font-mono text-sm text-slate-200">
-            <Clock className="w-4 h-4 text-amber-400" />
-            <span>{formatTime(timeRemaining)}</span>
-          </div>
+          {mode === 'simulation' ? (
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 font-mono text-sm text-slate-200">
+              <Clock className="w-4 h-4 text-amber-400" />
+              <span>{formatTime(timeRemaining)}</span>
+            </div>
+          ) : (
+            <Badge variant="info" className="px-3 py-1.5 text-xs font-bold flex items-center gap-1.5">
+              <span>Practice Mode (Untimed)</span>
+            </Badge>
+          )}
 
           <Button
             variant="outline"

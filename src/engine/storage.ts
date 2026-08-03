@@ -96,3 +96,37 @@ export function toggleQuestionBookmark(questionId: string): string[] {
 
   return updated;
 }
+
+/**
+ * Seen Questions tracking to prevent repetition across exam retakes.
+ */
+export function getSeenQuestionIds(examCode: string): string[] {
+  try {
+    const raw = localStorage.getItem(`aws_exam_seen_q_${examCode}`);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function markQuestionsAsSeen(examCode: string, questionIds: string[]): string[] {
+  try {
+    const seen = new Set(getSeenQuestionIds(examCode));
+    questionIds.forEach(id => seen.add(id));
+    const updated = Array.from(seen);
+    localStorage.setItem(`aws_exam_seen_q_${examCode}`, JSON.stringify(updated));
+    return updated;
+  } catch (err) {
+    console.error('Failed to update seen questions', err);
+    return [];
+  }
+}
+
+export function resetSeenQuestions(examCode: string): void {
+  try {
+    localStorage.removeItem(`aws_exam_seen_q_${examCode}`);
+  } catch (err) {
+    console.error('Failed to reset seen questions', err);
+  }
+}
+

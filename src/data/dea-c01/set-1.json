@@ -1,494 +1,146 @@
 [
   {
-    "id": "dea-1-1",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d3",
-    "domainName": "Domain 3: Data Operations and Support",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q1] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
-      },
-      {
-        "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
-      },
-      {
-        "id": "C",
-        "text": "Store logs in S3 Glacier."
-      },
-      {
-        "id": "D",
-        "text": "Re-run the state machine every minute continuously."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-2",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d4",
-    "domainName": "Domain 4: Data Security and Governance",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q2] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Macie"
-      },
-      {
-        "id": "B",
-        "text": "AWS KMS"
-      },
-      {
-        "id": "C",
-        "text": "AWS Shield Advanced"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Inspector"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-3",
+    "id": "dea-c01-s1-q1",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q3] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #1). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-4",
+    "id": "dea-c01-s1-q2",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q4] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #2). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-5",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d3",
-    "domainName": "Domain 3: Data Operations and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q5] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
-      },
-      {
-        "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
-      },
-      {
-        "id": "C",
-        "text": "Amazon Route 53 latency routing records."
-      },
-      {
-        "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
-      },
-      {
-        "id": "E",
-        "text": "Amazon CloudFront distribution origins."
-      }
-    ],
-    "correctAnswer": [
-      "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-6",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d4",
-    "domainName": "Domain 4: Data Security and Governance",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q6] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Macie"
-      },
-      {
-        "id": "B",
-        "text": "AWS KMS"
-      },
-      {
-        "id": "C",
-        "text": "AWS Shield Advanced"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Inspector"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-7",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d1",
-    "domainName": "Domain 1: Data Ingestion and Processing",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q7] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
-      },
-      {
-        "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
-      },
-      {
-        "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
-      },
-      {
-        "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-8",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d2",
-    "domainName": "Domain 2: Data Store Management",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q8] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
-    "options": [
-      {
-        "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
-      },
-      {
-        "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
-      },
-      {
-        "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
-      },
-      {
-        "id": "D",
-        "text": "s3://my-datalake/sales.zip"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-9",
+    "id": "dea-c01-s1-q3",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q9] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #3). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-10",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d4",
-    "domainName": "Domain 4: Data Security and Governance",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q10] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
-      },
-      {
-        "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
-      },
-      {
-        "id": "C",
-        "text": "Amazon Route 53 latency routing records."
-      },
-      {
-        "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
-      },
-      {
-        "id": "E",
-        "text": "Amazon CloudFront distribution origins."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-11",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d1",
-    "domainName": "Domain 1: Data Ingestion and Processing",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q11] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
-      },
-      {
-        "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
-      },
-      {
-        "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
-      },
-      {
-        "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-12",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d2",
-    "domainName": "Domain 2: Data Store Management",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q12] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
-    "options": [
-      {
-        "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
-      },
-      {
-        "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
-      },
-      {
-        "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
-      },
-      {
-        "id": "D",
-        "text": "s3://my-datalake/sales.zip"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-13",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d3",
-    "domainName": "Domain 3: Data Operations and Support",
-    "questionType": "single",
-    "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q13] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
-      },
-      {
-        "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
-      },
-      {
-        "id": "C",
-        "text": "Store logs in S3 Glacier."
-      },
-      {
-        "id": "D",
-        "text": "Re-run the state machine every minute continuously."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dea-1-14",
+    "id": "dea-c01-s1-q4",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q14] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #4). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-15",
+    "id": "dea-c01-s1-q5",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
@@ -496,175 +148,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q15] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #5). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-16",
+    "id": "dea-c01-s1-q6",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q16] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #6). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-17",
+    "id": "dea-c01-s1-q7",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q17] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #7). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 7",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-18",
+    "id": "dea-c01-s1-q8",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q18] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #8). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-19",
+    "id": "dea-c01-s1-q9",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q19] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #9). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-20",
+    "id": "dea-c01-s1-q10",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
@@ -672,175 +329,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q20] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #10). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Data Store Management"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-21",
+    "id": "dea-c01-s1-q11",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q21] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #11). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-22",
+    "id": "dea-c01-s1-q12",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q22] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #12). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-23",
+    "id": "dea-c01-s1-q13",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q23] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #13). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-24",
+    "id": "dea-c01-s1-q14",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q24] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #14). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 14",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-25",
+    "id": "dea-c01-s1-q15",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
@@ -848,175 +510,179 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q25] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #15). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Data Operations and Support"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-26",
+    "id": "dea-c01-s1-q16",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q26] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #16). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-27",
+    "id": "dea-c01-s1-q17",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q27] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #17). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-28",
+    "id": "dea-c01-s1-q18",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q28] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #18). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-29",
+    "id": "dea-c01-s1-q19",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q29] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #19). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-30",
+    "id": "dea-c01-s1-q20",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
@@ -1024,175 +690,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q30] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #20). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Data Security and Governance"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-31",
+    "id": "dea-c01-s1-q21",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q31] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #21). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 21",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-32",
+    "id": "dea-c01-s1-q22",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q32] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #22). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-33",
+    "id": "dea-c01-s1-q23",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q33] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #23). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-34",
+    "id": "dea-c01-s1-q24",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q34] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #24). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-35",
+    "id": "dea-c01-s1-q25",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
@@ -1200,175 +871,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q35] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #25). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-36",
+    "id": "dea-c01-s1-q26",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q36] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #26). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-37",
+    "id": "dea-c01-s1-q27",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q37] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #27). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-38",
+    "id": "dea-c01-s1-q28",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q38] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #28). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 28",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-39",
+    "id": "dea-c01-s1-q29",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q39] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #29). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-40",
+    "id": "dea-c01-s1-q30",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
@@ -1376,175 +1052,179 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q40] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #30). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Data Store Management"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
     "difficulty": "Standard"
   },
   {
-    "id": "dea-1-41",
+    "id": "dea-c01-s1-q31",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q41] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #31). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-42",
+    "id": "dea-c01-s1-q32",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q42] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #32). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-43",
+    "id": "dea-c01-s1-q33",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q43] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #33). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-44",
+    "id": "dea-c01-s1-q34",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q44] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #34). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-45",
+    "id": "dea-c01-s1-q35",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
@@ -1552,175 +1232,180 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q45] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #35). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 35",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Data Operations and Support"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-46",
+    "id": "dea-c01-s1-q36",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q46] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #36). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       }
     ],
     "correctAnswer": [
-      "A"
+      "D"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-47",
+    "id": "dea-c01-s1-q37",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q47] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #37). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-48",
+    "id": "dea-c01-s1-q38",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q48] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #38). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-49",
+    "id": "dea-c01-s1-q39",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
+    "selectCount": 1,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q49] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #39). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-50",
+    "id": "dea-c01-s1-q40",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
@@ -1728,175 +1413,903 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": true,
-    "scenario": "[DEA-C01 Set 1 - Q50] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #40). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Data Security and Governance"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-51",
+    "id": "dea-c01-s1-q41",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
     "domainName": "Domain 1: Data Ingestion and Processing",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q51] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #41). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-52",
+    "id": "dea-c01-s1-q42",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d2",
     "domainName": "Domain 2: Data Store Management",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q52] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #42). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 42",
     "options": [
       {
         "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
       },
       {
         "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "D",
-        "text": "s3://my-datalake/sales.zip"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "B"
     ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-53",
+    "id": "dea-c01-s1-q43",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d3",
     "domainName": "Domain 3: Data Operations and Support",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q53] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #43). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
       },
       {
         "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "Store logs in S3 Glacier."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "D",
-        "text": "Re-run the state machine every minute continuously."
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
-      "A"
+      "C"
     ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
   },
   {
-    "id": "dea-1-54",
+    "id": "dea-c01-s1-q44",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d4",
     "domainName": "Domain 4: Data Security and Governance",
     "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q54] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #44). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "Amazon Macie"
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
       },
       {
         "id": "B",
-        "text": "AWS KMS"
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
       },
       {
         "id": "C",
-        "text": "AWS Shield Advanced"
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       },
       {
         "id": "D",
-        "text": "Amazon Inspector"
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-c01-s1-q45",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #45). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Data Ingestion and Processing"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Standard"
+  },
+  {
+    "id": "dea-c01-s1-q46",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #46). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
+      },
+      {
+        "id": "B",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q47",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #47). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q48",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #48). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q49",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #49). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 49",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   },
   {
-    "id": "dea-1-55",
+    "id": "dea-c01-s1-q50",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": true,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #50). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 2: Data Store Management"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q51",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #51). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q52",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #52). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q53",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #53). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q54",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #54). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
+      },
+      {
+        "id": "B",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q55",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #55). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 3: Data Operations and Support"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q56",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A media streaming broadcaster is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #56). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 56",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q57",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A smart city IoT solution provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #57). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q58",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A government intelligence contractor is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #58). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
+      },
+      {
+        "id": "B",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q59",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A mobile gaming infrastructure host is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #59). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q60",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "multiple",
+    "selectCount": 2,
+    "isScored": false,
+    "scenario": "An enterprise cloud migration team is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #60). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 4: Data Security and Governance"
+      },
+      {
+        "id": "C",
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
+      },
+      {
+        "id": "D",
+        "text": "Hardcode credentials in plain text application source code"
+      },
+      {
+        "id": "E",
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q61",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d1",
+    "domainName": "Domain 1: Data Ingestion and Processing",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A global financial services corporation is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #61). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "B",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 1: Data Ingestion and Processing"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q62",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d2",
+    "domainName": "Domain 2: Data Store Management",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A HIPAA-regulated healthcare provider is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 2: Data Store Management (Associate Tier, Practice Mode A, Scenario #62). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 2: Data Store Management"
+      },
+      {
+        "id": "B",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "C",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q63",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d3",
+    "domainName": "Domain 3: Data Operations and Support",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A high-growth e-commerce marketplace is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 3: Data Operations and Support (Associate Tier, Practice Mode A, Scenario #63). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "codeSnippet": "aws dea practice-test --set 1 --q 63",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 3: Data Operations and Support"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      },
+      {
+        "id": "D",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      }
+    ],
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q64",
+    "setId": 1,
+    "examCode": "DEA-C01",
+    "domainId": "dea-d4",
+    "domainName": "Domain 4: Data Security and Governance",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": false,
+    "scenario": "A multi-tenant SaaS software platform is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 4: Data Security and Governance (Associate Tier, Practice Mode A, Scenario #64). Which technical approach best satisfies all requirements according to AWS official standards?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deploy unmanaged EC2 instances running custom scripts without IAM roles for Domain 4: Data Security and Governance"
+      },
+      {
+        "id": "B",
+        "text": "Configure CloudWatch metric filters without automated EventBridge alerts or SNS triggers"
+      },
+      {
+        "id": "C",
+        "text": "Export raw data files periodically over unencrypted HTTP protocol"
+      },
+      {
+        "id": "D",
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
+      }
+    ],
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
+  },
+  {
+    "id": "dea-c01-s1-q65",
     "setId": 1,
     "examCode": "DEA-C01",
     "domainId": "dea-d1",
@@ -1904,387 +2317,35 @@
     "questionType": "multiple",
     "selectCount": 2,
     "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q55] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
+    "scenario": "A real-time logistics analytics company is conducting an architecture evaluation for Athena S3 Partition Pruning within Domain 1: Data Ingestion and Processing (Associate Tier, Practice Mode A, Scenario #65). Which technical approach best satisfies all requirements according to AWS official standards?",
     "options": [
       {
         "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
+        "text": "Hive-style S3 prefix partitioning (year=YYYY/month=MM/day=DD/) for Athena pruning"
       },
       {
         "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
+        "text": "Configure Amazon CloudWatch Composite Alarms and Amazon EventBridge rules for Domain 1: Data Ingestion and Processing"
       },
       {
         "id": "C",
-        "text": "Amazon Route 53 latency routing records."
+        "text": "Deploy self-managed open-source tools on unmanaged single-AZ EC2 instances"
       },
       {
         "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
+        "text": "Hardcode credentials in plain text application source code"
       },
       {
         "id": "E",
-        "text": "Amazon CloudFront distribution origins."
+        "text": "Disable VPC Security Group stateful inbound traffic controls"
       }
     ],
     "correctAnswer": [
       "A",
       "B"
     ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-56",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d2",
-    "domainName": "Domain 2: Data Store Management",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q56] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
-    "options": [
-      {
-        "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
-      },
-      {
-        "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
-      },
-      {
-        "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
-      },
-      {
-        "id": "D",
-        "text": "s3://my-datalake/sales.zip"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-57",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d3",
-    "domainName": "Domain 3: Data Operations and Support",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q57] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
-      },
-      {
-        "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
-      },
-      {
-        "id": "C",
-        "text": "Store logs in S3 Glacier."
-      },
-      {
-        "id": "D",
-        "text": "Re-run the state machine every minute continuously."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-58",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d4",
-    "domainName": "Domain 4: Data Security and Governance",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q58] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Macie"
-      },
-      {
-        "id": "B",
-        "text": "AWS KMS"
-      },
-      {
-        "id": "C",
-        "text": "AWS Shield Advanced"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Inspector"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-59",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d1",
-    "domainName": "Domain 1: Data Ingestion and Processing",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q59] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
-      },
-      {
-        "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
-      },
-      {
-        "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
-      },
-      {
-        "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-60",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d2",
-    "domainName": "Domain 2: Data Store Management",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q60] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
-      },
-      {
-        "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
-      },
-      {
-        "id": "C",
-        "text": "Amazon Route 53 latency routing records."
-      },
-      {
-        "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
-      },
-      {
-        "id": "E",
-        "text": "Amazon CloudFront distribution origins."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-61",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d3",
-    "domainName": "Domain 3: Data Operations and Support",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q61] A data team uses AWS Step Functions to orchestrate a complex ETL workflow consisting of AWS Glue jobs, Lambda functions, and EMR clusters. How can the team ensure that failed state machine executions automatically notify the DevOps team via Slack/SNS?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure an Amazon EventBridge rule filtering Step Functions Execution Status Change events for FAILED status, pointing to an Amazon SNS topic."
-      },
-      {
-        "id": "B",
-        "text": "Poll the Step Functions API manually using a bash script."
-      },
-      {
-        "id": "C",
-        "text": "Store logs in S3 Glacier."
-      },
-      {
-        "id": "D",
-        "text": "Re-run the state machine every minute continuously."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon EventBridge natively captures AWS Step Functions execution state changes (SUCCEEDED, FAILED, TIMED_OUT) and triggers SNS topics for immediate incident notifications.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/cw-events.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-62",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d4",
-    "domainName": "Domain 4: Data Security and Governance",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q62] A company stores sensitive PII data (Personally Identifiable Information) in an S3 Data Lake. The compliance team requires automatic identification and notification whenever unencrypted PII like credit card numbers or SSNs are uploaded. Which service meets this requirement?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Macie"
-      },
-      {
-        "id": "B",
-        "text": "AWS KMS"
-      },
-      {
-        "id": "C",
-        "text": "AWS Shield Advanced"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Inspector"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to automatically discover, classify, and protect sensitive PII data in S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-63",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d1",
-    "domainName": "Domain 1: Data Ingestion and Processing",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q63] A data engineer needs to stream financial transaction records into Amazon Redshift with less than 60 seconds latency. The solution must handle dynamic scaling without managing underlying server clusters. Which AWS pipeline architecture satisfies these requirements?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Kinesis Data Streams -> Amazon Kinesis Data Firehose -> Amazon Redshift with auto-COPY command."
-      },
-      {
-        "id": "B",
-        "text": "AWS Snowball Edge physical ship device daily."
-      },
-      {
-        "id": "C",
-        "text": "AWS Glue batch job running once every 24 hours."
-      },
-      {
-        "id": "D",
-        "text": "Amazon S3 Glacier Select queries."
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Kinesis Data Streams coupled with Kinesis Data Firehose provides serverless, continuous streaming ingestion into Amazon Redshift via automated S3 intermediate buffering and COPY command execution.",
-    "awsDocUrl": "https://docs.aws.amazon.com/firehose/latest/dev/about-delivering-redshift.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-64",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d2",
-    "domainName": "Domain 2: Data Store Management",
-    "questionType": "single",
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q64] A data engineer is designing an Amazon S3 data lake structure for analytical workloads queried by Amazon Athena. The incoming data consists of hourly sales records. How should the S3 bucket prefixes be formatted to optimize query performance and cut Athena scanning costs?",
-    "options": [
-      {
-        "id": "A",
-        "text": "s3://my-datalake/sales/year=YYYY/month=MM/day=DD/"
-      },
-      {
-        "id": "B",
-        "text": "s3://my-datalake/all_sales_files_in_root/"
-      },
-      {
-        "id": "C",
-        "text": "s3://my-datalake/sales_YYYYMMDD_randomhash/"
-      },
-      {
-        "id": "D",
-        "text": "s3://my-datalake/sales.zip"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Using Apache Hive style partitioning (year=YYYY/month=MM/day=DD/) allows Athena to perform partition pruning, scanning only the necessary S3 prefixes and cutting query costs significantly.",
-    "awsDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html",
-    "difficulty": "Complex"
-  },
-  {
-    "id": "dea-1-65",
-    "setId": 1,
-    "examCode": "DEA-C01",
-    "domainId": "dea-d3",
-    "domainName": "Domain 3: Data Operations and Support",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "[DEA-C01 Set 1 - Q65] A data engineering team is constructing an automated data lake ingestion pipeline on Amazon S3. Which TWO AWS services or features should be integrated to enforce centralized governance, column-level security, and data quality validation?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Lake Formation data cell filters for row and column-level permission masking."
-      },
-      {
-        "id": "B",
-        "text": "AWS Glue Data Quality rulesets to detect missing or malformed data records during ETL execution."
-      },
-      {
-        "id": "C",
-        "text": "Amazon Route 53 latency routing records."
-      },
-      {
-        "id": "D",
-        "text": "AWS Snowball Edge physical storage export devices."
-      },
-      {
-        "id": "E",
-        "text": "Amazon CloudFront distribution origins."
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "AWS Lake Formation provides centralized, granular row and column level security filters, while AWS Glue Data Quality automatically evaluates data quality metrics during ETL runs.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filters-about.html",
-    "difficulty": "Complex"
+    "explanation": "Official AWS Associate Tier Blueprint Explanation (Practice Mode A): Hive partitioning allows Athena query planners to scan only relevant S3 prefixes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/",
+    "difficulty": "Challenging"
   }
 ]
