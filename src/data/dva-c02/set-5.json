@@ -3,71 +3,76 @@
     "id": "dvac02-s5-q1",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "A developer wants to provision AWS infrastructure using TypeScript instead of writing raw JSON/YAML templates. Which framework should be used?",
+    "scenario": "A developer is building an asynchronous ordering pipeline where incoming order messages are placed on an Amazon SQS queue. An AWS Lambda function processes messages in batches. When a processing error occurs on a single item in a batch of 10 items, the developer needs to ensure that only the failed message is retried, avoiding re-processing the 9 successful items without deleting them manually in function code. Which TWO actions must the developer take? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "AWS Cloud Development Kit (AWS CDK)"
+        "text": "Enable 'ReportBatchItemFailures' in the Lambda Event Source Mapping configuration."
       },
       {
         "id": "B",
-        "text": "AWS Serverless Application Model (AWS SAM)"
+        "text": "Return a JSON payload containing 'batchItemFailures' array with the failed message's 'itemIdentifier' (messageId)."
       },
       {
         "id": "C",
-        "text": "AWS CloudFormation CLI"
+        "text": "Throw an unhandled runtime exception inside the Lambda function handler."
       },
       {
         "id": "D",
-        "text": "AWS Amplify SDK"
+        "text": "Increase the queue Visibility Timeout to 12 hours."
+      },
+      {
+        "id": "E",
+        "text": "Set the Event Source Mapping BatchSize parameter to 1."
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "AWS CDK allows developers to define cloud infrastructure using familiar programming languages like TypeScript, Python, Java, and C#.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/home.html",
-    "difficulty": "Standard"
+    "explanation": "To handle partial batch failures in SQS event sources, developers enable `ReportBatchItemFailures` on the event source mapping and structure the function return payload to include `batchItemFailures` containing the `itemIdentifier` of failed SQS messages. SQS then keeps only those specified messages visible for retries.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#services-sqs-batchfailurereporting",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q2",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A Lambda function experiences frequent cold starts, adding 2 seconds of latency to user requests. How can the developer eliminate cold start latency for critical functions?",
+    "scenario": "A developer needs to configure cross-account access to allow an AWS Lambda function in Account A (111111111111) to publish messages to an Amazon SNS topic located in Account B (222222222222). What policy configuration is required in Account B to allow this access securely?",
     "options": [
       {
         "id": "A",
-        "text": "Configure Provisioned Concurrency for the function"
+        "text": "Attach an Access Policy to the SNS topic in Account B granting sns:Publish permission to Account A's Lambda Execution Role ARN."
       },
       {
         "id": "B",
-        "text": "Increase the function memory allocation to 10240 MB"
+        "text": "Set the SNS topic visibility to public in Account B."
       },
       {
         "id": "C",
-        "text": "Set the function timeout to 15 minutes"
+        "text": "Attach an S3 Bucket Policy in Account B referencing Account A's root ID."
       },
       {
         "id": "D",
-        "text": "Use SQS dead-letter queues"
+        "text": "Configure an Amazon API Gateway WebSocket route in Account A."
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Provisioned Concurrency initializes requested execution environments ahead of time so functions respond immediately to incoming requests without cold starts.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
-    "difficulty": "Standard"
+    "explanation": "Cross-account access to resource-based services like Amazon SNS requires an SNS Topic Policy attached to the topic in Account B that grants `sns:Publish` permissions specifically to the principal (Lambda Execution Role) in Account A.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q3",
@@ -75,34 +80,39 @@
     "examCode": "DVA-C02",
     "domainId": "dva-d4",
     "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "An application reading from a Kinesis Data Stream falls behind and records a high GetRecords.IteratorAgeMilliseconds metric value. What does this indicate?",
+    "scenario": "An AWS Lambda function processing real-time analytics events experiences cold start latency exceeding 4 seconds. The function is written in Python, relies on large machine learning libraries, and runs inside an Amazon VPC. Which TWO configuration changes will significantly reduce initialization and execution latency? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Consumers are reading data slower than producers are writing data to the stream"
+        "text": "Configure Provisioned Concurrency for the Lambda function."
       },
       {
         "id": "B",
-        "text": "The stream has run out of storage space"
+        "text": "Increase the allocated Memory setting for the Lambda function."
       },
       {
         "id": "C",
-        "text": "The consumer application credentials have expired"
+        "text": "Increase the Lambda execution Timeout setting to 15 minutes."
       },
       {
         "id": "D",
-        "text": "Kinesis Data Stream KMS key is disabled"
+        "text": "Disable AWS X-Ray Active Tracing."
+      },
+      {
+        "id": "E",
+        "text": "Attach an Elastic IP directly to the Lambda VPC interface."
       }
     ],
     "correctAnswer": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "IteratorAgeMilliseconds measures the age of the last record processed relative to when it arrived in the stream. A high value means consumers cannot keep up with write throughput.",
-    "awsDocUrl": "https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html",
-    "difficulty": "Standard"
+    "explanation": "Provisioned Concurrency keeps execution environments initialized, completely bypassing cold start setup latency. Increasing function memory scales CPU processing power proportionally, dramatically speeding up heavy library imports and initialization logic.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q4",
@@ -113,2172 +123,292 @@
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A developer is deploying a multi-container application using Elastic Beanstalk. Which configuration file specifies the container definitions and volume mounts?",
+    "scenario": "A developer is defining a serverless application using AWS SAM. The SAM template (`template.yaml`) defines a serverless API using `AWS::Serverless::Api`. The developer wants to enable CORS for all endpoints across the API globally. Where should the `Cors` configuration property be placed in the template?",
     "options": [
       {
         "id": "A",
-        "text": "Dockerrun.aws.json"
+        "text": "Under Globals -> Api -> Cors"
       },
       {
         "id": "B",
-        "text": "buildspec.yml"
+        "text": "Under Resources -> MyFunction -> Metadata"
       },
       {
         "id": "C",
-        "text": "Procfile"
+        "text": "In samconfig.toml under parameters"
       },
       {
         "id": "D",
-        "text": "cron.yaml"
+        "text": "In buildspec.yml under env"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "For Elastic Beanstalk multi-container or ECS environments, Dockerrun.aws.json specifies how Docker containers are configured and deployed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-container-docker-v2.html",
-    "difficulty": "Standard"
+    "explanation": "In AWS SAM templates, setting `Cors` under `Globals` -> `Api` applies cross-origin resource sharing configuration globally across all routes defined under the API resources.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-api-cors.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q5",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A developer notices that an API Gateway REST API returns HTTP 429 Too Many Requests errors during peak traffic hours. What is the root cause of this error?",
+    "scenario": "A developer needs to query an Amazon DynamoDB table that stores user profile records. The primary key consists of `UserId` (Partition Key) and `RegistrationDate` (Sort Key). The developer wants to search profiles by `EmailAddress` (which is not part of the primary key). What index design pattern enables searching efficiently by `EmailAddress` without scanning the entire table?",
     "options": [
       {
         "id": "A",
-        "text": "API Gateway throttling limits have been exceeded"
+        "text": "Create a Global Secondary Index (GSI) with EmailAddress as the Partition Key."
       },
       {
         "id": "B",
-        "text": "The client sent an unauthenticated request"
+        "text": "Create a Local Secondary Index (LSI) with RegistrationDate as Partition Key."
       },
       {
         "id": "C",
-        "text": "The backend Lambda function threw an unhandled exception"
+        "text": "Execute a Scan operation with a FilterExpression on EmailAddress."
       },
       {
         "id": "D",
-        "text": "API Gateway experienced an internal gateway timeout"
+        "text": "Enable DynamoDB Accelerator (DAX) write-through cache."
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "HTTP status code 429 indicates that rate limits or throttling limits configured on API Gateway (or default account limit of 10,000 rps) have been exceeded.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html",
-    "difficulty": "Standard"
+    "explanation": "Global Secondary Indexes (GSIs) allow specifying an alternate partition key (e.g. `EmailAddress`) independent of the base table's primary key schema, enabling fast `Query` operations without scanning.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q6",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A developer wants to test Lambda functions locally before deploying to AWS. Which CLI tool provides local execution capabilities by emulating Lambda and API Gateway?",
+    "scenario": "A developer needs to store sensitive connection strings in AWS Systems Manager Parameter Store. The strings must be encrypted using a Customer Managed Key (CMK) in AWS KMS. When creating the parameter using the AWS CLI `aws ssm put-parameter`, which parameter type and flag must be specified?",
     "options": [
       {
         "id": "A",
-        "text": "AWS SAM CLI"
+        "text": "--type SecureString --key-id <KMS_KEY_ARN>"
       },
       {
         "id": "B",
-        "text": "AWS CLI v2"
+        "text": "--type String --encrypt"
       },
       {
         "id": "C",
-        "text": "AWS Amplify CLI"
+        "text": "--type StringList --kms-key-id <KMS_KEY_ARN>"
       },
       {
         "id": "D",
-        "text": "AWS CDK CLI"
+        "text": "--type EncryptedString"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "AWS SAM CLI provides commands like `sam local invoke` and `sam local start-api` to run and debug serverless applications locally using Docker containers.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-debugging.html",
-    "difficulty": "Standard"
+    "explanation": "Creating encrypted parameters in SSM Parameter Store requires setting `--type SecureString`. To use a custom CMK instead of the default account key, pass `--key-id <KMS_KEY_ARN>`.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cli/latest/reference/ssm/put-parameter.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q7",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "What happens if a CloudFormation stack creation fails while creating one of the resources in the stack by default?",
+    "scenario": "A developer is troubleshooting an application that invokes an AWS Lambda function synchronously via API Gateway. Users report HTTP 500 errors. Inspection of CloudWatch logs shows `Task timed out after 30.00 seconds` in Lambda, while API Gateway logs show HTTP 504 Gateway Timeout. What hard limit in API Gateway caused the gateway timeout?",
     "options": [
       {
         "id": "A",
-        "text": "Failed resources are skipped and stack creation completes"
+        "text": "API Gateway has a maximum integration response timeout limit of 29 seconds."
       },
       {
         "id": "B",
-        "text": "CloudFormation automatically rolls back the entire stack, deleting created resources"
+        "text": "Lambda execution role lost KMS permissions after 30 seconds."
       },
       {
         "id": "C",
-        "text": "The stack stays in CREATE_IN_PROGRESS state indefinitely"
+        "text": "DynamoDB On-Demand capacity exceeded limits."
       },
       {
         "id": "D",
-        "text": "The stack converts into a Drift Detection mode"
+        "text": "SQS Visibility Timeout was set to 0."
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "By default, if a resource creation fails during stack creation, AWS CloudFormation triggers a rollback (ROLLBACK_IN_PROGRESS) and deletes all resources created up to that point.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-describing-stacks.html",
-    "difficulty": "Standard"
+    "explanation": "Amazon API Gateway enforces a maximum hard integration execution timeout of 29 seconds. If a backend Lambda function takes 30 seconds or longer to complete, API Gateway times out at 29 seconds and returns HTTP 504.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q8",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "multiple",
+    "selectCount": 2,
     "isScored": true,
-    "scenario": "A developer needs to encrypt payload data sent between an Application Load Balancer and backend EC2 instances. Which protocol configuration ensures end-to-end encryption in transit?",
+    "scenario": "A developer is configuring an AWS CodeBuild project to build a container image and push it to Amazon Elastic Container Registry (ECR). The build fails in the `pre_build` phase during authentication. Which TWO configurations are required in the CodeBuild IAM service role and buildspec.yml to resolve this? (Select TWO.)",
     "options": [
       {
         "id": "A",
-        "text": "Configure an HTTP listener on ALB and HTTP target group"
+        "text": "Attach ecr:GetAuthorizationToken permissions to the CodeBuild IAM service role."
       },
       {
         "id": "B",
-        "text": "Configure an HTTPS listener on ALB and HTTPS target group with valid certificates on targets"
+        "text": "Execute aws ecr get-login-password | docker login in the buildspec.yml pre_build phase."
       },
       {
         "id": "C",
-        "text": "Enable SSE-KMS on the target EC2 EBS root volumes"
+        "text": "Store ECR passwords in plain text in buildspec.yml env variables."
       },
       {
         "id": "D",
-        "text": "Use VPC Flow Logs to encrypt network packets"
+        "text": "Disable Privileged Mode in CodeBuild project settings."
+      },
+      {
+        "id": "E",
+        "text": "Configure an S3 Bucket Policy granting ecr:PutImage."
       }
     ],
     "correctAnswer": [
+      "A",
       "B"
     ],
-    "explanation": "End-to-end transit encryption requires an HTTPS listener on the ALB to encrypt client-to-ALB traffic, and an HTTPS target group so ALB re-encrypts traffic sent to backend EC2 instances.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html",
-    "difficulty": "Standard"
+    "explanation": "Authenticating Docker CLI to Amazon ECR requires the CodeBuild service role to have `ecr:GetAuthorizationToken` (and `ecr:BatchCheckLayerAvailability`, `ecr:PutImage`, etc.) permissions. In `buildspec.yml`, the `pre_build` phase must run `aws ecr get-login-password` passed to `docker login`.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/sample-docker.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q9",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A developer is building a SAM (Serverless Application Model) template. Which section of the SAM template defines the AWS resources to be provisioned?",
+    "scenario": "A developer needs to write items to an Amazon DynamoDB table. The application needs to update a user's account balance (`balance`), but only if the user's account status (`status`) is currently set to `'ACTIVE'`. Which DynamoDB API operation and parameter enforces this conditional check?",
     "options": [
       {
         "id": "A",
-        "text": "Parameters"
+        "text": "UpdateItem API with ConditionExpression set to 'status = :active_val'."
       },
       {
         "id": "B",
-        "text": "Resources"
+        "text": "PutItem API with ProjectionExpression set to 'status'."
       },
       {
         "id": "C",
-        "text": "Globals"
+        "text": "GetItem API with ConsistentRead set to true."
       },
       {
         "id": "D",
-        "text": "Transform"
+        "text": "BatchWriteItem API with KeyConditionExpression."
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "Like CloudFormation templates, the Resources section in AWS SAM templates defines the AWS resources (such as AWS::Serverless::Function, AWS::Serverless::SimpleTable, etc.) to provision.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy.html",
-    "difficulty": "Standard"
+    "explanation": "`ConditionExpression` in `UpdateItem` evaluates item attributes before applying modifications. If `status != 'ACTIVE'`, DynamoDB rejects the update with a `ConditionalCheckFailedException`.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ConditionExpressions.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q10",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A developer is deploying a multi-container application using Elastic Beanstalk. Which configuration file specifies the container definitions and volume mounts?",
+    "scenario": "A web application hosted on Amazon EC2 uses Amazon Cognito User Pools for user sign-in. After a user successfully authenticates, Cognito returns three tokens: an ID Token, an Access Token, and a Refresh Token. Which token contains claims about user profile attributes (such as `email` and `given_name`) intended for the client UI?",
     "options": [
       {
         "id": "A",
-        "text": "Dockerrun.aws.json"
+        "text": "ID Token"
       },
       {
         "id": "B",
-        "text": "buildspec.yml"
+        "text": "Access Token"
       },
       {
         "id": "C",
-        "text": "Procfile"
+        "text": "Refresh Token"
       },
       {
         "id": "D",
-        "text": "cron.yaml"
+        "text": "KMS Data Key Token"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "For Elastic Beanstalk multi-container or ECS environments, Dockerrun.aws.json specifies how Docker containers are configured and deployed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-container-docker-v2.html",
-    "difficulty": "Standard"
+    "explanation": "In OpenID Connect / Cognito, the **ID Token** contains user identity assertions (claims) such as `sub`, `email`, `given_name`, and custom profile attributes used by the client application UI.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-tokens-with-identity-providers.html",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q11",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "A developer wants to allow frontend web users to upload files directly to an S3 bucket without routing through the backend server or exposing AWS credentials. What is the BEST solution?",
+    "scenario": "A developer needs to configure trace propagation for microservices running across Amazon ECS, AWS Lambda, and Amazon EC2 using AWS X-Ray. What HTTP header name carries trace context (root trace ID, parent segment ID, and sampling decision) between services?",
     "options": [
       {
         "id": "A",
-        "text": "Generate an S3 Presigned URL on the backend and return it to the frontend"
+        "text": "X-Amzn-Trace-Id"
       },
       {
         "id": "B",
-        "text": "Pass AWS access keys to the browser client securely"
+        "text": "X-Amz-RequestId"
       },
       {
         "id": "C",
-        "text": "Configure an S3 Bucket Policy allowing anonymous public PUT access"
+        "text": "X-AWS-Correlation-Id"
       },
       {
         "id": "D",
-        "text": "Use AWS STS to create long-term IAM users for each website visitor"
+        "text": "X-Amzn-Segment-Token"
       }
     ],
     "correctAnswer": [
       "A"
     ],
-    "explanation": "Presigned URLs grant temporary permissions to perform specific S3 operations (such as PUT uploads). The backend generates a signed URL using IAM credentials and hands it to the client, keeping credentials safe.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html",
-    "difficulty": "Standard"
+    "explanation": "AWS X-Ray uses the `X-Amzn-Trace-Id` HTTP header to pass tracing context across microservice boundaries, enabling end-to-end distributed transaction tracing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html#xray-concepts-tracingheader",
+    "difficulty": "Hard"
   },
   {
     "id": "dvac02-s5-q12",
     "setId": 5,
     "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer is using AWS Step Functions to orchestrate a order processing workflow. Which state type should be used to execute multiple sub-tasks concurrently?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Choice state"
-      },
-      {
-        "id": "B",
-        "text": "Task state"
-      },
-      {
-        "id": "C",
-        "text": "Parallel state"
-      },
-      {
-        "id": "D",
-        "text": "Pass state"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "A Parallel state in Step Functions allows execution of multiple branch state machines concurrently. Execution continues only after all parallel branches complete.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q13",
-    "setId": 5,
-    "examCode": "DVA-C02",
     "domainId": "dva-d3",
     "domainName": "Domain 3: Deployment",
     "questionType": "single",
     "selectCount": 1,
     "isScored": true,
-    "scenario": "Which file in an application source code repository instructs AWS CodeDeploy how to deploy the application onto EC2 or on-premises instances?",
-    "options": [
-      {
-        "id": "A",
-        "text": "buildspec.yml"
-      },
-      {
-        "id": "B",
-        "text": "appspec.yml"
-      },
-      {
-        "id": "C",
-        "text": "template.yaml"
-      },
-      {
-        "id": "D",
-        "text": "dockerrun.aws.json"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "The AppSpec file (appspec.yml or appspec.json) is used by AWS CodeDeploy to define deployment actions, file mappings, and lifecycle hooks.",
-    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q14",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer is using AWS Step Functions to orchestrate a order processing workflow. Which state type should be used to execute multiple sub-tasks concurrently?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Choice state"
-      },
-      {
-        "id": "B",
-        "text": "Task state"
-      },
-      {
-        "id": "C",
-        "text": "Parallel state"
-      },
-      {
-        "id": "D",
-        "text": "Pass state"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "A Parallel state in Step Functions allows execution of multiple branch state machines concurrently. Execution continues only after all parallel branches complete.",
-    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q15",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer wants to restrict access to an API Gateway endpoint to requests coming only from a specific Amazon CloudFront distribution. How can this be accomplished?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure CloudFront to send a custom secret header and validate it in an API Gateway Lambda Authorizer or WAF"
-      },
-      {
-        "id": "B",
-        "text": "Use Security Groups on API Gateway to allow only CloudFront IP ranges"
-      },
-      {
-        "id": "C",
-        "text": "Enable S3 Bucket Policies on API Gateway"
-      },
-      {
-        "id": "D",
-        "text": "Attach an IAM Role directly to the CloudFront distribution"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "To restrict API Gateway to CloudFront, you can add a custom header in CloudFront origin settings and verify that header in API Gateway using AWS WAF, a custom Lambda authorizer, or resource policies.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-s3-corners.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q16",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A distributed application composed of API Gateway, Lambda, and DynamoDB is experiencing elevated response latencies. The developer needs to trace requests across all microservices to identify bottlenecks. Which service should be enabled?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS X-Ray"
-      },
-      {
-        "id": "B",
-        "text": "Amazon CloudWatch Logs Insights"
-      },
-      {
-        "id": "C",
-        "text": "AWS CloudTrail"
-      },
-      {
-        "id": "D",
-        "text": "Amazon Inspector"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS X-Ray helps developers analyze and debug distributed, microservice-based applications. It generates service maps and traces end-to-end user requests.",
-    "awsDocUrl": "https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q17",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A web application receives unpredictable bursts of read requests for popular user profiles stored in DynamoDB. The developer wants to achieve microsecond read latency without increasing provisioned read capacity. Which service should be added?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon ElastiCache for Redis"
-      },
-      {
-        "id": "B",
-        "text": "Amazon DynamoDB Accelerator (DAX)"
-      },
-      {
-        "id": "C",
-        "text": "Amazon CloudFront"
-      },
-      {
-        "id": "D",
-        "text": "Amazon RDS Proxy"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache specifically built for DynamoDB. It reduces read latency to microseconds and is API-compatible, requiring no application rewrite.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q18",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer needs to encrypt payload data sent between an Application Load Balancer and backend EC2 instances. Which protocol configuration ensures end-to-end encryption in transit?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure an HTTP listener on ALB and HTTP target group"
-      },
-      {
-        "id": "B",
-        "text": "Configure an HTTPS listener on ALB and HTTPS target group with valid certificates on targets"
-      },
-      {
-        "id": "C",
-        "text": "Enable SSE-KMS on the target EC2 EBS root volumes"
-      },
-      {
-        "id": "D",
-        "text": "Use VPC Flow Logs to encrypt network packets"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "End-to-end transit encryption requires an HTTPS listener on the ALB to encrypt client-to-ALB traffic, and an HTTPS target group so ALB re-encrypts traffic sent to backend EC2 instances.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q19",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer receives HTTP 504 Gateway Timeout from an Application Load Balancer. What is the cause of this error?",
-    "options": [
-      {
-        "id": "A",
-        "text": "The target application on EC2 or Lambda failed to respond before the ALB idle timeout expired"
-      },
-      {
-        "id": "B",
-        "text": "The client SSL certificate is invalid"
-      },
-      {
-        "id": "C",
-        "text": "The security group blocked inbound HTTP traffic"
-      },
-      {
-        "id": "D",
-        "text": "The target group has zero registered targets"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "HTTP 504 Gateway Timeout occurs when the load balancer connected to a target, but the target did not send a response before the ALB idle timeout limit (default 60s) elapsed.",
-    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html#http-504-issues",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q20",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A developer wants to protect an Amazon API Gateway REST API from unauthorized access. Which TWO authentication/authorization methods can be implemented natively? (Select TWO.)",
-    "options": [
-      {
-        "id": "A",
-        "text": "IAM Permissions (AWS_IAM authorization)"
-      },
-      {
-        "id": "B",
-        "text": "Amazon Cognito User Pools authorizers"
-      },
-      {
-        "id": "C",
-        "text": "Basic Authentication headers stored in plaintext"
-      },
-      {
-        "id": "D",
-        "text": "Hardcoded IP whitelist in API Gateway route definitions"
-      },
-      {
-        "id": "E",
-        "text": "AWS KMS Key Policies attached directly to API resources"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "API Gateway natively supports AWS_IAM authorization (for signing requests with Signature Version 4) and Amazon Cognito User Pools authorizers (using JWT tokens). Custom Lambda authorizers are also supported.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-to-api.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q21",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "Which CloudWatch Logs metric feature allows transforming raw log text (such as 'ERROR') into a numerical metric for triggering alarms?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Metric Filters"
-      },
-      {
-        "id": "B",
-        "text": "Log Streams"
-      },
-      {
-        "id": "C",
-        "text": "Subscription Filters"
-      },
-      {
-        "id": "D",
-        "text": "CloudWatch Insights"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Metric Filters search for terms or patterns in CloudWatch log streams and turn matching occurrences into numeric CloudWatch metrics, which can then trigger alarms.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogDataUsingFilters.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q22",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer wants to provision AWS infrastructure using TypeScript instead of writing raw JSON/YAML templates. Which framework should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Cloud Development Kit (AWS CDK)"
-      },
-      {
-        "id": "B",
-        "text": "AWS Serverless Application Model (AWS SAM)"
-      },
-      {
-        "id": "C",
-        "text": "AWS CloudFormation CLI"
-      },
-      {
-        "id": "D",
-        "text": "AWS Amplify SDK"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS CDK allows developers to define cloud infrastructure using familiar programming languages like TypeScript, Python, Java, and C#.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/home.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q23",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An application running on an Amazon EC2 instance needs to access an S3 bucket and an SQS queue. Which approach is MOST secure for authenticating the application?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Hardcode IAM access keys in the application configuration file"
-      },
-      {
-        "id": "B",
-        "text": "Store IAM access keys in environment variables on the instance"
-      },
-      {
-        "id": "C",
-        "text": "Assign an IAM Role to the EC2 instance via an instance profile"
-      },
-      {
-        "id": "D",
-        "text": "Use AWS STS AssumeRole with long-term IAM credentials stored in code"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Assigning an IAM Role to an EC2 instance profile automatically provides temporary credentials via the Instance Metadata Service (IMDS). This avoids storing or managing static keys on disk.",
-    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q24",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer needs to run a lightweight containerized web API with automatic scaling and no server management. Which AWS service allows deploying container images directly from a source code repository or container registry with minimal configuration?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS App Runner"
-      },
-      {
-        "id": "B",
-        "text": "Amazon EC2"
-      },
-      {
-        "id": "C",
-        "text": "AWS Elastic Beanstalk (EC2 mode)"
-      },
-      {
-        "id": "D",
-        "text": "Amazon EMR"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS App Runner makes it easy to quickly deploy containerized web applications and APIs from container images or source code directly to AWS with zero infrastructure configuration required.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q25",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An application sends user activity events to an Amazon SQS queue. The developer wants to process events in parallel while ensuring that events for the same user ID are processed sequentially in the exact order received. What should be configured?",
-    "options": [
-      {
-        "id": "A",
-        "text": "SQS Standard queue with a custom sorting attribute"
-      },
-      {
-        "id": "B",
-        "text": "SQS FIFO queue with the MessageGroupId set to the user ID"
-      },
-      {
-        "id": "C",
-        "text": "SNS topic with multiple SQS subscriptions"
-      },
-      {
-        "id": "D",
-        "text": "SQS Standard queue with short polling"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "SQS FIFO queues preserve message ordering within a MessageGroupId group. By setting MessageGroupId to the user ID, events for that specific user are strictly ordered and processed sequentially, while events for different users can be processed concurrently.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-message-group-id.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q26",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer needs to store configuration parameters (like API URLs) and encrypted strings (like database passwords) centrally for multiple microservices. The solution must be low-cost and integrate natively with IAM. Which service should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Parameter Store"
-      },
-      {
-        "id": "B",
-        "text": "AWS Key Management Service"
-      },
-      {
-        "id": "C",
-        "text": "Amazon DynamoDB"
-      },
-      {
-        "id": "D",
-        "text": "AWS Secrets Manager"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "SSM Parameter Store allows storing plain text strings and encrypted SecureString parameters (via KMS). It is free for standard parameters and low-cost for advanced parameters, making it ideal for general app parameters.",
-    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q27",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A developer wants to upload large 5GB files to Amazon S3 using the AWS SDK. Which TWO techniques optimize the upload speed and reliability? (Select TWO.)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Use S3 Multipart Upload API to upload parts in parallel"
-      },
-      {
-        "id": "B",
-        "text": "Use S3 Transfer Acceleration to route data through AWS edge locations"
-      },
-      {
-        "id": "C",
-        "text": "Enable S3 Object Lock before initiating the upload"
-      },
-      {
-        "id": "D",
-        "text": "Use client-side encryption with a local static key"
-      },
-      {
-        "id": "E",
-        "text": "Store the file in DynamoDB first before moving to S3"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Multipart Upload allows files larger than 100MB to be split and uploaded concurrently in parts, automatically retrying failed parts. S3 Transfer Acceleration leverages CloudFront's edge network for faster data transfer over long distances.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q28",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer receives an AccessDenied error when attempting to read an encrypted object from S3. The object was encrypted using SSE-KMS with a customer managed key. The developer has s3:GetObject permission. What missing permission caused the error?",
-    "options": [
-      {
-        "id": "A",
-        "text": "kms:Decrypt permission on the KMS key policy"
-      },
-      {
-        "id": "B",
-        "text": "s3:PutObject permission on the S3 bucket policy"
-      },
-      {
-        "id": "C",
-        "text": "kms:GenerateDataKey permission on the KMS key policy"
-      },
-      {
-        "id": "D",
-        "text": "iam:PassRole permission on the developer's IAM policy"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "When reading an SSE-KMS encrypted object in S3, the principal needs both s3:GetObject permission on the object and kms:Decrypt permission on the KMS key used to encrypt it.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q29",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer receives an AccessDenied error when attempting to read an encrypted object from S3. The object was encrypted using SSE-KMS with a customer managed key. The developer has s3:GetObject permission. What missing permission caused the error?",
-    "options": [
-      {
-        "id": "A",
-        "text": "kms:Decrypt permission on the KMS key policy"
-      },
-      {
-        "id": "B",
-        "text": "s3:PutObject permission on the S3 bucket policy"
-      },
-      {
-        "id": "C",
-        "text": "kms:GenerateDataKey permission on the KMS key policy"
-      },
-      {
-        "id": "D",
-        "text": "iam:PassRole permission on the developer's IAM policy"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "When reading an SSE-KMS encrypted object in S3, the principal needs both s3:GetObject permission on the object and kms:Decrypt permission on the KMS key used to encrypt it.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q30",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A developer wants to containerize a web app and store the Docker images securely in a private repository. Which TWO services should be used together? (Select TWO.)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Elastic Container Registry (ECR) for hosting private Docker images"
-      },
-      {
-        "id": "B",
-        "text": "AWS CodeBuild or local Docker CLI to build and push images to ECR"
-      },
-      {
-        "id": "C",
-        "text": "AWS CodeArtifact for storing npm packages"
-      },
-      {
-        "id": "D",
-        "text": "Amazon S3 static website hosting"
-      },
-      {
-        "id": "E",
-        "text": "AWS Elastic Beanstalk single instance mode"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Amazon ECR is a managed Docker container registry. AWS CodeBuild or Docker CLI can authenticate with ECR to build, tag, and push container images into ECR repositories.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q31",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer needs to store configuration parameters (like API URLs) and encrypted strings (like database passwords) centrally for multiple microservices. The solution must be low-cost and integrate natively with IAM. Which service should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Parameter Store"
-      },
-      {
-        "id": "B",
-        "text": "AWS Key Management Service"
-      },
-      {
-        "id": "C",
-        "text": "Amazon DynamoDB"
-      },
-      {
-        "id": "D",
-        "text": "AWS Secrets Manager"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "SSM Parameter Store allows storing plain text strings and encrypted SecureString parameters (via KMS). It is free for standard parameters and low-cost for advanced parameters, making it ideal for general app parameters.",
-    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q32",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer wants to allow frontend web users to upload files directly to an S3 bucket without routing through the backend server or exposing AWS credentials. What is the BEST solution?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Generate an S3 Presigned URL on the backend and return it to the frontend"
-      },
-      {
-        "id": "B",
-        "text": "Pass AWS access keys to the browser client securely"
-      },
-      {
-        "id": "C",
-        "text": "Configure an S3 Bucket Policy allowing anonymous public PUT access"
-      },
-      {
-        "id": "D",
-        "text": "Use AWS STS to create long-term IAM users for each website visitor"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Presigned URLs grant temporary permissions to perform specific S3 operations (such as PUT uploads). The backend generates a signed URL using IAM credentials and hands it to the client, keeping credentials safe.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q33",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An application running on an Amazon EC2 instance needs to access an S3 bucket and an SQS queue. Which approach is MOST secure for authenticating the application?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Hardcode IAM access keys in the application configuration file"
-      },
-      {
-        "id": "B",
-        "text": "Store IAM access keys in environment variables on the instance"
-      },
-      {
-        "id": "C",
-        "text": "Assign an IAM Role to the EC2 instance via an instance profile"
-      },
-      {
-        "id": "D",
-        "text": "Use AWS STS AssumeRole with long-term IAM credentials stored in code"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Assigning an IAM Role to an EC2 instance profile automatically provides temporary credentials via the Instance Metadata Service (IMDS). This avoids storing or managing static keys on disk.",
-    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q34",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An application publishes order notification events to an Amazon SNS topic. Three different microservices need to receive all messages. How should this fan-out architecture be configured?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Create an SQS queue for each microservice and subscribe all 3 queues to the SNS topic"
-      },
-      {
-        "id": "B",
-        "text": "Have each microservice poll the SNS topic directly using the AWS SDK"
-      },
-      {
-        "id": "C",
-        "text": "Route SNS events directly to an S3 bucket and trigger microservices via S3 events"
-      },
-      {
-        "id": "D",
-        "text": "Use API Gateway to broadcast SNS messages to microservices"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "The SNS fan-out pattern subscribes multiple SQS queues to a single SNS topic. When a message is published to the topic, SNS delivers a copy to each queue, allowing the microservices to process messages independently and asynchronously.",
-    "awsDocUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-common-scenarios.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q35",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "Which environment variable in AWS Lambda provides temporary credentials automatically to the AWS SDK running inside the function execution environment?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN"
-      },
-      {
-        "id": "B",
-        "text": "AWS_LAMBDA_FUNCTION_NAME and AWS_REGION"
-      },
-      {
-        "id": "C",
-        "text": "LAMBDA_SECURITY_TOKEN"
-      },
-      {
-        "id": "D",
-        "text": "AWS_KMS_KEY_ARN"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Lambda automatically injects AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN into the function's execution environment. The AWS SDK uses these automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q36",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer needs to run a lightweight containerized web API with automatic scaling and no server management. Which AWS service allows deploying container images directly from a source code repository or container registry with minimal configuration?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS App Runner"
-      },
-      {
-        "id": "B",
-        "text": "Amazon EC2"
-      },
-      {
-        "id": "C",
-        "text": "AWS Elastic Beanstalk (EC2 mode)"
-      },
-      {
-        "id": "D",
-        "text": "Amazon EMR"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS App Runner makes it easy to quickly deploy containerized web applications and APIs from container images or source code directly to AWS with zero infrastructure configuration required.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q37",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An application writing to a DynamoDB table receives ProvisionedThroughputExceededException errors. Which strategy should the developer implement first in the application code?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Implement exponential backoff with jitter in the application retry logic"
-      },
-      {
-        "id": "B",
-        "text": "Increase the table read/write capacity units to maximum"
-      },
-      {
-        "id": "C",
-        "text": "Re-create the table as a Global Table"
-      },
-      {
-        "id": "D",
-        "text": "Switch from DynamoDB to S3"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS SDKs automatically implement exponential backoff and jitter for retrying requests hit by ProvisionedThroughputExceededException. Adding backoff prevents request flooding.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html#Programming.Errors.RetryAndBackoff",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q38",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer is building a serverless web application. The application needs to process incoming requests via REST endpoints, validate the request body, and store records in DynamoDB. Which combination of services should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "API Gateway REST API, AWS Lambda, and Amazon DynamoDB"
-      },
-      {
-        "id": "B",
-        "text": "Application Load Balancer, Amazon EC2, and Amazon RDS"
-      },
-      {
-        "id": "C",
-        "text": "Amazon CloudFront, AWS Elastic Beanstalk, and Amazon ElastiCache"
-      },
-      {
-        "id": "D",
-        "text": "API Gateway WebSocket API, AWS Fargate, and Amazon DocumentDB"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "API Gateway provides REST API endpoints with built-in request validation. AWS Lambda handles backend processing logic, and DynamoDB provides serverless key-value storage. This forms the standard serverless application architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q39",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer wants to implement a canary deployment strategy for an AWS Lambda function using AWS SAM and AWS CodeDeploy. Which SAM deployment preference shifts 10% of traffic to the new version first, then shifts the remaining 90% after 10 minutes?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Canary10Percent10Minutes"
-      },
-      {
-        "id": "B",
-        "text": "Linear10Percent10Minutes"
-      },
-      {
-        "id": "C",
-        "text": "AllAtOnce"
-      },
-      {
-        "id": "D",
-        "text": "PreTrafficHook"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Canary10Percent10Minutes shifts 10 percent of traffic to the new version. After a 10-minute bake period without alarms, the remaining 90 percent is shifted.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q40",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer is creating an AWS Lambda function that processes video files from S3. The execution time often exceeds 5 minutes. What is the maximum timeout that can be configured for a Lambda function?",
-    "options": [
-      {
-        "id": "A",
-        "text": "5 minutes"
-      },
-      {
-        "id": "B",
-        "text": "10 minutes"
-      },
-      {
-        "id": "C",
-        "text": "15 minutes"
-      },
-      {
-        "id": "D",
-        "text": "30 minutes"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "AWS Lambda functions have a maximum configurable execution timeout of 15 minutes (900 seconds). For tasks exceeding 15 minutes, AWS Step Functions, AWS Batch, or ECS tasks should be used.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q41",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer is creating an AWS Lambda function that processes video files from S3. The execution time often exceeds 5 minutes. What is the maximum timeout that can be configured for a Lambda function?",
-    "options": [
-      {
-        "id": "A",
-        "text": "5 minutes"
-      },
-      {
-        "id": "B",
-        "text": "10 minutes"
-      },
-      {
-        "id": "C",
-        "text": "15 minutes"
-      },
-      {
-        "id": "D",
-        "text": "30 minutes"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "AWS Lambda functions have a maximum configurable execution timeout of 15 minutes (900 seconds). For tasks exceeding 15 minutes, AWS Step Functions, AWS Batch, or ECS tasks should be used.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q42",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer needs to run a lightweight containerized web API with automatic scaling and no server management. Which AWS service allows deploying container images directly from a source code repository or container registry with minimal configuration?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS App Runner"
-      },
-      {
-        "id": "B",
-        "text": "Amazon EC2"
-      },
-      {
-        "id": "C",
-        "text": "AWS Elastic Beanstalk (EC2 mode)"
-      },
-      {
-        "id": "D",
-        "text": "Amazon EMR"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS App Runner makes it easy to quickly deploy containerized web applications and APIs from container images or source code directly to AWS with zero infrastructure configuration required.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q43",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": true,
-    "scenario": "A developer wants to upload large 5GB files to Amazon S3 using the AWS SDK. Which TWO techniques optimize the upload speed and reliability? (Select TWO.)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Use S3 Multipart Upload API to upload parts in parallel"
-      },
-      {
-        "id": "B",
-        "text": "Use S3 Transfer Acceleration to route data through AWS edge locations"
-      },
-      {
-        "id": "C",
-        "text": "Enable S3 Object Lock before initiating the upload"
-      },
-      {
-        "id": "D",
-        "text": "Use client-side encryption with a local static key"
-      },
-      {
-        "id": "E",
-        "text": "Store the file in DynamoDB first before moving to S3"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Multipart Upload allows files larger than 100MB to be split and uploaded concurrently in parts, automatically retrying failed parts. S3 Transfer Acceleration leverages CloudFront's edge network for faster data transfer over long distances.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q44",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "Which environment variable in AWS Lambda provides temporary credentials automatically to the AWS SDK running inside the function execution environment?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN"
-      },
-      {
-        "id": "B",
-        "text": "AWS_LAMBDA_FUNCTION_NAME and AWS_REGION"
-      },
-      {
-        "id": "C",
-        "text": "LAMBDA_SECURITY_TOKEN"
-      },
-      {
-        "id": "D",
-        "text": "AWS_KMS_KEY_ARN"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Lambda automatically injects AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_SESSION_TOKEN into the function's execution environment. The AWS SDK uses these automatically.",
-    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q45",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer is building a SAM (Serverless Application Model) template. Which section of the SAM template defines the AWS resources to be provisioned?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Parameters"
-      },
-      {
-        "id": "B",
-        "text": "Resources"
-      },
-      {
-        "id": "C",
-        "text": "Globals"
-      },
-      {
-        "id": "D",
-        "text": "Transform"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Like CloudFormation templates, the Resources section in AWS SAM templates defines the AWS resources (such as AWS::Serverless::Function, AWS::Serverless::SimpleTable, etc.) to provision.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q46",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "An application publishes order notification events to an Amazon SNS topic. Three different microservices need to receive all messages. How should this fan-out architecture be configured?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Create an SQS queue for each microservice and subscribe all 3 queues to the SNS topic"
-      },
-      {
-        "id": "B",
-        "text": "Have each microservice poll the SNS topic directly using the AWS SDK"
-      },
-      {
-        "id": "C",
-        "text": "Route SNS events directly to an S3 bucket and trigger microservices via S3 events"
-      },
-      {
-        "id": "D",
-        "text": "Use API Gateway to broadcast SNS messages to microservices"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "The SNS fan-out pattern subscribes multiple SQS queues to a single SNS topic. When a message is published to the topic, SNS delivers a copy to each queue, allowing the microservices to process messages independently and asynchronously.",
-    "awsDocUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-common-scenarios.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q47",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer is using AWS KMS to encrypt sensitive application data locally before saving it to a database. Which API operation should be used to obtain an encryption key for local envelope encryption?",
-    "options": [
-      {
-        "id": "A",
-        "text": "kms:Encrypt"
-      },
-      {
-        "id": "B",
-        "text": "kms:GenerateDataKey"
-      },
-      {
-        "id": "C",
-        "text": "kms:Decrypt"
-      },
-      {
-        "id": "D",
-        "text": "kms:CreateKey"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "kms:GenerateDataKey returns a plaintext data key and an encrypted copy of that key (encrypted by a KMS CMK). The application uses the plaintext key to encrypt data locally, then discards the plaintext key and stores the encrypted data key alongside the data.",
-    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q48",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A developer needs to measure memory usage inside an EC2 instance. CloudWatch standard metrics do not show memory utilization. What must be installed on the EC2 instance to send memory metrics to CloudWatch?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Unified CloudWatch Agent"
-      },
-      {
-        "id": "B",
-        "text": "AWS Systems Manager Agent (SSM Agent)"
-      },
-      {
-        "id": "C",
-        "text": "AWS X-Ray Daemon"
-      },
-      {
-        "id": "D",
-        "text": "AWS CodeDeploy Agent"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Hypervisor metrics for EC2 only include CPU, Disk I/O, and Network. To track OS-level metrics like RAM usage or disk space, the CloudWatch Agent must be installed inside the guest OS.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q49",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A Lambda function connected to an Amazon RDS PostgreSQL database suffers from database connection timeouts during concurrent invocations. Which solution prevents database connection exhaustion?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Create an Amazon RDS Proxy and point Lambda database connections to the proxy"
-      },
-      {
-        "id": "B",
-        "text": "Increase Lambda function memory to maximum"
-      },
-      {
-        "id": "C",
-        "text": "Use SQS FIFO queue in front of Lambda"
-      },
-      {
-        "id": "D",
-        "text": "Enable Multi-AZ on the RDS database"
-      }
-    ],
-    "correctAnswer": [
-      "C"
-    ],
-    "explanation": "Amazon RDS Proxy pools and shares database connections, protecting the database from running out of connections during traffic spikes from Lambda functions.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q50",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": true,
-    "scenario": "A Lambda function requires database access credentials. The credentials must be stored securely, encrypted at rest, and automatically rotated every 30 days. Which service should the developer use?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS Systems Manager Parameter Store (String parameter)"
-      },
-      {
-        "id": "B",
-        "text": "AWS Secrets Manager with auto-rotation enabled"
-      },
-      {
-        "id": "C",
-        "text": "Environment variables inside the Lambda function configuration"
-      },
-      {
-        "id": "D",
-        "text": "An S3 object encrypted with SSE-S3"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "AWS Secrets Manager is designed specifically to manage, rotate, and retrieve secrets such as database credentials securely. It natively supports built-in auto-rotation using AWS Lambda functions.",
-    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q51",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer wants to test Lambda functions locally before deploying to AWS. Which CLI tool provides local execution capabilities by emulating Lambda and API Gateway?",
-    "options": [
-      {
-        "id": "A",
-        "text": "AWS SAM CLI"
-      },
-      {
-        "id": "B",
-        "text": "AWS CLI v2"
-      },
-      {
-        "id": "C",
-        "text": "AWS Amplify CLI"
-      },
-      {
-        "id": "D",
-        "text": "AWS CDK CLI"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "AWS SAM CLI provides commands like `sam local invoke` and `sam local start-api` to run and debug serverless applications locally using Docker containers.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-debugging.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q52",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer wants to restrict access to an API Gateway endpoint to requests coming only from a specific Amazon CloudFront distribution. How can this be accomplished?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Configure CloudFront to send a custom secret header and validate it in an API Gateway Lambda Authorizer or WAF"
-      },
-      {
-        "id": "B",
-        "text": "Use Security Groups on API Gateway to allow only CloudFront IP ranges"
-      },
-      {
-        "id": "C",
-        "text": "Enable S3 Bucket Policies on API Gateway"
-      },
-      {
-        "id": "D",
-        "text": "Attach an IAM Role directly to the CloudFront distribution"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "To restrict API Gateway to CloudFront, you can add a custom header in CloudFront origin settings and verify that header in API Gateway using AWS WAF, a custom Lambda authorizer, or resource policies.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-s3-corners.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q53",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer is building a serverless web application. The application needs to process incoming requests via REST endpoints, validate the request body, and store records in DynamoDB. Which combination of services should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "API Gateway REST API, AWS Lambda, and Amazon DynamoDB"
-      },
-      {
-        "id": "B",
-        "text": "Application Load Balancer, Amazon EC2, and Amazon RDS"
-      },
-      {
-        "id": "C",
-        "text": "Amazon CloudFront, AWS Elastic Beanstalk, and Amazon ElastiCache"
-      },
-      {
-        "id": "D",
-        "text": "API Gateway WebSocket API, AWS Fargate, and Amazon DocumentDB"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "API Gateway provides REST API endpoints with built-in request validation. AWS Lambda handles backend processing logic, and DynamoDB provides serverless key-value storage. This forms the standard serverless application architecture.",
-    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q54",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer needs to implement optimistic locking in Amazon DynamoDB to ensure that concurrent updates to an item do not overwrite each other. Which feature should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "DynamoDB Transactions"
-      },
-      {
-        "id": "B",
-        "text": "Condition expressions using a version attribute"
-      },
-      {
-        "id": "C",
-        "text": "DynamoDB Accelerator (DAX)"
-      },
-      {
-        "id": "D",
-        "text": "Global Secondary Indexes"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Optimistic locking with condition expressions (e.g., attribute_exists or version = :expectedVersion) ensures an update only succeeds if the item's version attribute has not changed since it was read. If another process updated it, the conditional check fails.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q55",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An application reading from a Kinesis Data Stream falls behind and records a high GetRecords.IteratorAgeMilliseconds metric value. What does this indicate?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Consumers are reading data slower than producers are writing data to the stream"
-      },
-      {
-        "id": "B",
-        "text": "The stream has run out of storage space"
-      },
-      {
-        "id": "C",
-        "text": "The consumer application credentials have expired"
-      },
-      {
-        "id": "D",
-        "text": "Kinesis Data Stream KMS key is disabled"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "IteratorAgeMilliseconds measures the age of the last record processed relative to when it arrived in the stream. A high value means consumers cannot keep up with write throughput.",
-    "awsDocUrl": "https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q56",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer is using AWS KMS to encrypt sensitive application data locally before saving it to a database. Which API operation should be used to obtain an encryption key for local envelope encryption?",
-    "options": [
-      {
-        "id": "A",
-        "text": "kms:Encrypt"
-      },
-      {
-        "id": "B",
-        "text": "kms:GenerateDataKey"
-      },
-      {
-        "id": "C",
-        "text": "kms:Decrypt"
-      },
-      {
-        "id": "D",
-        "text": "kms:CreateKey"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "kms:GenerateDataKey returns a plaintext data key and an encrypted copy of that key (encrypted by a KMS CMK). The application uses the plaintext key to encrypt data locally, then discards the plaintext key and stores the encrypted data key alongside the data.",
-    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q57",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "An application sends user activity events to an Amazon SQS queue. The developer wants to process events in parallel while ensuring that events for the same user ID are processed sequentially in the exact order received. What should be configured?",
-    "options": [
-      {
-        "id": "A",
-        "text": "SQS Standard queue with a custom sorting attribute"
-      },
-      {
-        "id": "B",
-        "text": "SQS FIFO queue with the MessageGroupId set to the user ID"
-      },
-      {
-        "id": "C",
-        "text": "SNS topic with multiple SQS subscriptions"
-      },
-      {
-        "id": "D",
-        "text": "SQS Standard queue with short polling"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "SQS FIFO queues preserve message ordering within a MessageGroupId group. By setting MessageGroupId to the user ID, events for that specific user are strictly ordered and processed sequentially, while events for different users can be processed concurrently.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-message-group-id.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q58",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A web application receives unpredictable bursts of read requests for popular user profiles stored in DynamoDB. The developer wants to achieve microsecond read latency without increasing provisioned read capacity. Which service should be added?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon ElastiCache for Redis"
-      },
-      {
-        "id": "B",
-        "text": "Amazon DynamoDB Accelerator (DAX)"
-      },
-      {
-        "id": "C",
-        "text": "Amazon CloudFront"
-      },
-      {
-        "id": "D",
-        "text": "Amazon RDS Proxy"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache specifically built for DynamoDB. It reduces read latency to microseconds and is API-compatible, requiring no application rewrite.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q59",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer wants to implement a canary deployment strategy for an AWS Lambda function using AWS SAM and AWS CodeDeploy. Which SAM deployment preference shifts 10% of traffic to the new version first, then shifts the remaining 90% after 10 minutes?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Canary10Percent10Minutes"
-      },
-      {
-        "id": "B",
-        "text": "Linear10Percent10Minutes"
-      },
-      {
-        "id": "C",
-        "text": "AllAtOnce"
-      },
-      {
-        "id": "D",
-        "text": "PreTrafficHook"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Canary10Percent10Minutes shifts 10 percent of traffic to the new version. After a 10-minute bake period without alarms, the remaining 90 percent is shifted.",
-    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q60",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d1",
-    "domainName": "Domain 1: Development with AWS Services",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer needs to implement optimistic locking in Amazon DynamoDB to ensure that concurrent updates to an item do not overwrite each other. Which feature should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "DynamoDB Transactions"
-      },
-      {
-        "id": "B",
-        "text": "Condition expressions using a version attribute"
-      },
-      {
-        "id": "C",
-        "text": "DynamoDB Accelerator (DAX)"
-      },
-      {
-        "id": "D",
-        "text": "Global Secondary Indexes"
-      }
-    ],
-    "correctAnswer": [
-      "B"
-    ],
-    "explanation": "Optimistic locking with condition expressions (e.g., attribute_exists or version = :expectedVersion) ensures an update only succeeds if the item's version attribute has not changed since it was read. If another process updated it, the conditional check fails.",
-    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q61",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d4",
-    "domainName": "Domain 4: Troubleshooting and Optimization",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A developer wants to inspect custom log messages emitted by a NodeJS Lambda function. Which TWO CloudWatch features help view and query these logs efficiently? (Select TWO.)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon CloudWatch Logs Streams generated automatically per Lambda container"
-      },
-      {
-        "id": "B",
-        "text": "Amazon CloudWatch Logs Insights to run interactive SQL-like queries across log groups"
-      },
-      {
-        "id": "C",
-        "text": "AWS X-Ray Active Tracing"
-      },
-      {
-        "id": "D",
-        "text": "Amazon CloudWatch Metric Filters"
-      },
-      {
-        "id": "E",
-        "text": "AWS CloudTrail Event History"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Lambda automatically streams console.log messages to CloudWatch Log Streams under /aws/lambda/<function-name>. CloudWatch Logs Insights allows querying across these log streams.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q62",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer is using AWS CodeDeploy to deploy an update to an application running on EC2. The deployment must update instances one at a time, ensuring that at least half the instances remain operational throughout. Which deployment configuration should be used?",
-    "options": [
-      {
-        "id": "A",
-        "text": "CodeDeployDefault.OneAtATime"
-      },
-      {
-        "id": "B",
-        "text": "CodeDeployDefault.HalfAtATime"
-      },
-      {
-        "id": "C",
-        "text": "CodeDeployDefault.AllAtOnce"
-      },
-      {
-        "id": "D",
-        "text": "CodeDeployDefault.Canary10Percent30Minutes"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "CodeDeployDefault.OneAtATime deploys the revision to one instance at a time. As long as the fleet size is >= 2, at least half of the instances remain online during the deployment.",
-    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q63",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d2",
-    "domainName": "Domain 2: Security",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A mobile application requires authenticated access to user-specific folders in Amazon S3 after signing in with Google or Facebook. Which service provides federated identity management and temporary AWS credentials?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Cognito User Pools and Identity Pools"
-      },
-      {
-        "id": "B",
-        "text": "AWS IAM Identity Center"
-      },
-      {
-        "id": "C",
-        "text": "AWS STS GetSessionToken"
-      },
-      {
-        "id": "D",
-        "text": "Amazon API Gateway Lambda Authorizer"
-      }
-    ],
-    "correctAnswer": [
-      "A"
-    ],
-    "explanation": "Cognito User Pools handle user sign-in and social identity federation. Cognito Identity Pools convert identity tokens into temporary, scoped IAM credentials for accessing AWS resources like S3.",
-    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q64",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "multiple",
-    "selectCount": 2,
-    "isScored": false,
-    "scenario": "A developer wants to containerize a web app and store the Docker images securely in a private repository. Which TWO services should be used together? (Select TWO.)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Amazon Elastic Container Registry (ECR) for hosting private Docker images"
-      },
-      {
-        "id": "B",
-        "text": "AWS CodeBuild or local Docker CLI to build and push images to ECR"
-      },
-      {
-        "id": "C",
-        "text": "AWS CodeArtifact for storing npm packages"
-      },
-      {
-        "id": "D",
-        "text": "Amazon S3 static website hosting"
-      },
-      {
-        "id": "E",
-        "text": "AWS Elastic Beanstalk single instance mode"
-      }
-    ],
-    "correctAnswer": [
-      "A",
-      "B"
-    ],
-    "explanation": "Amazon ECR is a managed Docker container registry. AWS CodeBuild or Docker CLI can authenticate with ECR to build, tag, and push container images into ECR repositories.",
-    "awsDocUrl": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html",
-    "difficulty": "Standard"
-  },
-  {
-    "id": "dvac02-s5-q65",
-    "setId": 5,
-    "examCode": "DVA-C02",
-    "domainId": "dva-d3",
-    "domainName": "Domain 3: Deployment",
-    "questionType": "single",
-    "selectCount": 1,
-    "isScored": false,
-    "scenario": "A developer uses AWS CodeBuild to compile code and build Docker images. Where are the build commands and environment phases defined?",
+    "scenario": "A developer uses AWS CodeDeploy to update a web application running on Amazon EC2 instances. The deployment is configured as an In-Place deployment. The developer needs to specify shell scripts that stop the web server before file installation and restart it after file installation. Which file in the application source repository specifies these hooks?",
     "options": [
       {
         "id": "A",
@@ -2294,14 +424,1869 @@
       },
       {
         "id": "D",
+        "text": "template.yaml"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The `appspec.yml` file is used by AWS CodeDeploy to define deployment lifecycle hooks (`ApplicationStop`, `BeforeInstall`, `AfterInstall`, `ApplicationStart`, `ValidateService`) and file mappings.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q13",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application publishes event records to an Amazon Kinesis Data Stream with 4 shards. The consumer application uses the Kinesis Client Library (KCL) v2. What AWS service does KCL use internally to track shard leases, consumer state, and record checkpoints?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon DynamoDB"
+      },
+      {
+        "id": "B",
+        "text": "Amazon ElastiCache for Redis"
+      },
+      {
+        "id": "C",
+        "text": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The Kinesis Client Library (KCL) creates and manages an internal Amazon DynamoDB table (named after the KCL application name) to maintain worker leases, shard processing state, and checkpoints.",
+    "awsDocUrl": "https://docs.aws.amazon.com/streams/latest/dev/kinesis-record-processor-ddb.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q14",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is configuring client-side envelope encryption for sensitive files before uploading them to Amazon S3. The developer invokes AWS KMS `kms:GenerateDataKey`. What TWO values are returned in the response payload from KMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Plaintext data key and CiphertextDataKey (encrypted copy of data key)"
+      },
+      {
+        "id": "B",
+        "text": "KMS Root Certificate and RSA Private Key"
+      },
+      {
+        "id": "C",
+        "text": "S3 Presigned URL and IAM Access Key"
+      },
+      {
+        "id": "D",
+        "text": "Cognito ID Token and Access Token"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`kms:GenerateDataKey` generates a symmetric data key under a KMS CMK and returns both a `Plaintext` data key (for immediate local encryption) and a `CiphertextBlob` (data key encrypted by KMS for storage).",
+    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q15",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A backend application writing records to Amazon DynamoDB experiences `ProvisionedThroughputExceededException` errors during sudden traffic spikes. What retry strategy should be implemented in application code to handle transient throttling gracefully?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exponential backoff with randomized jitter"
+      },
+      {
+        "id": "B",
+        "text": "Immediate retry without delay"
+      },
+      {
+        "id": "C",
+        "text": "Linear retries every 1 millisecond"
+      },
+      {
+        "id": "D",
+        "text": "Re-create the table as Global Table"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Implementing exponential backoff with randomized jitter progressively increases wait time between retries and spreads out retry requests to prevent overwhelming throttled database partitions.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html#Programming.Errors.RetryAndBackoff",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q16",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses the AWS Serverless Application Model (SAM) CLI to build and test a serverless application locally. What CLI command runs a local HTTP server that emulates Amazon API Gateway, allowing the developer to test REST API endpoints locally using Docker?",
+    "options": [
+      {
+        "id": "A",
+        "text": "sam local start-api"
+      },
+      {
+        "id": "B",
+        "text": "sam local invoke"
+      },
+      {
+        "id": "C",
+        "text": "sam deploy --guided"
+      },
+      {
+        "id": "D",
+        "text": "sam package"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`sam local start-api` hosts a local HTTP server emulating API Gateway endpoints that trigger local Docker containers running Lambda function code.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-start-api.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q17",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application publishes messages to an Amazon SQS FIFO queue. The developer wants to ensure that messages belonging to the same customer are processed sequentially in exact order, while messages for different customers are processed concurrently. What message attribute controls message grouping in SQS FIFO queues?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MessageGroupId"
+      },
+      {
+        "id": "B",
+        "text": "MessageDeduplicationId"
+      },
+      {
+        "id": "C",
+        "text": "ReceiptHandle"
+      },
+      {
+        "id": "D",
+        "text": "SequenceNumber"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "In SQS FIFO queues, `MessageGroupId` designates the message group. Messages with identical group IDs are delivered strictly in order, whereas messages across distinct group IDs can be processed in parallel.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-message-group-id.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q18",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to grant an Amazon EC2 instance permission to read database parameters from AWS Systems Manager Parameter Store. What IAM entity should be attached to the EC2 instance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IAM Instance Profile associated with an IAM Role granting ssm:GetParameter"
+      },
+      {
+        "id": "B",
+        "text": "IAM Access Key stored in EC2 User Data"
+      },
+      {
+        "id": "C",
+        "text": "S3 Bucket Policy granting public read"
+      },
+      {
+        "id": "D",
+        "text": "VPC Security Group granting port 22"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Attaching an IAM Role via an Instance Profile provides temporary credentials to EC2 instances securely via IMDSv2 without storing static keys.",
+    "awsDocUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q19",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is configuring CloudWatch monitoring for an Amazon SQS queue. What CloudWatch metric tracks the number of messages in flight (messages retrieved by consumers but not yet deleted or timed out)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ApproximateNumberOfMessagesNotVisible"
+      },
+      {
+        "id": "B",
+        "text": "ApproximateNumberOfMessagesDelayed"
+      },
+      {
+        "id": "C",
+        "text": "ApproximateNumberOfMessagesVisible"
+      },
+      {
+        "id": "D",
+        "text": "NumberOfMessagesSent"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`ApproximateNumberOfMessagesNotVisible` measures messages currently fetched by consumers and in flight within their visibility timeout period.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-monitoring-using-cloudwatch.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q20",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses the AWS Cloud Development Kit (AWS CDK) in Python to define infrastructure. What CLI command displays the diff between the deployed CloudFormation stack and current local CDK code construct changes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "cdk diff"
+      },
+      {
+        "id": "B",
+        "text": "cdk synth"
+      },
+      {
+        "id": "C",
+        "text": "cdk bootstrap"
+      },
+      {
+        "id": "D",
+        "text": "cdk deploy --dry-run"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`cdk diff` compares local synthesized stack templates against active deployed CloudFormation stacks and outputs pending resource changes.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/cli.html#cli-diff",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q21",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An AWS Lambda function reads events from an Amazon SQS standard queue. The Lambda function execution takes 30 seconds. What is the recommended Visibility Timeout setting for the SQS queue to prevent duplicate function invocations during execution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At least 180 seconds (6 times the Lambda function timeout)"
+      },
+      {
+        "id": "B",
+        "text": "10 seconds"
+      },
+      {
+        "id": "C",
+        "text": "30 seconds exactly"
+      },
+      {
+        "id": "D",
+        "text": "0 seconds"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS best practice requires setting the SQS Visibility Timeout to at least 6 times the Lambda function timeout so Lambda can complete processing and retries before SQS re-exposes the message.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#events-sqs-queueconfig",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q22",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to restrict access to an Amazon S3 bucket so that objects can ONLY be uploaded if they are encrypted using SSE-KMS. What condition key MUST be evaluated in the S3 bucket policy Deny statement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "s3:x-amz-server-side-encryption StringNotEquals aws:kms"
+      },
+      {
+        "id": "B",
+        "text": "aws:PrincipalArn StringEquals *"
+      },
+      {
+        "id": "C",
+        "text": "s3:x-amz-acl StringEquals public-read"
+      },
+      {
+        "id": "D",
+        "text": "aws:SecureTransport Bool false"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Evaluating `s3:x-amz-server-side-encryption` in a `Deny` policy statement when `StringNotEquals` is `aws:kms` rejects any upload that does not explicitly request SSE-KMS encryption.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q23",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer notices that an API Gateway REST API returns HTTP 429 Too Many Requests errors under heavy traffic. What is the root cause of this response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "API Gateway rate or burst throttling limits have been exceeded."
+      },
+      {
+        "id": "B",
+        "text": "Lambda execution timeout occurred."
+      },
+      {
+        "id": "C",
+        "text": "S3 bucket policy denied public read."
+      },
+      {
+        "id": "D",
+        "text": "CloudFront distribution origin was unreachable."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "HTTP 429 Too Many Requests indicates that client request rates exceeded configured API Gateway stage/method throttling limits or account default limit (10,000 rps).",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q24",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses AWS CodePipeline with AWS CodeDeploy to update a serverless Lambda application. The SAM template specifies a traffic shifting preference. Which CodeDeploy deployment preference type shifts 10% of traffic immediately and the remaining 90% after 10 minutes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Canary10Percent10Minutes"
+      },
+      {
+        "id": "B",
+        "text": "Linear10PercentEvery10Minutes"
+      },
+      {
+        "id": "C",
+        "text": "AllAtOnce"
+      },
+      {
+        "id": "D",
+        "text": "PreTrafficHook"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`Canary10Percent10Minutes` shifts 10% of traffic to the new version, holds for 10 minutes, and shifts the remaining 90% if no alarms trigger.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q25",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an AWS Step Functions state machine to process tasks in parallel branches simultaneously. Which state type should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parallel state"
+      },
+      {
+        "id": "B",
+        "text": "Map state"
+      },
+      {
+        "id": "C",
+        "text": "Choice state"
+      },
+      {
+        "id": "D",
+        "text": "Task state"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "A `Parallel` state in Step Functions executes independent branches of state machines concurrently, waiting until all branches complete before continuing.",
+    "awsDocUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q26",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to generate temporary, scoped AWS IAM credentials for a mobile application using Amazon Cognito. Which Cognito pool converts identity tokens into IAM credentials?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cognito Identity Pools (Federated Identities)"
+      },
+      {
+        "id": "B",
+        "text": "Cognito User Pools"
+      },
+      {
+        "id": "C",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "D",
+        "text": "API Gateway Authorizer"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Cognito Identity Pools receive authentication tokens from User Pools or 3rd-party identity providers and exchange them for temporary AWS IAM credentials.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q27",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to optimize DynamoDB read performance for a table where application reads request identical items repeatedly. What fully managed in-memory cache delivers microsecond read latency?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon DynamoDB Accelerator (DAX)"
+      },
+      {
+        "id": "B",
+        "text": "Amazon ElastiCache for Memcached"
+      },
+      {
+        "id": "C",
+        "text": "Amazon CloudFront"
+      },
+      {
+        "id": "D",
+        "text": "Amazon S3 Transfer Acceleration"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "DynamoDB Accelerator (DAX) is an API-compatible, fully managed in-memory cache specifically built for DynamoDB that reduces read response time to microseconds.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q28",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses AWS CodeBuild to build Docker images. Where are build phases (`install`, `pre_build`, `build`, `post_build`) defined?",
+    "options": [
+      {
+        "id": "A",
+        "text": "buildspec.yml"
+      },
+      {
+        "id": "B",
+        "text": "appspec.yml"
+      },
+      {
+        "id": "C",
+        "text": "Dockerfile"
+      },
+      {
+        "id": "D",
         "text": "samconfig.toml"
       }
     ],
     "correctAnswer": [
-      "B"
+      "A"
     ],
-    "explanation": "AWS CodeBuild uses a buildspec.yml file located in the root of the source directory to define phases (install, pre_build, build, post_build) and run shell commands.",
+    "explanation": "AWS CodeBuild reads `buildspec.yml` in the root source directory to execute commands across lifecycle build phases.",
     "awsDocUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html",
-    "difficulty": "Standard"
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q29",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to upload 500 MB files to Amazon S3 using the AWS SDK. Which API feature allows splitting large files into smaller parts uploaded concurrently?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S3 Multipart Upload API"
+      },
+      {
+        "id": "B",
+        "text": "S3 Object Versioning"
+      },
+      {
+        "id": "C",
+        "text": "S3 Object Lock"
+      },
+      {
+        "id": "D",
+        "text": "S3 Batch Operations"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "S3 Multipart Upload splits files larger than 100 MB into smaller parts uploaded concurrently, allowing independent retries and optimized network throughput.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q30",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure access permissions for an AWS Lambda function that accesses an Amazon Aurora database in a private subnet. What IAM policy actions MUST be included in the Lambda execution role?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ec2:CreateNetworkInterface, ec2:DescribeNetworkInterfaces, ec2:DeleteNetworkInterface"
+      },
+      {
+        "id": "B",
+        "text": "s3:PutObject, s3:GetObject"
+      },
+      {
+        "id": "C",
+        "text": "iam:CreateUser, iam:AttachUserPolicy"
+      },
+      {
+        "id": "D",
+        "text": "codebuild:StartBuild"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Lambda functions configured to connect to Amazon VPC subnets require ENI management permissions (`AWSLambdaVPCAccessExecutionRole`).",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q31",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to monitor an AWS Lambda function for memory exhaustion errors. Where are function execution runtime logs and memory usage details sent by default?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon CloudWatch Logs"
+      },
+      {
+        "id": "B",
+        "text": "AWS CloudTrail Event History"
+      },
+      {
+        "id": "C",
+        "text": "Amazon S3 server access logs"
+      },
+      {
+        "id": "D",
+        "text": "VPC Flow Logs"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Lambda streams all standard output logs, runtime error messages, and `REPORT` lines (including memory used) directly to CloudWatch Logs under `/aws/lambda/<function-name>`.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q32",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses AWS Serverless Application Model (SAM) to define a serverless stack. Which SAM CLI command packages artifacts and deploys the stack to CloudFormation in a single step?",
+    "options": [
+      {
+        "id": "A",
+        "text": "sam deploy"
+      },
+      {
+        "id": "B",
+        "text": "sam local start-api"
+      },
+      {
+        "id": "C",
+        "text": "sam validate"
+      },
+      {
+        "id": "D",
+        "text": "sam init"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`sam deploy` packages build output artifacts, uploads them to an S3 bucket, creates CloudFormation changeset objects, and deploys the stack.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q33",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application publishes notification messages to an Amazon SNS topic. Three separate microservices need to process every message asynchronously. What fan-out architecture should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Subscribe three Amazon SQS queues to the SNS topic, with each microservice consuming from its respective queue."
+      },
+      {
+        "id": "B",
+        "text": "Have microservices poll SNS directly via AWS SDK."
+      },
+      {
+        "id": "C",
+        "text": "Route SNS messages to S3 bucket lifecycle rules."
+      },
+      {
+        "id": "D",
+        "text": "Use CloudFront signed URLs."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The SNS Fan-out pattern subscribes multiple SQS queues to a single SNS topic. When a message is published, SNS replicates and delivers it to all subscribed queues automatically.",
+    "awsDocUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-common-scenarios.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q34",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure authentication for an Amazon API Gateway REST API using AWS IAM permissions (`AWS_IAM` authorizer). How must client applications sign their HTTP requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sign HTTP requests using AWS Signature Version 4 (SigV4) with IAM credentials."
+      },
+      {
+        "id": "B",
+        "text": "Pass JWT token in Authorization Bearer header."
+      },
+      {
+        "id": "C",
+        "text": "Include x-api-key in request headers."
+      },
+      {
+        "id": "D",
+        "text": "Encrypt request body using KMS RSA keys."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "API Gateway routes protected by `AWS_IAM` authorization require requests to be authenticated via Signature Version 4 (SigV4) using IAM access keys.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-authenticating-api-requests.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q35",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer is inspecting CloudWatch metrics for an Amazon SQS queue. The metric `ApproximateNumberOfMessagesVisible` is high, while `ApproximateNumberOfMessagesNotVisible` is 0. What does this indicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Messages are present in the queue waiting to be fetched by consumer applications."
+      },
+      {
+        "id": "B",
+        "text": "All messages are currently in flight."
+      },
+      {
+        "id": "C",
+        "text": "Messages were deleted by DLQ rules."
+      },
+      {
+        "id": "D",
+        "text": "SQS queue is throttled."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`ApproximateNumberOfMessagesVisible` represents the number of messages available in the queue ready for retrieval by consumers.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-monitoring-using-cloudwatch.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q36",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an AWS CodePipeline pipeline triggered automatically whenever code is pushed to the `main` branch of an AWS CodeCommit repository. What service detects CodeCommit changes in real-time?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amazon EventBridge rules"
+      },
+      {
+        "id": "B",
+        "text": "S3 Bucket Lifecycle Rules"
+      },
+      {
+        "id": "C",
+        "text": "AWS CloudTrail SQS Polling"
+      },
+      {
+        "id": "D",
+        "text": "EC2 User Data scripts"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Amazon EventBridge rules capture CodeCommit repository state change events in real-time and trigger CodePipeline executions instantly.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q37",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to perform optimistic locking on items in an Amazon DynamoDB table to prevent concurrent overwrites. What attribute and expression should be added to `PutItem` or `UpdateItem` calls?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A version attribute and ConditionExpression set to 'version = :expected_version'."
+      },
+      {
+        "id": "B",
+        "text": "KeyConditionExpression on Sort Key."
+      },
+      {
+        "id": "C",
+        "text": "ProjectionExpression set to 'ALL_ATTRIBUTES'."
+      },
+      {
+        "id": "D",
+        "text": "ConsistentRead set to true."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Optimistic locking in DynamoDB uses a version number attribute evaluated via `ConditionExpression` (`version = :expected_version`). If another process updated the item in the interim, the write fails with `ConditionalCheckFailedException`.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.OptimisticLocking.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q38",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure client access to an Amazon API Gateway REST API. The API must require clients to send a pre-configured API key in request headers. Which HTTP header name MUST be passed by clients?",
+    "options": [
+      {
+        "id": "A",
+        "text": "x-api-key"
+      },
+      {
+        "id": "B",
+        "text": "Authorization"
+      },
+      {
+        "id": "C",
+        "text": "X-Amzn-Trace-Id"
+      },
+      {
+        "id": "D",
+        "text": "Host"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "API Gateway evaluates client API keys by inspecting the `x-api-key` HTTP request header.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-setup-api-key-with-console.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q39",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An Application Load Balancer target group marks target instances as `Unhealthy` with reason `Target.ResponseCodeMismatch`. What is the cause of this error?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The target instance returned an HTTP status code that did not match the configured expected health check success codes (e.g., 200)."
+      },
+      {
+        "id": "B",
+        "text": "Security groups blocked inbound HTTP traffic."
+      },
+      {
+        "id": "C",
+        "text": "The ALB SSL certificate expired."
+      },
+      {
+        "id": "D",
+        "text": "The target instance CPU reached 100%."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`Target.ResponseCodeMismatch` indicates that the load balancer sent an HTTP health check request to the target path, but the target returned a status code outside the configured success range.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q40",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to specify build artifacts in `buildspec.yml` for an AWS CodeBuild project so that downstream CodePipeline stages can consume them. Under which syntax section are output files defined?",
+    "options": [
+      {
+        "id": "A",
+        "text": "artifacts -> files"
+      },
+      {
+        "id": "B",
+        "text": "phases -> build -> output"
+      },
+      {
+        "id": "C",
+        "text": "env -> variables"
+      },
+      {
+        "id": "D",
+        "text": "version -> 0.2"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CodeBuild packages and uploads build outputs defined under `artifacts` -> `files` in `buildspec.yml` to the pipeline artifact bucket.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q41",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an AWS Lambda function triggered by an Amazon Kinesis Data Stream. What event source mapping configuration parameter controls the maximum number of stream records passed to Lambda in a single function invocation payload?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BatchSize"
+      },
+      {
+        "id": "B",
+        "text": "ParallelizationFactor"
+      },
+      {
+        "id": "C",
+        "text": "MaximumRecordAgeInSeconds"
+      },
+      {
+        "id": "D",
+        "text": "BisectBatchOnFunctionError"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`BatchSize` sets the maximum number of records that Lambda reads from a Kinesis shard and passes to the function in a single invocation payload.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q42",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to store database passwords in AWS Secrets Manager. What AWS service executes the automated credential rotation logic every 30 days?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWS Lambda"
+      },
+      {
+        "id": "B",
+        "text": "AWS Systems Manager Run Command"
+      },
+      {
+        "id": "C",
+        "text": "AWS CodeDeploy"
+      },
+      {
+        "id": "D",
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "AWS Secrets Manager uses AWS Lambda functions to execute rotation logic (creating new secret versions, updating DB passwords, testing, and finishing rotation).",
+    "awsDocUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q43",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to capture detailed subsegments and outgoing HTTP request execution timing in Node.js code for AWS X-Ray. What SDK call wraps outgoing HTTP requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AWSXRay.captureHTTPsGlobal(require('http'))"
+      },
+      {
+        "id": "B",
+        "text": "AWSXRay.enableTraceLogger()"
+      },
+      {
+        "id": "C",
+        "text": "AWSXRay.setContextMissingStrategy('LOG_ERROR')"
+      },
+      {
+        "id": "D",
+        "text": "AWSXRay.config([AWSXRay.plugins.EC2])"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`AWSXRay.captureHTTPsGlobal` wraps Node.js native HTTP/HTTPS modules to record outgoing HTTP calls as subsegments in X-Ray traces.",
+    "awsDocUrl": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-nodejs-httpclients.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q44",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses AWS CloudFormation to provision a multi-tier stack. The template defines an Amazon S3 bucket and an AWS Lambda function. How should the developer reference the S3 bucket name in the Lambda resource properties?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ref intrinsic function on the S3 bucket logical ID"
+      },
+      {
+        "id": "B",
+        "text": "Fn::GetAtt intrinsic function on Endpoint"
+      },
+      {
+        "id": "C",
+        "text": "Hardcode the S3 bucket ARN"
+      },
+      {
+        "id": "D",
+        "text": "Fn::ImportValue from an external stack"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "In CloudFormation, calling `Ref` on an `AWS::S3::Bucket` resource returns the bucket name string.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q45",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an SQS queue to delay message delivery to workers by 5 minutes upon being published. What parameter controls message delivery delays globally for a queue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DelaySeconds set to 300"
+      },
+      {
+        "id": "B",
+        "text": "VisibilityTimeout set to 300"
+      },
+      {
+        "id": "C",
+        "text": "ReceiveMessageWaitTimeSeconds set to 20"
+      },
+      {
+        "id": "D",
+        "text": "MessageRetentionPeriod set to 300"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`DelaySeconds` configures SQS Delay Queues, postponing message visibility to consumers for a specified delay duration (up to 15 minutes) after being published.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q46",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure CORS on an Amazon API Gateway REST API. Which HTTP method handles browser preflight requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "OPTIONS"
+      },
+      {
+        "id": "B",
+        "text": "GET"
+      },
+      {
+        "id": "C",
+        "text": "POST"
+      },
+      {
+        "id": "D",
+        "text": "HEAD"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Web browsers automatically send unauthenticated `OPTIONS` preflight requests to check server CORS permissions before executing cross-origin requests.",
+    "awsDocUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q47",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to query CloudWatch logs using CloudWatch Logs Insights. What query keyword calculates aggregate metrics like count, average, or max grouped by field?",
+    "options": [
+      {
+        "id": "A",
+        "text": "stats"
+      },
+      {
+        "id": "B",
+        "text": "filter"
+      },
+      {
+        "id": "C",
+        "text": "fields"
+      },
+      {
+        "id": "D",
+        "text": "sort"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "In CloudWatch Logs Insights query syntax, `stats` computes aggregate functions (such as `count()`, `avg()`, `sum()`, `max()`) grouped by specified log fields.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q48",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses AWS CodePipeline with AWS CodeDeploy to update an application running on EC2 instances. What deployment configuration updates instances one at a time across a fleet?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CodeDeployDefault.OneAtATime"
+      },
+      {
+        "id": "B",
+        "text": "CodeDeployDefault.AllAtOnce"
+      },
+      {
+        "id": "C",
+        "text": "CodeDeployDefault.HalfAtATime"
+      },
+      {
+        "id": "D",
+        "text": "CodeDeployDefault.LambdaCanary10Percent5Minutes"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`CodeDeployDefault.OneAtATime` deploys the application revision to one EC2 instance at a time, ensuring maximum fleet availability during updates.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q49",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an AWS Lambda function triggered by an Amazon S3 bucket event. If the function execution fails due to a code error, what is the default retry behavior for asynchronous S3 event invocations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lambda retries the event twice automatically (total 3 attempts)."
+      },
+      {
+        "id": "B",
+        "text": "Lambda retries indefinitely for 7 days."
+      },
+      {
+        "id": "C",
+        "text": "S3 deletes the uploaded file immediately."
+      },
+      {
+        "id": "D",
+        "text": "The event is discarded immediately without retry."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "For asynchronous event invocations (such as S3 Event Notifications), AWS Lambda automatically retries execution twice (total 3 attempts) before discarding the event or routing to Dead Letter Queues/Destinations.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q50",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to generate temporary AWS credentials for a web application user using OAuth 2.0 social sign-in. Which AWS STS API operation exchanges web identity provider tokens for temporary IAM credentials?",
+    "options": [
+      {
+        "id": "A",
+        "text": "sts:AssumeRoleWithWebIdentity"
+      },
+      {
+        "id": "B",
+        "text": "sts:GetSessionToken"
+      },
+      {
+        "id": "C",
+        "text": "sts:AssumeRole"
+      },
+      {
+        "id": "D",
+        "text": "sts:GetCallerIdentity"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`AssumeRoleWithWebIdentity` exchanges OpenID Connect or OAuth 2.0 identity tokens (from providers like Google, Facebook, Amazon) for temporary AWS IAM credentials.",
+    "awsDocUrl": "https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q51",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An application reading from an Amazon Kinesis Data Stream records high `GetRecords.IteratorAgeMilliseconds`. What action increases consumer throughput?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Split stream shards and scale consumer worker instances to match the new shard count."
+      },
+      {
+        "id": "B",
+        "text": "Decrease Lambda function memory."
+      },
+      {
+        "id": "C",
+        "text": "Enable S3 Object Lock."
+      },
+      {
+        "id": "D",
+        "text": "Decrease queue visibility timeout."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`IteratorAgeMilliseconds` measures processing lag relative to current time. Splitting stream shards and scaling worker processes increases concurrent data processing capacity.",
+    "awsDocUrl": "https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q52",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses AWS CDK to define infrastructure. What construct level represents higher-level, opinionated patterns (such as `ApplicationLoadBalancedFargateService`)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Level 3 Constructs (L3)"
+      },
+      {
+        "id": "B",
+        "text": "Level 1 Constructs (L1)"
+      },
+      {
+        "id": "C",
+        "text": "CfnResources"
+      },
+      {
+        "id": "D",
+        "text": "CloudFormation Modules"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Level 3 (L3) constructs (also known as patterns) combine multiple resources and best practice defaults into reusable high-level architectures.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cdk/v2/guide/constructs.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q53",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an Amazon SQS Standard queue to poll for messages without returning empty responses when no messages are available. What polling mechanism should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Long Polling (ReceiveMessageWaitTimeSeconds > 0)"
+      },
+      {
+        "id": "B",
+        "text": "Short Polling (ReceiveMessageWaitTimeSeconds = 0)"
+      },
+      {
+        "id": "C",
+        "text": "FIFO Deduplication"
+      },
+      {
+        "id": "D",
+        "text": "Delay Queue"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Long polling (`ReceiveMessageWaitTimeSeconds` set up to 20 seconds) waits for messages to arrive before returning responses, eliminating empty responses and lowering cost.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q54",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an Amazon S3 bucket policy to enforce HTTPS connections in transit. Which global condition key MUST be evaluated in the Deny statement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "aws:SecureTransport set to false"
+      },
+      {
+        "id": "B",
+        "text": "s3:x-amz-server-side-encryption set to AES256"
+      },
+      {
+        "id": "C",
+        "text": "aws:PrincipalArn set to *"
+      },
+      {
+        "id": "D",
+        "text": "s3:VersionId set to null"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Evaluating `aws:SecureTransport: false` inside a `Deny` policy statement enforces that non-TLS (HTTP) requests are automatically blocked by S3.",
+    "awsDocUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-https",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q55",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An AWS Lambda function written in Node.js performs slow external API calls. CloudWatch metrics show execution timeouts. What setting in Lambda configuration increases permitted execution duration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Timeout"
+      },
+      {
+        "id": "B",
+        "text": "MemorySize"
+      },
+      {
+        "id": "C",
+        "text": "ReservedConcurrency"
+      },
+      {
+        "id": "D",
+        "text": "ProvisionedConcurrency"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "The `Timeout` setting configures the maximum time (up to 15 minutes) that AWS Lambda allows a function execution to run before terminating it.",
+    "awsDocUrl": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html#configuration-timeout-console",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q56",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer uses AWS SAM to build a serverless application. What command compiles construct code and prepares local build output inside `.aws-sam/build/` directory?",
+    "options": [
+      {
+        "id": "A",
+        "text": "sam build"
+      },
+      {
+        "id": "B",
+        "text": "sam deploy"
+      },
+      {
+        "id": "C",
+        "text": "sam local invoke"
+      },
+      {
+        "id": "D",
+        "text": "sam publish"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`sam build` processes SAM template files, resolves dependencies, compiles source code, and writes build output files into the `.aws-sam/build/` directory.",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-build.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q57",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to retrieve an item from an Amazon DynamoDB table with strong consistency. Which API parameter MUST be set to `true` in the `GetItem` call?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ConsistentRead"
+      },
+      {
+        "id": "B",
+        "text": "ProjectionExpression"
+      },
+      {
+        "id": "C",
+        "text": "ReturnConsumedCapacity"
+      },
+      {
+        "id": "D",
+        "text": "Select"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Setting `ConsistentRead: true` forces DynamoDB to perform a strongly consistent read operation, reading from nodes that guarantee returning the latest successful write data.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q58",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure user directory sign-in for a web application using Amazon Cognito. What Cognito component manages user pools, password rules, and MFA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cognito User Pools"
+      },
+      {
+        "id": "B",
+        "text": "Cognito Identity Pools"
+      },
+      {
+        "id": "C",
+        "text": "AWS IAM Identity Center"
+      },
+      {
+        "id": "D",
+        "text": "API Gateway Authorizer"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "Cognito User Pools serve as user directories providing user registration, sign-in, MFA, and JWT token issuance.",
+    "awsDocUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q59",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "An Application Load Balancer target group shows target instances failing health checks with `Target.Timeout`. What is the primary cause?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The health check request sent to the target timed out due to security group or network ACL rules blocking traffic."
+      },
+      {
+        "id": "B",
+        "text": "Client SSL certificate expired."
+      },
+      {
+        "id": "C",
+        "text": "Target group deregistration delay was 0."
+      },
+      {
+        "id": "D",
+        "text": "Sticky sessions were enabled."
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`Target.Timeout` indicates that health check requests sent from ALB to targets timed out before receiving a response, commonly caused by network or security group blocks.",
+    "awsDocUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q60",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to configure an AWS CodePipeline pipeline with manual approval stages. Which pipeline action type halts execution until an authorized user approves?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Approval"
+      },
+      {
+        "id": "B",
+        "text": "CodeBuild"
+      },
+      {
+        "id": "C",
+        "text": "Lambda"
+      },
+      {
+        "id": "D",
+        "text": "Deploy"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "CodePipeline provides a native `Approval` action type that halts pipeline execution until an authorized IAM user approves or rejects the action.",
+    "awsDocUrl": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q61",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d1",
+    "domainName": "Domain 1: Development with AWS Services",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to write items to an Amazon DynamoDB table using transactions. What API operation provides ACID transactional atomicity across up to 100 items?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TransactWriteItems"
+      },
+      {
+        "id": "B",
+        "text": "BatchWriteItem"
+      },
+      {
+        "id": "C",
+        "text": "PutItem"
+      },
+      {
+        "id": "D",
+        "text": "UpdateItem"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`TransactWriteItems` provides synchronous, all-or-nothing ACID transactional processing across multiple DynamoDB items.",
+    "awsDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q62",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to encrypt local data files using envelope encryption. What API call to AWS KMS returns both a plaintext data key and an encrypted copy of that key?",
+    "options": [
+      {
+        "id": "A",
+        "text": "kms:GenerateDataKey"
+      },
+      {
+        "id": "B",
+        "text": "kms:Encrypt"
+      },
+      {
+        "id": "C",
+        "text": "kms:Decrypt"
+      },
+      {
+        "id": "D",
+        "text": "kms:Sign"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`kms:GenerateDataKey` generates a data key under a KMS CMK and returns both the plaintext key (for local payload encryption) and the encrypted key (for storage).",
+    "awsDocUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q63",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d3",
+    "domainName": "Domain 3: Deployment",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to run local Lambda function invocations using SAM CLI. What command invokes a specific function locally passing an event JSON payload file?",
+    "options": [
+      {
+        "id": "A",
+        "text": "sam local invoke FunctionName -e event.json"
+      },
+      {
+        "id": "B",
+        "text": "sam deploy --event event.json"
+      },
+      {
+        "id": "C",
+        "text": "sam build --local"
+      },
+      {
+        "id": "D",
+        "text": "sam validate"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`sam local invoke` executes a Lambda function locally inside a Docker container using a provided event JSON file (`-e event.json`).",
+    "awsDocUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-invoke.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q64",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d4",
+    "domainName": "Domain 4: Troubleshooting and Optimization",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to trace downstream HTTP calls made from an AWS Lambda function written in Node.js. What package from the AWS X-Ray SDK must be used to instrument outgoing HTTP requests?",
+    "options": [
+      {
+        "id": "A",
+        "text": "aws-xray-sdk-core (AWSXRay.captureHTTPsGlobal)"
+      },
+      {
+        "id": "B",
+        "text": "aws-sdk-v3-logger"
+      },
+      {
+        "id": "C",
+        "text": "cloudwatch-agent-sdk"
+      },
+      {
+        "id": "D",
+        "text": "kms-crypto-tool"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "In Node.js, `aws-xray-sdk-core` provides `AWSXRay.captureHTTPsGlobal` to intercept and trace all outgoing HTTP/HTTPS calls automatically.",
+    "awsDocUrl": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-nodejs-httpclients.html",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "dvac02-s5-q65",
+    "setId": 5,
+    "examCode": "DVA-C02",
+    "domainId": "dva-d2",
+    "domainName": "Domain 2: Security",
+    "questionType": "single",
+    "selectCount": 1,
+    "isScored": true,
+    "scenario": "A developer needs to store encrypted credentials in AWS Systems Manager Parameter Store. Which parameter type encrypts parameters at rest using AWS KMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SecureString"
+      },
+      {
+        "id": "B",
+        "text": "String"
+      },
+      {
+        "id": "C",
+        "text": "StringList"
+      },
+      {
+        "id": "D",
+        "text": "EncryptedText"
+      }
+    ],
+    "correctAnswer": [
+      "A"
+    ],
+    "explanation": "`SecureString` parameters in Systems Manager Parameter Store use AWS KMS keys to encrypt sensitive string values at rest.",
+    "awsDocUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-about.html#sysman-paramstore-securestring",
+    "difficulty": "Hard"
   }
 ]
